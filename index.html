@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<title>Deel Japan News</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+    background: #fff; color: #1a1a1a; line-height: 1.6;
+  }
+
+  /* ── TOP BAR ── */
+  .topbar { position: sticky; top: 0; z-index: 100; background: #fff; border-bottom: 1px solid #eee; }
+  .topbar-inner { max-width: 720px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 10px 16px; }
+  .topbar-logo { font-size: 19px; font-weight: 900; color: #0052ff; letter-spacing: -0.5px; }
+  .topbar-actions { display: flex; gap: 6px; align-items: center; }
+  .topbar-btn { background: none; border: none; cursor: pointer; padding: 6px; border-radius: 50%; color: #555; display: flex; align-items: center; position: relative; }
+  .topbar-btn:hover { background: #f5f5f5; }
+  .topbar-btn svg { width: 20px; height: 20px; }
+  .bm-badge { position: absolute; top: 2px; right: 2px; min-width: 15px; height: 15px; background: #ef4444; color: #fff; border-radius: 10px; font-size: 9px; font-weight: 700; display: none; align-items: center; justify-content: center; padding: 0 3px; border: 2px solid #fff; }
+  .bm-badge.show { display: flex; }
+
+  /* ── TABS ── */
+  .tabs { max-width: 720px; margin: 0 auto; display: flex; overflow-x: auto; padding: 0 12px; border-bottom: 1px solid #eee; scrollbar-width: none; }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab { padding: 10px 14px; font-size: 13px; font-weight: 600; color: #999; cursor: pointer; white-space: nowrap; border: none; background: none; border-bottom: 2.5px solid transparent; }
+  .tab:hover { color: #555; }
+  .tab.on { color: #1a1a1a; border-bottom-color: #1a1a1a; }
+
+  /* ── STATUS / PROGRESS ── */
+  .progress-bar { max-width: 720px; margin: 0 auto; padding: 8px 16px; font-size: 12px; color: #888; display: none; align-items: center; gap: 8px; background: #fafafa; border-bottom: 1px solid #f0f0f0; }
+  .progress-bar.on { display: flex; }
+  .mspin { display: inline-block; width: 12px; height: 12px; border: 2px solid #ddd; border-top-color: #0052ff; border-radius: 50%; animation: sp .7s linear infinite; }
+  @keyframes sp { to { transform: rotate(360deg); } }
+
+  /* ── SEARCH ── */
+  .search-wrap { max-width: 720px; margin: 0 auto; padding: 10px 16px 6px; }
+  .search-wrap input { width: 100%; padding: 8px 14px; border: 1px solid #e5e5e5; border-radius: 8px; font-size: 13px; outline: none; background: #f9fafb; }
+  .search-wrap input:focus { border-color: #0052ff; background: #fff; }
+
+  /* ── MAIN ── */
+  .main-area { max-width: 720px; margin: 0 auto; padding-bottom: 80px; min-height: 50vh; }
+
+  .section-label { padding: 14px 16px 4px; display: flex; align-items: center; gap: 8px; }
+  .section-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+  .section-name { font-size: 13px; font-weight: 700; color: #555; }
+  .section-line { flex: 1; height: 1px; background: #eee; }
+  .section-cnt { font-size: 11px; color: #bbb; }
+
+  /* ── NEWS ROW ── */
+  .nrow { display: flex; align-items: flex-start; gap: 14px; padding: 14px 16px; border-bottom: 1px solid #f2f2f2; cursor: pointer; transition: background .1s; }
+  .nrow:hover { background: #fafafa; }
+  .nrow-body { flex: 1; min-width: 0; }
+  .nrow-date { font-size: 11px; color: #aaa; margin-bottom: 2px; font-weight: 500; }
+  .nrow-title { font-size: 15px; font-weight: 700; line-height: 1.45; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .nrow-orig { font-size: 11px; color: #bbb; font-style: italic; margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .nrow-summary { font-size: 12.5px; color: #555; line-height: 1.5; margin-top: 4px; max-height: 2.95em; overflow: hidden; }
+  .nrow-meta { display: flex; align-items: center; gap: 6px; font-size: 11px; color: #999; margin-top: 6px; flex-wrap: wrap; }
+  .nrow-src { font-weight: 600; color: #666; }
+  .mdot { width: 3px; height: 3px; border-radius: 50%; background: #ccc; }
+  .lang-tag { font-size: 9px; padding: 1px 5px; border-radius: 3px; font-weight: 700; }
+  .ltja { background: #fef3c7; color: #92400e; }
+  .lten { background: #dbeafe; color: #1e40af; }
+  .score-tag { font-size: 9px; padding: 1px 5px; border-radius: 3px; font-weight: 700; background: #fee2e2; color: #dc2626; }
+
+  .nrow-right { flex-shrink: 0; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+  .nrow-thumb { width: 110px; height: 74px; border-radius: 6px; object-fit: cover; background: #f0f0f0; display: block; }
+  .nrow-thumb-ph { width: 110px; height: 74px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; color: rgba(255,255,255,.9); }
+  .bm-btn { background: none; border: none; cursor: pointer; padding: 2px; color: #ccc; line-height: 1; }
+  .bm-btn:hover { transform: scale(1.15); }
+  .bm-btn.saved { color: #1a1a1a; }
+  .bm-btn svg { width: 20px; height: 20px; }
+
+  /* ── DETAIL ── */
+  .detail-view { display: none; position: fixed; inset: 0; z-index: 300; background: #fff; overflow-y: auto; }
+  .detail-view.open { display: block; }
+  .detail-topbar { position: sticky; top: 0; z-index: 10; background: #fff; border-bottom: 1px solid #eee; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; max-width: 720px; margin: 0 auto; }
+  .detail-back { background: none; border: none; cursor: pointer; font-size: 15px; color: #555; display: flex; align-items: center; gap: 4px; font-weight: 500; }
+  .detail-back:hover { color: #000; }
+  .detail-actions { display: flex; gap: 8px; }
+  .detail-actions button { background: none; border: none; cursor: pointer; color: #555; display: flex; align-items: center; font-size: 13px; gap: 3px; }
+  .detail-actions button:hover { color: #000; }
+  .detail-content { max-width: 720px; margin: 0 auto; padding: 20px 16px 60px; }
+  .detail-cat { font-size: 12px; font-weight: 700; margin-bottom: 8px; }
+  .detail-title { font-size: 22px; font-weight: 800; line-height: 1.4; margin-bottom: 8px; }
+  .detail-orig { font-size: 13px; color: #aaa; font-style: italic; margin-bottom: 12px; }
+  .detail-meta { font-size: 13px; color: #888; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+  .detail-meta strong { color: #555; }
+  .detail-img { width: 100%; border-radius: 8px; margin-bottom: 8px; max-height: 400px; object-fit: cover; background: #f0f0f0; }
+  .detail-img-ph { width: 100%; height: 200px; border-radius: 8px; margin-bottom: 8px; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; color: rgba(255,255,255,.9); }
+  .detail-img-credit { font-size: 11px; color: #aaa; margin-bottom: 16px; }
+  .detail-body { font-size: 16px; line-height: 1.8; color: #333; }
+  .detail-body p { margin-bottom: 16px; }
+  .detail-read-full { display: inline-flex; align-items: center; gap: 4px; margin-top: 16px; padding: 10px 20px; background: #0052ff; color: #fff; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; }
+  .detail-read-full:hover { background: #003fcc; }
+  .detail-footer { margin-top: 28px; padding-top: 20px; border-top: 1px solid #eee; display: flex; gap: 12px; }
+  .detail-footer button { display: flex; align-items: center; gap: 5px; padding: 8px 16px; border-radius: 6px; border: 1px solid #e5e5e5; background: #fff; cursor: pointer; font-size: 13px; color: #555; }
+  .detail-footer button:hover { background: #f5f5f5; }
+  .detail-footer button.saved-d { background: #1a1a1a; color: #fff; border-color: #1a1a1a; }
+
+  .detail-article-loading { text-align: center; padding: 20px 0; color: #aaa; font-size: 13px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+  .detail-article-text { font-size: 15.5px; line-height: 1.85; color: #333; }
+  .detail-article-text p { margin-bottom: 14px; text-align: justify; }
+  .detail-summary-box { background: #f8f9fa; border-left: 3px solid #0052ff; padding: 12px 16px; margin-bottom: 20px; border-radius: 0 6px 6px 0; }
+  .detail-summary-box .label { font-size: 11px; font-weight: 700; color: #0052ff; margin-bottom: 4px; }
+  .detail-summary-box p { font-size: 14px; color: #444; line-height: 1.7; margin: 0; }
+
+  /* ── DRAWER ── */
+  .drawer-bg { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.35); z-index: 200; }
+  .drawer-bg.open { display: block; }
+  .drawer { position: fixed; top: 0; right: 0; bottom: 0; width: 400px; max-width: 88vw; background: #fff; z-index: 201; transform: translateX(100%); transition: transform .25s ease; display: flex; flex-direction: column; box-shadow: -4px 0 24px rgba(0,0,0,.12); }
+  .drawer-bg.open .drawer { transform: translateX(0); }
+  .drawer-hdr { padding: 14px 18px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+  .drawer-hdr h3 { font-size: 16px; font-weight: 800; }
+  .drawer-x { background: none; border: none; font-size: 24px; cursor: pointer; color: #999; }
+  .drawer-list { flex: 1; overflow-y: auto; }
+  .drawer-empty { text-align: center; padding: 50px 20px; color: #bbb; font-size: 13px; line-height: 1.7; }
+  .drawer-ft { padding: 10px 18px; border-top: 1px solid #eee; text-align: center; }
+  .drawer-ft button { background: #fff; border: 1px solid #e5e5e5; color: #dc2626; padding: 6px 16px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+
+  /* ── ERROR LOG ── */
+  .error-log { max-width: 720px; margin: 0 auto; padding: 12px 16px; display: none; }
+  .error-log.on { display: block; }
+  .error-log-toggle { font-size: 11px; color: #999; cursor: pointer; text-decoration: underline; }
+  .error-log-content { display: none; margin-top: 8px; padding: 8px 12px; background: #fef2f2; border: 1px solid #fecaca; border-radius: 6px; font-size: 11px; color: #991b1b; max-height: 200px; overflow-y: auto; white-space: pre-wrap; font-family: monospace; }
+  .error-log-content.open { display: block; }
+
+  /* ── MISC ── */
+  .loading-box { text-align: center; padding: 60px 20px; color: #aaa; }
+  .lspin { width: 32px; height: 32px; border: 3px solid #eee; border-top-color: #0052ff; border-radius: 50%; animation: sp .8s linear infinite; margin: 0 auto 14px; }
+  .empty-box { text-align: center; padding: 50px 20px; color: #bbb; font-size: 14px; }
+  .bottom-bar { position: fixed; bottom: 0; left: 0; right: 0; max-width: 720px; margin: 0 auto; background: #fff; border-top: 1px solid #eee; padding: 7px 16px; display: flex; justify-content: space-between; align-items: center; font-size: 11px; color: #aaa; z-index: 50; }
+  .bottom-bar a { color: #0052ff; cursor: pointer; font-weight: 600; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-logo">DEEL NEWS</div>
+    <div class="topbar-actions">
+      <button class="topbar-btn" onclick="openDrawer()" title="保存した記事">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v18l-7-4-7 4V3z"/></svg>
+        <span class="bm-badge" id="bmBadge">0</span>
+      </button>
+      <button class="topbar-btn" onclick="loadAllFeeds()" id="refreshBtn" title="更新">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4v6h6"/><path d="M23 20v-6h-6"/><path d="M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="tabs">
+    <button class="tab on" data-c="top" onclick="sw('top',this)">トップ</button>
+    <button class="tab" data-c="all" onclick="sw('all',this)">すべて</button>
+    <button class="tab" data-c="deel" onclick="sw('deel',this)">Deel</button>
+    <button class="tab" data-c="funding" onclick="sw('funding',this)">資金調達</button>
+    <button class="tab" data-c="ma" onclick="sw('ma',this)">M&A</button>
+    <button class="tab" data-c="competitor" onclick="sw('competitor',this)">競合</button>
+    <button class="tab" data-c="global" onclick="sw('global',this)">海外展開</button>
+    <button class="tab" data-c="talent" onclick="sw('talent',this)">人材</button>
+    <button class="tab" data-c="hr" onclick="sw('hr',this)">HR</button>
+    <button class="tab" data-c="event" onclick="sw('event',this)">イベント</button>
+    <button class="tab" data-c="saved" onclick="sw('saved',this)">保存済み</button>
+  </div>
+</div>
+
+<div class="progress-bar" id="progressBar">
+  <span class="mspin"></span><span id="progressText">読み込み中...</span>
+</div>
+
+<div class="search-wrap">
+  <input type="text" id="searchIn" placeholder="キーワードで絞り込み..." oninput="render()">
+</div>
+
+<div class="error-log" id="errorLog">
+  <span class="error-log-toggle" onclick="document.getElementById('errorLogContent').classList.toggle('open')">取得エラーの詳細を表示</span>
+  <div class="error-log-content" id="errorLogContent"></div>
+</div>
+
+<div class="main-area" id="mainArea">
+  <div class="loading-box"><div class="lspin"></div><div>ニュースを取得しています...</div></div>
+</div>
+
+<div class="detail-view" id="detailView">
+  <div class="detail-topbar">
+    <button class="detail-back" onclick="closeDetail()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+      戻る
+    </button>
+    <div class="detail-actions">
+      <button onclick="currentArticle && window.open(currentArticle.link,'_blank')">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        元記事を開く
+      </button>
+    </div>
+  </div>
+  <div class="detail-content" id="detailContent"></div>
+</div>
+
+<div class="drawer-bg" id="drawerBg" onclick="closeDrawerBg(event)">
+  <div class="drawer">
+    <div class="drawer-hdr"><h3>保存した記事</h3><button class="drawer-x" onclick="closeDrawer()">&times;</button></div>
+    <div class="drawer-list" id="drawerList"></div>
+    <div class="drawer-ft" id="drawerFt" style="display:none"><button onclick="clearBm()">すべて削除</button></div>
+  </div>
+</div>
+
+<div class="bottom-bar">
+  <span id="statusText">読み込み中...</span>
+  <a onclick="loadAllFeeds()">更新</a>
+</div>
+
+<script>
+// ═══════════ CONFIG ═══════════
+const CATS = {
+  deel:       { label:'Deel関連',     color:'#0052ff' },
+  funding:    { label:'資金調達',     color:'#10b981' },
+  ma:         { label:'M&A',          color:'#f59e0b' },
+  competitor: { label:'競合動向',     color:'#ef4444' },
+  global:     { label:'海外事業展開', color:'#3b82f6' },
+  talent:     { label:'海外人材採用', color:'#8b5cf6' },
+  hr:         { label:'人事・HR',     color:'#ec4899' },
+  event:      { label:'イベント',     color:'#06b6d4' }
+};
+
+// Consolidated queries — fewer but broader to reduce API calls
+const CAT_Q = {
+  deel:       { ja:['Deel 日本'], en:['Deel HR payroll EOR'] },
+  funding:    { ja:['スタートアップ 資金調達 億円','ベンチャー シリーズ 調達'], en:['japan startup funding series'] },
+  ma:         { ja:['M&A 買収 合併 日本','TOB 公開買付 買収'], en:['japan M&A acquisition merger'] },
+  competitor: { ja:['SmartHR OR freee人事労務 OR マネーフォワード給与','KING OF TIME OR ジョブカン OR カオナビ'], en:['Remote OR "Oyster HR" OR "Papaya Global" OR Rippling'] },
+  global:     { ja:['海外進出 日本企業','海外事業展開 グローバル展開'], en:['japanese company global expansion overseas'] },
+  talent:     { ja:['外国人材 採用 日本','グローバル人材 採用 リモート'], en:['japan hiring global talent international'] },
+  hr:         { ja:['HR Tech 日本 人事','CHRO OR 人事部長 インタビュー','EOR 雇用代行 給与計算'], en:['HR technology employer of record japan'] },
+  event:      { ja:['HR Tech イベント カンファレンス','人事 EXPO セミナー 2025'], en:['HR tech conference summit japan'] }
+};
+
+const ORD = ['deel','funding','ma','competitor','global','talent','hr','event'];
+
+// ═══════════ SALES SCORING ═══════════
+const HIGH_KW = [
+  '海外進出','海外展開','グローバル展開','海外拠点','海外子会社',
+  '海外人材','外国人材','グローバル人材','越境リモート','リモート採用',
+  '資金調達','シリーズA','シリーズB','シリーズC','シリーズD','億円調達',
+  '人事制度','給与計算','EOR','雇用代行','Employer of Record',
+  'M&A','買収','合併','TOB','IPO','上場',
+  'Deel','SmartHR','freee','Remote.com','Oyster','Papaya Global','Rippling',
+  'global expansion','international hiring','overseas','payroll',
+  'HR tech','CHRO','人事部長','働き方改革','リモートワーク'
+];
+const BOOST = { deel:30, competitor:20, talent:18, global:18, funding:14, ma:12, hr:10, event:5 };
+function score(a) {
+  let s = BOOST[a.category]||0;
+  const t = (a.title+' '+(a.summary||'')+' '+(a.titleOriginal||'')).toLowerCase();
+  HIGH_KW.forEach(k => { if (t.includes(k.toLowerCase())) s += 8; });
+  const age = (Date.now() - a.pubDate) / 86400000;
+  if (age < 3) s += 10; else if (age < 7) s += 5;
+  return s;
+}
+
+// ═══════════ STATE ═══════════
+let ALL = [];
+let BM = JSON.parse(localStorage.getItem('dn_bm2')||'[]');
+let TAB = 'top';
+let currentArticle = null;
+let errorLogs = [];
+
+// ═══════════ MULTI-STRATEGY FETCH ═══════════
+// Strategy 1: rss2json.com API (returns JSON, CORS-friendly)
+async function fetchViaRss2Json(rssUrl) {
+  const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+  const r = await fetch(apiUrl, { signal: AbortSignal.timeout(12000) });
+  if (!r.ok) throw new Error(`rss2json: ${r.status}`);
+  const data = await r.json();
+  if (data.status !== 'ok') throw new Error(`rss2json: ${data.message||'error'}`);
+  return data.items.map(it => ({
+    title: it.title || '',
+    link: it.link || '',
+    pubDate: new Date(it.pubDate),
+    source: it.author || extractSource(it.title),
+    img: it.thumbnail || it.enclosure?.link || extractImg(it.description || it.content || ''),
+    summary: stripHtml(it.description || it.content || '')
+  })).filter(a => a.title && a.link);
+}
+
+// Strategy 2: allorigins.win JSON endpoint
+async function fetchViaAllOrigins(rssUrl) {
+  const apiUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(rssUrl)}`;
+  const r = await fetch(apiUrl, { signal: AbortSignal.timeout(12000) });
+  if (!r.ok) throw new Error(`allorigins: ${r.status}`);
+  const data = await r.json();
+  if (!data.contents) throw new Error('allorigins: empty');
+  return parseXml(data.contents);
+}
+
+// Strategy 3: corsproxy.io
+async function fetchViaCorsproxy(rssUrl) {
+  const apiUrl = `https://corsproxy.io/?${encodeURIComponent(rssUrl)}`;
+  const r = await fetch(apiUrl, { signal: AbortSignal.timeout(12000) });
+  if (!r.ok) throw new Error(`corsproxy: ${r.status}`);
+  return parseXml(await r.text());
+}
+
+// Strategy 4: corsproxy.org
+async function fetchViaCorsproxyOrg(rssUrl) {
+  const apiUrl = `https://corsproxy.org/?${encodeURIComponent(rssUrl)}`;
+  const r = await fetch(apiUrl, { signal: AbortSignal.timeout(12000) });
+  if (!r.ok) throw new Error(`corsproxy.org: ${r.status}`);
+  return parseXml(await r.text());
+}
+
+// Try all strategies in order
+async function fetchRss(rssUrl) {
+  const strategies = [fetchViaRss2Json, fetchViaAllOrigins, fetchViaCorsproxy, fetchViaCorsproxyOrg];
+  for (const fn of strategies) {
+    try {
+      const articles = await fn(rssUrl);
+      if (articles.length > 0) return articles;
+    } catch (e) {
+      errorLogs.push(`[${fn.name}] ${rssUrl.slice(0,80)}... → ${e.message}`);
+    }
+  }
+  return [];
+}
+
+// ═══════════ XML PARSER ═══════════
+function parseXml(xml) {
+  const doc = new DOMParser().parseFromString(xml, 'text/xml');
+  const err = doc.querySelector('parsererror');
+  if (err) throw new Error('XML parse error');
+  const out = [];
+  doc.querySelectorAll('item').forEach(it => {
+    const title = it.querySelector('title')?.textContent?.trim() || '';
+    const link = it.querySelector('link')?.textContent?.trim() || '';
+    const pub = it.querySelector('pubDate')?.textContent || '';
+    const src = it.querySelector('source')?.textContent?.trim() || '';
+    const desc = it.querySelector('description')?.textContent || '';
+    let img = extractImg(desc);
+    if (!img) { const mc = it.getElementsByTagNameNS('*','content'); if (mc.length) img = mc[0].getAttribute('url')||''; }
+    if (!img) { const enc = it.querySelector('enclosure'); if (enc) img = enc.getAttribute('url')||''; }
+    const summary = stripHtml(desc);
+    if (title && link) out.push({ title, link, pubDate: new Date(pub), source: src || extractSource(title), img, summary });
+  });
+  return out;
+}
+
+function extractImg(html) { const m = html.match(/<img[^>]+src=["']([^"']+)["']/i); return m ? m[1] : ''; }
+function extractSource(title) { const m = title.match(/[-–—]\s*([^-–—]+)$/); return m ? m[1].trim() : ''; }
+function stripHtml(html) {
+  let t = html.replace(/<[^>]+>/g, '').trim();
+  if (t.length > 280) t = t.slice(0,280)+'...';
+  return t;
+}
+
+// ═══════════ ARTICLE BODY FETCH ═══════════
+async function fetchArticleBody(url) {
+  const strategies = [
+    async (u) => {
+      const r = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(u)}`, { signal: AbortSignal.timeout(15000) });
+      if (!r.ok) throw new Error('fail');
+      const d = await r.json();
+      return d.contents || '';
+    },
+    async (u) => {
+      const r = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(u)}`, { signal: AbortSignal.timeout(10000) });
+      // rss2json won't work for regular pages — skip
+      throw new Error('skip');
+    },
+    async (u) => {
+      const r = await fetch(`https://corsproxy.io/?${encodeURIComponent(u)}`, { signal: AbortSignal.timeout(15000) });
+      if (!r.ok) throw new Error('fail');
+      return await r.text();
+    },
+    async (u) => {
+      const r = await fetch(`https://corsproxy.org/?${encodeURIComponent(u)}`, { signal: AbortSignal.timeout(15000) });
+      if (!r.ok) throw new Error('fail');
+      return await r.text();
+    }
+  ];
+
+  for (const fn of strategies) {
+    try {
+      const html = await fn(url);
+      if (html && html.length > 200) return html;
+    } catch(e) { continue; }
+  }
+  return null;
+}
+
+function extractArticleContent(html) {
+  const doc = new DOMParser().parseFromString(html, 'text/html');
+
+  // Remove unwanted elements
+  doc.querySelectorAll('script,style,nav,header,footer,aside,.ad,.ads,.sidebar,.menu,.nav,.comment,.related,.share,.social,iframe,form').forEach(e => e.remove());
+
+  // Try to find article content in priority order
+  const selectors = ['article', '[role="article"]', 'main', '.article-body', '.article-content', '.entry-content', '.post-content', '.story-body', '.content-body', '#article-body', '.article__body'];
+  let contentEl = null;
+  for (const sel of selectors) {
+    contentEl = doc.querySelector(sel);
+    if (contentEl) break;
+  }
+  if (!contentEl) contentEl = doc.body;
+
+  // Extract paragraphs
+  const paragraphs = [];
+  contentEl.querySelectorAll('p').forEach(p => {
+    const text = p.textContent.trim();
+    // Filter out short/junk paragraphs
+    if (text.length > 20 && !text.match(/^(広告|PR|スポンサー|cookie|Copyright|©)/i)) {
+      paragraphs.push(text);
+    }
+  });
+
+  // Also try to get meta description as fallback summary
+  let metaDesc = '';
+  const metaEl = doc.querySelector('meta[name="description"],meta[property="og:description"]');
+  if (metaEl) metaDesc = metaEl.getAttribute('content') || '';
+
+  // Try to get og:image
+  let ogImg = '';
+  const ogImgEl = doc.querySelector('meta[property="og:image"],meta[name="twitter:image"]');
+  if (ogImgEl) ogImg = ogImgEl.getAttribute('content') || '';
+
+  return { paragraphs, metaDesc, ogImg };
+}
+function dedup(arr) {
+  const s = new Set();
+  return arr.filter(a => { const k = a.title.replace(/\s+/g,'').toLowerCase().slice(0,50); if (s.has(k)) return false; s.add(k); return true; });
+}
+
+// ═══════════ GOOGLE NEWS RSS URL ═══════════
+function gurl(query, lang) {
+  const hl = lang==='ja'?'ja':'en', gl = lang==='ja'?'JP':'US', ce = lang==='ja'?'JP:ja':'US:en';
+  return `https://news.google.com/rss/search?q=${encodeURIComponent(query+' when:30d')}&hl=${hl}&gl=${gl}&ceid=${ce}`;
+}
+
+async function fetchCat(ck) {
+  const qs = CAT_Q[ck]; const ps = [];
+  for (const lang of ['ja','en']) {
+    for (const q of qs[lang]) {
+      ps.push(fetchRss(gurl(q, lang)).then(arts => {
+        arts.forEach(a => { a.category=ck; a.lang=lang; });
+        return arts;
+      }));
+    }
+  }
+  const res = await Promise.all(ps);
+  const all = res.flat().sort((a,b) => b.pubDate - a.pubDate);
+  return dedup(all).slice(0, 20);
+}
+
+// ═══════════ TRANSLATE ═══════════
+async function tr(text) {
+  try {
+    const r = await fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=ja&dt=t&q=${encodeURIComponent(text)}`, { signal: AbortSignal.timeout(8000) });
+    const d = await r.json();
+    if (d?.[0]) return d[0].map(s=>s[0]).join('');
+  } catch(e) { errorLogs.push(`[translate] ${e.message}`); }
+  return null;
+}
+
+async function translateAll() {
+  const en = ALL.filter(a => a.lang==='en');
+  if (!en.length) return;
+  setProgress(true, '英語ニュースを翻訳中...');
+  let done = 0;
+  for (let i=0; i<en.length; i+=4) {
+    await Promise.all(en.slice(i,i+4).map(async a => {
+      const tt = await tr(a.title);
+      if (tt) { a.titleOriginal=a.title; a.title=tt; }
+      if (a.summary?.length > 10) {
+        const ts = await tr(a.summary);
+        if (ts) {
+          a.summaryOriginal=a.summary; a.summary=ts;
+          a.summaryFull = ts;
+          a.summaryShort = ts.length > 60 ? ts.slice(0,55)+'...' : ts;
+        }
+      }
+      done++;
+      setProgress(true, `英語ニュースを翻訳中... (${done}/${en.length})`);
+    }));
+  }
+  setProgress(false);
+  render();
+}
+
+// ═══════════ MAIN LOAD ═══════════
+async function loadAllFeeds() {
+  const btn = document.getElementById('refreshBtn');
+  btn.disabled = true;
+  errorLogs = [];
+  document.getElementById('errorLog').classList.remove('on');
+
+  document.getElementById('mainArea').innerHTML = '<div class="loading-box"><div class="lspin"></div><div>ニュースを取得しています...</div></div>';
+  setProgress(true, 'Google News RSSからニュースを取得中...');
+
+  ALL = [];
+  let loadedCats = 0;
+  const total = ORD.length;
+
+  for (const ck of ORD) {
+    setProgress(true, `${CATS[ck].label}のニュースを取得中... (${loadedCats+1}/${total})`);
+    try {
+      const arts = await fetchCat(ck);
+      ALL.push(...arts);
+      loadedCats++;
+    } catch(e) {
+      errorLogs.push(`[fetchCat:${ck}] ${e.message}`);
+      loadedCats++;
+    }
+  }
+
+  ALL = dedup(ALL);
+
+  // Clean up and improve summaries
+  ALL.forEach((a, i) => {
+    // Remove summary if it's just the title repeated
+    if (a.summary) {
+      const normSum = a.summary.replace(/\s+/g,'').toLowerCase();
+      const normTitle = a.title.replace(/\s+/g,'').toLowerCase();
+      if (normSum.startsWith(normTitle.slice(0,30)) || a.summary.length < 8) {
+        a.summary = '';
+      }
+    }
+    // Store full summary for detail view, create short version for list
+    a.summaryFull = a.summary || '';
+    if (!a.summary || a.summary.length < 8) {
+      const c = CATS[a.category];
+      a.summary = `${c.label}に関するニュース。${a.source?a.source+'が報道。':''}`;
+      a.summaryFull = a.summary;
+    }
+    // Create truncated version for list (~50 chars)
+    if (a.summary.length > 60) {
+      a.summaryShort = a.summary.slice(0, 55) + '...';
+    } else {
+      a.summaryShort = a.summary;
+    }
+    // Use numeric index as ID — safe for HTML attributes, no collisions
+    a.id = 'n' + i;
+  });
+
+  // Show errors if any
+  if (errorLogs.length > 0) {
+    document.getElementById('errorLog').classList.add('on');
+    document.getElementById('errorLogContent').textContent = errorLogs.join('\n');
+  }
+
+  if (ALL.length === 0) {
+    setProgress(false);
+    document.getElementById('mainArea').innerHTML =
+      '<div class="empty-box">ニュースを取得できませんでした。<br>ネットワーク接続を確認し、しばらく後にもう一度お試しください。<br><br><small style="color:#bbb;">CORSプロキシが一時的に利用不可の場合があります。<br>下部の「取得エラーの詳細を表示」で原因を確認できます。</small></div>';
+    btn.disabled = false;
+    updateStatus();
+    return;
+  }
+
+  setProgress(true, `${ALL.length}件取得完了 — 表示を準備中...`);
+  render();
+  updateStatus();
+  updateBmBadge();
+  setProgress(false);
+  btn.disabled = false;
+
+  // Translate in background
+  translateAll();
+}
+
+function setProgress(show, text) {
+  const el = document.getElementById('progressBar');
+  const tx = document.getElementById('progressText');
+  if (show) { el.classList.add('on'); tx.textContent = text||''; }
+  else { el.classList.remove('on'); }
+}
+
+// ═══════════ RENDER ═══════════
+function esc(t) { const d=document.createElement('div'); d.textContent=t; return d.innerHTML; }
+function fmtD(d) { if (!(d instanceof Date)||isNaN(d)) return ''; return `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()}`; }
+function fmtAgo(d) {
+  if (!(d instanceof Date)||isNaN(d)) return '';
+  const h=Math.floor((Date.now()-d)/3600000), dd=Math.floor((Date.now()-d)/86400000);
+  if (h<1) return 'たった今'; if (h<24) return `${h}時間前`; if (dd<7) return `${dd}日前`;
+  return fmtD(d);
+}
+function isBm(id) { return BM.some(b=>b.id===id); }
+
+function thumbH(a) {
+  if (a.img) {
+    return `<img class="nrow-thumb" src="${esc(a.img)}" alt="" referrerpolicy="no-referrer" loading="lazy"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="nrow-thumb-ph" style="display:none;background:${CATS[a.category]?.color||'#888'}">${CATS[a.category]?.label||''}</div>`;
+  }
+  return `<div class="nrow-thumb-ph" style="background:${CATS[a.category]?.color||'#888'}">${CATS[a.category]?.label||''}</div>`;
+}
+
+function rowH(a, showScore) {
+  const bm = isBm(a.id);
+  const orig = a.titleOriginal ? `<div class="nrow-orig">${esc(a.titleOriginal)}</div>` : '';
+  const lt = a.lang==='en' ? '<span class="lang-tag lten">EN→JP</span>' : '';
+  const sc = showScore ? `<span class="score-tag">重要度 ${score(a)}</span>` : '';
+  return `
+    <div class="nrow" data-aid="${esc(a.id)}" onclick="openDetail(this.dataset.aid)">
+      <div class="nrow-body">
+        <div class="nrow-date">${fmtD(a.pubDate)}</div>
+        <div class="nrow-title">${esc(a.title)}</div>
+        ${orig}
+        <div class="nrow-summary">${esc(a.summaryShort || a.summary)}</div>
+        <div class="nrow-meta">
+          <span class="nrow-src">${esc(a.source)}</span>
+          <span class="mdot"></span>
+          <span>${fmtAgo(a.pubDate)}</span>
+          ${lt} ${sc}
+        </div>
+      </div>
+      <div class="nrow-right">
+        ${thumbH(a)}
+        <button class="bm-btn ${bm?'saved':''}" data-bmid="${esc(a.id)}" onclick="event.stopPropagation();toggleBm(this.dataset.bmid,event)" title="保存">
+          <svg viewBox="0 0 24 24" fill="${bm?'currentColor':'none'}" stroke="currentColor" stroke-width="1.8"><path d="M5 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v18l-7-4-7 4V3z"/></svg>
+        </button>
+      </div>
+    </div>`;
+}
+
+function render() {
+  const c = document.getElementById('mainArea');
+  const q = document.getElementById('searchIn').value.toLowerCase();
+
+  if (TAB === 'saved') {
+    if (!BM.length) { c.innerHTML='<div class="empty-box">保存した記事はありません。</div>'; return; }
+    c.innerHTML = BM.map(b => rowH({...b, pubDate:new Date(b.pubDate)},false)).join('');
+    return;
+  }
+
+  let list = TAB==='top' ? getTop() : TAB==='all' ? ALL : ALL.filter(a=>a.category===TAB);
+  if (q) list = list.filter(a =>
+    a.title.toLowerCase().includes(q)||a.source.toLowerCase().includes(q)||
+    (a.summary||'').toLowerCase().includes(q)||(a.titleOriginal||'').toLowerCase().includes(q));
+
+  if (!list.length) { c.innerHTML='<div class="empty-box">該当するニュースがありません。</div>'; return; }
+
+  if (TAB==='all') {
+    const g = {};
+    list.forEach(a => { if (!g[a.category]) g[a.category]=[]; g[a.category].push(a); });
+    let h = '';
+    for (const ck of ORD) {
+      if (!g[ck]?.length) continue;
+      const cat = CATS[ck];
+      h += `<div class="section-label"><span class="section-dot" style="background:${cat.color}"></span><span class="section-name">${cat.label}</span><span class="section-line"></span><span class="section-cnt">${g[ck].length}件</span></div>`;
+      h += g[ck].map(a=>rowH(a,false)).join('');
+    }
+    c.innerHTML = h;
+  } else {
+    c.innerHTML = list.map(a=>rowH(a, TAB==='top')).join('');
+  }
+}
+
+function getTop() {
+  // Keep original references so .id lookup works; add _s score as property
+  return ALL.map(a => { a._s = score(a); return a; })
+    .slice().sort((a,b) => b._s - a._s).slice(0,30);
+}
+
+function updateStatus() {
+  const n = new Date();
+  document.getElementById('statusText').textContent =
+    `${ALL.length}件 · ${n.getHours()}:${String(n.getMinutes()).padStart(2,'0')} 更新`;
+}
+
+// ═══════════ TAB ═══════════
+function sw(t, el) {
+  TAB = t;
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));
+  el.classList.add('on');
+  render();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ═══════════ DETAIL ═══════════
+function openDetail(id) {
+  const a = findArticle(id);
+  if (!a) { console.warn('Article not found:', id); return; }
+  currentArticle = a;
+  const d = a.pubDate instanceof Date ? a.pubDate : new Date(a.pubDate);
+  const cat = CATS[a.category];
+  const bm = isBm(a.id);
+
+  let imgH;
+  if (a.img) {
+    imgH = `<img class="detail-img" src="${esc(a.img)}" alt="" referrerpolicy="no-referrer"
+      onerror="this.style.display='none'">`;
+  } else {
+    imgH = `<div class="detail-img-ph" style="background:${cat?.color||'#888'}">${cat?.label||''}</div>`;
+  }
+  const origT = a.titleOriginal ? `<div class="detail-orig">${esc(a.titleOriginal)}</div>` : '';
+  const langN = a.lang==='en' ? '<span class="lang-tag lten" style="font-size:11px;padding:2px 8px;">翻訳記事 (EN→JP)</span>' : '';
+  const summaryText = a.summaryFull || a.summary || '';
+  const summaryBox = summaryText ? `
+    <div class="detail-summary-box">
+      <div class="label">要約</div>
+      <p>${esc(summaryText)}</p>
+    </div>` : '';
+
+  document.getElementById('detailContent').innerHTML = `
+    <div class="detail-cat" style="color:${cat?.color||'#0052ff'}">${cat?.label||''} ${langN}</div>
+    <div class="detail-title">${esc(a.title)}</div>
+    ${origT}
+    <div class="detail-meta">
+      <strong>${esc(a.source)}</strong>
+      <span class="mdot"></span>
+      <span>${fmtD(d)} (${fmtAgo(d)})</span>
+    </div>
+    ${imgH}
+    <div class="detail-img-credit">出典: ${esc(a.source)}</div>
+    ${summaryBox}
+    <div id="detailArticleArea">
+      <div class="detail-article-loading"><span class="mspin"></span> 記事本文を取得中...</div>
+    </div>
+    <a class="detail-read-full" href="${esc(a.link)}" target="_blank" rel="noopener noreferrer" style="margin-top:20px">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      元記事を読む (${esc(a.source)})
+    </a>
+    <div class="detail-footer">
+      <button class="${bm?'saved-d':''}" data-bmid="${esc(a.id)}" onclick="toggleBmDetail(this.dataset.bmid)">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="${bm?'currentColor':'none'}" stroke="currentColor" stroke-width="1.8"><path d="M5 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v18l-7-4-7 4V3z"/></svg>
+        ${bm?'保存済み':'記事を保存'}
+      </button>
+    </div>`;
+
+  document.getElementById('detailView').classList.add('open');
+  document.getElementById('detailView').scrollTop = 0;
+  document.body.style.overflow = 'hidden';
+
+  // Fetch article body in background
+  loadArticleBody(a);
+}
+
+async function loadArticleBody(article) {
+  const area = document.getElementById('detailArticleArea');
+  if (!area) return;
+
+  try {
+    const html = await fetchArticleBody(article.link);
+    if (!html) {
+      area.innerHTML = `<div style="color:#888;font-size:14px;padding:12px 0;border-top:1px solid #eee;">
+        記事本文を直接取得できませんでした。上の「元記事を読む」ボタンからご覧ください。</div>`;
+      return;
+    }
+
+    const { paragraphs, metaDesc, ogImg } = extractArticleContent(html);
+
+    // Update image if we got a better one from og:image
+    if (ogImg && !article.img) {
+      article.img = ogImg;
+      const imgEl = document.querySelector('.detail-img');
+      if (imgEl) imgEl.src = ogImg;
+    }
+
+    // Update summary if we got meta description and current summary is weak
+    if (metaDesc && (!article.summary || article.summary.length < 30)) {
+      article.summary = metaDesc;
+      // Also update the summary box
+      const sumBox = document.querySelector('.detail-summary-box p');
+      if (sumBox) sumBox.textContent = metaDesc;
+    }
+
+    if (paragraphs.length > 0) {
+      // Show article text (limit to reasonable length)
+      const displayParas = paragraphs.slice(0, 20);
+      let bodyHtml = '<div class="detail-article-text">';
+      bodyHtml += displayParas.map(p => `<p>${esc(p)}</p>`).join('');
+      if (paragraphs.length > 20) {
+        bodyHtml += `<p style="color:#888;">（以下省略 — 元記事で全文をお読みいただけます）</p>`;
+      }
+      bodyHtml += '</div>';
+      area.innerHTML = bodyHtml;
+
+      // If article is in English, translate the body
+      if (article.lang === 'en' && displayParas.length > 0) {
+        translateArticleBody(displayParas, area);
+      }
+    } else {
+      area.innerHTML = `<div style="color:#888;font-size:14px;padding:12px 0;border-top:1px solid #eee;">
+        記事本文の抽出に失敗しました。上の「元記事を読む」ボタンからご覧ください。</div>`;
+    }
+  } catch(e) {
+    area.innerHTML = `<div style="color:#888;font-size:14px;padding:12px 0;">
+      記事本文を取得できませんでした。上の「元記事を読む」ボタンからご覧ください。</div>`;
+  }
+}
+
+async function translateArticleBody(paragraphs, area) {
+  // Translate paragraphs in batches
+  const translated = [];
+  for (let i = 0; i < paragraphs.length; i += 3) {
+    const batch = paragraphs.slice(i, i+3);
+    const results = await Promise.all(batch.map(p => tr(p)));
+    results.forEach((t, j) => translated.push(t || paragraphs[i+j]));
+  }
+  let bodyHtml = '<div class="detail-article-text">';
+  bodyHtml += translated.map(p => `<p>${esc(p)}</p>`).join('');
+  bodyHtml += '</div>';
+  area.innerHTML = bodyHtml;
+}
+
+function closeDetail() {
+  document.getElementById('detailView').classList.remove('open');
+  document.body.style.overflow = '';
+  currentArticle = null;
+}
+
+function toggleBmDetail(id) { toggleBm(id); if (currentArticle) openDetail(currentArticle.id); }
+
+// ═══════════ BOOKMARKS ═══════════
+function toggleBm(id, ev) {
+  if (ev) { ev.stopPropagation(); ev.preventDefault(); }
+  const idx = BM.findIndex(b=>b.id===id);
+  if (idx>=0) { BM.splice(idx,1); }
+  else {
+    const a = ALL.find(x=>x.id===id);
+    if (a) BM.unshift({ id:a.id, title:a.title, titleOriginal:a.titleOriginal||'', link:a.link, source:a.source, pubDate:a.pubDate.toISOString(), img:a.img, summary:a.summary, category:a.category, lang:a.lang, summaryOriginal:a.summaryOriginal||'' });
+  }
+  saveBm(); render(); renderDrawer();
+}
+
+// Find article by id — works for both ALL array and BM array
+function findArticle(id) {
+  return ALL.find(x=>x.id===id) || BM.find(x=>x.id===id);
+}
+function saveBm() { localStorage.setItem('dn_bm2',JSON.stringify(BM)); updateBmBadge(); }
+function updateBmBadge() {
+  const b = document.getElementById('bmBadge');
+  b.textContent = BM.length; b.classList.toggle('show', BM.length>0);
+}
+function openDrawer() { document.getElementById('drawerBg').classList.add('open'); renderDrawer(); }
+function closeDrawer() { document.getElementById('drawerBg').classList.remove('open'); }
+function closeDrawerBg(e) { if (e.target===e.currentTarget) closeDrawer(); }
+function renderDrawer() {
+  const l=document.getElementById('drawerList'), f=document.getElementById('drawerFt');
+  if (!BM.length) { l.innerHTML='<div class="drawer-empty">保存した記事はありません。</div>'; f.style.display='none'; return; }
+  f.style.display='block';
+  l.innerHTML = BM.map(b=>rowH({...b,pubDate:new Date(b.pubDate)},false)).join('');
+}
+function clearBm() { if (!confirm('保存した記事をすべて削除しますか？')) return; BM=[]; saveBm(); renderDrawer(); render(); }
+
+// ═══════════ KEYBOARD ═══════════
+document.addEventListener('keydown', e => { if (e.key==='Escape') closeDetail(); });
+
+// ═══════════ INIT ═══════════
+updateBmBadge();
+setInterval(loadAllFeeds, 30*60*1000);
+loadAllFeeds();
+</script>
+</body>
+</html>
