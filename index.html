@@ -334,6 +334,8 @@ function parseXml(xml) {
   doc.querySelectorAll('item').forEach(it => {
     const title = it.querySelector('title')?.textContent?.trim() || '';
     const link = it.querySelector('link')?.textContent?.trim() || '';
+    const sourceUrl = it.querySelector('source')?.getAttribute('url') || '';
+    const actualLink = (sourceUrl && !sourceUrl.includes('news.google.com')) ? sourceUrl : link;
     const pub = it.querySelector('pubDate')?.textContent || '';
     const src = it.querySelector('source')?.textContent?.trim() || '';
     const desc = it.querySelector('description')?.textContent || '';
@@ -341,7 +343,7 @@ function parseXml(xml) {
     if (!img) { const mc = it.getElementsByTagNameNS('*','content'); if (mc.length) img = mc[0].getAttribute('url')||''; }
     if (!img) { const enc = it.querySelector('enclosure'); if (enc) img = enc.getAttribute('url')||''; }
     const summary = stripHtml(desc);
-    if (title && link) out.push({ title, link, pubDate: new Date(pub), source: src || extractSource(title), img, summary });
+    if (title && actualLink) out.push({ title, link: actualLink, pubDate: new Date(pub), source: src || extractSource(title), img, summary });
   });
   return out;
 }
