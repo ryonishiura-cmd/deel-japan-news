@@ -313,7 +313,7 @@ async function fetchViaCorsproxyOrg(rssUrl) {
 
 // Try all strategies in order
 async function fetchRss(rssUrl) {
-  const strategies = [fetchViaRss2Json, fetchViaAllOrigins, fetchViaCorsproxy, fetchViaCorsproxyOrg];
+  const strategies = [fetchViaAllOrigins, fetchViaCorsproxy, fetchViaCorsproxyOrg, fetchViaRss2Json];
   for (const fn of strategies) {
     try {
       const articles = await fn(rssUrl);
