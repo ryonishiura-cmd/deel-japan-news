@@ -290,7 +290,7 @@ async function fetchViaRss2Json(rssUrl) {
     source: it.author || extractSource(it.title),
     img: it.thumbnail || it.enclosure?.link || extractImg(it.description || it.content || ''),
     summary: stripHtml(it.description || it.content || '')
-  }).filter(a => a.title && a.link);
+  }}).filter(a => a.title && a.link);
 }
 
 // Strategy 2: allorigins.win JSON endpoint
