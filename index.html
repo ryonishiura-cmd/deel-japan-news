@@ -354,41 +354,101 @@ function stripHtml(html) {
   return t;
 }
 
-// ═══════════ ARTICLE BODY FETCH ═══════════
+// âââââââââââ ARTICLE BODY FETCH âââââââââââ
+
+// Google News links redirect â resolve to the actual article URL first
+async function resolveGoogleNewsUrl(url) {
+  if (!url.includes('news.google.com')) return url;
+  // Try to extract the real URL from Google News redirect
+  // Method 1: Use allorigins to follow the redirect and get the final URL
+  try {
+    const r = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`, { signal: AbortSignal.timeout(10000) });
+    if (r.ok) {
+      const d = await r.json();
+      // allorigins returns the final URL after redirects in response_url
+      if (d.status?.url && !d.status.url.includes('news.google.com')) return d.status.url;
+      // Try to extract URL from the HTML content (Google News redirect page)
+      if (d.contents) {
+        const m = d.contents.match(/data-n-au="([^"]+)"/);
+        if (m) return decodeURIComponent(m[1]);
+        const m2 = d.contents.match(/href="(https?:\/\/(?!news\.google\.com)[^"]+)"/);
+        if (m2) return m2[1];
+        // If content is from the actual article (redirect was followed), return as-is
+        if (d.contents.length > 1000) return url;
+      }
+    }
+  } catch(e) {}
+  // Method 2: Try corsproxy which may follow redirects
+  try {
+    const r = await fetch(`https://corsproxy.io/?${encodeURIComponent(url)}`, {
+      signal: AbortSignal.timeout(10000),
+      redirect: 'follow'
+    });
+    if (r.ok && r.url && !r.url.includes('news.google.com') && !r.url.includes('corsproxy')) return r.url;
+  } catch(e) {}
+  return url;
+}
+
+async function fetchViaProxy(proxyFn, url) {
+  const html = await proxyFn(url);
+  if (html && html.length > 200) return html;
+  throw new Error('too short');
+}
+
 async function fetchArticleBody(url) {
-  const strategies = [
+  // First, try to resolve Google News redirect URLs
+  let resolvedUrl = url;
+  try { resolvedUrl = await resolveGoogleNewsUrl(url); } catch(e) {}
+
+  const proxies = [
+    // allorigins â JSON response, generally reliable
     async (u) => {
       const r = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(u)}`, { signal: AbortSignal.timeout(15000) });
       if (!r.ok) throw new Error('fail');
       const d = await r.json();
       return d.contents || '';
     },
-    async (u) => {
-      const r = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(u)}`, { signal: AbortSignal.timeout(10000) });
-      // rss2json won't work for regular pages — skip
-      throw new Error('skip');
-    },
+    // corsproxy.io
     async (u) => {
       const r = await fetch(`https://corsproxy.io/?${encodeURIComponent(u)}`, { signal: AbortSignal.timeout(15000) });
       if (!r.ok) throw new Error('fail');
       return await r.text();
     },
+    // corsproxy.org
     async (u) => {
       const r = await fetch(`https://corsproxy.org/?${encodeURIComponent(u)}`, { signal: AbortSignal.timeout(15000) });
       if (!r.ok) throw new Error('fail');
       return await r.text();
+    },
+    // api.codetabs.com â another free proxy
+    async (u) => {
+      const r = await fetch(`https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(u)}`, { signal: AbortSignal.timeout(15000) });
+      if (!r.ok) throw new Error('fail');
+      return await r.text();
+    },
+    // Google webcache as last resort
+    async (u) => {
+      const cacheUrl = `https://webcache.googleusercontent.com/search?q=cache:${encodeURIComponent(u)}`;
+      const r = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(cacheUrl)}`, { signal: AbortSignal.timeout(15000) });
+      if (!r.ok) throw new Error('fail');
+      const d = await r.json();
+      return d.contents || '';
     }
   ];
 
-  for (const fn of strategies) {
-    try {
-      const html = await fn(url);
-      if (html && html.length > 200) return html;
-    } catch(e) { continue; }
+  // Try with the resolved URL first, then original URL as fallback
+  const urlsToTry = resolvedUrl !== url ? [resolvedUrl, url] : [url];
+
+  for (const tryUrl of urlsToTry) {
+    for (const fn of proxies) {
+      try {
+        const html = await fn(tryUrl);
+        if (html && html.length > 200) return html;
+      } catch(e) { continue; }
+    }
   }
   return null;
 }
-
 function extractArticleContent(html) {
   const doc = new DOMParser().parseFromString(html, 'text/html');
 
