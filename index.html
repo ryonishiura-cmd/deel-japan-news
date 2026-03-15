@@ -275,14 +275,22 @@ async function fetchViaRss2Json(rssUrl) {
   if (!r.ok) throw new Error(`rss2json: ${r.status}`);
   const data = await r.json();
   if (data.status !== 'ok') throw new Error(`rss2json: ${data.message||'error'}`);
-  return data.items.map(it => ({
+  return data.items.map(it => {
+    // Google News RSS: extract actual URL from description's <a href>
+    let link = it.link || '';
+    if (link.includes('news.google.com')) {
+      const descHtml = it.description || it.content || '';
+      const hrefMatch = descHtml.match(/<a[^>]+href="(https?:\/\/(?!news\.google\.com)[^"]+)"/i);
+      if (hrefMatch) link = hrefMatch[1];
+    }
+    return {
     title: it.title || '',
-    link: it.link || '',
+    link,
     pubDate: new Date(it.pubDate),
     source: it.author || extractSource(it.title),
     img: it.thumbnail || it.enclosure?.link || extractImg(it.description || it.content || ''),
     summary: stripHtml(it.description || it.content || '')
-  })).filter(a => a.title && a.link);
+  }).filter(a => a.title && a.link);
 }
 
 // Strategy 2: allorigins.win JSON endpoint
