@@ -177,8 +177,28 @@ async function resolveGoogleNewsUrl(item) {
 }
 
 // --- ã¡ã¤ã³å¦ç ---
+// --- fetchArticleMeta: og:image, description ---
+async function fetchArticleMeta(url) {
+  const result = { img: '', summary: '' };
+  if (!url || url.includes('news.google.com')) return result;
+  try {
+    const resp = await fetch(url, {
+      headers: { 'User-Agent': UA, 'Accept': 'text/html,application/xhtml+xml', 'Accept-Language': 'ja,en;q=0.9' },
+      signal: AbortSignal.timeout(10000), redirect: 'follow',
+    });
+    if (!resp.ok) return result;
+    const html = await resp.text();
+    const head = html.substring(0, Math.min(html.length, 15000));
+    const imgP = [/<meta[^>]+property="og:image"[^>]+content="([^"]+)"/i, /<meta[^>]+content="([^"]+)"[^>]+property="og:image"/i, /<meta[^>]+name="twitter:image"[^>]+content="([^"]+)"/i];
+    for (const p of imgP) { const m = head.match(p); if (m && m[1]) { result.img = decodeHtmlEntities(m[1]); break; } }
+    const descP = [/<meta[^>]+property="og:description"[^>]+content="([^"]+)"/i, /<meta[^>]+content="([^"]+)"[^>]+property="og:description"/i, /<meta[^>]+name="description"[^>]+content="([^"]+)"/i];
+    for (const p of descP) { const m = head.match(p); if (m && m[1]) { let d = decodeHtmlEntities(m[1]).trim(); if (d.length > 300) d = d.substring(0, 297) + '...'; result.summary = d; break; } }
+  } catch (e) { console.log('  Meta fetch failed: ' + e.message); }
+  return result;
+}
+
 async function main() {
-  console.log('=== Deel News RSS Resolver v2 ===');
+  console.log('=== Deel News RSS Resolver v3 ===');
   console.log('Time: ' + new Date().toISOString());
 
   let existing = {};
@@ -202,6 +222,7 @@ async function main() {
   let resolvedCount = 0;
   let cachedCount = 0;
   let failedCount = 0;
+  let metaFetchedCount = 0;
 
   for (const [category, rssUrl] of Object.entries(FEEDS)) {
     console.log('Fetching: ' + category);
@@ -226,6 +247,8 @@ async function main() {
             ...item,
             category,
             resolvedUrl: existing[item.link].resolvedUrl,
+            img: existing[item.link].img || '',
+            summary: existing[item.link].summary || '',
           });
           cachedCount++;
           continue;
@@ -243,10 +266,19 @@ async function main() {
           failedCount++;
         }
 
-        allArticles.push({ ...item, category, resolvedUrl });
+        // Meta fetch
+        let img = '';
+        let summary = '';
+        if (isValidArticleUrl(resolvedUrl)) {
+          console.log('    Fetching meta...');
+          const meta = await fetchArticleMeta(resolvedUrl);
+          img = meta.img; summary = meta.summary;
+          if (img || summary) { metaFetchedCount++; }
+        }
+        allArticles.push({ ...item, category, resolvedUrl, img, summary });
 
         // ã¬ã¼ãå¶éåé¿ã®ããå°ãå¾ã¤
-        await new Promise(r => setTimeout(r, 300));
+        await new Promise(r => setTimeout(r, 400));
       }
     } catch (e) {
       console.log('  Error: ' + e.message);
@@ -269,6 +301,7 @@ async function main() {
     resolvedInThisRun: resolvedCount,
     cachedFromPrevious: cachedCount,
     failedToResolve: failedCount,
+    metaFetched: metaFetchedCount,
     articles: unique,
   };
   writeFileSync(dataPath, JSON.stringify(output, null, 2));
@@ -278,6 +311,7 @@ async function main() {
   console.log('Newly resolved: ' + resolvedCount);
   console.log('Cached: ' + cachedCount);
   console.log('Failed: ' + failedCount);
+  console.log('Meta fetched: ' + metaFetchedCount);
 }
 
 main().catch(e => {
