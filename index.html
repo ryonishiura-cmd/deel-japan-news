@@ -269,7 +269,8 @@ let errorLogs = [];
 // ═══════════ PROXY WORKER (Cloudflare Workers) ═══════════
 // デプロイ後、以下のURLをWorkerのURLに変更する
 // 空文字列の場合はWorkerを使わず、既存のCORSプロキシにフォールバック
-const WORKER_URL = ''; // 例: 'https://deel-news-proxy.xxx.workers.dev'
+const WORKER_URL = '';
+    const ARTICLES_JSON_URL = 'data/articles.json'; // 例: 'https://deel-news-proxy.xxx.workers.dev'
 
 
 // ═══════════ MULTI-STRATEGY FETCH ═══════════
@@ -584,7 +585,34 @@ async function translateAll() {
 
 // ═══════════ MAIN LOAD ═══════════
 async function loadAllFeeds() {
-  const btn = document.getElementById('refreshBtn');
+  const btn = document.getElementById('refreshBtn')
+    // --- articles.json 事前解決済みデータの読み込み ---
+    try {
+      const ajResp = await fetch(ARTICLES_JSON_URL + '?t=' + Date.now(), { signal: AbortSignal.timeout(8000) });
+      if (ajResp.ok) {
+        const ajData = await ajResp.json();
+        if (ajData.articles && ajData.articles.length > 0) {
+          console.log('[articles.json] ' + ajData.totalArticles + ' articles loaded');
+          const btn = document.getElementById('refreshBtn');
+          if (btn) { btn.disabled = true; btn.textContent = '読み込み中…'; }
+          document.getElementById('statusBar').textContent = '記事を読み込み中…';
+          ALL.length = 0;
+          for (const a of ajData.articles) {
+            ALL.push({
+              title: a.title || '', link: a.resolvedUrl || a.sourceUrl || a.link || '',
+              originalLink: a.link || '', pubDate: a.pubDate || '',
+              source: a.source || '', category: a.category || '',
+            });
+          }
+          ALL.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
+          document.getElementById('statusBar').textContent = ALL.length + ' 件の記事（事前解決済み）';
+          renderPage();
+          if (btn) { btn.disabled = false; btn.textContent = '更新'; }
+          return;
+        }
+      }
+    } catch (e) { console.log('[articles.json] fallback to RSS: ' + e.message); }
+    // --- ここまで articles.json ---;
   btn.disabled = true;
   errorLogs = [];
   document.getElementById('errorLog').classList.remove('on');
