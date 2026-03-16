@@ -1,27 +1,39 @@
 /**
- * Google News RSSフィードを取得し、リダイレクトURLを実URLに解決するスクリプト
- * GitHub Actionsで定期実行される
+ * Google News RSSãã£ã¼ããåå¾ãããªãã¤ã¬ã¯ãURLãå®URLã«è§£æ±ºããã¹ã¯ãªãã
+ * GitHub Actionsã§å®æå®è¡ããã
  *
- * 出力: data/articles.json（記事データ + 解決済みURL）
+ * åºå: data/articles.jsonï¼è¨äºãã¼ã¿ + è§£æ±ºæ¸ã¿URLï¼
  */
 
 import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs';
 
-// RSSフィードURL一覧（ダッシュボードのCAT_Qと同じ）
+// RSSãã£ã¼ãURLä¸è¦§ï¼ããã·ã¥ãã¼ãã®CAT_Qã¨åãï¼
 const FEEDS = {
   deel: 'https://news.google.com/rss/search?q=%22Deel%22+%E6%8E%A1%E7%94%A8+OR+%E4%BA%BA%E4%BA%8B+OR+HR+OR+EOR&hl=ja&gl=JP&ceid=JP:ja',
   funding: 'https://news.google.com/rss/search?q=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAA+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAB+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAC&hl=ja&gl=JP&ceid=JP:ja',
-  ma: 'https://news.google.com/rss/search?q=M%26A+%E8%B2%B7%E5%8F%8E+OR+%E5%90%88%E4%BD%B5+OR+TOB+OR+MBO+OR+%E4%B8%8A%E5%A0%B4%E5%BB%83%E6%AD%A2&hl=ja&gl=JP&ceid=JP:ja',
+  ma: 'https://news.google.com/rss/search?q=M%26A+%E8%B2%B7%E5%8F%8E+OR+%E5%90%88%E4%BE%B5+OR+TOB+OR+MBO+OR+%E4%B8%8A%E5%A0%B4%E5%BB%83%E6%AD%A2&hl=ja&gl=JP&ceid=JP:ja',
   competitor: 'https://news.google.com/rss/search?q=%22Remote.com%22+OR+%22Papaya+Global%22+OR+%22Velocity+Global%22+OR+%22Oyster+HR%22+OR+%22Rippling%22+OR+%22Globalization+Partners%22&hl=ja&gl=JP&ceid=JP:ja',
   global: 'https://news.google.com/rss/search?q=%E6%B5%B7%E5%A4%96%E9%80%B2%E5%87%BA+OR+%E6%B5%B7%E5%A4%96%E5%B1%95%E9%96%8B+OR+%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E5%B1%95%E9%96%8B+OR+%E6%B5%B7%E5%A4%96%E4%BA%8B%E6%A5%AD&hl=ja&gl=JP&ceid=JP:ja',
   talent: 'https://news.google.com/rss/search?q=%E6%B5%B7%E5%A4%96%E4%BA%BA%E6%9D%90%E6%8E%A1%E7%94%A8+OR+%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E4%BA%BA%E6%9D%90+OR+%E5%A4%96%E5%9B%BD%E4%BA%BA%E6%8E%A1%E7%94%A8+OR+%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF+%E6%B5%B7%E5%A4%96&hl=ja&gl=JP&ceid=JP:ja',
-  hr: 'https://news.google.com/rss/search?q=HR+%E3%83%86%E3%83%83%E3%82%AF+OR+%E4%BA%BA%E4%BA%8B%E3%83%86%E3%83%83%E3%82%AF+OR+%E5%8A%B4%E5%8B%99%E7%AE%A1%E7%90%86+OR+%E7%B5%A6%E4%B8%8E%E8%A8%88%E7%AE%97+SaaS&hl=ja&gl=JP&ceid=JP:ja',
+  hr: 'https://news.google.com/rss/search?q=HR+%E3%83%86%E3%83%83%E3%82%AF+OR+%E4%BA%BA%E4%BA%8B%E3%83%86%E3%83%83%E3%82%AF+OR+%E5%8A%B4%E5%8B%99%E7%AE%A1%E7%90%86+OR+%E7%B5%A6%E4%B8%8E%E8%A9%88%E7%AE%97+SaaS&hl=ja&gl=JP&ceid=JP:ja',
   event: 'https://news.google.com/rss/search?q=HR+%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9+OR+%E4%BA%BA%E4%BA%8B+%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC+OR+%E6%8E%A1%E7%94%A8+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88+2025&hl=ja&gl=JP&ceid=JP:ja',
 };
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
-// --- RSS XML パース ---
+// --- HTMLã¨ã³ãã£ãã£ãã³ã¼ã ---
+function decodeHtmlEntities(str) {
+  return str
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&#x27;/g, "'")
+    .replace(/&#x2F;/g, '/');
+}
+
+// --- RSS XML ãã¼ã¹ ---
 function parseRssXml(xml) {
   const items = [];
   const itemRegex = /<item>([\s\S]*?)<\/item>/g;
@@ -33,20 +45,55 @@ function parseRssXml(xml) {
     const pubDate = block.match(/<pubDate>([\s\S]*?)<\/pubDate>/)?.[1]?.trim() || '';
     const sourceText = block.match(/<source[^>]*>([\s\S]*?)<\/source>/)?.[1]?.trim() || '';
     const sourceUrl = block.match(/<source[^>]+url="([^"]+)"/)?.[1] || '';
-    const desc = block.match(/<description>([\s\S]*?)<\/description>/)?.[1]?.trim() || '';
+    const descRaw = block.match(/<description>([\s\S]*?)<\/description>/)?.[1]?.trim() || '';
 
-    // descriptionからhref抽出
-    const descHref = desc.match(/href="(https?:\/\/(?!news\.google\.com)[^"]+)"/)?.[1] || '';
+    // descriptionã¯HTMLã¨ã³ãã£ãã£åããã¦ãããã¨ãå¤ãã®ã§ãã³ã¼ããã¦ããhrefæ½åº
+    const descDecoded = decodeHtmlEntities(descRaw);
+    const descHref = descDecoded.match(/href="(https?:\/\/(?!news\.google\.com)[^"]+)"/)?.[1] || '';
 
     items.push({ title, link, pubDate, source: sourceText, sourceUrl, descHref });
   }
   return items;
 }
 
-// --- Google News URL → 実URL 解決 ---
-async function resolveGoogleNewsUrl(url) {
-  if (!url.includes('news.google.com')) return url;
+// --- URLãæå¹ãªè¨äºURLãå¤å® ---
+function isValidArticleUrl(url) {
+  if (!url) return false;
+  if (url.includes('news.google.com')) return false;
+  if (url.includes('consent.google')) return false;
+  if (url.includes('accounts.google')) return false;
+  try {
+    const parsed = new URL(url);
+    // ãã¹ãç©ºãã«ã¼ãã®ã¿ = ãã¡ã¤ã³ã ã = è¨äºURLã§ã¯ãªã
+    const path = parsed.pathname.replace(/\/+$/, '');
+    if (!path || path === '') return false;
+    return true;
+  } catch {
+    return false;
+  }
+}
 
+// --- Google News URL â å®URL è§£æ±ºï¼npm google-news-decoderå©ç¨ï¼ ---
+async function resolveWithDecoder(url) {
+  try {
+    const { default: GoogleNewsDecoder } = await import('google-news-decoder');
+    const decoder = new GoogleNewsDecoder();
+    const result = await decoder.decodeGoogleNewsUrl(url);
+    if (result && result.decodedUrl && isValidArticleUrl(result.decodedUrl)) {
+      return result.decodedUrl;
+    }
+    if (result && result.url && isValidArticleUrl(result.url)) {
+      return result.url;
+    }
+  } catch (e) {
+    // google-news-decoderãä½¿ããªã/å¤±æããå ´å
+    console.log('    Decoder failed: ' + e.message);
+  }
+  return null;
+}
+
+// --- Google News URL â å®URL è§£æ±ºï¼HTTPãªãã¤ã¬ã¯ã + HTMLãã¼ã¹ï¼ ---
+async function resolveByRedirect(url) {
   try {
     const resp = await fetch(url, {
       redirect: 'follow',
@@ -54,33 +101,68 @@ async function resolveGoogleNewsUrl(url) {
       signal: AbortSignal.timeout(10000),
     });
 
+    // HTTPãªãã¤ã¬ã¯ãã§è§£æ±ºã§ããå ´å
     const finalUrl = resp.url;
-    if (finalUrl && !finalUrl.includes('news.google.com') && !finalUrl.includes('consent.google')) {
+    if (isValidArticleUrl(finalUrl)) {
       return finalUrl;
     }
 
+    // HTMLããURLæ½åºãè©¦ã¿ã
     const html = await resp.text();
-    const m1 = html.match(/data-n-au="([^"]+)"/);
-    if (m1) return decodeURIComponent(m1[1]);
-    const m2 = html.match(/data-url="(https?:\/\/(?!news\.google\.com)[^"]+)"/);
-    if (m2) return m2[1];
-    const m3 = html.match(/content="\d+;\s*url=(https?:\/\/(?!news\.google\.com)[^"]+)"/i);
-    if (m3) return m3[1];
-    const m4 = html.match(/<meta[^>]+property="og:url"[^>]+content="(https?:\/\/(?!news\.google\.com)[^"]+)"/);
-    if (m4) return m4[1];
-    const m5 = html.match(/<link[^>]+rel="canonical"[^>]+href="(https?:\/\/(?!news\.google\.com)[^"]+)"/);
-    if (m5) return m5[1];
-    const m6 = html.match(/href="(https?:\/\/(?!news\.google\.com|accounts\.google|consent\.google|www\.google)[^"]+)"/);
-    if (m6) return m6[1];
+    const patterns = [
+      /data-n-au="([^"]+)"/,
+      /data-url="(https?:\/\/[^"]+)"/,
+      /content="\d+;\s*url=(https?:\/\/[^"]+)"/i,
+      /<meta[^>]+property="og:url"[^>]+content="(https?:\/\/[^"]+)"/,
+      /<link[^>]+rel="canonical"[^>]+href="(https?:\/\/[^"]+)"/,
+      /window\.location\.replace\("(https?:\/\/[^"]+)"\)/,
+      /location\.href\s*=\s*"(https?:\/\/[^"]+)"/,
+    ];
+
+    for (const pattern of patterns) {
+      const m = html.match(pattern);
+      if (m && m[1]) {
+        const candidate = decodeURIComponent(m[1]);
+        if (isValidArticleUrl(candidate)) {
+          return candidate;
+        }
+      }
+    }
   } catch (e) {
-    // タイムアウト等
+    // ã¿ã¤ã ã¢ã¦ãç­
+    console.log('    Redirect failed: ' + e.message);
   }
-  return url;
+  return null;
 }
 
-// --- メイン処理 ---
+// --- ã¡ã¤ã³è§£æ±ºã­ã¸ãã¯ ---
+async function resolveGoogleNewsUrl(item) {
+  const { link, descHref } = item;
+
+  // 1. descriptionããæ½åºããURLãããã°ã¾ãä½¿ã
+  if (isValidArticleUrl(descHref)) {
+    return descHref;
+  }
+
+  // 2. google-news-decoderããã±ã¼ã¸ã§è§£æ±º
+  if (link.includes('news.google.com')) {
+    const decoded = await resolveWithDecoder(link);
+    if (decoded) return decoded;
+  }
+
+  // 3. HTTPãªãã¤ã¬ã¯ã + HTMLãã¼ã¹ã§è§£æ±º
+  if (link.includes('news.google.com')) {
+    const redirected = await resolveByRedirect(link);
+    if (redirected) return redirected;
+  }
+
+  // 4. å¨ã¦å¤±æããå ´åã¯Google Newsãªã³ã¯ããã®ã¾ã¾è¿ã
+  return link;
+}
+
+// --- ã¡ã¤ã³å¦ç ---
 async function main() {
-  console.log('=== Deel News RSS Resolver ===');
+  console.log('=== Deel News RSS Resolver v2 ===');
   console.log('Time: ' + new Date().toISOString());
 
   let existing = {};
@@ -89,9 +171,12 @@ async function main() {
     try {
       const old = JSON.parse(readFileSync(dataPath, 'utf-8'));
       for (const a of old.articles || []) {
-        existing[a.link] = a;
+        // ã­ã£ãã·ã¥ã¯æå¹ãªè¨äºURLã®ã¿ä½¿ç¨ï¼ãã¡ã¤ã³ã ãã®URLã¯åè§£æ±ºï¼
+        if (isValidArticleUrl(a.resolvedUrl)) {
+          existing[a.link] = a;
+        }
       }
-      console.log('Existing articles: ' + Object.keys(existing).length);
+      console.log('Valid cached articles: ' + Object.keys(existing).length);
     } catch (e) {
       console.log('Could not read existing data, starting fresh');
     }
@@ -100,6 +185,7 @@ async function main() {
   const allArticles = [];
   let resolvedCount = 0;
   let cachedCount = 0;
+  let failedCount = 0;
 
   for (const [category, rssUrl] of Object.entries(FEEDS)) {
     console.log('Fetching: ' + category);
@@ -117,7 +203,8 @@ async function main() {
       console.log('  Found ' + items.length + ' items');
 
       for (const item of items) {
-        if (existing[item.link]?.resolvedUrl && !existing[item.link].resolvedUrl.includes('news.google.com')) {
+        // ã­ã£ãã·ã¥ã«æå¹ãªURLãããã°ãããä½¿ç¨
+        if (existing[item.link]?.resolvedUrl) {
           allArticles.push({
             ...item,
             category,
@@ -127,18 +214,22 @@ async function main() {
           continue;
         }
 
-        let resolvedUrl = item.link;
-        if (item.sourceUrl && !item.sourceUrl.includes('news.google.com')) {
-          resolvedUrl = item.sourceUrl;
-        } else if (item.descHref) {
-          resolvedUrl = item.descHref;
-        } else if (item.link.includes('news.google.com')) {
-          resolvedUrl = await resolveGoogleNewsUrl(item.link);
-          if (resolvedUrl !== item.link) resolvedCount++;
-          await new Promise(r => setTimeout(r, 500));
+        // URLè§£æ±º
+        console.log('  Resolving: ' + item.title.substring(0, 50) + '...');
+        const resolvedUrl = await resolveGoogleNewsUrl(item);
+
+        if (isValidArticleUrl(resolvedUrl)) {
+          console.log('    -> OK: ' + resolvedUrl.substring(0, 80));
+          resolvedCount++;
+        } else {
+          console.log('    -> FAILED (using original link)');
+          failedCount++;
         }
 
         allArticles.push({ ...item, category, resolvedUrl });
+
+        // ã¬ã¼ãå¶éåé¿ã®ããå°ãå¾ã¤
+        await new Promise(r => setTimeout(r, 300));
       }
     } catch (e) {
       console.log('  Error: ' + e.message);
@@ -160,6 +251,7 @@ async function main() {
     totalArticles: unique.length,
     resolvedInThisRun: resolvedCount,
     cachedFromPrevious: cachedCount,
+    failedToResolve: failedCount,
     articles: unique,
   };
   writeFileSync(dataPath, JSON.stringify(output, null, 2));
@@ -168,6 +260,7 @@ async function main() {
   console.log('Total: ' + unique.length + ' articles');
   console.log('Newly resolved: ' + resolvedCount);
   console.log('Cached: ' + cachedCount);
+  console.log('Failed: ' + failedCount);
 }
 
 main().catch(e => {
