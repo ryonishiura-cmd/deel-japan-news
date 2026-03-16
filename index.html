@@ -608,6 +608,9 @@ async function loadAllFeeds() {
           document.getElementById('statusText').textContent = ALL.length + ' 件の記事（事前解決済み）';
           render();
           if (btn) { btn.disabled = false; btn.textContent = '更新'; }
+          
+          // ID付与（openDetailで使用）
+          ALL.forEach((a, i) => { a.id = 'n' + i; });
           return;
         }
       }
