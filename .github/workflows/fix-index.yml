@@ -1,0 +1,39 @@
+name: Fix index.html duplication
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix duplicated content
+        run: |
+          echo "Current file size:"
+          wc -c index.html
+          # Extract content up to first </html> tag
+          python3 -c "
+          with open('index.html', 'r') as f:
+              content = f.read()
+          idx = content.find('</html>')
+          if idx >= 0:
+              correct = content[:idx+7] + chr(10)
+              with open('index.html', 'w') as f:
+                  f.write(correct)
+              print(f'Fixed: {len(content)} -> {len(correct)} chars')
+          else:
+              print('No </html> found, file unchanged')
+          "
+          echo "New file size:"
+          wc -c index.html
+      - name: Commit fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.html
+          git diff --cached --stat
+          git commit -m "Fix duplicated content in index.html" || echo "No changes to commit"
+          git push
