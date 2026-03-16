@@ -1,9 +1,10 @@
 {
-  "updatedAt": "2026-03-16T04:38:11.271Z",
-  "totalArticles": 117,
-  "resolvedInThisRun": 12,
-  "cachedFromPrevious": 108,
-  "failedToResolve": 0,
+  "updatedAt": "2026-03-16T06:27:29.749Z",
+  "totalArticles": 114,
+  "resolvedInThisRun": 10,
+  "cachedFromPrevious": 105,
+  "failedToResolve": 1,
+  "metaFetched": 10,
   "articles": [
     {
       "title": "横河電機のM&amp;A戦略を紐解く：計器メーカーから高度ソリューション・DX企業への事業構造転換 - ストレイナー",
@@ -13,17 +14,21 @@
       "sourceUrl": "https://strainer.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://strainer.jp/notes/8975"
+      "resolvedUrl": "https://strainer.jp/notes/8975",
+      "img": "",
+      "summary": ""
     },
     {
-      "title": "中小企業のグローバル人材を育成！「海外ビジネス・チャレンジ塾（実践編）」で、海外ビジネスを加速させる実践力を身につけよう - イザ！",
-      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE83Z0h4QmJnOWJXeXNYVXVhU2dUd2lPcWVKZzE5Vjlvd1ZOWmV4c3liOFNtNkRXX0ZrTTJfNHN6NWNRWmdqc1BLNGcxUG9NaWZpcmlFLVo0TnczLUhDd2t3U0RaR2pTajBZWEZ1alhEaThVbnJ3bTlCb2dNOWY4dw?oc=5",
+      "title": "中小企業のグローバル人材を育成！「海外ビジネス・チャレンジ塾（実践編）」で、海外ビジネスを加速させる実践力を身につけよう - 時事ドットコム",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9yTnNiRjNJaTVrcER3aExFOWw4bTFVVkZjVGh5ZEtjZ29DREFXSUcwWE8yNzlOU2o1VmhYTFlaOFVPVU5UY29PaFRlODhDWmhRbWc?oc=5",
       "pubDate": "Mon, 16 Mar 2026 02:00:00 GMT",
-      "source": "イザ！",
-      "sourceUrl": "https://www.iza.ne.jp",
+      "source": "時事ドットコム",
+      "sourceUrl": "https://www.jiji.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.iza.ne.jp/pressrelease/prtimes_tv/MPK3ANT4VRID7OIVRMEF2UEOZA/"
+      "resolvedUrl": "https://www.jiji.com/jc/prtimestv?k=3138",
+      "img": "https://www.jiji.com/news2/prt/tv_images/3138.jpg",
+      "summary": "中小企業のグローバル人材を育成！「海外ビジネス・チャレンジ塾（実践編）」で、海外ビジネスを加速させる実践力を身につけよう      中小企業のグローバル人材を育成！「海外ビジネス・チャレンジ塾（実践編）」で、海外ビジネスを加速させる実践力を身につけよう     03/16 11:00   ［公益財団法人東京都中小企業振興公社］       公益財団法人東京都中小企業振興公社（本社：東京都千代田区、理事長：中西 充）が、都内中小企業の海外展開を後押しする連続講座「海外ビジネス・チャレンジ塾（実践編…"
     },
     {
       "title": "スノーピーク（三条市）再上場へ国内外でのブランド強化 新事業やアパレルの見直し、海外展開加速 - 新潟日報",
@@ -33,17 +38,9 @@
       "sourceUrl": "https://www.niigata-nippo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.niigata-nippo.co.jp/articles/-/796878"
-    },
-    {
-      "title": "中小企業のグローバル人材を育成！「海外ビジネス・チャレンジ塾（実践編）」で、海外ビジネスを加速させる実践力を身につけよう - 産経ニュース",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBGdm9Fd2hJa3ZTd2o5d2IxTmF2UE1IUU1jRDRyLXdWMF84bzJNSXpicGZwNWVIV1pJV3Z3MUNwVTBsRkppOEY0MUtOTnpycE83bTBsUzBwalhYWmxtYW04UGlyZ0ZfaVBRMmNCb05FTWlIZXFCWlJfdkFYRHktczg?oc=5",
-      "pubDate": "Mon, 16 Mar 2026 02:00:00 GMT",
-      "source": "産経ニュース",
-      "sourceUrl": "https://www.sankei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.sankei.com/pressrelease/prtimes_tv/MPK3ANT4VRID7OIVRMEF2UEOZA/"
+      "resolvedUrl": "https://www.niigata-nippo.co.jp/articles/-/796878",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "新規店舗展開を機に初の海外進出へ挑戦 - ニコニコニュース",
@@ -53,27 +50,21 @@
       "sourceUrl": "https://news.nicovideo.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.nicovideo.jp/watch/nw19040283?news_ref=watch_20_nw19000234"
+      "resolvedUrl": "https://news.nicovideo.jp/watch/nw19040283?news_ref=watch_20_nw19000234",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "〔アジア進出〕現地の実情に合わせ商品開発＝YKKAP・小野寺国際事業本部長☆2(時事通信) - Yahoo!ファイナンス",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQT0RFZXpST0RPNUY1R1hqazFxWTZSLTVnTXotUHNmYVFvRlBUaF93VDdfRmlHTl9vOFFRZ2F3dDZqRl91dUxldHp4VHZScm1MWFdRV0VwaGNOLXJVd21QRkZiWG1CWThTWnJuWlFGNm9mSjdiVzJVWlpjM3oxZTJTZVZpdnpaTnM?oc=5",
-      "pubDate": "Sun, 15 Mar 2026 23:54:42 GMT",
+      "pubDate": "Sun, 15 Mar 2026 23:51:00 GMT",
       "source": "Yahoo!ファイナンス",
       "sourceUrl": "https://finance.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://finance.yahoo.co.jp/news/detail/a8e2d75d097334159a4ba01e2cd8dcc47be37b19"
-    },
-    {
-      "title": "〔アジア進出〕現地の実情に合わせ商品開発＝YKKAP・小野寺国際事業本部長☆1(時事通信) - Yahoo!ファイナンス",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOckExeU5hTTFxUXU5eURMUG1MVzh4bkthZENhUzl1Ykw4SFM4QUk0T0ZaUllmQ1pJZFd1TlRValkyQ3dQS1pzTnBfbWdBWDdGNWp1TzdJZlROS3FkRjN2MGNKRGhaUVRDWHl2RlRYYW9pZUZGSmV3SlpwVGtDRVJjeVl5NXF6TVk?oc=5",
-      "pubDate": "Sun, 15 Mar 2026 23:54:41 GMT",
-      "source": "Yahoo!ファイナンス",
-      "sourceUrl": "https://finance.yahoo.co.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://finance.yahoo.co.jp/news/detail/f72df326e23217238828f4357d341fa1b2894d53"
+      "resolvedUrl": "https://finance.yahoo.co.jp/news/detail/a8e2d75d097334159a4ba01e2cd8dcc47be37b19",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "スタートアップの資金調達ランキング、AI創薬の大型調達が並ぶ - 日経バイオテクONLINE",
@@ -83,7 +74,9 @@
       "sourceUrl": "https://bio.nikkeibp.co.jp",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://bio.nikkeibp.co.jp/atcl/report/16/082400016/031200443/"
+      "resolvedUrl": "https://bio.nikkeibp.co.jp/atcl/report/16/082400016/031200443/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "なぜデンソーと東芝はロームとの統合を目指すのか？浮かび上がった国産パワー半導体の「勝ち筋」 - M&amp;A Online",
@@ -93,7 +86,9 @@
       "sourceUrl": "https://maonline.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://maonline.jp/articles/winning_strategy_of_japanese_power_semiconductors20260316"
+      "resolvedUrl": "https://maonline.jp/articles/winning_strategy_of_japanese_power_semiconductors20260316",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "学者が斬る・視点争点：海外進出は女性活躍の追い風か？ 小橋文子 - 週刊エコノミスト Online",
@@ -103,7 +98,9 @@
       "sourceUrl": "https://weekly-economist.mainichi.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://weekly-economist.mainichi.jp/articles/20260331/se1/00m/020/007000c"
+      "resolvedUrl": "https://weekly-economist.mainichi.jp/articles/20260331/se1/00m/020/007000c",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "マンダムMBOは望ましい買収だったか - 日本経済新聞",
@@ -113,7 +110,9 @@
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUB142830U6A210C2000000/"
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUB142830U6A210C2000000/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "海外進出の鍵は留学生 名古屋で就職説明会開催 商社や製造業など34社が語る「採用のメリット」（テレビ愛知） - Yahoo!ニュース",
@@ -123,7 +122,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/articles/ccc62a9a5e5367f99815b658f28fdd112df9bf41"
+      "resolvedUrl": "https://news.yahoo.co.jp/articles/ccc62a9a5e5367f99815b658f28fdd112df9bf41",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "【開催報告】中小企業のグローバル人材を育成！「海外ビジネス・チャレンジ塾（実践編）」全4日間のプログラムが完結 - PR TIMES",
@@ -133,7 +134,9 @@
       "sourceUrl": "https://prtimes.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000088.000034524.html"
+      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000088.000034524.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "「いや、マイアミの惨事ではない！」ドミニカに０対10惨敗も、韓国メディアは“近未来への光明”を確信！「これから韓国野球の世界化が始まる」【WBC】 | THE DIGEST - THE DIGEST",
@@ -143,7 +146,9 @@
       "sourceUrl": "https://thedigestweb.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://thedigestweb.com/baseball/detail/id=111477"
+      "resolvedUrl": "https://thedigestweb.com/baseball/detail/id=111477",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "Midwest Games、ゲーム業界の重鎮をCOOに招聘 グローバル展開を加速 - Forbes JAPAN",
@@ -153,7 +158,9 @@
       "sourceUrl": "https://forbesjapan.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://forbesjapan.com/articles/detail/93784"
+      "resolvedUrl": "https://forbesjapan.com/articles/detail/93784",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "韓国CJオリーブヤング、Kビューティー世界展開へ…幕張メッセとLAでフェスタ開催（KOREA WAVE） - Yahoo!ニュース",
@@ -163,7 +170,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/articles/6f257aa682edfef6f35afaf398e3ea05c1fbe362"
+      "resolvedUrl": "https://news.yahoo.co.jp/articles/6f257aa682edfef6f35afaf398e3ea05c1fbe362",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "韓国CJオリーブヤング、Kビューティー世界展開へ…幕張メッセとLAでフェスタ開催 - AFPBB News",
@@ -173,7 +182,9 @@
       "sourceUrl": "https://www.afpbb.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.afpbb.com/articles/biz/3626636?ctm_campaign=biz_news"
+      "resolvedUrl": "https://www.afpbb.com/articles/biz/3626636?ctm_campaign=biz_news",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "韓国・農心、2025年は営業利益12.8％増…海外事業の成長が下支え（KOREA WAVE） - Yahoo!ニュース",
@@ -183,7 +194,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/articles/2b4983e5229451bb8fc33d27da35fa915c02c6a0"
+      "resolvedUrl": "https://news.yahoo.co.jp/articles/2b4983e5229451bb8fc33d27da35fa915c02c6a0",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "【公式】俳優マ・ドンソク、大韓体育会から特別感謝の牌を受賞…韓国ボクシングのグローバル化に貢献 - wowKorea",
@@ -193,7 +206,9 @@
       "sourceUrl": "https://www.wowkorea.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.wowkorea.jp/news/read/517579.html"
+      "resolvedUrl": "https://www.wowkorea.jp/news/read/517579.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "佐世保・沖縄拠点の米海兵隊2500人が中東へ 強襲揚陸艦トリポリ派遣が示す在日米軍「世界展開拠点」 #エキスパートトピ - Yahoo!ニュース",
@@ -203,7 +218,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/expert/articles/cb324d23d6e99c118636f7e49db497f6bea6feba"
+      "resolvedUrl": "https://news.yahoo.co.jp/expert/articles/cb324d23d6e99c118636f7e49db497f6bea6feba",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "「公正な買収の在り方に関する研究会」の再開 - M&amp;A Online",
@@ -213,7 +230,9 @@
       "sourceUrl": "https://maonline.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://maonline.jp/articles/mhm20260314"
+      "resolvedUrl": "https://maonline.jp/articles/mhm20260314",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "3月9〜13日 スタートアップ資金調達まとめ読み - 日本経済新聞",
@@ -223,7 +242,9 @@
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC129680S6A310C2000000/"
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC129680S6A310C2000000/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "輸送や通信 海外展開支援 政府、経済安保法改正案 来週にも決定 - 福井新聞社",
@@ -233,7 +254,9 @@
       "sourceUrl": "https://www.fukuishimbun.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.fukuishimbun.co.jp/articles/-/2551437"
+      "resolvedUrl": "https://www.fukuishimbun.co.jp/articles/-/2551437",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "輸送・通信の海外展開支援 経済安保法改正案、供給網強化急ぐ - 北日本新聞webunプラス",
@@ -243,7 +266,9 @@
       "sourceUrl": "https://webun.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://webun.jp/articles/-/985598"
+      "resolvedUrl": "https://webun.jp/articles/-/985598",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "民間の海外展開支援 経済安保法改正案輸送や通信事業 - 沖縄タイムス社",
@@ -253,7 +278,9 @@
       "sourceUrl": "https://www.okinawatimes.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.okinawatimes.co.jp/articles/-/1794646"
+      "resolvedUrl": "https://www.okinawatimes.co.jp/articles/-/1794646",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "海外進出へ人材確保 鳥貴族「日本で働く外国人材を活用」 - テレ東BIZ",
@@ -263,7 +290,9 @@
       "sourceUrl": "https://txbiz.tv-tokyo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://txbiz.tv-tokyo.co.jp/wbs/newsl/post_336969"
+      "resolvedUrl": "https://txbiz.tv-tokyo.co.jp/wbs/newsl/post_336969",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "IIJ、海外拠点向け脆弱性診断サービスを提供開始 - マイナビニュース",
@@ -273,7 +302,21 @@
       "sourceUrl": "https://news.mynavi.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.mynavi.jp/techplus/article/20260313-4206168/"
+      "resolvedUrl": "https://news.mynavi.jp/techplus/article/20260313-4206168/",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "フォースタートアップス(株)【7089】：株価・株式情報 - Yahoo!ファイナンス",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9IM1J0YVhtY0ZLNzk4MTZDTURsR1NZalRBemtwcllMRUxRYUp1alBqbTdGRzNIN2NSQXZsTTk5d0swQ2ExWGJEUzFyZ2hQbVNWV0E?oc=5",
+      "pubDate": "Fri, 13 Mar 2026 09:59:59 GMT",
+      "source": "Yahoo!ファイナンス",
+      "sourceUrl": "https://finance.yahoo.co.jp",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://finance.yahoo.co.jp/quote/7089.T",
+      "img": "https://s.yimg.jp/images/finance/common/image/ogp.png",
+      "summary": "フォースタートアップス(株)【7089】の株価、チャート、最新の関連ニュース、掲示板、みんなの評価などをご覧いただけます。前日終値、高値、安値はもちろんのこと年初来高値/安値もご覧いただけます。Yahoo!ファイナンスでは株価速報、チャート、ランキング、ポートフォリオ、ニュース、掲示板など投資判断に役立つ情報を掲載しています。"
     },
     {
       "title": "青森発スタートアップappcycle、グローバル展開を見据え経営体制を大幅強化！NEC CDO・勝沼氏、日本テクトシステムズ代表・生田目氏、元特許庁・外山氏が取締役に就任 - PR TIMES",
@@ -283,7 +326,9 @@
       "sourceUrl": "https://prtimes.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000031.000103443.html"
+      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000031.000103443.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "日本のM&amp;Aブーム、今年も続く－トヨタなど大型案件に世界が注目 - Bloomberg.com",
@@ -293,7 +338,9 @@
       "sourceUrl": "https://www.bloomberg.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.bloomberg.com/jp/news/articles/2026-03-13/TBTG4IT9NJLV00"
+      "resolvedUrl": "https://www.bloomberg.com/jp/news/articles/2026-03-13/TBTG4IT9NJLV00",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "フーバーブレイン、AI活用業務改革コンサルティングのProofXを買収 - 日本M&amp;Aセンター",
@@ -303,7 +350,9 @@
       "sourceUrl": "https://www.nihon-ma.co.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.nihon-ma.co.jp/news/20260313_3927-51/"
+      "resolvedUrl": "https://www.nihon-ma.co.jp/news/20260313_3927-51/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "祝・PayPay ナスダック上場。だが真の勝者は『孫正義』か？目論見書から読み解く「海外展開」の真意（神田敏晶） - エキスパート - Yahoo!ニュース",
@@ -313,7 +362,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/expert/articles/5c7674302386b08ef7fd9e985933fd67e5a89b49"
+      "resolvedUrl": "https://news.yahoo.co.jp/expert/articles/5c7674302386b08ef7fd9e985933fd67e5a89b49",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "新作3Dローグライクゲーム『SlashZero（スラッシュゼロ）』のグローバル展開が発表！ - AppMedia",
@@ -323,7 +374,9 @@
       "sourceUrl": "https://appmedia.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://appmedia.jp/news/79833422"
+      "resolvedUrl": "https://appmedia.jp/news/79833422",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "【主要15業界別】コンサルタントに支援を求めるテーマは？商社ではM＆Aと海外展開…現役コンサル3800人のデータを徹底分析！ - ダイヤモンド・オンライン",
@@ -333,7 +386,21 @@
       "sourceUrl": "https://diamond.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://diamond.jp/articles/-/385667"
+      "resolvedUrl": "https://diamond.jp/articles/-/385667",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "Oppoの小型スマートウォッチWatch X3 Mini登場か Wear OS搭載でグローバル展開の可能性 - スマホダイジェスト",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB3dGxYalBHWm5NcEctTDd0M3RkejB0NXpXMFA1aU5YZkpOWk5zbUI2STBjalFoRzNuY0hmZTlINUxuMXBKTVRVZQ?oc=5",
+      "pubDate": "Thu, 12 Mar 2026 19:08:26 GMT",
+      "source": "スマホダイジェスト",
+      "sourceUrl": "https://sumahodigest.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFB3dGxYalBHWm5NcEctTDd0M3RkejB0NXpXMFA1aU5YZkpOWk5zbUI2STBjalFoRzNuY0hmZTlINUxuMXBKTVRVZQ?oc=5",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "海外進出先でインドに注目 日本企業 - 沖縄タイムス社",
@@ -343,7 +410,9 @@
       "sourceUrl": "https://www.okinawatimes.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.okinawatimes.co.jp/articles/-/1793721"
+      "resolvedUrl": "https://www.okinawatimes.co.jp/articles/-/1793721",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "桜井 一宏（さくらい かずひろ） - tv-tokyo.co.jp",
@@ -353,7 +422,9 @@
       "sourceUrl": "https://www.tv-tokyo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.tv-tokyo.co.jp/cambria/backnumber/2026/0312/"
+      "resolvedUrl": "https://www.tv-tokyo.co.jp/cambria/backnumber/2026/0312/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "放送20年の総決算 スペシャル月間 第2弾 “ニッポンの食”グローバル化の未来｜カンブリア宮殿 - テレ東BIZ",
@@ -363,7 +434,9 @@
       "sourceUrl": "https://txbiz.tv-tokyo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://txbiz.tv-tokyo.co.jp/cambria/vod/post_336507"
+      "resolvedUrl": "https://txbiz.tv-tokyo.co.jp/cambria/vod/post_336507",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "AI×ロボタクシーで世界展開へ日産、Uberなどと協業 - au Webポータル",
@@ -373,7 +446,9 @@
       "sourceUrl": "https://article.auone.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://article.auone.jp/detail/1/3/6/508_6_r_20260312_1773311702317630"
+      "resolvedUrl": "https://article.auone.jp/detail/1/3/6/508_6_r_20260312_1773311702317630",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "AI×ロボタクシーで世界展開へ日産、Uberなどと協業（日テレNEWS NNN） - Yahoo!ニュース",
@@ -383,7 +458,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/articles/3d4ad3636f5e832fbf83ae7d68528f5394a0142c"
+      "resolvedUrl": "https://news.yahoo.co.jp/articles/3d4ad3636f5e832fbf83ae7d68528f5394a0142c",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "AI×ロボタクシーで世界展開へ日産、Uberなどと協業 (2026年3月12日掲載) - ライブドアニュース",
@@ -393,7 +470,9 @@
       "sourceUrl": "https://news.livedoor.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.livedoor.com/topics/detail/30753809/"
+      "resolvedUrl": "https://news.livedoor.com/topics/detail/30753809/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "メディックス---3QはBtoB領域が2ケタ増収、支援領域の拡張と海外展開を加速し「Beyond広告」を推進(フィスコ) - Yahoo!ファイナンス",
@@ -403,7 +482,9 @@
       "sourceUrl": "https://finance.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://finance.yahoo.co.jp/news/detail/099988aed53a9ee57f1673c910d76e6f95eb2bee"
+      "resolvedUrl": "https://finance.yahoo.co.jp/news/detail/099988aed53a9ee57f1673c910d76e6f95eb2bee",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "福井銀行との間で中堅・中小企業の海外事業支援に関する業務協力協定書を締結 - jbic.go.jp",
@@ -413,7 +494,9 @@
       "sourceUrl": "https://www.jbic.go.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.jbic.go.jp/ja/information/press/press-2025/press_00177.html"
+      "resolvedUrl": "https://www.jbic.go.jp/ja/information/press/press-2025/press_00177.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "伊藤忠商事、アニメ・キャラクターIPの世界展開を担う中核会社「アイライツポート」設立 スカパー・ピクチャーズを持分法適用会社化 - 音楽業界総合情報サイト",
@@ -423,7 +506,9 @@
       "sourceUrl": "https://www.musicman.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.musicman.co.jp/business/716646"
+      "resolvedUrl": "https://www.musicman.co.jp/business/716646",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "VIPO、経産省「令和7年度コンテンツ産業成長投資支援事業費補助金（IP360）」事務局に 海外展開支援の第1回公募を開始 - 音楽業界総合情報サイト",
@@ -433,7 +518,9 @@
       "sourceUrl": "https://www.musicman.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.musicman.co.jp/business/716641"
+      "resolvedUrl": "https://www.musicman.co.jp/business/716641",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "株式会社3DCが、シリーズA - ニコニコニュース",
@@ -443,7 +530,9 @@
       "sourceUrl": "https://news.nicovideo.jp",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://news.nicovideo.jp/watch/nw19028634?news_ref=watch_20_nw18363173"
+      "resolvedUrl": "https://news.nicovideo.jp/watch/nw19028634?news_ref=watch_20_nw18363173",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "Deel「2025年グローバル採用動向レポート」を公開、AIトレーナーという新職種の越境採用が前年比283％増 - FNNプライムオンライン",
@@ -453,7 +542,9 @@
       "sourceUrl": "https://www.fnn.jp",
       "descHref": "",
       "category": "deel",
-      "resolvedUrl": "https://www.fnn.jp/articles/-/1014051"
+      "resolvedUrl": "https://www.fnn.jp/articles/-/1014051",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "AIコーディングスタートアップCursor、500億ドル評価額での資金調達協議中=Bloomberg 執筆 - Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
@@ -463,7 +554,9 @@
       "sourceUrl": "https://jp.investing.com",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://jp.investing.com/news/stock-market-news/article-1455627"
+      "resolvedUrl": "https://jp.investing.com/news/stock-market-news/article-1455627",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "有力ベンチャーキャピタリスト30名が関西に集結 ── シード期スタートアップの資金調達支援プログラム開催 - PR TIMES",
@@ -473,17 +566,9 @@
       "sourceUrl": "https://prtimes.jp",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000026.000052863.html"
-    },
-    {
-      "title": "学研HD、「ゆるいM&amp;A」で子会社育つ 後発の介護が屋台骨に - 日本経済新聞 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5HbHh0R0NiLVhFaDE1NjVDUTlvMXkyNFZPUGc1NVZvSmNIVzdFcmhTRDlMREd0aHN6MlhzcGQ0OGpVaTdldXJoOXpZc3M3NnZmRDRuWlFjNW5KT2Z5UEE1QmQ4X0FEWXNyU0NscQ?oc=5",
-      "pubDate": "Wed, 11 Mar 2026 20:00:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC0525I0V00C26A3000000/"
+      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000026.000052863.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "全銀協が買収融資のリスク管理指針作成へ､金利が迫る目利き力-関係者 - Bloomberg.com",
@@ -493,7 +578,9 @@
       "sourceUrl": "https://www.bloomberg.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.bloomberg.com/jp/news/articles/2026-03-11/TBPYFOT96OSH00"
+      "resolvedUrl": "https://www.bloomberg.com/jp/news/articles/2026-03-11/TBPYFOT96OSH00",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "中国製薬企業の海外進出が加速、技術輸出側からグローバルパートナーへ - ニフティニュース",
@@ -503,7 +590,9 @@
       "sourceUrl": "https://news.nifty.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.nifty.com/article/world/china/12181-5028726/"
+      "resolvedUrl": "https://news.nifty.com/article/world/china/12181-5028726/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "日本のエンタメコンテンツのグローバル展開を後押し。令和7年度コンテンツ産業支援補助金「IP360」，海外展開支援の応募受付を開始 - 4Gamer.net",
@@ -513,7 +602,9 @@
       "sourceUrl": "https://www.4gamer.net",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.4gamer.net/games/999/G999905/20260311043/"
+      "resolvedUrl": "https://www.4gamer.net/games/999/G999905/20260311043/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "「中身に口は出さない」最大数十億円のコンテンツ補助金「経産省・IP360」。映適遵守で労働環境改善も推進 - Brand New Creativity",
@@ -523,7 +614,9 @@
       "sourceUrl": "https://branc.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://branc.jp/article/2026/03/11/2502.html"
+      "resolvedUrl": "https://branc.jp/article/2026/03/11/2502.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "世界のＭ＆Ａ、2月は前年比2.3倍の5131億ドル 米オープンＡＩへの出資など寄与＝ＬＳＥＧ - Reuters",
@@ -533,7 +626,9 @@
       "sourceUrl": "https://jp.reuters.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://jp.reuters.com/markets/japan/LQGP4RTMFRISFGNIEUFJLI64W4-2026-03-11/"
+      "resolvedUrl": "https://jp.reuters.com/markets/japan/LQGP4RTMFRISFGNIEUFJLI64W4-2026-03-11/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "シェアリングテクノロジー、住宅リフォーム事業のライフラインを買収 - 日本M&amp;Aセンター",
@@ -543,17 +638,21 @@
       "sourceUrl": "https://www.nihon-ma.co.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.nihon-ma.co.jp/news/20260311_3989-21/"
+      "resolvedUrl": "https://www.nihon-ma.co.jp/news/20260311_3989-21/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "半導体スタートアップのLENZO、シードラウンドで資金調達を実施 - marr.jp",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE12OEZVVVhhSG44UXRVZWZQdUJUd3JGN3Q3ZTl2RVpxa2pLLUctRVNNQ2NIV2pmbTVBemx6bVBPdmZWdkMxeUFIQ09Lb0JrSEptYjQ5NlZaSUtXQmxyZ2pIN0xGS1c?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBQZ2pqR1hUNGtYNnoxNjI4NTQ3RV9ZYi1rZGFGTmZCNmRRZHlpZDcwUDN1YTdkSnUtOFd6VDhwY1lZNGJocmVQWVgwSTVwOHFQTHhsVDVEX0tEVVFJd2c?oc=5",
       "pubDate": "Wed, 11 Mar 2026 05:33:00 GMT",
       "source": "marr.jp",
       "sourceUrl": "https://www.marr.jp",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://www.marr.jp/genre/new/advisor_news/entry/67827"
+      "resolvedUrl": "https://www.marr.jp/genre/topics/news/entry/67827",
+      "img": "https://www.marr.jp/shared_files/entry/mainfo_img.jpg",
+      "summary": "M&A関連の最新ニュースをいち早くお届けします。 会員の皆様（無料会員も含む）には1日2回、随時更新内容をお知らせする「M&A速報」メールマガジンを配信しています。"
     },
     {
       "title": "『みんなで翻訳』で日本コンテンツの海外進出を加速！ 『キャプテン翼』など出版社漫画の翻訳版販売を開始！ - PR TIMES",
@@ -563,7 +662,9 @@
       "sourceUrl": "https://prtimes.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000367.000089066.html"
+      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000367.000089066.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "RBW、257エンターテインメント買収でグローバル展開強化…ジェンダーレスコンセプトで話題のXLOVが所属（Kstyle） - Yahoo!ニュース",
@@ -573,17 +674,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/articles/a256e52c30bd5178cf08b6aa68e2d390bb50e5e5"
-    },
-    {
-      "title": "RBW、257エンターテインメント買収でグローバル展開強化…ジェンダーレスコンセプトで話題のXLOVが所属 - Kstyle",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9wdUJVb0NxOUxtejZVQzFhX1JMVmM2SFFtRkpLT1dTUFNRNTRUWG02XzlUbUlaSzdZU1RfQks5MVN6SkJKTXZ6TEZkZlhfZkNST0pGeDJYeHJUYWM0?oc=5",
-      "pubDate": "Wed, 11 Mar 2026 04:09:20 GMT",
-      "source": "Kstyle",
-      "sourceUrl": "https://kstyle.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://kstyle.com/article.ksn?articleNo=2276474"
+      "resolvedUrl": "https://news.yahoo.co.jp/articles/a256e52c30bd5178cf08b6aa68e2d390bb50e5e5",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "外食の海外進出が相次ぐ中､居酒屋業態で期待の銘柄は？ - 四季報オンライン",
@@ -593,7 +686,9 @@
       "sourceUrl": "https://shikiho.toyokeizai.net",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://shikiho.toyokeizai.net/news/0/937510"
+      "resolvedUrl": "https://shikiho.toyokeizai.net/news/0/937510",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "メーガン妃の「アズ・エヴァー」、海外進出の噂を否定 Netflixとの提携解消で早くも足踏み状態か - ELLE",
@@ -603,7 +698,9 @@
       "sourceUrl": "https://www.elle.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.elle.com/jp/culture/celebgossip/a70703753/meghan-markles-as-ever-says-no-decisions-made-on-global-expansion-260311/"
+      "resolvedUrl": "https://www.elle.com/jp/culture/celebgossip/a70703753/meghan-markles-as-ever-says-no-decisions-made-on-global-expansion-260311/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "発売前にAmazon「CI・M＆A」カテゴリ1位獲得！個人でできるスモールM＆A実践録―銀座のネイルサロンを買収した中小企業診断士 - PR TIMES",
@@ -613,7 +710,9 @@
       "sourceUrl": "https://prtimes.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000002.000179322.html"
+      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000002.000179322.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "外国人に仕切られ、海外事業で日本人の出番がない…英語も話せなかったJTは、いかに人材のグローバル化を進めたか？ - JBpress",
@@ -623,7 +722,21 @@
       "sourceUrl": "https://jbpress.ismedia.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://jbpress.ismedia.jp/articles/-/93366"
+      "resolvedUrl": "https://jbpress.ismedia.jp/articles/-/93366",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "電動バイクのダットバイク、シリーズBで400万USDを調達［経済］ - VIETJOベトナムニュース",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1SYUUzOUtuWlpyY2g3SHQzdHBRaGZtMGFxZnBTSV9Qc0NxbnFzUVI4a1F2ZDlKRVpxWkZmb2dVNnA5NF9OMzdmeGhPQnV6TkJIbHNERldPVDQyb0ZJTXFjZUk1REQ?oc=5",
+      "pubDate": "Tue, 10 Mar 2026 20:41:00 GMT",
+      "source": "VIETJOベトナムニュース",
+      "sourceUrl": "https://www.viet-jo.com",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://www.viet-jo.com/news/economy/260310174354.html",
+      "img": "https://www.viet-jo.com/image/news/260310054256.jpg",
+      "summary": "電動バイクの生産・販売を手掛ける地場スタートアップのダットバイク(Dat Bike)は、シリーズBラウンドでティエンベト証券[TVS](Thien Viet Securities)から400万USD(約..."
     },
     {
       "title": "バーガーキング、ベローチェ、クリスピー・クリーム・ドーナツ…人気チェーン次々と買収。舞台裏で動く「巨額マネー」の正体 - Yahoo!ニュース",
@@ -633,7 +746,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://news.yahoo.co.jp/articles/52af97ad6176b7aa412c9e6975553b8daf0249d5"
+      "resolvedUrl": "https://news.yahoo.co.jp/articles/52af97ad6176b7aa412c9e6975553b8daf0249d5",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "バーガーキング、ベローチェ、クリスピー・クリーム・ドーナツ…人気チェーン次々と買収。舞台裏で動く「巨額マネー」の正体 - ゴールドオンライン",
@@ -643,7 +758,9 @@
       "sourceUrl": "https://gentosha-go.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://gentosha-go.com/articles/-/76467"
+      "resolvedUrl": "https://gentosha-go.com/articles/-/76467",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "伊藤忠、ＩＰ集約の子会社 アニメ製作・海外展開を強化 - 朝日新聞",
@@ -653,7 +770,9 @@
       "sourceUrl": "https://www.asahi.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.asahi.com/articles/DA3S16420304.html"
+      "resolvedUrl": "https://www.asahi.com/articles/DA3S16420304.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "牛角、大戸屋の次はベローチェ。コロワイドが440億円を投じる戦略価値と高掴みのリスク #エキスパートトピ - Yahoo!ニュース",
@@ -663,7 +782,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://news.yahoo.co.jp/expert/articles/55938d47dafd8869f497b5aa789630513ae106ed"
+      "resolvedUrl": "https://news.yahoo.co.jp/expert/articles/55938d47dafd8869f497b5aa789630513ae106ed",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "カフェのベローチェ・クリエ展開企業をコロワイドが買収し完全子会社化 - M&amp;Aキャピタルパートナーズ",
@@ -673,17 +794,21 @@
       "sourceUrl": "https://www.ma-cp.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.ma-cp.com/news/10186/"
+      "resolvedUrl": "https://www.ma-cp.com/news/10186/",
+      "img": "",
+      "summary": ""
     },
     {
-      "title": "海外進出先でインド注目 経済団体が協業後押し - 北海道新聞デジタル",
-      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1vYWhtaVpRSEtuTmg2VlpMeUVhSDNXV3JTR0VNSDI5R25SdHlWVXEyTnV0bkNHaGhsajdSZEt2VDFzMWtfYlNNMGpjWTlKa1R0UHNUSUJsbEdYUQ?oc=5",
-      "pubDate": "Tue, 10 Mar 2026 09:57:51 GMT",
-      "source": "北海道新聞デジタル",
-      "sourceUrl": "https://www.hokkaido-np.co.jp",
+      "title": "未来に向けた取り組み02：海外展開の加速 | 富士フイルムビジネスイノベーション - Fujifilm [Global]",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBueTJoRXppSUpEbVNMNnVDZDVZWFlmUURMcjZobzdPNXBWdDFlYU9qUWd4ZVNKSkdNTTBZNTlXalpaemlsalBibFJwMkhVNUxhRTRmSFNTT2otT3FnN1F0bVdpbFpyTXdmUjIzT3VqbEFBS09ucVhpQzB1S0Y?oc=5",
+      "pubDate": "Tue, 10 Mar 2026 10:35:38 GMT",
+      "source": "Fujifilm [Global]",
+      "sourceUrl": "https://www.fujifilm.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.hokkaido-np.co.jp/article/1285664/"
+      "resolvedUrl": "https://www.fujifilm.com/fb/ja/about/careers/graduates/business/future02",
+      "img": "https://www.fujifilm.com/fb/themes/custom/fujifilm_com_fb_jp_g2/_resources/fujifilm_com_fb/ogp_ja.png",
+      "summary": ""
     },
     {
       "title": "海外進出先でインド注目 - OANDA",
@@ -693,7 +818,9 @@
       "sourceUrl": "https://www.oanda.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.oanda.jp/lab-education/market_news/kn_2026031001001968/"
+      "resolvedUrl": "https://www.oanda.jp/lab-education/market_news/kn_2026031001001968/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "伝説のFPSを蘇らせた「Delta Force」のグローバル展開戦略。Team Jadeが語る，レッドオーシャンで生き残るための施策［GDC 2026］ - 4Gamer.net",
@@ -703,7 +830,9 @@
       "sourceUrl": "https://www.4gamer.net",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.4gamer.net/games/732/G073256/20260310043/"
+      "resolvedUrl": "https://www.4gamer.net/games/732/G073256/20260310043/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "インドにおける日系企業の進出動向 | 地域・分析レポート - 海外ビジネス情報 - jetro.go.jp",
@@ -713,7 +842,9 @@
       "sourceUrl": "https://www.jetro.go.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/biz/areareports/2026/7cb80159ee52d16c.html"
+      "resolvedUrl": "https://www.jetro.go.jp/biz/areareports/2026/7cb80159ee52d16c.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "仏ルノー、海外展開強化で販売台数20％以上増 新5カ年戦略（ロイター） - Yahoo!ニュース",
@@ -723,7 +854,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/articles/f0741517716299eaa0ce22e3c7f26d400c0c7be3"
+      "resolvedUrl": "https://news.yahoo.co.jp/articles/f0741517716299eaa0ce22e3c7f26d400c0c7be3",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "仏ルノー、海外展開強化で販売台数20％以上増 新5カ年戦略 - Reuters",
@@ -733,7 +866,9 @@
       "sourceUrl": "https://jp.reuters.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://jp.reuters.com/markets/global-markets/SG6LGUO5GFPOJFCQTHZUPI56BQ-2026-03-10/"
+      "resolvedUrl": "https://jp.reuters.com/markets/global-markets/SG6LGUO5GFPOJFCQTHZUPI56BQ-2026-03-10/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "コロワイド、珈琲館･ベローチェを440億円で買収 デザートと相乗効果 - 日本経済新聞 - 日本経済新聞",
@@ -743,7 +878,9 @@
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC061RZ0W6A300C2000000/"
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC061RZ0W6A300C2000000/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "「経団連グローバル人材育成スカラーシップ」に採択！ ～医療機器開発を目指して海外留学へ～ - 共同通信PRワイヤー",
@@ -753,7 +890,9 @@
       "sourceUrl": "https://kyodonewsprwire.jp",
       "descHref": "",
       "category": "talent",
-      "resolvedUrl": "https://kyodonewsprwire.jp/release/202603065208"
+      "resolvedUrl": "https://kyodonewsprwire.jp/release/202603065208",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "ダイナパック Research Memo（6）：M&amp;A戦略や海外事業を成長エンジンとして収益拡大を目指す(フィスコ) - Yahoo!ファイナンス",
@@ -763,7 +902,9 @@
       "sourceUrl": "https://finance.yahoo.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://finance.yahoo.co.jp/news/detail/18e8f816cf520d928353928060ed26eb193c3ab4"
+      "resolvedUrl": "https://finance.yahoo.co.jp/news/detail/18e8f816cf520d928353928060ed26eb193c3ab4",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "IIJ、「IIJ Safous Security Assessment」で海外拠点向け脆弱性診断サービスを提供 - クラウド Watch",
@@ -773,27 +914,9 @@
       "sourceUrl": "https://cloud.watch.impress.co.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://cloud.watch.impress.co.jp/docs/news/2091679.html"
-    },
-    {
-      "title": "富士フイルムBIがトルコ企業を買収、基幹システム導入の海外展開加速：製造ITニュース - MONOist",
-      "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9fRFU1Z0ZzbjJqdFVjRFlxbktwM2xYVkNlYWgtS1FLN3BmSlFnTHFsRWVEVDBrYUtDSXJJX2Fhb0RWTDRxZDExR3h5Y3Y1aHd4dU1PTW9VX0hFdkpmLTdKc3dwYnFWNXhFT2dIU19YWQ?oc=5",
-      "pubDate": "Tue, 10 Mar 2026 01:00:00 GMT",
-      "source": "MONOist",
-      "sourceUrl": "https://monoist.itmedia.co.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://monoist.itmedia.co.jp/mn/articles/2603/10/news028.html"
-    },
-    {
-      "title": "IIJ、セキュリティリスク可視化サービスに海外拠点を対象としたメニュー追加 「IIJ Safous Security Assessment 海外脆弱性診断」 - INTERNET Watch",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzSk1CeElEamFsbmV1TERMdmdKNFBWZ3lnMGRPT1JkLXJvd0l1RWdHZlY2MlpQRzhJRmh2ZlF2QjhJVEpxdnI5WnlHYUFLX3VGTUpqdDF6Mm9YV2hVTnJzb2NKR2lXQ3d6NW5B?oc=5",
-      "pubDate": "Mon, 09 Mar 2026 22:00:00 GMT",
-      "source": "INTERNET Watch",
-      "sourceUrl": "https://internet.watch.impress.co.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://internet.watch.impress.co.jp/docs/news/2091729.html"
+      "resolvedUrl": "https://cloud.watch.impress.co.jp/docs/news/2091679.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "「バーガーキング800億」「資さんうどん240億」 外食ブランドの「争奪戦」が加速する理由と展望は（山路力也） - エキスパート - Yahoo!ニュース",
@@ -803,7 +926,9 @@
       "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://news.yahoo.co.jp/expert/articles/1568f2b130919ee54a284bdcaeef2fda9f9359c9"
+      "resolvedUrl": "https://news.yahoo.co.jp/expert/articles/1568f2b130919ee54a284bdcaeef2fda9f9359c9",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "無印良品のスキンケア、新たな成長のエンジンに－海外展開に｢可能性｣ - Bloomberg.com",
@@ -813,17 +938,9 @@
       "sourceUrl": "https://www.bloomberg.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.bloomberg.com/jp/news/articles/2026-03-08/TB93ZCKK3NY800"
-    },
-    {
-      "title": "重慶トップ、自動車産業の海外進出を後押し - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE84ckNaTlotSnRWYThGTUZVTjcwYTJfUExVODgwTHA3d0t1b2VYU0QtVkIwWnMtcDA5ZXdHbjlvUUxBb3VuSWpHMTRMd2ZTYkN1Z01zMFc3dXQtRHM1cHB4alNxM053bXB4d3NGNA?oc=5",
-      "pubDate": "Sun, 08 Mar 2026 07:34:16 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOGM072BU0X00C26A3000000/"
+      "resolvedUrl": "https://www.bloomberg.com/jp/news/articles/2026-03-08/TB93ZCKK3NY800",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "【3/19】海外ビジネスセミナー＆個別相談会「海外展示会で『成果につなげる』商談の進め方と注意点」 - スタートアップポートヨコハマ",
@@ -833,7 +950,9 @@
       "sourceUrl": "https://socialport-y.city.yokohama.lg.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://socialport-y.city.yokohama.lg.jp/20260307-64076/"
+      "resolvedUrl": "https://socialport-y.city.yokohama.lg.jp/20260307-64076/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "3月2〜6日 スタートアップ資金調達まとめ読み - 日本経済新聞",
@@ -843,17 +962,21 @@
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC06A6F0W6A300C2000000/"
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC06A6F0W6A300C2000000/",
+      "img": "",
+      "summary": ""
     },
     {
-      "title": "大和証券、欧米ブティック買収で築いた独自網でM＆A収益1000億円へ！スタープレーヤーに頼らない脱成果至上主義の「大和流・勝利の方程式」 - ダイヤモンド・オンライン",
-      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFA4ekJKaWY5dnFVUXpocDFEWWRNa0xiNG00YkVRTWt3NE9OSXZ3NUpvTmNoY21fdUV3M2NJNWFVRTVvbXlKVjB0Yjh6RDHSAU9BVV95cUxNNlFaUFJyTDFob2s3Mm5iVFVFVDhVd19LbWxENUFhT0RGNkFNQ0F5TnhWd3UzMnhXa2pCT2YyUUJwWmFXUXdxN2hyWnNPQ1pv?oc=5",
+      "title": "「経団連グローバル人材育成スカラーシップ」に採択！ ～医療機器開発を目指して海外留学へ～ - Excite エキサイト",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9YNnoxYmFBMWI3eE5KWXhTcUxMVHNQU3I5YXdSRm9JUDEzSlFGenFCMmNBdFQ1SjNRZExWWGlnSGgybHlBUGtqS2dnYzdfV2Q1R3l2WEg5aG5GRUtHN0haTUU3dktoZjVOSk9UV3ZueVV2NnFDN0lYMw?oc=5",
       "pubDate": "Fri, 06 Mar 2026 08:00:00 GMT",
-      "source": "ダイヤモンド・オンライン",
-      "sourceUrl": "https://diamond.jp",
+      "source": "Excite エキサイト",
+      "sourceUrl": "https://www.excite.co.jp",
       "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://diamond.jp/articles/-/384800"
+      "category": "talent",
+      "resolvedUrl": "https://www.excite.co.jp/news/article/Kyodo_prw_202603065208/image/1/",
+      "img": "https://s.eximg.jp/exnews/feed/Kyodo_prw/3c/Kyodo_prw_202603065208/Kyodo_prw_202603065208_1.jpg",
+      "summary": "【採択は金沢工業大学で初】機械工学科3年・街道瑠奈さん金沢工業大学工学部機械工学科3年の街道瑠奈さん（森本・林研究室）が、公益財団法人経団連国際教育交流財団が運営する「経団連グローバル人材育成スカラー..."
     },
     {
       "title": "2月に資金調達した｢スタートアップ｣ランキングTOP20。首位のNOT A HOTELは総額101億円を調達 - 東洋経済オンライン",
@@ -863,7 +986,9 @@
       "sourceUrl": "https://toyokeizai.net",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://toyokeizai.net/articles/-/936945"
+      "resolvedUrl": "https://toyokeizai.net/articles/-/936945",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "【STARTUP DB】調査結果 スタートアップ資金調達金額ランキング（2026年2月） - PR TIMES",
@@ -873,7 +998,21 @@
       "sourceUrl": "https://prtimes.jp",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000446.000032589.html"
+      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000446.000032589.html",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "25年に多額の資金調達をしたスタートアップ20社 - スマートニュース（SmartNews）",
+      "link": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxOX1ctQU1HOHpCdzJaakdQME5GdVVJWUVIMHlvTEhtZE9uNm50QjZNTHRxVXBTbEJKYWtIRTZ6N3B6TDN3ejhCNGY4dkVoTmVUdk9ZQnpLcUt3Q0NwT01sTzVtODBqSGlnUmhpVnphb1lMSWF5SkUyR2Q4OEFkaFdDWlRxTGVSdkV1c3ltZnRwQVVPUjBHVUdQa2JLMFh4b1RSeThMT0p6QXNXTTBsTkdlZW1TZXRYeWJibGlCMGZmWWZGV1FnLTM1Y2g0RzBTWHJmWjFiZEVNNXhEeG53RVdsTUd0QWpjdXN2M3QyZHJ4ejh0TS1qajVHN24xNHRpNHBDel8ydG1kMzhkZUxRcmRDQ2dhWW9jTVFnWWZrbUFHdmc4RXY3VDhkUFZHbHNvYTZZQWRueXRKdnBhSmk4MV9LOXkwRDBEZ0U1NTFleFNKdVVqOUd3WmJZVEdZZHktSjU5?oc=5",
+      "pubDate": "Thu, 05 Mar 2026 08:00:00 GMT",
+      "source": "スマートニュース（SmartNews）",
+      "sourceUrl": "https://www.smartnews.com",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://www.smartnews.com/news/article/4920444126052223613-25%E5%B9%B4%E3%81%AB%E5%A4%9A%E9%A1%8D%E3%81%AE%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94%E3%82%92%E3%81%97%E3%81%9F%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%9720%E7%A4%BE",
+      "img": "https://thumbnail.smartnews.com/?url=https%3A%2F%2Ftoyokeizai.net%2Fmwimgs%2Fa%2F9%2F-%2Fimg_a9b6c06174a0f7a58ec8573749b7b896610966.jpg",
+      "summary": "成長期待が資金調達額に表れる スタートアップにとって資金調達は成長を加速させるための大きなドライバーだ。資金があれば、これまでの稼ぎ以上の大きな投資が可能になる。さらに投資家や金融機関が「成長期待を持てる」と判断した結果でもある。 では具体"
     },
     {
       "title": "海外戦略の成否は組織で決まる 地方企業のグローバル人材戦略と推進体制のつくり方 - HRプロ",
@@ -883,7 +1022,9 @@
       "sourceUrl": "https://www.hrpro.co.jp",
       "descHref": "",
       "category": "talent",
-      "resolvedUrl": "https://www.hrpro.co.jp/seminar_detail.php?ccd=00253&pcd=5285"
+      "resolvedUrl": "https://www.hrpro.co.jp/seminar_detail.php?ccd=00253&pcd=5285",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "令和7年度都内アニメ産業海外進出ステップアッププログラム|3月|都庁総合ホームページ - metro.tokyo.lg.jp",
@@ -893,7 +1034,9 @@
       "sourceUrl": "https://www.metro.tokyo.lg.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.metro.tokyo.lg.jp/information/press/2026/03/2026030404"
+      "resolvedUrl": "https://www.metro.tokyo.lg.jp/information/press/2026/03/2026030404",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "パトスロゴス、大企業向け人事給与SaaS「Combosite人事給与」においてSOC1 Type2 報告書を受領 - ニコニコニュース",
@@ -903,17 +1046,9 @@
       "sourceUrl": "https://news.nicovideo.jp",
       "descHref": "",
       "category": "hr",
-      "resolvedUrl": "https://news.nicovideo.jp/watch/nw18995306?news_ref=top_newComments"
-    },
-    {
-      "title": "パトスロゴス、大企業向け人事給与SaaS「Combosite人事給与」においてSOC1 Type2 報告書を受領 - イザ！",
-      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE0xd3dybUNmSmx3blZJY0hDU1VKOThLd1o0d2NLLUZRN0ZxT1NhTzY1OXNGTmtla0tUM0VBTWxYZ3BnSWdPZXg1R1JpaWV5S0hiZU5RNmJCaWdqcFRua3BMdzdJNGxrX2hZTDMwRlJHS1BHSkFQeWFQdW53?oc=5",
-      "pubDate": "Wed, 04 Mar 2026 00:00:00 GMT",
-      "source": "イザ！",
-      "sourceUrl": "https://www.iza.ne.jp",
-      "descHref": "",
-      "category": "hr",
-      "resolvedUrl": "https://www.iza.ne.jp/pressrelease/prtimes/SOLXAK42W5K6NNHFYTULBJYF74/"
+      "resolvedUrl": "https://news.nicovideo.jp/watch/nw18995306?news_ref=top_newComments",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "上智大学が挑む新たなグローバル展開。アフリカとの協働で国際的リーダーの育成を目指す - sophia.ac.jp",
@@ -923,7 +1058,9 @@
       "sourceUrl": "https://www.sophia.ac.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.sophia.ac.jp/jpn/article/feature/endeavor/20260302/"
+      "resolvedUrl": "https://www.sophia.ac.jp/jpn/article/feature/endeavor/20260302/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "2月24〜27日 スタートアップ資金調達まとめ読み - 日本経済新聞",
@@ -933,7 +1070,9 @@
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC269DN0W6A220C2000000/"
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC269DN0W6A220C2000000/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "大熊のスタートアップ企業 事業、資金調達で連携探る 福島県いわき市 初の「浜通り共創ハブ」 - 福島民報社",
@@ -943,7 +1082,9 @@
       "sourceUrl": "https://www.minpo.jp",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://www.minpo.jp/news/moredetail/20260227130622"
+      "resolvedUrl": "https://www.minpo.jp/news/moredetail/20260227130622",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "加速する企業の海外事業撤退と期待される取引金融機関の役割 - KPMG",
@@ -953,7 +1094,9 @@
       "sourceUrl": "https://kpmg.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://kpmg.com/jp/ja/insights/2026/02/overseas-withdrawal-bank-role.html"
+      "resolvedUrl": "https://kpmg.com/jp/ja/insights/2026/02/overseas-withdrawal-bank-role.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "大学発スタートアップ、資金調達額3年ぶり低水準 投資の選別進む - 日本経済新聞",
@@ -963,7 +1106,9 @@
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUB11C0R0R11C25A2000000/"
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUB11C0R0R11C25A2000000/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "Deelが日本進出、グローバル人材をリモート活用するための労務管理SaaSを提供 - HRzine",
@@ -973,7 +1118,9 @@
       "sourceUrl": "https://hrzine.jp",
       "descHref": "",
       "category": "deel",
-      "resolvedUrl": "https://hrzine.jp/news/detail/3766"
+      "resolvedUrl": "https://hrzine.jp/news/detail/3766",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "ホテル・旅館業界のM&amp;A事例40選！最新の売却・買収動向やメリットを専門家が解説 - masouken.com",
@@ -983,7 +1130,9 @@
       "sourceUrl": "https://masouken.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://masouken.com/%E3%83%9B%E3%83%86%E3%83%AB%E3%81%A8%E6%97%85%E9%A4%A8%E3%81%AEM&A"
+      "resolvedUrl": "https://masouken.com/%E3%83%9B%E3%83%86%E3%83%AB%E3%81%A8%E6%97%85%E9%A4%A8%E3%81%AEM&A",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "タクシー業界のM&amp;A動向と成功の秘訣｜譲渡メリットや最新の買収事例を専門家が解説 - masouken.com",
@@ -993,7 +1142,9 @@
       "sourceUrl": "https://masouken.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://masouken.com/%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%E4%BC%9A%E7%A4%BE%E3%81%AEM&A"
+      "resolvedUrl": "https://masouken.com/%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%E4%BC%9A%E7%A4%BE%E3%81%AEM&A",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "2月16〜20日 スタートアップ資金調達まとめ読み - 日本経済新聞",
@@ -1003,7 +1154,9 @@
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGXZQOUC208QW0Q6A220C2000000&nik_code=0070086"
+      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGXZQOUC208QW0Q6A220C2000000&nik_code=0070086",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "ウェディング業界のM&amp;A動向｜売却・買収の成功ポイントや市場規模、最新の経営戦略を解説 - masouken.com",
@@ -1013,7 +1166,9 @@
       "sourceUrl": "https://masouken.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://masouken.com/%E5%A9%9A%E7%A4%BC%E3%82%A6%E3%82%A8%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E6%A5%AD%E7%95%8C%E3%81%AEM&A"
+      "resolvedUrl": "https://masouken.com/%E5%A9%9A%E7%A4%BC%E3%82%A6%E3%82%A8%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E6%A5%AD%E7%95%8C%E3%81%AEM&A",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "SaaS業界のM&amp;A動向と会社売却のメリット｜最新の市場変化と成功のポイントを専門家が解説 - masouken.com",
@@ -1023,7 +1178,9 @@
       "sourceUrl": "https://masouken.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://masouken.com/SaaS%E3%81%AEM&A%E3%81%A8%E5%A3%B2%E5%8D%B4%E8%B2%B7%E5%8F%8E"
+      "resolvedUrl": "https://masouken.com/SaaS%E3%81%AEM&A%E3%81%A8%E5%A3%B2%E5%8D%B4%E8%B2%B7%E5%8F%8E",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "連続買収、束ねる力ですいすい成長 M&amp;Aいぶし銀企業 - 日本経済新聞",
@@ -1033,7 +1190,21 @@
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUB176B60X10C26A2000000/"
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUB176B60X10C26A2000000/",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "フォースタートアップス、「スタートアップ資金調達金額ランキング」を発表 - Biz/Zine",
+      "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1OMFdfZzEwZ2lmVDJZVDhGWlNtRjFoVFE3ak9ya01DZTZrR2l5ZDFleHF3VUNwN2o1VzFPZzNqNms1NXQtakc3c1JnWGs?oc=5",
+      "pubDate": "Thu, 19 Feb 2026 09:56:33 GMT",
+      "source": "Biz/Zine",
+      "sourceUrl": "https://bizzine.jp",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://bizzine.jp/news/detail/11650",
+      "img": "https://bizzine.jp/static/images/article/11650/11650_ogp.png",
+      "summary": "フォースタートアップス、「スタートアップ資金調達金額ランキング」を発表"
     },
     {
       "title": "静岡県、目指すはスタートアップ先進地 資金調達支援に官民で厚み - 日本経済新聞",
@@ -1043,7 +1214,21 @@
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOCC011JA0R00C26A2000000/"
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOCC011JA0R00C26A2000000/",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "ニデック、崩れるM&amp;A巧者の評価 買収後の統合作業の不備を自認 - 日本経済新聞 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9yLXRVdV8wbGNBeWlXcnkyS2t4ckRkLUtfQ1h4Z2NxTGRVSlhJTk1wbzIxZ1Q1MDhSaXhJUXRudFZsOFV5WlBXUnp2SzFlLWJRUHoyeEtWYWRrSWVHcC1kMkZOU19Lc0MwVXdrZg?oc=5",
+      "pubDate": "Thu, 19 Feb 2026 08:00:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUB28CII0Y6A120C2000000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2623271013022026000000-1.jpg?auto=format&bg=FFFF&crop=focalpoint&fit=crop&fp-x=0.51&fp-y=0.58&h=630&w=1200&s=428ca3267d5329011f16ecb4e7988f7f",
+      "summary": "ニデックのM&A（合併・買収）巧者の評価が崩れ始めている。1月28日に東京証券取引所に提出した改善計画・状況報告書で「買収先を管理する体制が十分に構築されないままグループ会社が拡大し、管理機能を担える人材も不足していた」と開示した。買収後に企業価値を高めるPMI（統合作業）がおろそかになっていた実態をニデック自らが明らかにするのは初めてだ。ニデックはM&Aを駆使して、事業を拡大してきた"
     },
     {
       "title": "“M&amp;A巧者”コーナンによるアレンザTOBのねらいとは？ - ダイヤモンド・チェーンストアオンライン",
@@ -1053,7 +1238,9 @@
       "sourceUrl": "https://diamond-rm.net",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://diamond-rm.net/management/businessplan/536826/"
+      "resolvedUrl": "https://diamond-rm.net/management/businessplan/536826/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "コラム・寄稿「企業の海外進出：成長の条件」 - rieti.go.jp",
@@ -1063,7 +1250,9 @@
       "sourceUrl": "https://www.rieti.go.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.rieti.go.jp/jp/special/special_report/248.html"
+      "resolvedUrl": "https://www.rieti.go.jp/jp/special/special_report/248.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "企業のグローバル化推進に関する連携協定の締結について - city.nagoya.jp",
@@ -1073,7 +1262,9 @@
       "sourceUrl": "https://www.city.nagoya.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.city.nagoya.jp/jigyou/sangyou/1026356/1026463/1026464/1046113.html"
+      "resolvedUrl": "https://www.city.nagoya.jp/jigyou/sangyou/1026356/1026463/1026464/1046113.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "展示会×海外展開に向けた人材育成×商社連携で実現！大豆肉『SoMeat』で米国・欧州市場の扉を開く - jetro.go.jp",
@@ -1083,7 +1274,9 @@
       "sourceUrl": "https://www.jetro.go.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/case_study/2025/somenoya.html"
+      "resolvedUrl": "https://www.jetro.go.jp/case_study/2025/somenoya.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "M&amp;Aで株価が上がる？ 買い手と売り手の株価への影響を詳しく解説 - M&amp;Aキャピタルパートナーズ",
@@ -1093,17 +1286,9 @@
       "sourceUrl": "https://www.ma-cp.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.ma-cp.com/about-ma/manda-stock-price/"
-    },
-    {
-      "title": "INFORICH がMBO、株式非公開化へ - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBzLVJhcGVyODR3S1ItY0tiOEQybllQN09EMk94M1BBWUtuVHJHbk9idkoyTm5GbkVlc3p0b05Ed2haaEF5RVZTSENOWUI1dw?oc=5",
-      "pubDate": "Mon, 16 Feb 2026 08:00:00 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/tobnews/2026_021a"
+      "resolvedUrl": "https://www.ma-cp.com/about-ma/manda-stock-price/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "セミナー・イベント：「海外展開への第一歩：企業が語る挑戦のリアル」 - J-Net21[中小企業ビジネス支援サイト]",
@@ -1113,7 +1298,9 @@
       "sourceUrl": "https://j-net21.smrj.go.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://j-net21.smrj.go.jp/snavi2/articles/176096"
+      "resolvedUrl": "https://j-net21.smrj.go.jp/snavi2/articles/176096",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "セミナー・イベント：「中堅・中小企業×ASEAN企業 海外ビジネス戦略に資する外国資本連携活用セミナー」を開催します - J-Net21[中小企業ビジネス支援サイト]",
@@ -1123,7 +1310,9 @@
       "sourceUrl": "https://j-net21.smrj.go.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://j-net21.smrj.go.jp/snavi2/articles/176148"
+      "resolvedUrl": "https://j-net21.smrj.go.jp/snavi2/articles/176148",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "M&amp;A（合併・買収）とは？2026年現在の動向から目的・手法・メリットを専門家が徹底解説 - masouken.com",
@@ -1133,7 +1322,9 @@
       "sourceUrl": "https://masouken.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://masouken.com/M&A"
+      "resolvedUrl": "https://masouken.com/M&A",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "2月9〜13日 スタートアップ資金調達まとめ読み - 日本経済新聞",
@@ -1143,7 +1334,9 @@
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC12BCO0S6A210C2000000/"
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC12BCO0S6A210C2000000/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "海外進出支援のサービス - jetro.go.jp",
@@ -1153,7 +1346,9 @@
       "sourceUrl": "https://www.jetro.go.jp",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/services/fdi/"
+      "resolvedUrl": "https://www.jetro.go.jp/services/fdi/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "企業がMBOによる「非公開化」を選ぶ理由は？ ～背景と変化する上場の意義～｜ライオン社長マガジン - M&amp;Aキャピタルパートナーズ",
@@ -1163,7 +1358,9 @@
       "sourceUrl": "https://www.ma-cp.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.ma-cp.com/magazine/analysis/trending-ma/8/"
+      "resolvedUrl": "https://www.ma-cp.com/magazine/analysis/trending-ma/8/",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "1月に資金調達した｢スタートアップ｣ランキングTOP20。首位の東大発･燈は三菱電機から50億円の出資 - 東洋経済オンライン",
@@ -1173,7 +1370,9 @@
       "sourceUrl": "https://toyokeizai.net",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://toyokeizai.net/articles/-/934646"
+      "resolvedUrl": "https://toyokeizai.net/articles/-/934646",
+      "img": "",
+      "summary": ""
     }
   ]
 }
