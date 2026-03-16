@@ -595,7 +595,7 @@ async function loadAllFeeds() {
           console.log('[articles.json] ' + ajData.totalArticles + ' articles loaded');
           const btn = document.getElementById('refreshBtn');
           if (btn) { btn.disabled = true; btn.textContent = '読み込み中…'; }
-          document.getElementById('statusBar').textContent = '記事を読み込み中…';
+          document.getElementById('statusText').textContent = '記事を読み込み中…';
           ALL.length = 0;
           for (const a of ajData.articles) {
             ALL.push({
@@ -605,8 +605,8 @@ async function loadAllFeeds() {
             });
           }
           ALL.sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate));
-          document.getElementById('statusBar').textContent = ALL.length + ' 件の記事（事前解決済み）';
-          renderPage();
+          document.getElementById('statusText').textContent = ALL.length + ' 件の記事（事前解決済み）';
+          render();
           if (btn) { btn.disabled = false; btn.textContent = '更新'; }
           return;
         }
