@@ -1,3 +1,94 @@
+name: Add article filter to resolve-news.mjs
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  add-filter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add non-Japan article filter
+        run: |
+          python3 << 'PYEOF'
+          import re
+
+          with open('resolve-news.mjs', 'r') as f:
+              content = f.read()
+
+          # Check if filter already exists
+          if 'EXCLUDE_PATTERNS' in content:
+              print('Filter already exists, skipping')
+          else:
+              # Add EXCLUDE_PATTERNS after the UA constant
+              filter_code = """
+// --- 非日本企業ニュース除外フィルタ ---
+const EXCLUDE_PATTERNS = [
+  // 韓国エンタメ・企業
+  /\bRBW\b/i, /\bHYBE\b/i, /Kstyle/i, /K-POP/i, /KPOP/i,
+  /\bSM\s*Entertainment/i, /\bYG\s*Entertainment/i, /\bJYP/i,
+  // 韓国ニュースソース
+  /WoW!Korea/i, /KOREA WAVE/i,
+  // 一般的な非日本企業キーワード
+  /韓国芸能/i, /韓国アイドル/i,
+];
+
+function isRelevantArticle(title, source) {
+  const text = title + ' ' + (source || '');
+  return !EXCLUDE_PATTERNS.some(pat => pat.test(text));
+}
+"""
+              # Insert after the UA line
+              ua_line = "const UA = "
+              ua_idx = content.find(ua_line)
+              if ua_idx >= 0:
+                  # Find end of the UA line
+                  eol = content.find(';', ua_idx)
+                  insert_pos = eol + 1
+                  content = content[:insert_pos] + '\n' + filter_code + content[insert_pos:]
+                  print('Added EXCLUDE_PATTERNS and isRelevantArticle function')
+              else:
+                  print('ERROR: Could not find UA constant')
+                  exit(1)
+
+              # Add filter call after deduplication
+              # Find: const unique = allArticles.filter(a => {
+              dedup_marker = "const unique = allArticles.filter"
+              if dedup_marker in content:
+                  # Replace the dedup filter to also include relevance check
+                  old_filter = """const unique = allArticles.filter(a => {
+    if (seen.has(a.link)) return false;
+    seen.add(a.link);
+    return true;
+  });"""
+                  new_filter = """const unique = allArticles.filter(a => {
+    if (seen.has(a.link)) return false;
+    seen.add(a.link);
+    if (!isRelevantArticle(a.title, a.source)) {
+      console.log('  Excluded (non-relevant): ' + a.title.substring(0, 60));
+      return false;
+    }
+    return true;
+  });"""
+                  content = content.replace(old_filter, new_filter)
+                  print('Added relevance filter to dedup step')
+              else:
+                  print('WARNING: Could not find dedup marker')
+
+          with open('resolve-news.mjs', 'w') as f:
+              f.write(content)
+          print('Done! File size: ' + str(len(content)))
+          PYEOF
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resolve-news.mjs
+          git diff --cached --stat
+          git commit -m "Add non-Japan article filter to resolve-news.mjs" || echo "No changes"
+          git push
 name: Fix index.html duplication
 on:
   workflow_dispatch:
