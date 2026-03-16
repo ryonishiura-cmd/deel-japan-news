@@ -11,15 +11,31 @@ import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs';
 const FEEDS = {
   deel: 'https://news.google.com/rss/search?q=%22Deel%22+%E6%8E%A1%E7%94%A8+OR+%E4%BA%BA%E4%BA%8B+OR+HR+OR+EOR&hl=ja&gl=JP&ceid=JP:ja',
   funding: 'https://news.google.com/rss/search?q=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAA+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAB+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAC&hl=ja&gl=JP&ceid=JP:ja',
-  ma: 'https://news.google.com/rss/search?q=M%26A+%E8%B2%B7%E5%8F%8E+OR+%E5%90%88%E4%BE%B5+OR+TOB+OR+MBO+OR+%E4%B8%8A%E5%A0%B4%E5%BB%83%E6%AD%A2&hl=ja&gl=JP&ceid=JP:ja',
+  ma: 'https://news.google.com/rss/search?q=M%26A+%E8%B2%B7%E5%8F%8E+OR+%E5%90%88%E4%BD%B5+OR+TOB+OR+MBO+OR+%E4%B8%8A%E5%A0%B4%E5%BB%83%E6%AD%A2&hl=ja&gl=JP&ceid=JP:ja',
   competitor: 'https://news.google.com/rss/search?q=%22Remote.com%22+OR+%22Papaya+Global%22+OR+%22Velocity+Global%22+OR+%22Oyster+HR%22+OR+%22Rippling%22+OR+%22Globalization+Partners%22&hl=ja&gl=JP&ceid=JP:ja',
   global: 'https://news.google.com/rss/search?q=%E6%B5%B7%E5%A4%96%E9%80%B2%E5%87%BA+OR+%E6%B5%B7%E5%A4%96%E5%B1%95%E9%96%8B+OR+%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E5%B1%95%E9%96%8B+OR+%E6%B5%B7%E5%A4%96%E4%BA%8B%E6%A5%AD&hl=ja&gl=JP&ceid=JP:ja',
   talent: 'https://news.google.com/rss/search?q=%E6%B5%B7%E5%A4%96%E4%BA%BA%E6%9D%90%E6%8E%A1%E7%94%A8+OR+%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E4%BA%BA%E6%9D%90+OR+%E5%A4%96%E5%9B%BD%E4%BA%BA%E6%8E%A1%E7%94%A8+OR+%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF+%E6%B5%B7%E5%A4%96&hl=ja&gl=JP&ceid=JP:ja',
-  hr: 'https://news.google.com/rss/search?q=HR+%E3%83%86%E3%83%83%E3%82%AF+OR+%E4%BA%BA%E4%BA%8B%E3%83%86%E3%83%83%E3%82%AF+OR+%E5%8A%B4%E5%8B%99%E7%AE%A1%E7%90%86+OR+%E7%B5%A6%E4%B8%8E%E8%A9%88%E7%AE%97+SaaS&hl=ja&gl=JP&ceid=JP:ja',
+  hr: 'https://news.google.com/rss/search?q=HR+%E3%83%86%E3%83%83%E3%82%AF+OR+%E4%BA%BA%E4%BA%8B%E3%83%86%E3%83%83%E3%82%AF+OR+%E5%8A%B4%E5%8B%99%E7%AE%A1%E7%90%86+OR+%E7%B5%A6%E4%B8%8E%E8%88%88%E7%AE%97+SaaS&hl=ja&gl=JP&ceid=JP:ja',
   event: 'https://news.google.com/rss/search?q=HR+%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9+OR+%E4%BA%BA%E4%BA%8B+%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC+OR+%E6%8E%A1%E7%94%A8+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88+2025&hl=ja&gl=JP&ceid=JP:ja',
 };
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
+
+// è¨äºã®ä¿ææéï¼1ã¶æ = 31æ¥ï¼
+const MAX_AGE_DAYS = 31;
+
+function isWithinMaxAge(pubDateStr) {
+  if (!pubDateStr) return false;
+  try {
+    const pubDate = new Date(pubDateStr);
+    const now = new Date();
+    const diffMs = now - pubDate;
+    const diffDays = diffMs / (1000 * 60 * 60 * 24);
+    return diffDays <= MAX_AGE_DAYS;
+  } catch {
+    return false;
+  }
+}
 
 // --- HTMLã¨ã³ãã£ãã£ãã³ã¼ã ---
 function decodeHtmlEntities(str) {
@@ -171,8 +187,8 @@ async function main() {
     try {
       const old = JSON.parse(readFileSync(dataPath, 'utf-8'));
       for (const a of old.articles || []) {
-        // ã­ã£ãã·ã¥ã¯æå¹ãªè¨äºURLã®ã¿ä½¿ç¨ï¼ãã¡ã¤ã³ã ãã®URLã¯åè§£æ±ºï¼
-        if (isValidArticleUrl(a.resolvedUrl)) {
+        // ã­ã£ãã·ã¥ã¯æå¹ãªè¨äºURLãã¤æéåã®ãã®ã®ã¿ä½¿ç¨
+        if (isValidArticleUrl(a.resolvedUrl) && isWithinMaxAge(a.pubDate)) {
           existing[a.link] = a;
         }
       }
@@ -199,8 +215,9 @@ async function main() {
         continue;
       }
       const xml = await resp.text();
-      const items = parseRssXml(xml);
-      console.log('  Found ' + items.length + ' items');
+      const rawItems = parseRssXml(xml);
+      const items = rawItems.filter(item => isWithinMaxAge(item.pubDate));
+      console.log('  Found ' + rawItems.length + ' items, ' + items.length + ' within last ' + MAX_AGE_DAYS + ' days');
 
       for (const item of items) {
         // ã­ã£ãã·ã¥ã«æå¹ãªURLãããã°ãããä½¿ç¨
