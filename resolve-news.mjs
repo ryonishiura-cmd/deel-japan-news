@@ -37,6 +37,18 @@ function isWithinMaxAge(pubDateStr) {
   }
 }
 
+// --- Non-relevant article filter ---
+const EXCLUDE_PATTERNS = [
+  /\bRBW\b/i,/\bHYBE\b/i,/Kstyle/i,/K-POP/i,/KPOP/i,
+  /\bSM\s*Entertainment/i,/\bYG\s*Entertainment/i,/\bJYP/i,
+  /WoW!Korea/i,/KOREA WAVE/i,
+];
+
+function isRelevantArticle(title,source){
+  const text=title+' '+(source||'');
+  return !EXCLUDE_PATTERNS.some(p=>p.test(text));
+}
+
 // --- HTMLã¨ã³ãã£ãã£ãã³ã¼ã ---
 function decodeHtmlEntities(str) {
   return str
@@ -289,6 +301,10 @@ async function main() {
   const unique = allArticles.filter(a => {
     if (seen.has(a.link)) return false;
     seen.add(a.link);
+    if(!isRelevantArticle(a.title,a.source)){
+      console.log('  Excluded: '+a.title.substring(0,60));
+      return false;
+    }
     return true;
   });
 
