@@ -266,6 +266,11 @@ let BM = JSON.parse(localStorage.getItem('dn_bm2')||'[]');
 let TAB = 'top';
 let currentArticle = null;
 let errorLogs = [];
+// ═══════════ PROXY WORKER (Cloudflare Workers) ═══════════
+// デプロイ後、以下のURLをWorkerのURLに変更する
+// 空文字列の場合はWorkerを使わず、既存のCORSプロキシにフォールバック
+const WORKER_URL = ''; // 例: 'https://deel-news-proxy.xxx.workers.dev'
+
 
 // ═══════════ MULTI-STRATEGY FETCH ═══════════
 // Strategy 1: rss2json.com API (returns JSON, CORS-friendly)
@@ -369,6 +374,16 @@ function stripHtml(html) {
 // Google News links redirect â resolve to the actual article URL first
 async function resolveGoogleNewsUrl(url) {
   if (!url.includes('news.google.com')) return url;
+  // Worker経由でURL解決（設定されている場合）
+  if (WORKER_URL) {
+    try {
+      const r = await fetch(WORKER_URL + '/resolve?url=' + encodeURIComponent(url), { signal: AbortSignal.timeout(8000) });
+      if (r.ok) {
+        const d = await r.json();
+        if (d.resolved && !d.resolved.includes('news.google.com')) return d.resolved;
+      }
+    } catch(e) {}
+  }
   // Try to extract the real URL from Google News redirect
   // Method 1: Use allorigins to follow the redirect and get the final URL
   try {
@@ -406,6 +421,16 @@ async function fetchViaProxy(proxyFn, url) {
 }
 
 async function fetchArticleBody(url) {
+  // Worker経由でHTML取得（設定されている場合）
+  if (WORKER_URL) {
+    try {
+      const r = await fetch(WORKER_URL + '/fetch?url=' + encodeURIComponent(url), { signal: AbortSignal.timeout(15000) });
+      if (r.ok) {
+        const html = await r.text();
+        if (html && html.length > 200) return html;
+      }
+    } catch(e) {}
+  }
   // First, try to resolve Google News redirect URLs
   let resolvedUrl = url;
   try { resolvedUrl = await resolveGoogleNewsUrl(url); } catch(e) {}
