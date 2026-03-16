@@ -20,10 +20,13 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install dependencies
+        run: npm install google-news-decoder
+
       - name: Run URL resolver
         run: node resolve-news.mjs
 
-      - name: Commit and push if changed
+      - name: Commit updated articles
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
