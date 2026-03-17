@@ -10,14 +10,27 @@ import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs';
 // RSSãã£ã¼ãURLä¸è¦§ï¼ããã·ã¥ãã¼ãã®CAT_Qã¨åãï¼
 const FEEDS = {
   deel: 'https://news.google.com/rss/search?q=%22Deel%22+%E6%8E%A1%E7%94%A8+OR+%E4%BA%BA%E4%BA%8B+OR+HR+OR+EOR&hl=ja&gl=JP&ceid=JP:ja',
+  funding_p: 'https://news.google.com/rss/search?q=site%3Athebridge.jp+OR+site%3Aprtimes.jp+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94+OR+%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA&hl=ja&gl=JP&ceid=JP:ja',
   funding: 'https://news.google.com/rss/search?q=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAA+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAB+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAC&hl=ja&gl=JP&ceid=JP:ja',
+  ma_p: 'https://news.google.com/rss/search?q=site%3Amaonline.jp+OR+site%3Anikkei.com+OR+site%3Atoyokeizai.net+M%26A+OR+%E8%B2%B7%E5%8F%8E+OR+%E6%B5%B7%E5%A4%96%E9%80%B2%E5%87%BA&hl=ja&gl=JP&ceid=JP:ja',
   ma: 'https://news.google.com/rss/search?q=M%26A+%E8%B2%B7%E5%8F%8E+OR+%E5%90%88%E4%BD%B5+OR+TOB+OR+MBO+OR+%E4%B8%8A%E5%A0%B4%E5%BB%83%E6%AD%A2&hl=ja&gl=JP&ceid=JP:ja',
-  competitor: 'https://news.google.com/rss/search?q=%22Remote.com%22+OR+%22Papaya+Global%22+OR+%22Velocity+Global%22+OR+%22Oyster+HR%22+OR+%22Rippling%22+OR+%22Globalization+Partners%22&hl=ja&gl=JP&ceid=JP:ja',
+  global_p: 'https://news.google.com/rss/search?q=site%3Anikkei.com+OR+site%3Atoyokeizai.net+%E6%B5%B7%E5%A4%96%E9%80%B2%E5%87%BA+OR+%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E5%B1%95%E9%96%8B+OR+%E6%B5%B7%E5%A4%96%E6%8B%A0%E7%82%B9&hl=ja&gl=JP&ceid=JP:ja',
   global: 'https://news.google.com/rss/search?q=%E6%B5%B7%E5%A4%96%E9%80%B2%E5%87%BA+OR+%E6%B5%B7%E5%A4%96%E5%B1%95%E9%96%8B+OR+%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E5%B1%95%E9%96%8B+OR+%E6%B5%B7%E5%A4%96%E4%BA%8B%E6%A5%AD&hl=ja&gl=JP&ceid=JP:ja',
   talent: 'https://news.google.com/rss/search?q=%E6%B5%B7%E5%A4%96%E4%BA%BA%E6%9D%90%E6%8E%A1%E7%94%A8+OR+%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E4%BA%BA%E6%9D%90+OR+%E5%A4%96%E5%9B%BD%E4%BA%BA%E6%8E%A1%E7%94%A8+OR+%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF+%E6%B5%B7%E5%A4%96&hl=ja&gl=JP&ceid=JP:ja',
-  hr: 'https://news.google.com/rss/search?q=HR+%E3%83%86%E3%83%83%E3%82%AF+OR+%E4%BA%BA%E4%BA%8B%E3%83%86%E3%83%83%E3%82%AF+OR+%E5%8A%B4%E5%8B%99%E7%AE%A1%E7%90%86+OR+%E7%B5%A6%E4%B8%8E%E8%88%88%E7%AE%97+SaaS&hl=ja&gl=JP&ceid=JP:ja',
-  event: 'https://news.google.com/rss/search?q=HR+%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9+OR+%E4%BA%BA%E4%BA%8B+%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC+OR+%E6%8E%A1%E7%94%A8+%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88+2025&hl=ja&gl=JP&ceid=JP:ja',
+  hr_p: 'https://news.google.com/rss/search?q=site%3Ahrnote.jp+OR+site%3Aroumu.com+%E6%B5%B7%E5%A4%96+OR+%E5%A4%96%E5%9B%BD%E4%BA%BA+OR+%E5%9C%A8%E7%95%99%E8%B3%87%E6%A0%BC+OR+%E5%B0%B1%E5%8A%B4%E3%83%93%E3%82%B6&hl=ja&gl=JP&ceid=JP:ja',
+  hr: 'https://news.google.com/rss/search?q=HR+%E3%83%86%E3%83%83%E3%82%AF+OR+%E4%BA%BA%E4%BA%8B%E3%83%86%E3%83%83%E3%82%AF+OR+%E5%8A%B4%E5%8B%99%E7%AE%A1%E7%90%86+OR+%E7%B5%A6%E4%B8%8E%E8%A8%88%E7%AE%97+SaaS&hl=ja&gl=JP&ceid=JP:ja',
+  inbound: 'https://news.google.com/rss/search?q=site%3Ajetro.go.jp+OR+site%3Ajp.techcrunch.com+%E6%97%A5%E6%9C%AC%E9%80%B2%E5%87%BA+OR+%E5%AF%BE%E6%97%A5%E6%8A%95%E8%B3%87&hl=ja&gl=JP&ceid=JP:ja',
+  competitor: 'https://news.google.com/rss/search?q=%22Remote.com%22+OR+%22Papaya+Global%22+OR+%22Velocity+Global%22+OR+%22Oyster+HR%22+OR+%22Rippling%22+OR+%22Globalization+Partners%22&hl=ja&gl=JP&ceid=JP:ja',
 };
+
+const CATEGORY_MAP = {
+  funding_p: 'funding',
+  ma_p: 'ma',
+  global_p: 'global',
+  hr_p: 'hr',
+  inbound: 'global',
+};
+
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 
@@ -257,7 +270,7 @@ async function main() {
         if (existing[item.link]?.resolvedUrl) {
           allArticles.push({
             ...item,
-            category,
+            category: CATEGORY_MAP[category] || category,
             resolvedUrl: existing[item.link].resolvedUrl,
             img: existing[item.link].img || '',
             summary: existing[item.link].summary || '',
