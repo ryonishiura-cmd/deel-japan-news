@@ -10,7 +10,7 @@ import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs';
 // RSSãã£ã¼ãURLä¸è¦§ï¼ããã·ã¥ãã¼ãã®CAT_Qã¨åãï¼
 const FEEDS = {
   deel: 'https://news.google.com/rss/search?q=%22Deel%22+%E6%8E%A1%E7%94%A8+OR+%E4%BA%BA%E4%BA%8B+OR+HR+OR+EOR&hl=ja&gl=JP&ceid=JP:ja',
-  funding_p: 'https://news.google.com/rss/search?q=site%3Athebridge.jp+OR+site%3Aprtimes.jp+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94+OR+%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA&hl=ja&gl=JP&ceid=JP:ja',
+  funding_p: 'https://news.google.com/rss/search?q=site%3Athebridge.jp+OR+site%3Aprtimes.jp+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94+OR+%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAA+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAB+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAC&hl=ja&gl=JP&ceid=JP:ja',
   funding: 'https://news.google.com/rss/search?q=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAA+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAB+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAC&hl=ja&gl=JP&ceid=JP:ja',
   ma_p: 'https://news.google.com/rss/search?q=site%3Amaonline.jp+OR+site%3Anikkei.com+OR+site%3Atoyokeizai.net+M%26A+OR+%E8%B2%B7%E5%8F%8E+OR+%E6%B5%B7%E5%A4%96%E9%80%B2%E5%87%BA&hl=ja&gl=JP&ceid=JP:ja',
   ma: 'https://news.google.com/rss/search?q=M%26A+%E8%B2%B7%E5%8F%8E+OR+%E5%90%88%E4%BD%B5+OR+TOB+OR+MBO+OR+%E4%B8%8A%E5%A0%B4%E5%BB%83%E6%AD%A2&hl=ja&gl=JP&ceid=JP:ja',
