@@ -732,6 +732,32 @@ function thumbH(a) {
   return `<div class="nrow-thumb-ph" style="background:${CATS[a.category]?.color||'#888'}">${CATS[a.category]?.label||''}</div>`;
 }
 
+// SF Owner matching
+var _sfOwners={},_sfKeys=[],_sfOwnerNames=[];
+function loadSfOwners(){
+  fetch("data/sf_owners.tsv").then(function(r){return r.text();}).then(function(text){
+    var lines=text.trim().split("\n");
+    _sfOwnerNames=lines[0].split("\t");
+    for(var i=1;i<lines.length;i++){
+      var p=lines[i].split("\t");
+      if(p.length>=2){var k=p[0].toLowerCase();_sfOwners[k]=parseInt(p[1]);_sfKeys.push(k);}
+    }
+    _sfKeys.sort(function(a,b){return b.length-a.length;});
+    console.log("SF owners loaded:",_sfKeys.length,"keys");
+    if(typeof render==="function") render();
+  });
+}
+function findSfOwner(title){
+  var t=(title||"").toLowerCase();
+  for(var i=0;i<_sfKeys.length;i++){if(t.indexOf(_sfKeys[i])>=0)return{name:_sfOwnerNames[_sfOwners[_sfKeys[i]]],key:_sfKeys[i]};}
+  return null;
+}
+function sfOwnerBadge(title){
+  var o=findSfOwner(title);
+  if(!o)return "";
+  return '\x3cspan class="sf-owner-tag"\x3e' + esc(o.name) + '\x3c/span\x3e';
+}
+
 function rowH(a, showScore) {
   const bm = isBm(a.id);
   const orig = a.titleOriginal ? `<div class="nrow-orig">${esc(a.titleOriginal)}</div>` : '';
@@ -741,7 +767,7 @@ function rowH(a, showScore) {
     <div class="nrow" data-aid="${esc(a.id)}" onclick="openDetail(this.dataset.aid)">
       <div class="nrow-body">
         <div class="nrow-date">${fmtD(a.pubDate)}</div>
-        <div class="nrow-title">${esc(a.title)}</div>
+        <div class="nrow-title">${esc(a.title)}${sfOwnerBadge(a.title)}</div>
         ${orig}
         <div class="nrow-summary">${esc(a.summaryShort || a.summary)}</div>
         <div class="nrow-meta">
@@ -988,6 +1014,7 @@ document.addEventListener('keydown', e => { if (e.key==='Escape') closeDetail();
 updateBmBadge();
 setInterval(loadAllFeeds, 30*60*1000);
 loadAllFeeds();
+loadSfOwners();
 </script>
 </body>
 </html>
