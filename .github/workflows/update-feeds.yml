@@ -1,0 +1,51 @@
+name: Update feeds
+on: workflow_dispatch
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          cat > p.py << 'END'
+          import re
+          from urllib.parse import quote_plus as qp
+          def gn(q):
+            return 'https://news.google.com/rss/search?q='+qp(q)+'&hl=ja&gl=JP&ceid=JP:ja'
+          F={
+            'deel':gn('"Deel" 採用 OR 人事 OR HR OR EOR'),
+            'funding_p':gn('site:thebridge.jp OR site:prtimes.jp 資金調達 OR スタートアップ OR シリーズ'),
+            'funding':gn('スタートアップ 資金調達 OR シリーズA OR シリーズB OR シリーズC'),
+            'ma_p':gn('site:maonline.jp OR site:nikkei.com OR site:toyokeizai.net M&A OR 買収 OR 海外進出'),
+            'ma':gn('M&A 買収 OR 合併 OR TOB OR MBO OR 上場廃止'),
+            'global_p':gn('site:nikkei.com OR site:toyokeizai.net 海外進出 OR グローバル展開 OR 海外拠点'),
+            'global':gn('海外進出 OR 海外展開 OR グローバル展開 OR 海外事業'),
+            'talent':gn('海外人材採用 OR グローバル人材 OR 外国人採用 OR リモートワーク 海外'),
+            'hr_p':gn('site:hrnote.jp OR site:roumu.com 海外 OR 外国人 OR 在留資格 OR 就労ビザ'),
+            'hr':gn('HR テック OR 人事テック OR 労務管理 OR 給与計算 SaaS'),
+            'inbound':gn('site:jetro.go.jp OR site:jp.techcrunch.com 日本進出 OR 対日投資'),
+            'competitor':gn('"Remote.com" OR "Papaya Global" OR "Velocity Global" OR "Oyster HR" OR "Rippling" OR "Globalization Partners"'),
+          }
+          M={'funding_p':'funding','ma_p':'ma','global_p':'global','hr_p':'hr','inbound':'global'}
+          fjs='const FEEDS = {\n'
+          for k,v in F.items():
+            fjs+=f"  {k}: '{v}',\n"
+          fjs+='};\n\nconst CATEGORY_MAP = {\n'
+          for k,v in M.items():
+            fjs+=f"  {k}: '{v}',\n"
+          fjs+='};\n'
+          with open('resolve-news.mjs','r') as f:
+            c=f.read()
+          c=re.sub(r'const FEEDS = \{[\s\S]*?\n\};',fjs,c,count=1)
+          c=re.sub(r'(\s+)category,(\n\s+resolvedUrl)',r'\1category: CATEGORY_MAP[category] || category,\2',c)
+          with open('resolve-news.mjs','w') as f:
+            f.write(c)
+          print('Done!')
+          END
+          python3 p.py
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resolve-news.mjs
+          git diff --staged --stat
+          git commit -m "Update RSS feeds to prioritize key sources"
+          git push
