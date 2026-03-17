@@ -1,0 +1,48 @@
+name: Optimize resolve
+on: workflow_dispatch
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          cat > p.js << 'ENDSCRIPT'
+          const fs = require('fs');
+          let c = fs.readFileSync('resolve-news.mjs', 'utf8');
+
+          // 1. Add Korean source exclusion patterns
+          c = c.replace(
+            "  /WoW!Korea/i,/KOREA WAVE/i,\n];",
+            "  /WoW!Korea/i,/KOREA WAVE/i,\n  /\\u{B9E4}\\u{C77C}\\u{ACBD}\\u{C81C}/u,/\\u{D55C}\\u{AD6D}\\u{ACBD}\\u{C81C}/u,/\\u{C870}\\u{C120}\\u{C77C}\\u{BCF4}/u,/\\u{C911}\\u{C559}\\u{C77C}\\u{BCF4}/u,/\\u{B3D9}\\u{C544}\\u{C77C}\\u{BCF4}/u,\n  /MK\\.co\\.kr/i,/hankyung/i,/chosun\\.com/i,\n];"
+          );
+
+          // 2. Reduce delay from 400ms to 100ms
+          c = c.replace(
+            "await new Promise(r => setTimeout(r, 400));",
+            "await new Promise(r => setTimeout(r, 100));"
+          );
+
+          // 3. Reduce timeouts from 10000 to 5000
+          c = c.replace(/AbortSignal\.timeout\(10000\)/g, 'AbortSignal.timeout(5000)');
+
+          // 4. Skip meta fetch for non-priority feeds
+          c = c.replace(
+            "        // Meta fetch\n        let img = '';\n        let summary = '';\n        if (isValidArticleUrl(resolvedUrl)) {",
+            "        // Meta fetch (priority feeds only for speed)\n        let img = '';\n        let summary = '';\n        const SKIP_META = ['funding','ma','global','hr','talent'];\n        if (isValidArticleUrl(resolvedUrl) && !SKIP_META.includes(category)) {"
+          );
+
+          fs.writeFileSync('resolve-news.mjs', c);
+          const v = fs.readFileSync('resolve-news.mjs', 'utf8');
+          console.log('100ms delay:', v.includes('setTimeout(r, 100)'));
+          console.log('5000 timeout:', v.includes('timeout(5000)'));
+          console.log('SKIP_META:', v.includes('SKIP_META'));
+          console.log('OK');
+          ENDSCRIPT
+          node p.js
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add resolve-news.mjs
+          git diff --cached --stat
+          git commit -m "Optimize: reduce timeouts, skip meta for broad feeds, Korean filter"
+          git push
