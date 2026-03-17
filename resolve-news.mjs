@@ -55,6 +55,8 @@ const EXCLUDE_PATTERNS = [
   /\bRBW\b/i,/\bHYBE\b/i,/Kstyle/i,/K-POP/i,/KPOP/i,
   /\bSM\s*Entertainment/i,/\bYG\s*Entertainment/i,/\bJYP/i,
   /WoW!Korea/i,/KOREA WAVE/i,
+  /\u{B9E4}\u{C77C}\u{ACBD}\u{C81C}/u,/\u{D55C}\u{AD6D}\u{ACBD}\u{C81C}/u,/\u{C870}\u{C120}\u{C77C}\u{BCF4}/u,/\u{C911}\u{C559}\u{C77C}\u{BCF4}/u,/\u{B3D9}\u{C544}\u{C77C}\u{BCF4}/u,
+  /MK\.co\.kr/i,/hankyung/i,/chosun\.com/i,
 ];
 
 function isRelevantArticle(title,source){
@@ -139,7 +141,7 @@ async function resolveByRedirect(url) {
     const resp = await fetch(url, {
       redirect: 'follow',
       headers: { 'User-Agent': UA, 'Accept': 'text/html', 'Accept-Language': 'ja,en;q=0.9' },
-      signal: AbortSignal.timeout(10000),
+      signal: AbortSignal.timeout(5000),
     });
 
     // HTTPãªãã¤ã¬ã¯ãã§è§£æ±ºã§ããå ´å
@@ -209,7 +211,7 @@ async function fetchArticleMeta(url) {
   try {
     const resp = await fetch(url, {
       headers: { 'User-Agent': UA, 'Accept': 'text/html,application/xhtml+xml', 'Accept-Language': 'ja,en;q=0.9' },
-      signal: AbortSignal.timeout(10000), redirect: 'follow',
+      signal: AbortSignal.timeout(5000), redirect: 'follow',
     });
     if (!resp.ok) return result;
     const html = await resp.text();
@@ -291,10 +293,11 @@ async function main() {
           failedCount++;
         }
 
-        // Meta fetch
+        // Meta fetch (priority feeds only for speed)
         let img = '';
         let summary = '';
-        if (isValidArticleUrl(resolvedUrl)) {
+        const SKIP_META = ['funding','ma','global','hr','talent'];
+        if (isValidArticleUrl(resolvedUrl) && !SKIP_META.includes(category)) {
           console.log('    Fetching meta...');
           const meta = await fetchArticleMeta(resolvedUrl);
           img = meta.img; summary = meta.summary;
@@ -303,7 +306,7 @@ async function main() {
         allArticles.push({ ...item, category, resolvedUrl, img, summary });
 
         // ã¬ã¼ãå¶éåé¿ã®ããå°ãå¾ã¤
-        await new Promise(r => setTimeout(r, 400));
+        await new Promise(r => setTimeout(r, 100));
       }
     } catch (e) {
       console.log('  Error: ' + e.message);
