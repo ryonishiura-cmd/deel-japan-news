@@ -831,7 +831,7 @@ function rowH(a, showScore) {
     <div class="nrow" data-aid="${esc(a.id)}" onclick="openDetail(this.dataset.aid)">
       <div class="nrow-body">
         <div class="nrow-date">${fmtD(a.pubDate)}</div>
-        <div class="nrow-title">${esc(a.title)}${sfOwnerBadge(a.title,a.summary)${fundingCoBadge(a)}}</div>
+        <div class="nrow-title">${esc(a.title)}${sfOwnerBadge(a.title,a.summary)}${fundingCoBadge(a)}</div>
         ${orig}
         <div class="nrow-summary">${esc(a.summaryShort || a.summary)}</div>
         <div class="nrow-meta">
