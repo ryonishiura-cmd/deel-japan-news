@@ -735,8 +735,10 @@ function thumbH(a) {
 // SF Owner matching
 var _sfOwners={},_sfKeys=[],_sfOwnerNames=[];
 // JP/EN stopwords - common generic terms that cause false positives
-var _sfJpStop={"日本":1,"東京":1,"大阪":1,"グローバル":1,"グローバ":1,"グループ":1,"ビジネス":1,"サービス":1,"テクノロジー":1,"テクノロジーズ":1,"システム":1,"ソリューション":1,"ソリューションズ":1,"コンサルティング":1,"マネジメント":1,"ホールディングス":1,"パートナーズ":1,"ネットワーク":1,"メディア":1,"キャピタル":1,"イノベーション":1,"デジタル":1,"プラットフォーム":1,"ビジョン":1,"ワークス":1,"株式会社":1,"有限会社":1,"合同会社":1,"プライム":1,"ベンチャー":1,"マーケティング":1,"テック":1,"コーポレーション":1,"エンジニアリング":1,"ソフトウェア":1,"リサーチ":1,"エンタープライズ":1,"インターナショナル":1,"コミュニケーション":1,"コミュニケーションズ":1,"ファイナンス":1,"デザイン":1,"スタジオ":1,"ラボ":1,"ファクトリー":1,"リソース":1,"クリエイティブ":1,"プロジェクト":1,"スタートアップ":1,"ファンド":1,"アセット":1,"エステート":1,"インベストメント":1,"プロダクト":1,"スパート":1,"エージェント":1,"エージェンシー":1,"アカデミー":1,"アドバイザーズ":1};
+var _sfJpStop={"日本":1,"東京":1,"大阪":1,"グローバル":1,"グローバ":1,"グループ":1,"ビジネス":1,"サービス":1,"テクノロジー":1,"テクノロジーズ":1,"システム":1,"ソリューション":1,"ソリューションズ":1,"コンサルティング":1,"マネジメント":1,"ホールディングス":1,"パートナーズ":1,"ネットワーク":1,"メディア":1,"キャピタル":1,"イノベーション":1,"デジタル":1,"プラットフォーム":1,"ビジョン":1,"ワークス":1,"株式会社":1,"有限会社":1,"合同会社":1,"プライム":1,"ベンチャー":1,"マーケティング":1,"テック":1,"コーポレーション":1,"エンジニアリング":1,"ソフトウェア":1,"リサーチ":1,"エンタープライズ":1,"インターナショナル":1,"コミュニケーション":1,"コミュニケーションズ":1,"ファイナンス":1,"デザイン":1,"スタジオ":1,"ラボ":1,"ファクトリー":1,"リソース":1,"クリエイティブ":1,"プロジェクト":1,"スタートアップ":1,"ファンド":1,"アセット":1,"エステート":1,"インベストメント":1,"プロダクト":1,"スパート":1,"エージェント":1,"エージェンシー":1,"アカデミー":1,"アドバイザーズ":1,"ロジスティクス":1,"ライテック":1,"プロパティ":1,"コムテック":1,"フィナンシャル":1,"ホテル":1,"アセット":1,"ジャパン":1,"オートモーティブ":1,"エレクトロニクス":1,"ロジスコ":1,"ファーマ":1,"クラウド":1,"モバイル":1,"ヘルスケア":1,"インダストリー":1,"セキュリティ":1,"リアルティ":1,"エナジー":1,"フーズ":1,"リテール":1,"トレーディング":1,"ケミカル":1,"マテリアル":1,"トラスト":1,"クレジット":1,"リース":1,"アドバイザリー":1,"コンサル":1,"ライフ":1,"メディカル":1,"インシュアランス":1,"カンパニー":1,"リミテッド":1,"システムズ":1};
 var _sfEnStop={co:1,ltd:1,inc:1,the:1,and:1,for:1,japan:1,tokyo:1,llc:1,gk:1,corporation:1,company:1,group:1,global:1,international:1,technology:1,technologies:1,solutions:1,consulting:1,management:1,holdings:1,partners:1,service:1,services:1,business:1,digital:1,media:1,capital:1,finance:1,innovation:1,platform:1,agency:1,design:1,studio:1,works:1,factory:1,project:1,limited:1,marketing:1,venture:1,ventures:1,investment:1,research:1,software:1,engineering:1,systems:1,fund:1,asset:1,prime:1,tech:1,real:1,estate:1};
+var _sfCoreStop={"スター":1,"クロス":1,"ランド":1,"プライ":1,"ブランド":1,"ジェン":1,"タイム":1,"リード":1,"スマート":1,"トライ":1,"インター":1,"エース":1,"ポータル":1,"インテ":1,"ダイヤモンド":1,"ソフトウエア":1,"インターネット":1,"フロント":1,"ネクスト":1,"アクセス":1,"ベース":1,"リンク":1,"フロー":1,"コード":1,"ビュー":1,"ウェイ":1,"ポイント":1,"センター":1,"データ":1,"ネット":1,"ウェブ":1,"アプリ":1,"サイト":1,"ウィル":1,"ヒューマン":1,"シャドー":1,"カーブアウト":1,"ベンチャーズ":1,"インサイト":1,"ストリーム":1};
+
 function _sfIsStopword(v){var h=/[\u3000-\u9fff]/.test(v);return h?!!_sfJpStop[v]:!!_sfEnStop[v];}
 function splitSfKey(key){
   var k=key.trim().toLowerCase(),r=[];
@@ -758,34 +760,45 @@ function splitSfKey(key){
   }
   return r;
 }
+function stripSfSuffix(name){
+var n=name.replace(/[\u30FB\s\u3000()\uff08\uff09\[\]\u3010\u3011,\uff0c\uff3c\uff5c\u203c]+/g,"");
+var sk=Object.keys(_sfJpStop);sk.sort(function(a,b){return b.length-a.length;});
+var ch=true;while(ch){ch=false;for(var i=0;i<sk.length;i++){var s=sk[i];if(n.length>s.length+1&&n.indexOf(s)===n.length-s.length){n=n.substring(0,n.length-s.length);ch=true;break;}}}
+return n;
+}
 function loadSfOwners(){
-  fetch("data/sf_owners.tsv").then(function(r){return r.text();}).then(function(text){
-    var lines=text.trim().split("\n");
-    _sfOwnerNames=lines[0].split("\t");
-    var seen={};
-    for(var i=1;i<lines.length;i++){
-      var p=lines[i].split("\t");
-      if(p.length<2)continue;
-      var oid=parseInt(p[1]);
-      var keys=splitSfKey(p[0]);
-      for(var j=0;j<keys.length;j++){
-        if(!seen[keys[j]]){seen[keys[j]]=1;_sfOwners[keys[j]]=oid;_sfKeys.push(keys[j]);}
-      }
-    }
-    _sfKeys.sort(function(a,b){return b.length-a.length;});
-    console.log("SF owners loaded:",_sfKeys.length,"keys from",lines.length-1,"accounts");
-    if(typeof render==="function") render();
-  });
+fetch("data/sf_owners.tsv").then(function(r){return r.text();}).then(function(text){
+var lines=text.trim().split("\n");
+_sfOwnerNames=lines[0].split("\t");
+var seen={};
+for(var i=1;i<lines.length;i++){
+var p=lines[i].split("\t");
+if(p.length<2)continue;
+var oid=parseInt(p[1]);
+var keys=splitSfKey(p[0]);
+for(var j=0;j<keys.length;j++){
+if(!seen[keys[j]]){seen[keys[j]]=1;_sfOwners[keys[j]]=oid;_sfKeys.push(keys[j]);}
 }
-function findSfOwner(title){
-  var t=(title||"").toLowerCase();
-  for(var i=0;i<_sfKeys.length;i++){if(t.indexOf(_sfKeys[i])>=0)return{name:_sfOwnerNames[_sfOwners[_sfKeys[i]]],key:_sfKeys[i]};}
-  return null;
+var core=stripSfSuffix(p[0].trim().toLowerCase());
+var orig=p[0].trim().toLowerCase().replace(/[\u30FB\s\u3000()\uff08\uff09\[\]\u3010\u3011,\uff0c\uff3c\uff5c\u203c]+/g,"");
+if(core.length>=3&&core!==orig&&/[\u3000-\u9fff]/.test(core)&&!_sfCoreStop[core]&&!seen[core]){
+seen[core]=1;_sfOwners[core]=oid;_sfKeys.push(core);
 }
-function sfOwnerBadge(title){
-  var o=findSfOwner(title);
-  if(!o)return "";
-  return '\x3cspan class="sf-owner-tag"\x3e' + esc(o.name) + '\x3c/span\x3e';
+}
+_sfKeys.sort(function(a,b){return b.length-a.length;});
+console.log("SF owners loaded:",_sfKeys.length,"keys from",lines.length-1,"accounts");
+if(typeof render==="function") render();
+});
+}
+function findSfOwner(title,summary){
+var t=((title||"")+" "+(summary||"")).toLowerCase();
+for(var i=0;i<_sfKeys.length;i++){if(t.indexOf(_sfKeys[i])>=0)return{name:_sfOwnerNames[_sfOwners[_sfKeys[i]]],key:_sfKeys[i]};}
+return null;
+}
+function sfOwnerBadge(title,summary){
+var o=findSfOwner(title,summary);
+if(!o)return "";
+return '<span class="sf-owner-tag">' + esc(o.name) + '</span>';
 }
 
 function rowH(a, showScore) {
@@ -797,7 +810,7 @@ function rowH(a, showScore) {
     <div class="nrow" data-aid="${esc(a.id)}" onclick="openDetail(this.dataset.aid)">
       <div class="nrow-body">
         <div class="nrow-date">${fmtD(a.pubDate)}</div>
-        <div class="nrow-title">${esc(a.title)}${sfOwnerBadge(a.title)}</div>
+        <div class="nrow-title">${esc(a.title)}${sfOwnerBadge(a.title,a.summary)}</div>
         ${orig}
         <div class="nrow-summary">${esc(a.summaryShort || a.summary)}</div>
         <div class="nrow-meta">
