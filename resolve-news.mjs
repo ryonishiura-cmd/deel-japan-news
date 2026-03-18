@@ -11,6 +11,11 @@ import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'fs';
 const FEEDS = {
   deel: 'https://news.google.com/rss/search?q=%22Deel%22+%E6%8E%A1%E7%94%A8+OR+%E4%BA%BA%E4%BA%8B+OR+HR+OR+EOR&hl=ja&gl=JP&ceid=JP:ja',
   funding_p: 'https://news.google.com/rss/search?q=site%3Athebridge.jp+OR+site%3Aprtimes.jp+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94+OR+%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAA+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAB+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAC&hl=ja&gl=JP&ceid=JP:ja',
+  funding_nk: 'https://news.google.com/rss/search?q=site%3Anikkei.com+%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94+OR+%E5%87%BA%E8%B3%87&hl=ja&gl=JP&ceid=JP:ja',
+  funding_vt: 'https://news.google.com/rss/search?q=site%3Aventure.jp+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94&hl=ja&gl=JP&ceid=JP:ja',
+  funding_sdb: 'https://news.google.com/rss/search?q=site%3Astartup-db.com+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94&hl=ja&gl=JP&ceid=JP:ja',
+  funding_ini: 'https://news.google.com/rss/search?q=site%3Ainitial.inc+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94&hl=ja&gl=JP&ceid=JP:ja',
+  funding_sil: 'https://news.google.com/rss/search?q=site%3Astartup-il.com+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94&hl=ja&gl=JP&ceid=JP:ja',
   funding: 'https://news.google.com/rss/search?q=%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97+%E8%B3%87%E9%87%91%E8%AA%BF%E9%81%94+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAA+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAB+OR+%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BAC&hl=ja&gl=JP&ceid=JP:ja',
   ma_p: 'https://news.google.com/rss/search?q=site%3Amaonline.jp+OR+site%3Anikkei.com+OR+site%3Atoyokeizai.net+M%26A+OR+%E8%B2%B7%E5%8F%8E+OR+%E6%B5%B7%E5%A4%96%E9%80%B2%E5%87%BA&hl=ja&gl=JP&ceid=JP:ja',
   ma: 'https://news.google.com/rss/search?q=M%26A+%E8%B2%B7%E5%8F%8E+OR+%E5%90%88%E4%BD%B5+OR+TOB+OR+MBO+OR+%E4%B8%8A%E5%A0%B4%E5%BB%83%E6%AD%A2&hl=ja&gl=JP&ceid=JP:ja',
@@ -29,6 +34,11 @@ const CATEGORY_MAP = {
   global_p: 'global',
   hr_p: 'hr',
   inbound: 'global',
+  funding_nk: 'funding',
+  funding_vt: 'funding',
+  funding_sdb: 'funding',
+  funding_ini: 'funding',
+  funding_sil: 'funding',
 };
 
 
@@ -62,6 +72,12 @@ const EXCLUDE_PATTERNS = [
 function isRelevantArticle(title,source){
   const text=title+' '+(source||'');
   return !EXCLUDE_PATTERNS.some(p=>p.test(text));
+}
+
+// --- Funding relevance filter ---
+const FUNDING_KW = /資金調達|調達額|億円|万円|出資|増資|ラウンド|シリーズ[A-Z]|シード|ファンド|エンジェル|バリュエーション|IPO|上場/;
+function isFundingRelevant(title) {
+  return FUNDING_KW.test(title || '');
 }
 
 // --- HTMLã¨ã³ãã£ãã£ãã³ã¼ã ---
@@ -303,7 +319,7 @@ async function main() {
           img = meta.img; summary = meta.summary;
           if (img || summary) { metaFetchedCount++; }
         }
-        allArticles.push({ ...item, category, resolvedUrl, img, summary });
+        allArticles.push({ ...item, category: CATEGORY_MAP[category] || category, resolvedUrl, img, summary });
 
         // ã¬ã¼ãå¶éåé¿ã®ããå°ãå¾ã¤
         await new Promise(r => setTimeout(r, 100));
@@ -319,6 +335,11 @@ async function main() {
     seen.add(a.link);
     if(!isRelevantArticle(a.title,a.source)){
       console.log('  Excluded: '+a.title.substring(0,60));
+      return false;
+    }
+    const _fcat = CATEGORY_MAP[a.category] || a.category;
+    if (_fcat === 'funding' && !isFundingRelevant(a.title)) {
+      console.log('  Funding irrelevant: ' + a.title.substring(0, 60));
       return false;
     }
     return true;
