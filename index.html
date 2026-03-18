@@ -771,6 +771,7 @@ fetch("data/sf_owners.tsv").then(function(r){return r.text();}).then(function(te
 var lines=text.trim().split("\n");
 _sfOwnerNames=lines[0].split("\t");
 var seen={};
+// Pass 1: register all original keys first
 for(var i=1;i<lines.length;i++){
 var p=lines[i].split("\t");
 if(p.length<2)continue;
@@ -779,6 +780,12 @@ var keys=splitSfKey(p[0]);
 for(var j=0;j<keys.length;j++){
 if(!seen[keys[j]]){seen[keys[j]]=1;_sfOwners[keys[j]]=oid;_sfKeys.push(keys[j]);}
 }
+}
+// Pass 2: add suffix-stripped brand cores (only if not already registered)
+for(var i=1;i<lines.length;i++){
+var p=lines[i].split("\t");
+if(p.length<2)continue;
+var oid=parseInt(p[1]);
 var core=stripSfSuffix(p[0].trim().toLowerCase());
 var orig=p[0].trim().toLowerCase().replace(/[\u30FB\s\u3000()\uff08\uff09\[\]\u3010\u3011,\uff0c\uff3c\uff5c\u203c]+/g,"");
 if(core.length>=3&&core!==orig&&/[\u3000-\u9fff]/.test(core)&&!_sfCoreStop[core]&&!seen[core]){
