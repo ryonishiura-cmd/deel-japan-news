@@ -734,39 +734,29 @@ function thumbH(a) {
 
 // SF Owner matching
 var _sfOwners={},_sfKeys=[],_sfOwnerNames=[];
+// JP/EN stopwords - common generic terms that cause false positives
+var _sfJpStop={"日本":1,"東京":1,"大阪":1,"グローバル":1,"グローバ":1,"グループ":1,"ビジネス":1,"サービス":1,"テクノロジー":1,"テクノロジーズ":1,"システム":1,"ソリューション":1,"ソリューションズ":1,"コンサルティング":1,"マネジメント":1,"ホールディングス":1,"パートナーズ":1,"ネットワーク":1,"メディア":1,"キャピタル":1,"イノベーション":1,"デジタル":1,"プラットフォーム":1,"ビジョン":1,"ワークス":1,"株式会社":1,"有限会社":1,"合同会社":1,"プライム":1,"ベンチャー":1,"マーケティング":1,"テック":1,"コーポレーション":1,"エンジニアリング":1,"ソフトウェア":1,"リサーチ":1,"エンタープライズ":1,"インターナショナル":1,"コミュニケーション":1,"コミュニケーションズ":1,"ファイナンス":1,"デザイン":1,"スタジオ":1,"ラボ":1,"ファクトリー":1,"リソース":1,"クリエイティブ":1,"プロジェクト":1,"スタートアップ":1,"ファンド":1,"アセット":1,"エステート":1,"インベストメント":1,"プロダクト":1,"スパート":1,"エージェント":1,"エージェンシー":1,"アカデミー":1,"アドバイザーズ":1};
+var _sfEnStop={co:1,ltd:1,inc:1,the:1,and:1,for:1,japan:1,tokyo:1,llc:1,gk:1,corporation:1,company:1,group:1,global:1,international:1,technology:1,technologies:1,solutions:1,consulting:1,management:1,holdings:1,partners:1,service:1,services:1,business:1,digital:1,media:1,capital:1,finance:1,innovation:1,platform:1,agency:1,design:1,studio:1,works:1,factory:1,project:1,limited:1,marketing:1,venture:1,ventures:1,investment:1,research:1,software:1,engineering:1,systems:1,fund:1,asset:1,prime:1,tech:1,real:1,estate:1};
+function _sfIsStopword(v){var h=/[\u3000-\u9fff]/.test(v);return h?!!_sfJpStop[v]:!!_sfEnStop[v];}
 function splitSfKey(key){
-  var parts=[];
-  // Split on brackets
-  var segs=key.replace(/[\[\]\(\)\uff08\uff09\u3010\u3011\u300c\u300d]/g,"\t").split("\t");
-  for(var s=0;s<segs.length;s++){
-    var seg=segs[s].trim();
-    if(seg.length<2)continue;
-    parts.push(seg);
-    // Split CJK vs Latin runs within each segment
-    var cjk=seg.match(/[\u3000-\u9fff\uff00-\uffef]+/g);
-    if(cjk)for(var c=0;c<cjk.length;c++){if(cjk[c].length>=2)parts.push(cjk[c]);}
-    var lat=seg.match(/[a-zA-Z][a-zA-Z0-9\s&\-\.]+[a-zA-Z0-9]/g);
-    if(lat)for(var l=0;l<lat.length;l++){if(lat[l].trim().length>=4)parts.push(lat[l].trim());}
-  }
-  // Also split on delimiters
-  var delims=["\uff5c","|","/","\uff0f","\u30fb","\u3000","  "," - "];
-  for(var d=0;d<delims.length;d++){
-    if(key.indexOf(delims[d])>=0){
-      var dp=key.split(delims[d]);
-      for(var di=0;di<dp.length;di++){var dd=dp[di].trim();if(dd.length>=2)parts.push(dd);}
+  var k=key.trim().toLowerCase(),r=[];
+  // Keep full key if >= 4 chars and not a stopword
+  if(k.length>=4&&!_sfIsStopword(k))r.push(k);
+  // Only split if key has both CJK and Latin characters
+  var hC=/[\u3000-\u9fff]/.test(k),hL=/[a-zA-Z]/.test(k);
+  if(hC&&hL){
+    var cR=/[\u3000-\u9fff\uff00-\uffef]/,lR=/[a-zA-Z0-9]/;
+    var c="",cT="",runs=[];
+    for(var i=0;i<k.length;i++){
+      var ch=k[i],tp=cR.test(ch)?"c":(lR.test(ch)?"l":"p");
+      if(tp==="p"){c+=ch;continue;}
+      if(cT&&cT!==tp){var t=c.trim();if(t.length>=4)runs.push(t);c=ch;cT=tp;}
+      else{c+=ch;cT=tp;}
     }
+    if(c.trim().length>=4)runs.push(c.trim());
+    for(var j=0;j<runs.length;j++){if(runs[j].length>=6&&!_sfIsStopword(runs[j]))r.push(runs[j]);}
   }
-  // Deduplicate and filter
-  var stop={co:1,ltd:1,inc:1,the:1,and:1,for:1,japan:1,tokyo:1,llc:1,gk:1,kk:1,corporation:1,company:1,group:1};
-  var seen={},result=[];
-  for(var p=0;p<parts.length;p++){
-    var v=parts[p].toLowerCase().trim();
-    if(seen[v])continue;
-    var hasCjk=/[\u3000-\u9fff]/.test(v);
-    if(hasCjk&&v.length>=2){seen[v]=1;result.push(v);}
-    else if(!hasCjk&&v.length>=4&&!stop[v]){seen[v]=1;result.push(v);}
-  }
-  return result;
+  return r;
 }
 function loadSfOwners(){
   fetch("data/sf_owners.tsv").then(function(r){return r.text();}).then(function(text){
