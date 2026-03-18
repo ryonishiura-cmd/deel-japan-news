@@ -136,6 +136,7 @@
   .bottom-bar a { color: #0052ff; cursor: pointer; font-weight: 600; text-decoration: none; }
 
 .sf-owner-tag{display:inline-block;padding:1px 7px;border-radius:10px;font-size:.72rem;font-weight:600;margin-left:6px;vertical-align:middle;color:#fff;background:#6366f1}
+.funding-co-tag { display:inline-block; background:#0d9488; color:#fff; font-size:11px; padding:2px 8px; border-radius:10px; margin-left:6px; font-weight:600; vertical-align:middle; }
 </style>
 </head>
 <body>
@@ -808,6 +809,19 @@ if(!o)return "";
 return '<span class="sf-owner-tag">' + esc(o.name) + '</span>';
 }
 
+function fundingCoBadge(a){
+if(a.category!=='funding'&&a.category!=='funding_p')return '';
+var t=a.title||'';
+var m=t.match(/株式会社\s*([^\s、,がはをの「（(]+)/);
+if(m&&m[1].length>=2)return '<span class="funding-co-tag">'+esc(m[1])+'</span>';
+m=t.match(/([^\s、,」）)]+?)\s*株式会社/);
+if(m&&m[1].length>=2)return '<span class="funding-co-tag">'+esc(m[1])+'</span>';
+if(/資金調達|調達|出資|億円|ラウンド/.test(t)){
+m=t.match(/^(.+?)[、がは]/);
+if(m&&m[1].length>=2&&m[1].length<=25)return '<span class="funding-co-tag">'+esc(m[1])+'</span>';
+}
+return '';
+}
 function rowH(a, showScore) {
   const bm = isBm(a.id);
   const orig = a.titleOriginal ? `<div class="nrow-orig">${esc(a.titleOriginal)}</div>` : '';
@@ -817,7 +831,7 @@ function rowH(a, showScore) {
     <div class="nrow" data-aid="${esc(a.id)}" onclick="openDetail(this.dataset.aid)">
       <div class="nrow-body">
         <div class="nrow-date">${fmtD(a.pubDate)}</div>
-        <div class="nrow-title">${esc(a.title)}${sfOwnerBadge(a.title,a.summary)}</div>
+        <div class="nrow-title">${esc(a.title)}${sfOwnerBadge(a.title,a.summary)${fundingCoBadge(a)}}</div>
         ${orig}
         <div class="nrow-summary">${esc(a.summaryShort || a.summary)}</div>
         <div class="nrow-meta">
