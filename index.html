@@ -793,6 +793,21 @@ if(core.length>=3&&core!==orig&&/[\u3000-\u9fff]/.test(core)&&!_sfCoreStop[core]
 seen[core]=1;_sfOwners[core]=oid;_sfKeys.push(core);
 }
 }
+// Pass 3: English name tokens
+for(var i=1;i<lines.length;i++){
+var p=lines[i].split("\t");
+if(p.length<2)continue;
+var oid=parseInt(p[p.length-1],10);
+var raw=p.slice(0,p.length-1).join(" ");
+var enTokens=raw.match(/[A-Za-z][A-Za-z0-9.\-]{1,}(?:\s+[A-Za-z][A-Za-z0-9.\-]*){0,4}/g);
+if(!enTokens)continue;
+for(var j=0;j<enTokens.length;j++){
+var et=enTokens[j].trim().toLowerCase();
+if(et.length<2)continue;
+if(/^(the|and|for|ltd|inc|co|corp|gk|kk|llc|group|japan|tokyo|in|of|or|is|it|by|to|at|on)$/i.test(et))continue;
+if(!seen[et]){seen[et]=1;_sfOwners[et]=oid;_sfKeys.push(et);}
+}
+}
 _sfKeys.sort(function(a,b){return b.length-a.length;});
 console.log("SF owners loaded:",_sfKeys.length,"keys from",lines.length-1,"accounts");
 if(typeof render==="function") render();
