@@ -331,8 +331,8 @@ async function main() {
 
   const seen = new Set();
   const unique = allArticles.filter(a => {
-    if (seen.has(a.link)) return false;
-    seen.add(a.link);
+    if (seen.has(a.link)||seen.has(a.title)) return false;
+    seen.add(a.link);seen.add(a.title);
     if(!isRelevantArticle(a.title,a.source)){
       console.log('  Excluded: '+a.title.substring(0,60));
       return false;
