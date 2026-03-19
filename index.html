@@ -808,6 +808,17 @@ if(/^(the|and|for|ltd|inc|co|corp|gk|kk|llc|group|japan|tokyo|in|of|or|is|it|by|
 if(!seen[et]){seen[et]=1;_sfOwners[et]=oid;_sfKeys.push(et);}
 }
 }
+// Pass 4: English suffix stripping (Corp., Inc., Ltd., Holdings, etc.)
+var EN_SFX=/\s*(?:Corp\.?|Inc\.?|Ltd\.?|Co\.?|LLC|LLP|GK|KK|K\.K\.|Holdings|Group|Corporation|Company|Limited|Pte|Pvt|SA|AG|GmbH|SE|NV|BV|Pty|PLC)\s*$/i;
+for(var i=1;i<lines.length;i++){
+var p=lines[i].split("\t");
+if(p.length<2)continue;
+var oid=parseInt(p[p.length-1],10);
+var raw=p.slice(0,p.length-1).join(" ").trim().toLowerCase();
+if(!EN_SFX.test(raw))continue;
+var short=raw.replace(EN_SFX,"").replace(/[,.]\s*$/,"").trim();
+if(short.length>=2&&!seen[short]){seen[short]=1;_sfOwners[short]=oid;_sfKeys.push(short);}
+}
 _sfKeys.sort(function(a,b){return b.length-a.length;});
 console.log("SF owners loaded:",_sfKeys.length,"keys from",lines.length-1,"accounts");
 if(typeof render==="function") render();
