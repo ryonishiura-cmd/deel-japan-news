@@ -329,10 +329,12 @@ async function main() {
     }
   }
 
+// Normalize title: strip trailing " - SourceName" and whitespace for dedup
+function normTitle(t){ return (t||"").replace(/\s*[\-\u2013\u2014\|]\s*[^\-\u2013\u2014\|]+$/, "").trim(); }
   const seen = new Set();
   const unique = allArticles.filter(a => {
-    if (seen.has(a.link)||seen.has(a.title)) return false;
-    seen.add(a.link);seen.add(a.title);
+    if (seen.has(a.link)||seen.has(a.title)||seen.has(normTitle(a.title))) return false;
+    seen.add(a.link);seen.add(a.title);seen.add(normTitle(a.title));
     if(!isRelevantArticle(a.title,a.source)){
       console.log('  Excluded: '+a.title.substring(0,60));
       return false;
