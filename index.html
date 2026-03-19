@@ -816,7 +816,7 @@ if(p.length<2)continue;
 var oid=parseInt(p[p.length-1],10);
 var raw=p.slice(0,p.length-1).join(" ").trim().toLowerCase();
 if(!EN_SFX.test(raw))continue;
-var short=raw.replace(EN_SFX,"").replace(/[,.]\s*$/,"").trim();
+var short=raw.replace(/\s*\([^)]*\)\s*/g,"").replace(EN_SFX,"").replace(/[,.]\s*$/,"").trim();
 if(short.length>=2&&!seen[short]){seen[short]=1;_sfOwners[short]=oid;_sfKeys.push(short);}
 }
 _sfKeys.sort(function(a,b){return b.length-a.length;});
@@ -829,9 +829,9 @@ var t=((title||"")+" "+(summary||"")).toLowerCase();
 for(var i=0;i<_sfKeys.length;i++){if(t.indexOf(_sfKeys[i])>=0)return{name:_sfOwnerNames[_sfOwners[_sfKeys[i]]],key:_sfKeys[i]};}
 return null;
 }
-function sfOwnerBadge(title,summary){
+function sfOwnerBadge(title,summary,cat){
 var o=findSfOwner(title,summary);
-if(!o)return "";
+if(!o||cat==="deel")return "";
 return '<span class="sf-owner-tag">' + esc(o.name) + '</span>';
 }
 
@@ -857,7 +857,7 @@ function rowH(a, showScore) {
     <div class="nrow" data-aid="${esc(a.id)}" onclick="openDetail(this.dataset.aid)">
       <div class="nrow-body">
         <div class="nrow-date">${fmtD(a.pubDate)}</div>
-        <div class="nrow-title">${esc(a.title)}${sfOwnerBadge(a.title,a.summary)}${fundingCoBadge(a)}</div>
+        <div class="nrow-title">${esc(a.title)}${sfOwnerBadge(a.title,a.summary,a.category)}${fundingCoBadge(a)}</div>
         ${orig}
         <div class="nrow-summary">${esc(a.summaryShort || a.summary)}</div>
         <div class="nrow-meta">
