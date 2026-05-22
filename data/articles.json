@@ -1,11 +1,563 @@
 {
-  "updatedAt": "2026-05-22T05:07:52.464Z",
-  "totalArticles": 421,
-  "resolvedInThisRun": 283,
-  "cachedFromPrevious": 356,
-  "failedToResolve": 1,
-  "metaFetched": 218,
+  "updatedAt": "2026-05-22T09:34:47.705Z",
+  "totalArticles": 428,
+  "resolvedInThisRun": 282,
+  "cachedFromPrevious": 358,
+  "failedToResolve": 0,
+  "metaFetched": 225,
   "articles": [
+    {
+      "title": "BYD、軽EV「ラッコ」発売前に展示 全国6カ所で開催 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPdlc3RFQ1dVRNemxFdkFHT1E1aERDSm1XQVVQdUVPUUtQMkFUNEVHWXA3aVIwZFBTLTk3OVMxbjY4TEt1WEEtb2ZLMUlnT2JzbjBCZkpHNnFsYVNLNWZrZG0tRllYMC1RdDgwX0xod2ZiVHJRd2t3amhQQjgzWmNIRWVHT2VzN1MyazhPM2pfMklNWUxYSjNxUDBISWkyczBMYWhMUFdpeWQ?oc=5",
+      "pubDate": "Fri, 22 May 2026 09:11:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGXZQOUC227930S6A520C2000000&scode=7201&ba=1",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3061334022052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=0e0542731360fff87e2c7a2e1c296ee6",
+      "summary": "中国の電気自動車（EV）大手、比亜迪（BYD）の日本法人は22日、2026年夏に発売予定の軽EV「ラッコ」を展示するキャンペーンを始めると発表した。全国6カ所を巡る。発売前の実車展示により、消費者の"
+    },
+    {
+      "title": "上場企業の26年3月期、5年連続最高益 利上げやAI需要の恩恵 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOQ3RBcnJFOVl4bHNRUHJXYXRGRHNxYy1mQU5mQVhFcDVLSHFKR2M3TTBJMmVxSFBGT2ExSnZLWGNNZi03N3g5dy1La25CMTZvNlZPSHVLYko4ajFPWXVsN04wY0tjQ19YRmREcjE0YndtRGI4YUQxMFV0QkxnV3hrOTFsdFY5UlZJaF84dUxOUnY5SHZiZUx0a2x3Z3FsSGU1TFZzMmlaZkc?oc=5",
+      "pubDate": "Fri, 22 May 2026 09:00:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGXZQOUB199T70Z10C26A5000000&scode=7203&ba=3",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3057301021052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.83&fp-y=0.8&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=75004c6ee23b988e9687a8e44d36c135",
+      "summary": "国内上場企業の2026年3月期の純利益が5年連続で過去最高を更新した。全36業種のうち26業種で損益が改善した。利上げで銀行の利益が伸びた。人工知能（AI）需要の拡大を背景にキオクシアホールディング"
+    },
+    {
+      "title": "キオクシア、意外に低いPERの天井 巨額利益が一過性なら10倍 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNkg5N3cwTFVqN1I2cFVJOHoxTTVJWEhPSmlpU0s3Q2w3RG5UUWhQUGF5akFTQ2hKNG1xdVBJRUtCeEhybGgxQzFlRUlPNUlIMUNWRGFXRnNIN21ZVU5ONmZHRHZrNkZsVGhtOUwyRVI4azZaQktCbF9JM19WRnFDc1FQd3pfYlhMRkI2WC1Ed1BjaHU5WTh3?oc=5",
+      "pubDate": "Fri, 22 May 2026 08:54:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/nkd/company/us/GS/news/?DisplayType=4&ng=DGXZQOUB21CS0021052026000000",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3058455022052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=453cf6a929d810a43201e2a6f32d5f19",
+      "summary": "株式相場をけん引するキオクシアホールディングス株の「天井」が意識されている。2027年3月期の予想PER（株価収益率）は7倍と低位にあり、市場では意外にも10倍超えは難しいとの指摘が多い。\n　22日の"
+    },
+    {
+      "title": "国内航空網維持へ、中堅航空への出資規制を撤廃 国交省の有識者会議 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMm9TcVRIODhUSlVYQi0zTGF2WkgzWGxla1pUQzhIMlF4VzlYbXdCN0RkQUl4S2diRkVZM1dEYW9uS0RfLURENV93REZTU3J5bkl5WnVlazJxU3lOSHlYNzJ5RFBONGlGUURsdXFld2RmMkE2QmM4cF9JaF9vZWhUQ0VsODJaREs4alpVVGY3dkk1MWxBX2FkMG1oLWpYbjl3R1E5ZG1R?oc=5",
+      "pubDate": "Fri, 22 May 2026 08:40:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=134&ng=DGXZQOUA221F30S6A520C2000000",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3059154022052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=7c1327a653fc6658c6897c155509cb7a",
+      "summary": "国土交通省は22日開いた「国内航空のあり方に関する有識者会議」でとりまとめ案を示した。大手航空から中堅航空への出資を実質的に20%までとしてきた規制を撤廃する。合併などの経営判断で選択肢を増やす。"
+    },
+    {
+      "title": "在庫戦略モデルでモノづくりの価値をより高みへ！ 製造業スタートアップ・FACTORY X がシードラウンドにて1億円の資金調達を実施［FACTORY X］ - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5CUjdMTUZMNUlfYm13c2lZaHQySjdfUDZOckd4aTh0d21QYnBtZDAtMjJkRzA5d1Y5RElUNGRoZ0UxTW9McnlXSl96VWtLRmh3T2g4bTJtVTJhNmdjYVlXalhXdUU1T3FIM1VHdUFnSFZnbVpCS0tlUkNfZEE?oc=5",
+      "pubDate": "Fri, 22 May 2026 08:29:56 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://www.nikkei.com/compass/content/PRTKDB000000020_000116690/preview",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "日産、スポーツ車「ニスモ」の海外初拠点 豪州で2026年後半に - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9rMlBkNVhieVJSNHFLYWZtMDBPSGd4WndxcE1hWi11VkRiX3BOaGtWMUZXMnpzQm9ZdDFLYTZLaGlMZlhRT1VPbEhKa0E0TTVMX0JMSURxaklwNEl2b0NUZWhSb0hzN1ptXzJwdQ?oc=5",
+      "pubDate": "Fri, 22 May 2026 08:03:51 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC221IE0S6A520C2000000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3058682022052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=10ad11a376091f132bcc16567f1446ca",
+      "summary": "日産自動車は22日、オーストラリアにスポーツ車ブランド「NISMO（ニスモ）」の拠点を新設すると発表した。高度な修理やメンテナンスなどのサービスを提供する。ニスモの海外拠点は初めて。海外でブランド力を高め販売拡大を狙う。豪州・ビクトリア州にある日産の販売拠点に「NISMOパフォーマンスセンター」を2026年後半に開設する。豪州では日産の高性能スポーツ車「GT-R」のファンがコミュニティーを形成"
+    },
+    {
+      "title": "第一三共[4568]：独立役員届出書 2026年5月22日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE14aGFaZFVSR2hRNmNmSGNNZ19GVjdiMk1oR1VRM0RFeUR0TWlweDR4MzF0V1JxVHlDZi1XTEJQVzhGQjY5YTJZUlFVYjlWNDNvNENvcXlHdlBNclp3NUhJZ044ejFfcUZQc0E?oc=5",
+      "pubDate": "Fri, 22 May 2026 08:00:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/nkd/disclosure/tdnr/20260522545362/",
+      "img": "https://www.nikkei.com/nkd/disclosure/tdnr/20260522545362/thumbnail/?ttype=ogp",
+      "summary": "2026年5月22日 第一三共[4568]の開示資料「独立役員届出書」 が閲覧できます。資料はPDFでダウンロードできます"
+    },
+    {
+      "title": "ダイキョーニシカワ[4246]：独立役員届出書 2026年5月22日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNT1R6V29GTEkyTGNMMVJIdDBqRkRoX1dibmhCVmRlMDJUblFqZmd3M05CZEJNSnRkendhOWcxWDFyVWRLR1JGZGpYdGU3ZlZfeUltTHVfcU84TzNUTzNXNXJaSUhNUFl3VF93LXloSlZIUkRqOXVySHdjemppNi1McW4yZW11Q1RuRmEwMUNrNkI4RkxIZmpOV3hxV0RSOXJYUWQwMDRNWTBqWmp4bzBVb1ozczc4a3U2VnFXM1A4c0F1TEdTS2ZKdURuejc?oc=5",
+      "pubDate": "Fri, 22 May 2026 08:00:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/markets/company/sys/redirect_dis.aspr?ano=fxscyx&t=https://www.nikkei.com/nkd/disclosure/tdnr/20260521543145/",
+      "img": "https://www.nikkei.com/nkd/disclosure/tdnr/20260521543145/thumbnail/?ttype=ogp",
+      "summary": "2026年5月22日 ダイキョーニシカワ[4246]の開示資料「独立役員届出書」 が閲覧できます。資料はPDFでダウンロードできます"
+    },
+    {
+      "title": "イシン株式会社に対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBQeGJ6LUxaYlZ4RzFwTXQ0dFNiY0RYTGRxaHFfd1JuaEhZNy1ITGNRUkVTekY1NXItal9KcktMeTRtbzF5UFFydWQzOUl5R1A0VzQ0N2JydkFNNklrWHp1Wk1B?oc=5",
+      "pubDate": "Fri, 22 May 2026 07:37:41 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y3EZ",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "ゴールドマン・サックス・インターナショナル(Goldman Sachs International)が株式会社牧野フライス製作所＜6135＞株式の変更報告書を提出（保有減少） - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1IcFBOTUttU1NNbHppYVN4eS1ONVRzTk9ONUpoTDliSVRtb0Rod2hMckN2OVUyYURLZV9IMHJBVElmVVpTSUZIZGJUV2F5RVhUTHc?oc=5",
+      "pubDate": "Fri, 22 May 2026 07:34:27 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/kabuhoyu/sh-s100y5oi",
+      "img": "https://maonline.jp/images/taiho/taiho_down1.png",
+      "summary": "東証プライムの株式会社牧野フライス製作所＜6135＞について、ゴールドマン・サックス・インターナショナル(Goldman Sachs International)が2026年5月22日付で財務局に変更報告書（5%ルール報告書）を提出した。"
+    },
+    {
+      "title": "アクシウム・キャピタル・ピーティーイー・エルティーディー(Axium Capital Pte. Ltd.)が綜研化学株式会社＜4972＞株式の変更報告書を提出（保有増加） - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1jMVlwT0pFeE1NaWNmYllJUDB0TlpKMnlwQ0szaWtiNHhZZTBmNmt3Qml1bnFGQmlITXBualJkaEdhVWRVUXhtRVdrTzI1NVk5dmc?oc=5",
+      "pubDate": "Fri, 22 May 2026 07:22:53 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/kabuhoyu/sh-s100y5si",
+      "img": "https://maonline.jp/images/taiho/taiho_up1a.png",
+      "summary": "東証スタンダードの綜研化学株式会社＜4972＞について、アクシウム・キャピタル・ピーティーイー・エルティーディー(Axium Capital Pte. Ltd.)が2026年5月22日付で財務局に変更報告書（5%ルール報告書）を提出した。"
+    },
+    {
+      "title": "アクシウム・キャピタル・ピーティーイー・エルティーディー(Axium Capital Pte. Ltd.)が株式会社アイ・エス・ビー＜9702＞株式の変更報告書を提出（保有増加） - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5jbjZWYTZaRXRNWjJvY3llMWw5TzNidWdIWHU5LXVEMkZEamwwVzdKanFwdDNacUwwZFVja1p4RlBydXVsMURXM2QwRlNPODJjQnc?oc=5",
+      "pubDate": "Fri, 22 May 2026 07:17:24 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/kabuhoyu/sh-s100y5jj",
+      "img": "https://maonline.jp/images/taiho/taiho_up1a.png",
+      "summary": "東証プライムの株式会社アイ・エス・ビー＜9702＞について、アクシウム・キャピタル・ピーティーイー・エルティーディー(Axium Capital Pte. Ltd.)が2026年5月22日付で財務局に変更報告書（5%ルール報告書）を提出した。"
+    },
+    {
+      "title": "アクシウム・キャピタル・ピーティーイー・エルティーディー(Axium Capital Pte. Ltd.)が日邦産業株式会社＜9913＞株式の変更報告書を提出 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1JLWZlclRjUXVLVXc2SlU1Q1k1aXNoY2RLYVhoQzZhdjgwRWxUY21VbW9wVVBjNktRWS05YXoxUWpocnRSRmRFek5sbHRTcjEtaWc?oc=5",
+      "pubDate": "Fri, 22 May 2026 07:17:02 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/kabuhoyu/sh-s100y5ua",
+      "img": "https://maonline.jp/images/taiho/taiho_up1a.png",
+      "summary": "東証スタンダード・名証メインの日邦産業株式会社＜9913＞について、アクシウム・キャピタル・ピーティーイー・エルティーディー(Axium Capital Pte. Ltd.)が2026年5月22日付で財務局に変更報告書（5%ルール報告書）を提出した。"
+    },
+    {
+      "title": "デンソー[6902]：独立役員届出書 2026年5月22日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBGTEVpd1c3TE9LQ1JHNkgxeTNZdXhMMGRXTjZBUTFiZGM0NUFLbjFxbXFCV3M4X1FVMFFWc2hIeGZGYmVxXzlzY3Uwb3JteFI5NjFzWkd0RVRIMUctRWcwY01EM0RsY09FWUE?oc=5",
+      "pubDate": "Fri, 22 May 2026 07:00:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/nkd/disclosure/tdnr/20260519540546/",
+      "img": "https://www.nikkei.com/nkd/disclosure/tdnr/20260519540546/thumbnail/?ttype=ogp",
+      "summary": "2026年5月22日 デンソー[6902]の開示資料「独立役員届出書」 が閲覧できます。資料はPDFでダウンロードできます"
+    },
+    {
+      "title": "ロング コリドー アセット マネジメント リミテッド(Long Corridor Asset Management Limited)がTHE WHY HOW DO COMPANY株式会社＜3823＞株式の変更報告書を提出（保有減少） - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1iRy1ESER3Z0NWTWdBZDdseDV1Z2puU1hvWDJGS3djLWhCdkMwM1RkZDY1X0FJdW1pcVdPUTNZV3djUEhrU0VnRkVJLVZlSndzbEE?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:57:44 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/kabuhoyu/sh-s100y55z",
+      "img": "https://maonline.jp/images/taiho/taiho_down1.png",
+      "summary": "東証スタンダードのTHE　WHY　HOW　DO　COMPANY株式会社＜3823＞について、ロング　コリドー　アセット　マネジメント　リミテッド(Long Corridor Asset Management Limited)が2026年5月22日付で財務局に変更報告書（5%ルール報告書）を提出した。"
+    },
+    {
+      "title": "Google、日本の開発者の海外展開を支援する「Google Play Accelerator Japan」の応募受付を開始 - gamebiz【ゲームビズ】",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9fME96ekpEbmhSeHlxenBEUFVkcUIzRkkzSkNaN3h4N3pFUUhNcVpqOTRiQ3FGUW43LVRkMjB6OEZ4VXBt?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:54:00 GMT",
+      "source": "gamebiz【ゲームビズ】",
+      "sourceUrl": "https://gamebiz.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://gamebiz.jp/news/426444",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "株式会社ＰＡＬＴＡＣに対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5OLXdpWWFRdS1kcl9yNkxHZHBYMXBCOUhNS21oQ2s1aWRsSUxVTE9zLWtfM3hadWhnUXVxendYRTZuQzRLZE5GOE5Jcjg5V0tsQ2FaWlNLemw2Sk1JZFZLZTJn?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:47:42 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5AM",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "日本円ステーブルコイン「JPYC」、シリーズB累計約50億円調達 | JPYC株式会社のプレスリリース - PR TIMES",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8ydTNfcEVNRHlVbHJmTW4weDFCVEpOT1BVUF9COEluaWJxWVp6WnZ0VEdrbExpOGxuMWdKR29lVGY4Q3V0MUxJcDhRcl96Ti15d1ByQ2xVbW5YWXp3TW1oN3paUHQ5TENlVlE?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:45:12 GMT",
+      "source": "PR TIMES",
+      "sourceUrl": "https://prtimes.jp",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000319.000054018.html",
+      "img": "https://prcdn.freetls.fastly.net/release_image/54018/319/54018-319-91357aac1dffc7665bca8abc0d1608dd-1280x720.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+      "summary": "JPYC株式会社のプレスリリース（2026年5月22日 15時45分）日本円ステーブルコイン「JPYC」、シリーズB累計約50億円調達"
+    },
+    {
+      "title": "株式会社セラクに対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE40SmV2elliRUg0cTRNREZGSGdhRkh5NVhjXzBMVjdzVnZYb0NDenpxaVVFLUFSSV9oY1JiOTVmaFdRNHJxLXdRWFNqc0FvWld3dlVfRFhISUdkUjBvaHBDWG5n?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:42:43 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5A8",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "カバー株式会社に対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QSEhsd2daQXFCblcxbTI1eGNfaFFCdXFIUmZkeU10dkY2MnE2U21VcGZWeG9mN293YVdSRWcza24tU2xvMW1tbmNPOWF0SGhRdFo1VkQyeTZQLTFFcWowZjJ3?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:42:41 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y51I",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "ゼナーアセットマネジメントエルエルピー(Zennor Asset Management LLP)が片倉工業株式会社＜3001＞株式の大量保有報告書を提出 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5UZVFmSjlLTnJlYllrMWI0eEd3RGhMU2lMLWVlaE1pTzl5ajRoeTdURmFWMVRhUjlyNXROb0ZUV21ZeUVxd3REZDJzUnBwcWxfdVE?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:41:55 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/kabuhoyu/sh-s100y5qj",
+      "img": "https://maonline.jp/images/taiho/taiho_newa.png",
+      "summary": "東証スタンダードの片倉工業株式会社＜3001＞について、ゼナーアセットマネジメントエルエルピー(Zennor Asset Management LLP)が2026年5月22日付で財務局に大量保有報告書（5%ルール報告書）を新規提出した。"
+    },
+    {
+      "title": "テレビ朝日HD、シンエイ動画について主力IP「ドラえもん」「クレしん」海外展開強化と新規IP開発、制作体制の強化を軸に中長期成長を目指す - gamebiz【ゲームビズ】",
+      "link": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9RYzhIYlc3My1VSU02NGgtTGk5ZHBUSlBaWFRTSWVTTWJjUWhWc3p0Rm5IaVIzRC0tRU1Mc2tOVm9RZWE0?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:41:00 GMT",
+      "source": "gamebiz【ゲームビズ】",
+      "sourceUrl": "https://gamebiz.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://gamebiz.jp/news/426443",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "南海プライウッド株式会社に対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5BQ3c4TXpWNW5OUjJ3MWJpbFl1T1FuanA5dVZPT1FBY0ltWk1pV0tjaTJyWTd3Z0xYYzcyN2d3QmFiQzVCWFhuSHYwekVCYUIzWHBBQVhEM2R3TWVhVkU4U0Z3?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:37:49 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5BD",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "株式会社ピックルスホールディングスに対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBJQWNZNG01SUsxY0JkdHBhOGJoSXZTUUxaUzZRd3NYYkJQdnpXaXpBVWxURjBreXNVOU1fcGRCdWpRLW1FS1U1MTRnOWFTdmMteEw2dnhVREJiLWZ2Y0c0dlh3?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:37:43 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5A6",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "アセット・バリュー・インベスターズ・リミテッド (Asset Value Investors Limited)が株式会社シンクロ・フード＜3963＞株式の変更報告書を提出 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE02QU5KQy1rSS1sUEVFdGg0elFMUlRCX0VGc2FhcFBOZ0EySzdhZW1QZjRTcG0yRkNEQXRjMzNBNXN0QmpPZWdlN2JXSU9zczZjSFE?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:36:54 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/kabuhoyu/sh-s100y4v2",
+      "img": "https://maonline.jp/images/taiho/taiho_staya.png",
+      "summary": "東証プライムの株式会社シンクロ・フード＜3963＞について、アセット・バリュー・インベスターズ・リミテッド (Asset Value Investors Limited)が2026年5月22日付で財務局に変更報告書（5%ルール報告書）を提出した。"
+    },
+    {
+      "title": "株式会社山大に対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBxd2M5WkRTQTlnNWllU1NNM09rNHBZMWluMHZuZ3libmNDSmhTV1VZMm1ER1hlcnVZbHpyQTJ1T3RoTHBZUGN6WVlhM2o1WFRRdnVFTFdFUGJBOTVtVWdzWXlB?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:32:40 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5B1",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "日本Ｍ＆Ａ - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE41OWtidEpVSU1sbXdOSmRuQWZrMm5ZZldSZWxDNW9nVUQ5a0pmdDBfbHpwX3dTdVU4c256MDRDbW9FZ1ZubXpmZzY0MGZsbjBSTFluWGxSbWttMVhub0J2aEVVbzBmT29Dcnc?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:30:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://www.nikkei.com/nkd/disclosure/tdnr/20260521543677/",
+      "img": "https://www.nikkei.com/nkd/disclosure/tdnr/20260521543677/thumbnail/?ttype=ogp",
+      "summary": "2026年5月22日 日本Ｍ＆Ａセンターホールディングス[2127]の開示資料「資本準備金の額の減少に関するお知らせ」 が閲覧できます。資料はPDFでダウンロードできます"
+    },
+    {
+      "title": "エスビー - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBXVlRJQlZyem1zVS14MEs5SWR5T2NiYnNKTmtXUG9xdXhFVWRjTTBPYUFHNC11WUU0SFlSQ2lMSDJfY0dnSjNYTTdwZ0oyZHBaa1FqblRMN2lWRS1SX05qVVV4R1dJdjg3aGc?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:30:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://www.nikkei.com/nkd/disclosure/tdnr/20260522544927/",
+      "img": "https://www.nikkei.com/nkd/disclosure/tdnr/20260522544927/thumbnail/?ttype=ogp",
+      "summary": "2026年5月22日 エスビー食品[2805]の開示資料「当社株式の大規模買付行為に関する対応方針（買収への対応方針）の更新について」 が閲覧できます。資料はPDFでダウンロードできます"
+    },
+    {
+      "title": "インディーゲーム展示会「東京ゲームダンジョン12」が開催、会場規模拡大で来場者も増加(日本) | ビジネス短信 - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9aWW94dzFyYl9VZ1NNX01MU2xoVlE3S3gyWWs5LWkwQVFtcWFNbXpEYnY2aHFWRkI5ZWxueTk4YUgzSEpidTVIZVVicXNBZFBKZTRMV1RBUlFyQmdEc3E1Q0h0Sl82c2hrTmZaZlRn?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:20:00 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/dda8300e10772e88.html",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "米助言ISS、中部電力の社長再任に反対推奨 浜岡原発問題受け - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOEJrUFN0dDJJRms2cFNvemtsQW1ZbWllTGlXV0FTdDZyaWlOYnJNaWRyTWM1ci02N3VZaVV6dGVmMkNJY2YwMGVKSHE1ZTFiYVIxZ3JPT2xBSmk2em5BSUFCY2ZyelR0ZmQ4amFDQlgwSFFQQmE5N3NiZVVBdzB4SXhSZWtyeVdSZ3JPa2lfQ185YWtZYktmTExYUVJobjRRTUg3M3AySzQ?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:07:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGXZQOFD225FJ0S6A520C2000000&scode=9502&ba=1",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3060226022052026000000-1.png?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=c8311ae817a39a16409ee923fc9eff59",
+      "summary": "米議決権行使助言会社のインスティテューショナル・シェアホルダー・サービシーズ（ISS）が、6月の定時株主総会で中部電力の林欣吾社長と勝野哲会長の再任案に反対推奨したことが22日分かった。浜岡原子力発"
+    },
+    {
+      "title": "トピー工業、インドネシアのホイール大手に10%出資 ASEAN深掘り - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9YSkJUcHpiUlBHVW1jN21jOVAya0FXSHdxNl9QTnl3cXhNRGEyREdiR2dlQTZjdjhJV3I3MmVQSlNkYjM2MklVd1ljRkdIeUd2Nl82enBTdHQ5OFItakpzOXcta1JjcGxOeUdfWg?oc=5",
+      "pubDate": "Fri, 22 May 2026 06:01:32 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC224R20S6A520C2000000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3059922022052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=c3d42d3dcd80d909066334df33a30598",
+      "summary": "ホイール大手のトピー工業は22日、インドネシアに拠点を置くアルミホイールメーカーPT.PAKOAKUINA（パコアクイナ）の株式10%を取得すると発表した。乗用車向けアルミホイール市場の成長が見込まれる東南アジア諸国連合（ASEAN）を深掘りする。トピー工業はパコアクイナ出資でASEA"
+    },
+    {
+      "title": "リヤド航空、ロンドン路線の一般向けチケット販売を開始(英国、サウジアラビア) | ビジネス短信 - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBpeVlpMGNGZ2Uxa1lSTnpvdWVuaDBibVJ0UTJSNE51MjVtYVFpOHA2aVdFdjAtRXpYaXV6bFV6ZjZRVnh2NURnRVpSNWpBT0haTDM2clRsYV9pVm55bHZOZGxGUlBpWmozVy11U0l3?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:59:51 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/b393b207fe794fa4.html",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "'KCC優勝の立役者' ソン・ギョチャン、衝撃の海外進出を宣言！ 次の行き先は「超注目の関心事」 - starnewskorea.com",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE53QlotQU5BQkZCdVBlMFZIVzNhVUxOQlBoNHBkZG1sd2lwUnp4TXdFLWdUbF85b2gtbXZaVXJlRk5HazZneUNJeURJd0lGUDNxSnd3OFgybVpOVXVfandpYUtqZFVzWEFqVGUtUmhFTkM4NHFxZ3hDaDRB?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:45:50 GMT",
+      "source": "starnewskorea.com",
+      "sourceUrl": "https://www.starnewskorea.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.starnewskorea.com/ja/sports/2026/05/22/2026052214394268106",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "4月のカナダ消費者物価指数、前年同月比2.8％上昇(カナダ) | ビジネス短信 - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBselVSRTdnZXFrOFFCd0c3XzNBTWJCc2c5bHZBM09qNmNZUXI3Z0Y2T1A3VU9pR3UxUkRfWGJwSE9zSHJ4NTZTRVREWnRsUUhGS2NsQUtlNU5la0hqT2ZudmVVMV83THV1ci1aT1J3?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:39:44 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/d7bfa3f3e9b9f6d7.html",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "エーザイ株式会社に対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBtWjlGSzY4bmR0N0pzVjdiRVY4eVZXX0JtcDlCdEh1d2tLcDFnSnhzZmJkdXNtLTFZYU5JeU9RbFBLOHdxNGZDcWpxdmRacDVUX3FIaGxIYWNWSUs4RWRKRHZB?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:37:14 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5OY",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "HPCシステムズ株価急伸 米政府量子コンピューター企業出資で連想 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EeU5STkU3M24tSEtZUFV4RnA2ZGNIV3RfRkZ2QVlGbmtsRVdZUXdXQnlqNUV3QTBJaEh1YzAyX3hnSXZPV21GdTJ6NXVIQVZlSDZ2SVJqTUM3ZEtsUXNDcWhtVk9KSXUxWm9CLQ?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:36:28 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOFL222XV0S6A520C2000000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3059946022052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=4b3ec6f5e2b6cdfbd16a0a4a4211b3d6",
+      "summary": "（12時55分、グロース、コード6597）研究機関向けなどの高性能計算機を製造するHPCシスが大幅に続伸している。午前に制限値幅の上限（ストップ高水準）である前日比504円（17.58%）高の3370円を付け、午後は"
+    },
+    {
+      "title": "米商務省、量子関連に3200億円出資 IBMなど9社 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNk5zOG1lVDExTG5EcFRzZ1NvT01CUzBoVTJsTlRtNEZnb3JieFZIeDhtQy1GNEFlV0EzSUVPNVBsaUNqRmxjdkdCVlZWeTBOeE1YT21uY1VMbjk0cmN3N0U2Szk3Q1BkNkZoa0ZrYWxscmxrbW1BVkJfZTFmMlJDa3phLXNNdF81RlhQRHc1aWpMUDI2cFZBMDN0T0pNSHliSWZONnFR?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:33:38 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=036&ng=DGKKZO96415080S6A520C2EAF000",
+      "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
+      "summary": "【ヒューストン=赤木俊介】米商務省は21日、量子コンピューターなどを手掛ける米国内の企業9社に計20億ドル（約3200億円）を出資すると発表した。IBMは量子計算向けウエハーを製造する子会社の設立に"
+    },
+    {
+      "title": "文化シヤッター買収防衛策、米ダルトンが非難 企業価値向上、近く提案書 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNOW14X3d4S2RlY1ZxWFJMRDBHQ01iLTBXd0tnOV9hV3hIOW80ZUVON0k0YUR0cHJOYlNUNGVkOU90N0NXNUV0X25fSHJOT1hvN1p4TEpKbUhldGFIV1JNZUR0bFB1S0Vnc0hvTHplOWd6MWF1d0h3bnhVOXVYZVZqUjd2MWNwRzRyNVFzV3lvZ094OXllb25hRU5ONno5NlpqUi0zaHdB?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:33:35 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=082&ng=DGKKZO96415060S6A520C2EAF000",
+      "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
+      "summary": "【ニューヨーク=伴百江】米ダルトン・インベストメンツが文化シヤッターの株式大規模買い付けへの対抗策を非難し、企業価値の向上を促す提案書をまとめたことが21日、わかった。近く公表する。\n　ダルトンは物言"
+    },
+    {
+      "title": "米商務省、CHIPSプラス法で量子分野9社に20億ドル超を拠出(米国) | ビジネス短信 - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1MdVVVY2I0aUt5VGl0RnVhLVR1bEVQNi1hcmMxa1d1VkZWUXMzYTdlV1FIMnNtYy1oM3plcWJNdkJ4UjE3QTRPa3YtVTkzRmdKZy16QUpNWkJOTC0yN1BIbG1kLUlCZWFXMkpubjBR?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:29:40 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/60a262f79ebec641.html",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "ＶＴホールディングス株式会社に対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9PekZ0UjcyZ19zaHFFZDh4Y21MQVpacnRJYlo1Z3I1WGtrMGhqZVJnVjlUN0h5OXkzODd3Xy1hZzZGazMyRk9xZ3lsenBmZkNOSUhPTnZzTnpETTNySWM3dGtR?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:27:11 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y4NE",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "農産物輸出拡大へ高付加価値化・外食海外展開を提起 自民骨子案 - 日本農業新聞",
+      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBwNEJWT09xckJlQjFvWENIbGdPaUdDcV85Tm50X0w0SVEyQXA5dGtkMDRTU0pheHdUWU9sRlMxempWelVUMWdCX1VKeTlScHRrdVlVQTFZNA?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:21:42 GMT",
+      "source": "日本農業新聞",
+      "sourceUrl": "https://www.agrinews.co.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.agrinews.co.jp/news/index/381971",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "揺らぐ政策環境と半導体サプライチェーン 世界の半導体産業（2） - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdmtUQ3ZGNDdMS1RLMm13NXBicjFOYW9ZT29CZVNtRUUyZmJOWUM4aXpJSmZQN0VGMXQzaGNHcDZqQVc1dGxKeWdpTnBkRzFLcElJbWViX3Q4RmVGV1lwU3NkOGFRT1NhTmViSWZKLW1DZkhiczRwek9aMkxaVzJFdnItb2l5Zw?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:11:47 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/biz/areareports/special/2026/0401/3bcfa32486679d37.html",
+      "img": "",
+      "summary": "米中摩擦や各国の産業・通商政策を背景に、半導体サプライチェーンの再編が注目されている。本稿は、貿易統計と政策動向を通じて、その実像を整理し、現時点では貿易フローの変化が限定的である一方、今後は大きく変容する可能性があることを示す。"
+    },
+    {
+      "title": "AI「ミュトス」アクセス権、政府・金融機関に付与 片山金融相が表明 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbmpSV1FTWTVDNHpDc1lrRUgwM2dBU3pUV3c5ODhnZlgyN1UtOVVEVmJXX2EySU5WV0NKVFp0M0tRZUVwaXBqYjFadlNab2FCbVlMZ2YweG5XbkxHV1JVdVhNRjFaaUFJakNHeFpjc3dad3haeU44aHF0cFM3MFRRWDBBRnNNRmgtU25FeHRRMW9oQkVDdUt6MWs2RVh2SF9jRzAzMzNUTjhDZw?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:06:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGXZQOUB223F00S6A520C2000000&nik_code=0070007",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3059148022052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.48&fp-y=0.28&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=357dad09473f334c406d6adf897efd14",
+      "summary": "片山さつき金融相は22日、日本の政府と金融機関に対し米新興アンソロピックが開発した新型人工知能（AI）モデル「Claude Mythos（クロード・ミュトス）」へのアクセス権が付与されると明らかにし"
+    },
+    {
+      "title": "株式会社ユーザーローカルに対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAyMkFWZmFJTjRDS19UZUl4dEJXbDRWYmktd0ZjTGdQdUNxWXc2Njg4UFlxREtsMGx4aXVwX3k4Z1lTS2ppZ3R1S1kxZHJ4ZE8ydkd6bjNmaExORGgzX1BhR0VR?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:02:13 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5JL",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "世界の2025年の新車販売、4台に1台がEVに、IEA報告(世界) | ビジネス短信 - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BUG1iMjJ4OFhsWTg1SkRUZWFXbDhxaWZxNjNzaTA3ajlNcGJWaTJyQmRTaWh2ZTNzZWY4YWhlVHIwaVJkZ0ZhV1J3dk5VZFFMYVYxNF9NbkZQSVdFYVNDRUlpcW5NdTBxQnBvdUZ3?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:00:18 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/f522aa728999c71f.html",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "新たに約 230 区画の住宅開発用地を確保 海外事業の成長を加速 - PR TIMES",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE52MlhJWkM2dEwtLWJzQ0FocnllTERlOHc2aUpTMVdtZ2pDdUdiVl9zWEZnN3N2dHRNamxsYXRNMmlndWZ3aFZJblh3ZmlqM29xdmRqMlJ1bGo5YmVFNmdNdWpST1BsYnVHNkE?oc=5",
+      "pubDate": "Fri, 22 May 2026 05:00:01 GMT",
+      "source": "PR TIMES",
+      "sourceUrl": "https://prtimes.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000700.000029869.html",
+      "img": "",
+      "summary": ""
+    },
     {
       "title": "米グーグルとブラックストーン、AIインフラの合弁会社を設立(米国) | ビジネス短信 - jetro.go.jp",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9Rb3paczNyckRPUzlmWkp1cmlZdjBDdU1xR0t0RVVQQndpSVNmcndBNGllWlVIWUs2MFV1VXRYcDdoTVJnM1RLNmdHV0d4UXY5dWNrT2dTOVJTc1hDUEd5d3FMdThmN0lNYlNIcVlR?oc=5",
@@ -31,6 +583,18 @@
       "summary": ""
     },
     {
+      "title": "ニデック社長、M&amp;Aで新領域開拓も検討－過去の買収事業を手放す考えも（Bloomberg） - Yahoo!ニュース",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRGxYemdvY1h6ZjE0ek80MU5GemNJZ2VKd2UwaHBzbDJ3UDdnR3N1QjJpNmtxRjR3eWdTY3JkRnZDT1lYaC1xVlIzUGhOdlNFajFuaE5UNl82V0IxZHJhc3dJRTlWcHFJaVhTSmFJOXEtN3FUNDk5NnN5SGtxSzdVTkhBdjRYLXYw?oc=5",
+      "pubDate": "Fri, 22 May 2026 04:39:40 GMT",
+      "source": "Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://news.yahoo.co.jp/articles/ed651ed84bde10b0b93b6b3854a69b06f87c1d91?page=2",
+      "img": "",
+      "summary": ""
+    },
+    {
       "title": "ニデック社長､M&amp;Aで新領域開拓も検討－過去の買収事業を手放す考えも - Bloomberg.com",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBrc0dJZ19HZkJ2UjdnTFVtM2FYMDdWa1dPeWEtVkJTM1lJcm9jRlp2dnVVZWZ5bENqVWdFSGlLRHh6WDRQYmlnUnZUdU9iUUhuZkhLMmVVZkVZMHo5dWdiNjZEcnBPYjNtN3M2b1lZc1NQS0J5cWRz?oc=5",
       "pubDate": "Fri, 22 May 2026 04:39:00 GMT",
@@ -43,14 +607,14 @@
       "summary": ""
     },
     {
-      "title": "ＪＸ金属株式会社に対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE4xaE1xWU1zczVPdkI2UlpiTHJuTThIVHkyTlpnWGpNemRzOFdWRDVWS3dNb3BuN0JqbTJHOEl2M3JNMjFpUjN2S2VyM1NEMG5haWFWWTFqai11Zk1xcURZdS1n?oc=5",
-      "pubDate": "Fri, 22 May 2026 04:16:38 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
+      "title": "ニデック社長、M&amp;Aで新領域開拓も検討－過去の買収事業を手放す考えも(Bloomberg) - Yahoo!ファイナンス",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNdFg0MHlUN3czRlUzQkxobmZYWHZMeHJfYmVDRnl3V3BvaHgtVVdfZ0VhNEgyenhmZ0RFUDd1emVoQlpYd0Rtc2h3a0JCU1ZQU3B2cVhoTjdEeDBGWEtNR0RhemctaHNyY1pGb2E3c0NWdVlrVHdxN3JheHNXYlRVUzZsazBOWVU?oc=5",
+      "pubDate": "Fri, 22 May 2026 04:39:00 GMT",
+      "source": "Yahoo!ファイナンス",
+      "sourceUrl": "https://finance.yahoo.co.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y54F",
+      "resolvedUrl": "https://finance.yahoo.co.jp/news/detail/ed651ed84bde10b0b93b6b3854a69b06f87c1d91",
       "img": "",
       "summary": ""
     },
@@ -79,6 +643,18 @@
       "summary": ""
     },
     {
+      "title": "Ｓｙｎｓが一時１８％高と急伸、海外展開評価で国内大手証券は目標株価を引き上げ - ライブドアニュース",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1KU2tTZDltNjRtSFhHZDdtXzlhdnZXYnl2TlZHLUt2LTk3czlSdzhRNkpRSlgwM1R3cEFhZ1pPT2J1S0twN29KNFpsdnRKNlAxdnk2UHVUdWxQM3dERjM4?oc=5",
+      "pubDate": "Fri, 22 May 2026 03:59:44 GMT",
+      "source": "ライブドアニュース",
+      "sourceUrl": "https://news.livedoor.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://news.livedoor.com/article/detail/31342775/",
+      "img": "",
+      "summary": ""
+    },
+    {
       "title": "Ｓｙｎｓが一時１８％高と急伸、海外展開評価で国内大手証券は目標株価を引き上げ | 個別株 - 株探ニュース - 株探（かぶたん）",
       "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5yTGFoLWVqb1Z2d0tNQUhLVkR4NXhYN1NqWUpMamdueldDc2o3TFVqclhhdVdweXdKMGVIdDQxLTdVbVdnQXZJbXBFbXRyNTNGaWVKSFVSTDhURFJTMlBkag?oc=5",
       "pubDate": "Fri, 22 May 2026 03:59:00 GMT",
@@ -103,18 +679,6 @@
       "summary": "通信インフラサービスのファイバーゲートは、電気通信工事やネットワークカメラ工事を手がけるアイワ（神奈川県大和市）を子会社化することで、通信分野における自社施工体制の強化と、通信とエネルギーを融合した次世代都市インフラモデルの構築と社会実装を加速する。"
     },
     {
-      "title": "有限会社オトコーポレーションの会社情報と与信管理 | NIKKEI COMPASS - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBzSFBHRl9OVEtheDZZME5DV2FRZmZDXzBQX2E1dFI4WXZCcUc0Zm5ZNkRsNUl4WktsdlNfMHFCTzlFU3FaUXVXV2JVQlNVTkVlMHNySjVrQ29HX01ndFVjOGwyOS1YaEFRb2lGbllR?oc=5",
-      "pubDate": "Fri, 22 May 2026 03:37:06 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/compass/company/erSJoyAburQ2UytWLp7iCF",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "畑常駐型ロボット『シンロボ』、設立に伴う初回資金調達を完了 - PR TIMES",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1TaUU2OWhaOXUyUzBHT3FlM0pyZ2x2UnlrdERacEhRbFY3azFmQnVtT3Bxc0Nna2ZNOUplaWdHcmZmaHdORDVjbzZqLXMtSHh6MDhtREE5MFBJNkNGcnhPVGNETVBXUkM4UGc?oc=5",
       "pubDate": "Fri, 22 May 2026 03:30:01 GMT",
@@ -127,16 +691,28 @@
       "summary": "株式会社SYN-ROBOTICSのプレスリリース（2026年5月22日 12時30分）畑常駐型ロボット『シンロボ』、設立に伴う初回資金調達を完了"
     },
     {
-      "title": "世界の新車販売の4台に1台がEVに、IEA報告(世界) | ビジネス短信 - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5BUG1iMjJ4OFhsWTg1SkRUZWFXbDhxaWZxNjNzaTA3ajlNcGJWaTJyQmRTaWh2ZTNzZWY4YWhlVHIwaVJkZ0ZhV1J3dk5VZFFMYVYxNF9NbkZQSVdFYVNDRUlpcW5NdTBxQnBvdUZ3?oc=5",
-      "pubDate": "Fri, 22 May 2026 03:09:30 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
+      "title": "株式会社銀座ルノアールに対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9NOGpJV25yajlrVXV5cDVqYVJoam1HT2E3dDJVVGxQUHVyZkc4bnF0Q0NCbzQ3M0R6dzgyMEdPUDM3QW1HRmVBNUJISmE3RjR5dldJT0oxSDlkVHRyYXM5QUVn?oc=5",
+      "pubDate": "Fri, 22 May 2026 03:11:44 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
       "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/f522aa728999c71f.html",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5SQ",
       "img": "",
       "summary": ""
+    },
+    {
+      "title": "APEC貿易相会合が中国で開幕 赤沢経産相、日中の閣僚接触探る - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1TcmVuYVliRnlNZ1c3bTRpcVEyUk5PTERTWDQ5RExtWlMydk9QMFNUMzk1QlhLUElkaWY0aVRoeVpvdzlqNUh1S2VHWEdZQ3BhM1JiX1EwMXhPQTFlRk1CdWFwWHl6dUNUdUtpLQ?oc=5",
+      "pubDate": "Fri, 22 May 2026 03:01:43 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOGM220VJ0S6A520C2000000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3058513022052026000000-2.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.25&fp-y=0.38&h=630&w=1200&s=2c8285fceff1d4deb2c3c1b729caadc0",
+      "summary": "【蘇州=田島如生】日米や中国など21カ国・地域によるアジア太平洋経済協力会議（APEC）の貿易相会合が22日、中国江蘇省蘇州市で開幕した。赤沢亮正経済産業相が出席した。日中関係の改善に向けて中国の王文濤商務相との接触を探る。実現すれば2025年11月の高市早苗首相の台湾有事を巡る国会答弁をきっかけに日中関係が悪化して以来、初の閣僚対話になる。首相答弁後の閣僚訪中はAPECの「女性と経済フォーラ"
     },
     {
       "title": "在庫戦略モデルでモノづくりの価値をより高みへ！ 製造業スタートアップ・FACTORY X がシードラウンドにて1億円の資金調達を実施 - PR TIMES",
@@ -159,18 +735,6 @@
       "descHref": "",
       "category": "global",
       "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/9b19287b6797a633.html",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "ユニ・チャーム株式会社に対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB6NnRzTDQ1MnVhbHRyTlJwcXF2YUtzM0pLN3A5Sy1OUE0yWmtWd2pXVWhHOVE0cjFSVHhCZFhYZHdrWGVNa0FLN282YTNnakdyVkdXRTFQdTNEV05TYXp1LWJn?oc=5",
-      "pubDate": "Fri, 22 May 2026 02:56:50 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y52W",
       "img": "",
       "summary": ""
     },
@@ -235,6 +799,30 @@
       "summary": ""
     },
     {
+      "title": "日本乾溜工業株式会社に対する大量保有報告書 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9QejJ3bTRia3JEMzE1RlU3ektoN08zUVFEZ0Z4RDFoZndtY094dnMzRmJ6UENJUmdNUS1OR240c0ZKc1lNQWg1TGVFUzItdzZmaUd4N2R6VmpqSHVvdlk5dVBB?oc=5",
+      "pubDate": "Fri, 22 May 2026 02:11:54 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5H1",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "豪グズマン、米国から撤退 収益伸びず「許容できない」 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1RSElGV0JmLW5zSG02QUt2WUNVeFQwQzlCWlVKYXlhLXJQMFpXdHRlaUVQU05EWjZ1ZjhMRDc4eUc5MlgtR285YXBFY0ZUcFNVMThkUnZPRV91dW9hSEZKYnYzWUxUUlhDaTQ2ZA?oc=5",
+      "pubDate": "Fri, 22 May 2026 02:10:11 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOGM2210K0S6A520C2000000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3058390022052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.51&fp-y=0.71&h=630&w=1200&s=56ed8bc4d77d061a961e280e160a9cf0",
+      "summary": "【シドニー=今橋瑠璃華】オーストラリアの外食チェーン「グズマンイーゴメズ」は22日、米国事業から撤退したと発表した。競争の激しい米国で収益が「許容できないほど低かった」と説明した。国内事業や日本・シンガポール市場に注力する。スティーブン・マークス創業者兼共同最高経営責任者（CEO）は同日、投資家向け説明会で「商品や顧客体験に自信があったが、米国で成功するには相当の時間と資金が必要だったと気づい"
+    },
+    {
       "title": "HP、韓国で「ガレージ精神」を復活…AIスタートアップのグローバル展開を支援 - finance.biggo.jp",
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5aYVhoeWRuOWtGMGhIVGRzUnB4N19naUl2cU1NeVF6aHRaY0JRRjZIcGlIelhmTlI3ZUR5S3VwOFYwTXh6aTZhdldhR185MXdSenRLS0dvZXRWWF9ZYkQ0?oc=5",
       "pubDate": "Fri, 22 May 2026 02:09:00 GMT",
@@ -255,18 +843,6 @@
       "descHref": "",
       "category": "global",
       "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/29e3b3a09082f65e.html",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "株式会社Ｎｏ．１に対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5NZ1lXc1RMV2xvckVCc3ZFVTdKYVNPM2taMTVlYmhlaXpmWDAwcjBzMGRCQi1wN2htM1YxX0ZlU28zYV8tOWl1QTY1c0ZlX0E3U1RicHowcXhXWHdYWDVaMkdB?oc=5",
-      "pubDate": "Fri, 22 May 2026 02:01:35 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5T2",
       "img": "",
       "summary": ""
     },
@@ -315,30 +891,6 @@
       "descHref": "",
       "category": "global",
       "resolvedUrl": "https://finance.yahoo.co.jp/news/detail/e49257ccee743849f50929bb95cea40023a4407d",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "株式会社RISEに対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jd3piV0Fvem9mV2pPc3ZSY1o4eFVkeHp6QnUwZUd4NFpkNTgwWDJhQlJOTHhZaVlKd2ZvZnVEM0ZvUXZQY0pONm1aVUpfdVBHSTFydkNYa1JMYkIwNU5janFR?oc=5",
-      "pubDate": "Fri, 22 May 2026 01:51:52 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5O0",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "第1四半期GDP成長率は前年同期比2.8％、中東情勢と予算成立遅延で減速(フィリピン、中東) | ビジネス短信 - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1mNHdaOWFSVXItQnczX0RkSEoxd3ZybExtTFp6U2wyZjBvQjdjdGNDSkV2Q2REM0xjamNaeFJBd3hHMFl1TndDREl1VXlSM09KdkVWbWQ5UGstNkhTcG02dXYtbFVJd1FDb0pEcGxn?oc=5",
-      "pubDate": "Fri, 22 May 2026 01:47:44 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/47d831a97e8c9772.html",
       "img": "",
       "summary": ""
     },
@@ -427,18 +979,6 @@
       "summary": ""
     },
     {
-      "title": "株式会社みずほフィナンシャルグループに対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1wcl9IYWdSYVFYNzVHUE00ZGswdU4yb2NYNXl2SjFFZWRhZXRGM1dqOUxkMldtTWsybjBWTXphRUstdEU0cGhCcXpfR2VWNXdRM014S1I3ZFBSU01EV2NNVnln?oc=5",
-      "pubDate": "Fri, 22 May 2026 01:01:43 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5B6",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "イラン暦1405年1月の消費者物価指数、前年同月比73％上昇(イラン) | ビジネス短信 - jetro.go.jp",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9iejEtMWN1Q0wyODFoa0Y0MTRDTGkzOEhxTDYyM2NBOXZMS0NOZDZhT0dKcU54eWp4cVktbFZSTlRXUVhDXzBMYVkwa0ZaSGNjYVM3SDgzQTNEZ1dVSDN6Ry1qNWpsNzVKbVcwVmlR?oc=5",
       "pubDate": "Fri, 22 May 2026 00:57:22 GMT",
@@ -447,54 +987,6 @@
       "descHref": "",
       "category": "global",
       "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/470117ea2b10b80c.html",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "株式会社琉球銀行に対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5zdzRFRXU2Q1JoNkp5SXg2UjNULXQ0QUtPN0pCenVoZTN0MjFvMHNoaHlTeVR0d012Nk1yV01pWHZJQzhzWjQwTnFINDRRNU01OS1ncUZmTDVkNlAwdjV4X2RB?oc=5",
-      "pubDate": "Fri, 22 May 2026 00:56:26 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5ND",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "株式会社武蔵野銀行に対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ScG5oN2JYaWV1R0FPSVk1ell5RWVIcWdSeXdiWjVGUjMtLWV0TTJMb2N1MG1ybnhIZWtYNFRsOE92WkhpYnlaNlR5UmZtTU53N1M5UWh6TWVUbmNLV1YtR0RR?oc=5",
-      "pubDate": "Fri, 22 May 2026 00:51:35 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5AS",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "株式会社フツパーに対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kX1ROa21zZHp2UnZEWUlPa2RoLUMwZnBHbkhzX09ubXNlQlYwVldXbGxFVmxWNjhWb3pXZ0E2UGtQa0U0MmZzR2ItNmhfd21mcnNWaEJEYnpiNHJQOXJpdEln?oc=5",
-      "pubDate": "Fri, 22 May 2026 00:36:17 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y5FZ",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "ペットゴー株式会社に対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE14amtiZVpKVVRBcWp1STZDYlhxcFd6cEpVZkFvN1lsZWVOdHdXMnBhcWNqazBWQ3JjTFg5eGRMLXlQTDk5dHZQNG9iR2h0SGZ3d0tGQ0x5Z2dWYzF4ZW5oNUxn?oc=5",
-      "pubDate": "Fri, 22 May 2026 00:06:21 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y55Q",
       "img": "",
       "summary": ""
     },
@@ -571,6 +1063,18 @@
       "summary": "マツダが主力市場の米国の高関税から反転攻勢に出る。原動力は21日に国内発売した新型の主力車「CX-5」だ。2012年に発売した初代モデルは4期連続最終赤字の経営危機からマツダを救った。中東危機や中国"
     },
     {
+      "title": "ペンタブ大手｢ワコム｣に社長解任の株主提案→社長の娘が社内でダンス動画撮影･社外取が経営する会社買収の是非 - 東洋経済オンライン",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9LaVFXbDhjV1hJY2JmTzdfSlhZZDBhMDNyYVNqWG9oNGF4a3NvSjVqREozaWdGT3ZrZGhQazdCRmJpUUtPc2pMYUkxZVhYS1ByTlE?oc=5",
+      "pubDate": "Thu, 21 May 2026 20:22:36 GMT",
+      "source": "東洋経済オンライン",
+      "sourceUrl": "https://toyokeizai.net",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://toyokeizai.net/articles/-/945177",
+      "img": "https://tk.ismcdn.jp/mwimgs/7/9/1200xm/img_799ed29429b2c71120371c92e24985bb192917.jpg",
+      "summary": "マンガ･アニメ制作現場で使われるペンタブレット大手･ワコムが､英投資ファンドAVIから社長解任などの株主提案を突きつけられています。社長の娘による会社スペースの利用､社外取が経営する会社の買収…株主総会での株主の判断に注目が集まります。"
+    },
+    {
       "title": "金融庁、海外運用会社買収しやすく 兼営業務売却を10年猶予 - nikkinonline.com",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBDMnJLck1BYVFRUkQxOUstZ1Zic052b2d5X0xRS19RU3hWckhhcE51YmNHMXRsdlgtclpuYXBOSWJ1Rjl1M3VYQXRTMjlyOC1vdVZrLU9n?oc=5",
       "pubDate": "Thu, 21 May 2026 20:20:24 GMT",
@@ -583,37 +1087,13 @@
       "summary": ""
     },
     {
-      "title": "ペンタブ大手｢ワコム｣に社長解任の株主提案→社長の娘が社内でダンス動画撮影･社外取が経営する会社買収の是非 - 東洋経済オンライン",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9LaVFXbDhjV1hJY2JmTzdfSlhZZDBhMDNyYVNqWG9oNGF4a3NvSjVqREozaWdGT3ZrZGhQazdCRmJpUUtPc2pMYUkxZVhYS1ByTlE?oc=5",
-      "pubDate": "Thu, 21 May 2026 20:20:00 GMT",
-      "source": "東洋経済オンライン",
-      "sourceUrl": "https://toyokeizai.net",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://toyokeizai.net/articles/-/945177",
-      "img": "https://tk.ismcdn.jp/mwimgs/7/9/1200xm/img_799ed29429b2c71120371c92e24985bb192917.jpg",
-      "summary": "マンガ･アニメ制作現場で使われるペンタブレット大手･ワコムが､英投資ファンドAVIから社長解任などの株主提案を突きつけられています。社長の娘による会社スペースの利用､社外取が経営する会社の買収…株主総会での株主の判断に注目が集まります。"
-    },
-    {
-      "title": "農産物輸出拡大へ高付加価値化・外食海外展開を提起 自民骨子案 - 日本農業新聞",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBwNEJWT09xckJlQjFvWENIbGdPaUdDcV85Tm50X0w0SVEyQXA5dGtkMDRTU0pheHdUWU9sRlMxempWelVUMWdCX1VKeTlScHRrdVlVQTFZNA?oc=5",
-      "pubDate": "Thu, 21 May 2026 20:05:39 GMT",
-      "source": "日本農業新聞",
-      "sourceUrl": "https://www.agrinews.co.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.agrinews.co.jp/news/index/381971",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "あなたの会社買収→社長は20代の私 個人版ファンド、起業の新潮流に - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE94VFRpcFFYSFo2eWRUX2RwbUNoXzZxeEdybFZqZmlIXzVUVjV6UVlmLWRBWHVGQW1CMmlqbFhyNUZLLS1IamV2NVN3eHRKOWdfV2FHSjNVN0xSSzdUbHpGaG5QZWVyX3A3YmNaSA?oc=5",
       "pubDate": "Thu, 21 May 2026 20:00:00 GMT",
       "source": "日本経済新聞",
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
-      "category": "ma",
+      "category": "funding",
       "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUB111GP0R10C26A5000000/",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3044614019052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.17&fp-y=0.33&h=630&w=1200&s=6a9ad4feb01a5535c8410e1317dca19d",
       "summary": "企業内で時間をかけて昇進するか、自分でゼロからスタートアップを立ち上げるか。――。経営者を目指す日本の若者には主に2つの選択肢しかなかった。ここにきて「第3の道」が注目を集めている。サーチファンドと呼ばれる個人版買収ファンドだ。起業家の秋山紳右衛門さん（27）は本場・米国で新たな挑戦を始めた。買収先探し、3カ月間に120社のトップ面談「あなたの会社を売ってもらえないか」。2025年7月。渡米"
@@ -751,18 +1231,6 @@
       "summary": "マツダは21日、多目的スポーツ車（SUV）「CX-5」を9年ぶりに全面改良して発売した。世界販売の3割弱を占める同社の大黒柱だ。もう1本の柱だった「マツダ2」の販売終了が重なるなか、10年間で4割減"
     },
     {
-      "title": "土地・保証頼らず融資 3メガや地銀 企業の成長性担保に - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWF9iT3ZlclYxN2N0QVd6ZGlCMXNhRDZ3dWVEdUxPSnhEanVSZUJUdDVPUU1yVm91bC1RRF9fTjNLT1Bfcm13cGJMQlh6a29TT2tOWmtoeGIwMmNxZkNEZlkyR2JkMHByaFRlVWJFbkM4YjdWU1hERzdUaWhpVy1JcmZNOFB2VDRXMXJxZno1WTBXZ3JFR2NUYkRFTWhva0JQdl94VTJBcnpnQQ?oc=5",
-      "pubDate": "Thu, 21 May 2026 17:05:43 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGKKZO96411560S6A520C2MM8000&nik_code=0070007",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKKZO9641157022052026MM8000-KB2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&ixlib=java-1.2.0&s=54fb92c26b161219699907a52fa7ac67",
-      "summary": "3メガバンクや地銀など10行以上の金融機関が近く、企業の技術力や成長性を担保にする新型の融資に参入する。不動産担保や経営者の個人保証に頼らないのが特徴だ。スタートアップの資金調達に追い風となる。\n　企"
-    },
-    {
       "title": "米新興3強にマネー集中 スペースX300兆円上場へ オープンAIも160兆円規模 - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPVnVFRlprVUpvb3hhY0NqVVdRRmE2LTlJY2RpOEpsMERHZmc4bjFNTzZSNUNKT2pQUmhwNTI4WEo1UmJ0anhfSGRnZUJrdC1qemh1SzB2OUQ3WWxrYnpwSnNRTkMweVpHc3BjN0laMExOaW1WUVduMHVkbUZvM1pBWERXbXpaME42Wkd2YlUxemowRzBOZ21hd2paOW5hLVA3Z2h6Uy14TG0?oc=5",
       "pubDate": "Thu, 21 May 2026 17:05:42 GMT",
@@ -773,18 +1241,6 @@
       "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=2&ng=DGKKZO96411350S6A520C2EA2000&scode=7203&ba=1",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKKZO9641136022052026EA2000-KB2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&ixlib=java-1.2.0&s=197b4637a1ee6a1a86557451a16e3085",
       "summary": "【シリコンバレー=伴正春】米スペースXが20日、6月の新規株式公開（IPO）に向けた目論見書を公開した。評価額は2兆ドル（約318兆円）とされ、年内IPOをめざすオープンAI、アンソロピックを含む米"
-    },
-    {
-      "title": "（新トップ）HSホールディングス社長 松村恭也氏 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNMDlfdzRJc2gyd1J2OFY1aG1Qa3ZaMVZtem1Bbm83YWlqaUdaNG80OVZKUndUaWR6aXAxMU13SlBZMjJWWEI2SHdOODNwdzMtanNidFZ6Z0h2OHB0NnNyTUFQa0YwTWdGQ2xnb1dNQTlPN1FNNVVBOEk0Q1UzWXNlbW9KZXhZUWZ3Tk1nZkNvd2lkY2pDVFY3aGd4OWIzZHh5ZTZmVFJB?oc=5",
-      "pubDate": "Thu, 21 May 2026 17:05:42 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=041&ng=DGKKZO96404650R20C26A5EE9000",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKKZO9640466021052026EE9000-KB2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&ixlib=java-1.2.0&s=e997d20f00dadef95764dc90eff1c50c",
-      "summary": "◇HSホールディングス社長\n　松村　恭也氏（まつむら・たかや）03年（平15年）専修大商卒、ガリバーインターナショナル（現IDOM）入社。20年HSホールディングス取締役。静岡県出身。54歳。\n（6月2"
     },
     {
       "title": "オリックスとカタール投資庁、国内システム開発を買収 共同ファンドで数百億円 - 日本経済新聞",
@@ -809,6 +1265,18 @@
       "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGKKZO96409130R20C26A5TB1000&scode=7267&ba=1",
       "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
       "summary": "ホンダは21日、小型の電気自動車（EV）「スーパーワン」を22日に発売すると発表した。軽EV「N-ONE e:」をベースにした車種で価格は339万円。国と東京都の補助金を活用すれば、実質150万円程"
+    },
+    {
+      "title": "（人事・銀行）農林中央金庫 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNY0N0YWV0UVNiZEthdEQzMnFycGdnR3lSZktjY3dMWnV3c2NFSmZZUGVTMWx4RjlNOVdOVWtjTHhrWXVjNW13azNtdExUTUpvZ1NvUFZINmtab1BKZWQ5bWh5T01xZ1NwZDhVVl82T2dXYXp1UVhwdkhBQjE0dTBKZ3VScXlCSjFuejl1Rkl5cnAzbTRRWk54Y2JYWEJ1d19fV2djbVN3?oc=5",
+      "pubDate": "Thu, 21 May 2026 17:05:38 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=2&n_m_code=121&ng=DGKKZO96402850R20C26A5TB2000",
+      "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
+      "summary": "農林中央金庫\n　（6月26日）理事、桐谷重毅\n同、佐々木百合"
     },
     {
       "title": "トヨタ、台湾から逆輸入 日本向け主力車生産 国内余力なく 納期待ち解消狙う - 日本経済新聞",
@@ -845,6 +1313,18 @@
       "resolvedUrl": "https://www.nikkei.com/article/DGKKZO96402500R20C26A5TB2000/",
       "img": "https://www.nikkei.com/.resources/k-components/rectangle.rev-d54ea30.png",
       "summary": "静甲（6月25日）冷間鍛造事業担当兼富士川工場長（エンジニアリング事業担当）取締役兼執行役員山下一弘取締役兼執行役員管理（常勤監査役）斎藤敏典取締役地域共創"
+    },
+    {
+      "title": "信越上場6割、28社が減益 今期最終、原油高など懸念 運輸業、コスト上昇で苦境 銀行は好調も先行き慎重 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNkRpZGJ2LXBzMGstNE5ZY0lzcFNxWnJNZDh4SW0wXzZkb21uQVRqTlRpeFJfVklHZWdVakpSelpEekpPS2VpSzhKRHlOZVQydXAya1NpdVB0MnRPV3hCWEpYc1UxQm53T1M5UG9Zam5ldFJPRkc4RExzdGRYdGQwSkI5ZXpjSUFjUzJHeW9jdHlPN1ZvZ1V4cWdYT1hYdkxCYzJOb0tacFY?oc=5",
+      "pubDate": "Thu, 21 May 2026 16:59:25 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGKKZO96399740R20C26A5L31000&scode=8537&ba=1",
+      "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
+      "summary": "信越の上場企業の3月期決算が出そろった。2026年3月期の純利益が前の期から減益となった企業は全体の2割弱だったのに対し、27年3月期は6割の企業が減益を見込む。中東情勢の緊迫化で原油高や調達難を懸"
     },
     {
       "title": "イントレプレナーの教科書 - 東洋経済STORE",
@@ -901,7 +1381,7 @@
       "source": "東洋経済STORE",
       "sourceUrl": "https://str.toyokeizai.net",
       "descHref": "",
-      "category": "ma",
+      "category": "global",
       "resolvedUrl": "https://str.toyokeizai.net/books/9784492048405/",
       "img": "https://str.toyokeizai.net/files/user/images/noimage.jpg",
       "summary": "東洋経済新報社が発行する週刊東洋経済、会社四季報などの雑誌や本、統計・総覧、主催のセミナー・イベント情報をご案内しています。"
@@ -973,7 +1453,7 @@
       "source": "日経ビジネス電子版",
       "sourceUrl": "https://business.nikkei.com",
       "descHref": "",
-      "category": "ma",
+      "category": "global",
       "resolvedUrl": "https://business.nikkei.com/atcl/NBD/19/mokuji/00372/",
       "img": "https://business.nikkei.com/images/onb/2019/nblogo_ogimage.png",
       "summary": "水危機が世界を揺らしている。渇水やインフラ破損で、世界各地で水不足が頻発しているためだ。世界経済をけん引する半導体産業やデータセンターをも脅かす。「水の国ニッポン」も例外ではなく、米国や中東でも危機は深まる。だが、中核の水技術に強みを持つ企業には商機となる。かつて海外で敗れた日本企業も好機をうかがう。再起の鍵は長く運営して稼ぐ力だ。国内の官民連携と業界再編をてこに、日の丸企業は世界に挑む。"
@@ -1037,30 +1517,6 @@
       "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=041&ng=DGXZQOUC202FA0Q6A520C2000000",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3053842021052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.48&fp-y=0.26&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=683f07377eb13db17fdfb4b79c0a57f5",
       "summary": "マツダは21日、多目的スポーツ車（SUV）「CX-5」を9年ぶりに全面改良して発売した。世界販売の3割弱を占める同社の大黒柱だ。もう1本の柱だった「マツダ2」の販売終了が重なるなか、10年間で4割減"
-    },
-    {
-      "title": "ＡＩで偽警官の顔生成、特殊詐欺 - 海外拠点で悪用拡大 - 奈良新聞",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1SekZjbkJiT3IwUEFSd3prbE9JdjFSa3lwV0dyY0RkSHpZbFl1Y3pKQjN3dUUzZnhzSktEX0lDSmVzdlRhSWkySm80dDA4R2QweE1QZU02Z3BfRGxhQnRZTUMzU2E?oc=5",
-      "pubDate": "Thu, 21 May 2026 09:35:20 GMT",
-      "source": "奈良新聞",
-      "sourceUrl": "https://www.nara-np.co.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nara-np.co.jp/global/2026052101001463.html",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "株式会社てらにしの会社情報と与信管理 | NIKKEI COMPASS - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBnbnRwTkhuNXVtWUVTMkRrRVU5ODdNZjBtdHZ6ZWdvWDZhQ1I0blF2TzQ2ZTBRbU1lcXA1M1lSdEc4ckJ1aWFOUEVueXNpWGR5bU5jSFNsZEI4Z1lQVmQyLXp4VWJjWXlMQWJWaWpB?oc=5",
-      "pubDate": "Thu, 21 May 2026 09:26:10 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/compass/company/wkrSzLJMcmqrNmLtVGRv8q",
-      "img": "",
-      "summary": ""
     },
     {
       "title": "人事、静甲 - 日本経済新聞",
@@ -1159,16 +1615,16 @@
       "summary": "トヨタ自動車は台湾で日本向け主力乗用車の生産を始める。専用ラインを設け10月から日本へ輸出する。日本では人手不足などから増産余力が乏しく、納期待ちが深刻になっている。海外のサプライチェーン（供給網）を活用して投資リスクを分散する。トヨタは国内生産を年300万台以上に維持する方針を掲げ、供給網を構築して技術力の確保や雇用の吸収につなげてきた。ただ人件費や物価の高騰で投資コストがかさんでおり、大手"
     },
     {
-      "title": "オアシス マネジメント カンパニー リミテッド(Oasis Management Company Ltd.)が株式会社パソナグループ＜2168＞株式の変更報告書を提出（保有減少） - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5IQXhBLWNycHR3MFg5VjJzY0NZQzdWdDdFVWgxWjZJa2NzSU10bE1vMTcycEtUQkdqSUpxYmxOOVlYVk9BM0pUZ3Btb21aeVdrVnc?oc=5",
-      "pubDate": "Thu, 21 May 2026 08:13:38 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
+      "title": "国連が世界経済見通しを下方修正、貿易は伸び継続も投資は停滞へ(世界) | ビジネス短信 - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9nZkJZVlktVER3RDY1TTFMWGhteGphMjAxSjU0TkNSTy1ObkQxMUl3WVI5eVNDNTBfTDRFTzVPYjhXdHgySFA0cEcxZlJMWWkyQnFsQUtVa003OEZPYi1lQU9Ub3JMRjBNbmx5N2ln?oc=5",
+      "pubDate": "Thu, 21 May 2026 08:46:12 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
       "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/kabuhoyu/sh-s100y4ms",
-      "img": "https://maonline.jp/images/taiho/taiho_down1.png",
-      "summary": "東証プライムの株式会社パソナグループ＜2168＞について、オアシス　マネジメント　カンパニー　リミテッド(Oasis Management Company Ltd.)が2026年5月21日付で財務局に変更報告書（5%ルール報告書）を提出した。"
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/48f1dec852cc00a8.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "日本式算数アプリを海外展開　米国やインドネシアで実績　スタートアップのマスマジ | チバテレ＋プラス - 千葉テレビ放送",
@@ -1195,18 +1651,6 @@
       "summary": "堀場製作所は堀場厚氏のトップ就任後、グローバル化により売上高が9倍に成長。カギとなるM＆A（合併・買収）でも、統合後のグローバル戦略でも「人」を重視する。「参勤交代」「遷宮」などユニークな発想で京都から世界に事業を伸ばす。"
     },
     {
-      "title": "「やる気が出ない」「毎日がマンネリ」 脳の不調からあなたを守る方法 - 日経ビジネス電子版",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9fS25NU19aYmE4cnJYQUY0bmFBaVBYdkEwdk9ESzh0Zmh3OTZXYU1QZUhlSGc0bFZBVllPOWlVYmFBYWMzdDJJWGdDcmxSempwS3hCVFA0bGt2VUJ5d1J4Q1I2RktTMm9WRlZjMkdoY0dYSXg1OWN6U1FKcE0?oc=5",
-      "pubDate": "Thu, 21 May 2026 08:00:00 GMT",
-      "source": "日経ビジネス電子版",
-      "sourceUrl": "https://business.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://business.nikkei.com/atcl/gen/19/00283/051400450/?i_cid=nbpnb_arc",
-      "img": "https://business.nikkei.com/atcl/gen/19/00283/051400450/fb.jpg",
-      "summary": "「最近、ひらめかない」「やる気が続かない」――。そんな悩みを抱えるミドル世代に向けて、脳のクセを知り、感情に振り回されないための“脳の扱い方のワザ”を脳科学者・篠原菊紀氏が教えてくれる。"
-    },
-    {
       "title": "株式会社両毛システムズに対する大量保有報告書 - M&amp;A Online",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5ScHh1NmFYc0FTN1dOeUdHbkpXaDBUM3p4eUg0dlZCN0NOTF81Vloxb0RVZ1BuajA5SWpwQW16ZUN6MEM3S3hKOXcyU1hZWVlYTjFLV2NaWDJCWHlaNmlwZkt3?oc=5",
       "pubDate": "Thu, 21 May 2026 07:53:42 GMT",
@@ -1231,18 +1675,6 @@
       "summary": ""
     },
     {
-      "title": "株式会社高見沢サイバネティックスに対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBZZUFOa1JzVjRvSDZ6dnBKNU13Uk1qSkFYVE1UTkhnWlluU1JTNVJnUGcyUERWVVd1eGRjMGJ3ek1LYVh4ZlNwWnEtNml6VHYyWlVBb3M1RkdCaW45OHl2T0NB?oc=5",
-      "pubDate": "Thu, 21 May 2026 07:48:23 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y4JI",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "トランプ米大統領、対イラン交渉は「最終段階」と発言(米国、イスラエル、イラン) | ビジネス短信 - jetro.go.jp",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBsdUw5UmpDREFRUEZSM052SUItT1NLcmVUdDdPTTVQcXBPdnpROHBnYUNEcEZEeUxhY3VBbHJSMVNjV1Q2aEM2SmI3dXJPVFFYQndGckRDQnQweTJJSC15YTB6TjRPYmlxZHVwMWRR?oc=5",
       "pubDate": "Thu, 21 May 2026 07:35:16 GMT",
@@ -1255,40 +1687,16 @@
       "summary": ""
     },
     {
-      "title": "エヌエフホールディングス[6864]：当社株式の大規模買付行為に関する対応策(買収への対応方針)の継続について 2026年5月21日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1HX01SRW9OQ21wMERtM25ZbXA1cjJwYXRPbVk2VXhzSWVjaUR5WS1yUFo1NUs1RlBmSFpFT1p2eG5oMTFTdDlZdFFWMXR6QnhRSzBJNEZkMjJBa3VSTHk5SWYwY2ZLMFNpRUE?oc=5",
-      "pubDate": "Thu, 21 May 2026 07:30:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/nkd/disclosure/tdnr/20260520542051/",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "ソディック[6143]：当社サーバーへの不正アクセスに関するお知らせ 2026年5月21日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZ09vb2NDRFRNd0RQdUc2aFpNdzkwOTZTR042M1VmNk1GeDVIdThwdFpBc3ZqcVZlVkgyUnpNYTBKVzJrU3NxWDRGWDJUZWRKRUVqQkJyX3lJRjhWbzEwSlkyOUhEc1NzaTZjdERYLXRxSDgxWS1iN2pjWUl3bTRhdWM0Njk2OTFjYTZ4akZoSWJxOGN4dlhnN1JvaW1XbjU0R19zV19qelVjOElhSll2M1daM0tTUDk3Sm9YN1ZQdVI1RzhHLTg0dVIxQlc?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4Yk5QS19zQkRKbnRtd01OVi1UaHhHX1MtakJrRGRSS0paN1NLVHhycVNCQndWVFFldDlNUmRPR2h1QUlpX2hBXzA5eUxob0VQaURad2hiclZBSkJhRDdDRXNQYXN2SjJRQ3c?oc=5",
       "pubDate": "Thu, 21 May 2026 07:30:00 GMT",
       "source": "日本経済新聞",
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/markets/company/sys/redirect_dis.aspr?ano=fxsdbk&t=https://www.nikkei.com/nkd/disclosure/tdnr/20260521543600/",
+      "resolvedUrl": "https://www.nikkei.com/nkd/disclosure/tdnr/20260521543600/",
       "img": "https://www.nikkei.com/nkd/disclosure/tdnr/20260521543600/thumbnail/?ttype=ogp",
       "summary": "2026年5月21日 ソディック[6143]の開示資料「当社サーバーへの不正アクセスに関するお知らせ」 が閲覧できます。資料はPDFでダウンロードできます"
-    },
-    {
-      "title": "国際ファッション専門職大学学生が制作した「SNS詐欺広告被害防止啓発動画」を公開しました（2026年5月20日） - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wV3B1MUlhRS1PWW5ndm9iTEdUX05WT0FLbEZEQzIwZy1hTW41Y0ZTWk9GdnZJeS1BSHpfQjgzY01aQWJCWHduVGxKYmtOUnBGcWdndXpXbWxlUkJETjZaYmNQeGQ3aWJS?oc=5",
-      "pubDate": "Thu, 21 May 2026 07:29:49 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/theme/ip/iippf/past/20260520.html",
-      "img": "",
-      "summary": ""
     },
     {
       "title": "全靴協連が第36回通常総会を開く――革靴産業の競争力強化へ。販路開拓・ブランド支援・海外展開を推進 - シューズポストオンライン",
@@ -1315,18 +1723,6 @@
       "summary": ""
     },
     {
-      "title": "日本金銭機械[6418]：当社株式の大量買付行為に関する対応策（買収防衛策）の継続について 2026年5月21日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBiN2NjM2lWS2JLWVJ4ODNQdFN1MWMxamtCUjFMTkp3NFNlcFVraEd6YXRGY3gwUTNveFRQSmxMRW81SFdCX1NxcmpTV01fLTV0V2xZeGptZElmSE5fS0s4OU8yMjVySGpOYmc?oc=5",
-      "pubDate": "Thu, 21 May 2026 07:00:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/nkd/disclosure/tdnr/20260521543133/",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "推理ゲームのSally、体験イベント強化 VCなどから資金調達 - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5GelBlTHlOX2FnT21WNlRTUkg0dzNodzhzM0JOZFA3R0g3dG9QRnV2LWtZd3BETXFMaFJIeGtLZDloNDRobFJmZHh1ZXk1TTZlVUJRZW51NEtsR2VwXzZBRktkVTJkOVNFODBlRg?oc=5",
       "pubDate": "Thu, 21 May 2026 06:58:56 GMT",
@@ -1337,18 +1733,6 @@
       "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC15BUS0V10C26A5000000/",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3029920015052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.4&fp-y=0.34&h=630&w=1200&s=1cf93a911afb7107baba7185d8c8b27a",
       "summary": "殺人事件を題材とした推理ゲームを手掛けるSally（サリー、東京・渋谷）が商業施設などと組んだ体験型イベントを強化する。このほど第三者割当増資でベンチャーキャピタル（VC）などから調達した資金を活用し、イベント開発のための人員採用にあてる。サリーは2018年創業のスタートアップで、オンラインで推理ゲーム「マーダーミステリーゲーム（マダミス）」が遊べるプラットフォーム「UZU（ウズ）」の開発と運"
-    },
-    {
-      "title": "米国、ガボンをAGOA対象に復活、特恵待遇を遡及適用(ガボン、米国、アフリカ) | ビジネス短信 - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBGckNBODhFT3lqV3RRQUVyOEZPX0wxSXBuUVI5OVZ2cEFka1BMb1lVVzZHbk1vTTV2eDBZdWpwdHFaNXlrZjVLLTBJLXlzVlhHVjFFcVhZQ0lnRVdyYng5SVctOU1HNU1TTG1wNGJB?oc=5",
-      "pubDate": "Thu, 21 May 2026 06:54:16 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/ffec1fcc25cb303e.html",
-      "img": "",
-      "summary": ""
     },
     {
       "title": "ピルグリム・パートナーズ・アジア・ピーティーイー・エルティーディー(Pilgrim Partners Asia (Pte.) Ltd.)がHYUGA PRIMARY CARE 株式会社＜7133＞株式の大量保有報告書を提出 - M&amp;A Online",
@@ -1412,13 +1796,13 @@
     },
     {
       "title": "オリックス、キオクシア株高で純利益700億円押し上げ 4〜6月期 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRVMyalBUTEhXVlJodDN0N0c0aWVBM1EzM09Rbk94MUV1SlM4TXUyZnNCUU1SVDNXQy1YNkVpRkNvWlRlX2ZzM3NlT0pfVG5nUE9iTTdSUS02M3hiZVhkQnBkVk5xdXFOb1dBWFRjV01XRnI1d3VxbHZxYXAwdGVjYjFldTBHUnZFMHM5cEhVMTFvZmhxTzZxR2NzRXRrcExWVDJOWUxB?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbU82QklnZnhLZm1pOG9hMHl3MzgyOU55RkIwT25oMFBfbVlPd2JoVkk2Z2d4Tk1EZ1pFZFV3bzhRTXlFdzhsNjQtalRpSzdhNlU4cGFPQUlqV1dBXzBLZUFNdm5uSUhJcU5DcFlMSzFZVGdXcWtKdEUzU05FNm5TNlFOQXVpOWJyWm1CWkNlamtZMkFSOXFQU2IxOXJfN3V6RWt6TnJB?oc=5",
       "pubDate": "Thu, 21 May 2026 06:06:00 GMT",
       "source": "日本経済新聞",
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=126&ng=DGXZQOUB215BN0R20C26A5000000",
+      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=128&ng=DGXZQOUB215BN0R20C26A5000000",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3053975021052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=3be161fab1b6ec3c8d7c51a8d6bc4c29",
       "summary": "オリックスは21日、投資先の東芝が保有するキオクシアホールディングス株の上昇を受け、2026年4〜6月期の連結純利益を700億円程度押し上げる可能性があると発表した。27年3月期は東芝の決算や東芝に"
     },
@@ -1457,18 +1841,6 @@
       "resolvedUrl": "https://www.nikkei.com/article/DGXZQOFL214740R20C26A5000000/",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3054104021052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=ba6f1e1677f399bc9087afd0aee5e9c4",
       "summary": "（13時40分、プライム、コード3853）企業向けソフトウエア製品を販売するアステリアが大幅続伸している。一時、前日比357円（19.91%）高の2150円まで上げ、2025年8月28日以来およそ9カ月ぶり高値を付けた。起業家イーロン・マスク氏が率いる米宇宙会社スペースXが20日、6月の新規株式公開（IPO）に向けた目論見書を公開した。スペースXは想定売り出し価格や新規株式発行数を開示しなかった"
-    },
-    {
-      "title": "アフリカでのエボラ出血熱流行を受け、米CDCが入国制限を実施 - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE85NDNiV3hSQlVPdkx0My1oTk9LOFQ1OFlQaExDRXpGeVhEYS1nQ2stLUdaal95TzB5RDVRb3hheGx4TTlVUnUyMDFtV3FmeVdJRWplYnVRMk41TTdGOHlTbDE2ZW9uSUlKQzFyTFFB?oc=5",
-      "pubDate": "Thu, 21 May 2026 05:13:05 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/9430c71a4bd731e9.html",
-      "img": "",
-      "summary": ""
     },
     {
       "title": "「スタコネ」累計マッチング数2,000件超・取引総額23.5億円を突破 - PR TIMES",
@@ -1531,18 +1903,6 @@
       "summary": ""
     },
     {
-      "title": "株式会社アストロスケールホールディングスに対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ReVNOYkNucS05bXdzUnd2SU81cFJ6VHFvNmlxVk93aGk3a0k4U0kwT0pSOHU3TThNcWZhNm9Ka1NfUVB1S1VxMUIySEstUjEwXzFyZjBvbDZOcEh5aFBkR0F3?oc=5",
-      "pubDate": "Thu, 21 May 2026 03:37:27 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y542",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "かわさき新産業創造センター（KBIC）入居企業のアナウト株式会社が、グローバル展開の加速化に向けシリーズB資金調達を実施しました［ツクリエ］ - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1xeUp2bk1tYlhSeE9BVUJwYmI3ME5CT0daQU5lWS1COWYxWFRYUHlpN3EtT0pYQlBjMW81UDhzbGtuTWdrbS1HdGd0OTJmWldFWXlaWUF6Yng1Rk5SWXVsT2RHbDgzY2gxQngxcmlMZmJxNUNBUUZtOW5vUzA?oc=5",
       "pubDate": "Thu, 21 May 2026 03:11:31 GMT",
@@ -1565,18 +1925,6 @@
       "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000006.000181420.html",
       "img": "https://prcdn.freetls.fastly.net/release_image/181420/6/181420-6-73152b6e63febf5518133fc4cf737b9a-1920x1080.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "summary": "株式会社AVIATEのプレスリリース（2026年5月21日 12時00分）バックオフィス業務のAI自動化プラットフォーム「TASKBASE」を手掛けるAVIATE、ANOBAKA・East Ventures・MIXI創業者 笠原氏より7,000万円の資金調達を実施"
-    },
-    {
-      "title": "巨大新興3強に資金集中 スペースX300兆円上場、OpenAIも160兆円規模 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE84YTAzX00zR0pRMDhwV2dKa3hrd0lmdC1TaXlVR3BvRE9FMWYzN01CUVZUbGhza1B3TW1mdUtnMm40cFZUWnJvUVhuTGlnRjc1dlBjenJHekE0UEpKVmp3cDdKX2s1QmNMc2dQYg?oc=5",
-      "pubDate": "Thu, 21 May 2026 02:55:23 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "funding",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOGN210I20R20C26A5000000/",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3052949021052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.82&fp-y=0.35&h=630&w=1200&s=08c36090f766ab86af5185f9f6a15b0a",
-      "summary": "【シリコンバレー=伴正春】米スペースXが20日、6月の新規株式公開（IPO）に向けた目論見書を公開した。評価額は2兆ドル（約318兆円）とされ、年内IPOをめざすオープンAI、アンソロピックを含む米巨大新興3社に巨額の資金が投じられる。株式市場に一段のテック偏重をもたらす要因となる。スペースXが目論見書にあたる「S-1」でナスダック市場に上場する計画を公表した。IPOを巡っては、米紙ウォール・"
     },
     {
       "title": "M＆A仲介大手3社の2026年9月期中間決算、そろって増収営業増益に コンサルタントの採用に慎重姿勢も - M&amp;A Online",
@@ -1687,28 +2035,16 @@
       "summary": "（9時40分、プライム、コード9984）ソフトバンクグループ（SBG）が急反発し、前日比920円（18.25%）高の5959円まで上昇した。米紙ウォール・ストリート・ジャーナル（WSJ）が20日、「米オープンAIが早ければ22日にも米国での新規株式公開（IPO）を申請する準備を始めた」と報じた。オープンAIにはSBGが傘下のファンドを通じて出資している。IPOに伴う収益貢献やグループの企業価値の"
     },
     {
-      "title": "【ウェビナー】インバウンド需要を起点に！海外販路開拓セミナー ―旅ナカから旅アトにつなげる越境EC活用術― | イベント情報 - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBGSnlVUEZXZ2dKVW5heVdDWVJSdERESXFLcVdfWVBvRjgwRHUzNThBc1d6d1NBUjMwVy1KQlM0YWVEQzZzbWpGMVh4RWZ5NmlmdThCZUJvQTVqSnJwdVlRT1RoT254OVk?oc=5",
-      "pubDate": "Thu, 21 May 2026 01:30:16 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/events/hmm/77b00eef5dd5e2ad.html",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "株式会社Ｇｌｏｂｅｅに対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1FWlllN2h2MEo4TUc4Ymstd0hHMFVuQnkxQzRaMmxqcnNDbnpRZFdLRW9xcWUzRXlVdzBRdndycENicDJqMkRRVVNLR1ZpbDcyTUh1QmRFTURweHluVXdhM2Fn?oc=5",
-      "pubDate": "Thu, 21 May 2026 01:27:00 GMT",
+      "title": "オールド・ピーク・グループ・リミテッド(Old Peak Group Ltd.)が阪神内燃機工業株式会社 株式の変更報告書を提出（保有増加） - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5ETkpMcEVMaVdxVHprNXNnalVaWHZJUnBtcjViVGVEYnJYbzBVZDM3ckpqMzRjUEhNaTZBdkxoZGVBRHIwMzdCcEZzcnJVc2lKQmc?oc=5",
+      "pubDate": "Thu, 21 May 2026 01:26:59 GMT",
       "source": "M&amp;A Online",
       "sourceUrl": "https://maonline.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y4RZ",
-      "img": "",
-      "summary": ""
+      "resolvedUrl": "https://maonline.jp/kabuhoyu/sh-s100y4h9",
+      "img": "https://maonline.jp/images/taiho/taiho_up1a.png",
+      "summary": "東証スタンダードの阪神内燃機工業株式会社＜6018＞について、オールド・ピーク・グループ・リミテッド(Old Peak Group Ltd.)が2026年5月21日付で財務局に変更報告書（5%ルール報告書）を提出した。"
     },
     {
       "title": "【2026年4月】韓国スタートアップの資金調達TOP15と、現況まとめ - korit.jp",
@@ -1807,18 +2143,6 @@
       "summary": "MASO株式会社のプレスリリース（2026年5月21日 09時59分）SaaS企業の現場の「目」となる。SaaSプロダクトにカメラ×生成AIの画像解析プラットフォームを提供するMASOが、シードラウンドにて総額8,150万円の資金調達を実施。"
     },
     {
-      "title": "四国化成ホールディングス株式会社に対する大量保有報告書 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5tclB1ZWJ3V1ZmRHFSdFU0MEVwMi01NndfblFBWVpiX1hnaG5YQmhObEQxOTNvSTY2N1dKQ2pJd1A5eDRGZVNaZF9zSi1SbEFZNnltX2FKdUd1dXRfMGpjUklR?oc=5",
-      "pubDate": "Thu, 21 May 2026 00:32:16 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/db/shareholding_reports/S100Y2RV",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "【RENKETSU GLOBAL VOICE】全国の企業へ「生きた情報」を届けるオンラインセミナーが本格始動！第1回は“美肌番長”外崎真由美氏が登壇し、海外進出のリアルを語る - ニコニコニュース",
       "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5GWHhGMHlhZkN0Z3FmWEFuSDJBaDlJSTRXa0pDbzJab1JDc0tlT3ZrUThoSnN2VG42NXRhMVhwUDgwWGl1bVdvU28tY2lhTkxrenlxdmZ5ME01UGluZDJNMmFIWm5KLXBm?oc=5",
       "pubDate": "Thu, 21 May 2026 00:30:40 GMT",
@@ -1891,18 +2215,6 @@
       "summary": "日本では、法人設立がしやすい環境が整っています。本ページでは、日本での拠点設立に関わる基本的な流れや、各ステップの解説、コスト試算、会社設立に関連した法制度情報・各種手続きを紹介します。​"
     },
     {
-      "title": "【蝶理】海外で事業領域拡大へ 事業投資とM＆Aを積極化 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5iZU1aWHplX2hWQ01PaUhCYlRrbXNFUXdFeFFxZDBIRXBjYUJ6aG9kQkxhbmwxRTJQTzF2cV8tZFZfT0U3V0M1UlRvZ0JrWkUxdXJSWFdwWGpMUUFkcFFiUlpnOHlwTVRHcmhj?oc=5",
-      "pubDate": "Wed, 20 May 2026 21:31:45 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/articles/chori_overseasbusiness20260521",
-      "img": "https://drdo50jm8vowu.cloudfront.net/uploads/article/212225/image_chori_overseasbusiness20260521.jpg",
-      "summary": "老舗繊維商社の蝶理は、海外市場を成長の中心に据え、事業領域を拡大する。世界的な生産・調達網の重要拠点である中国・ASEAN（東南アジア諸国連合）を基点に、海外から海外へのビジネスを強化し、数値目標の達成を目指す。"
-    },
-    {
       "title": "「くまモンに会える場所」来場の約7割が海外からの観光客　スタッフも多言語対応でグローバル化すすむ - ｄメニューニュース",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE4tMkJCekJObk93TmdDV2pQbDlHVmtIMUkxVEt4dDc1WWNwRXpUQUFSUTJERi04Qml0d3FTdzdnZVVpbWlUNXQ5N2x4NVd3b2gzS2xIYTV3TXQzeFFTMHpXQnBRTWJzLW4tS0VkbzgzQdIBdEFVX3lxTE5BODNzaG5id05UZW9VTDlsVUI2alJ6dXZhRTUxeEhtU0lhMnJlbkRZLXNFTkdmai1rVm5rbEw4UVBaMkZ6eU96OXFkeFFOUk9EMXM5dWpfY0ZsaWVnLTNITHlZSTE0NDlaaU9ibUJfVHhlNVRD?oc=5",
       "pubDate": "Wed, 20 May 2026 21:14:56 GMT",
@@ -1971,18 +2283,6 @@
       "descHref": "",
       "category": "funding",
       "resolvedUrl": "https://tradersunion.com/ja/news/market-voices/show/2094874-defense-startup-funding/",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "日清オイリオＧ、化粧品用エステル油の海外展開拍車 - 化学工業日報 電子版",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB1M2VONGNZaGJfVGh3V0Y0LXpRT1FEM1hIVkQwWWlIeGFIU3dPM2RoXzdKQ2VxVVpIS252THVtU0pCZzZxY1RlRTNZeTFtN0FSREtF?oc=5",
-      "pubDate": "Wed, 20 May 2026 20:04:30 GMT",
-      "source": "化学工業日報 電子版",
-      "sourceUrl": "https://chemicaldaily.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://chemicaldaily.com/archives/804290",
       "img": "",
       "summary": ""
     },
@@ -2083,16 +2383,16 @@
       "summary": "楽天グループは20日、金融事業を10月に再編すると発表した。楽天銀行の傘下に主要な金融子会社をまとめる。提携するみずほフィナンシャルグループも楽天銀行へ出資し連携を深める。再編で年850億円の利益を"
     },
     {
-      "title": "地銀、越境融資で利益底上げ 山梨中央銀や紀陽銀、大都市へ 不動産や富裕層に照準 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQNDZ5YmIyUkM0RWdGR2J4NWNKa0JwTmwzX0JEaDJzZlJ0bkNLMmktTGFOZE9mYjB3S0JFYlFCV1NOSnljT01jTlhyb0FGWEItZUNCdkF1TU5jTVdZV0dFSTdSZEJXNlJ5UnhnU2dzNDBFTVlULVh2enJaLUNEQk1wRHBqakR0SFNrcExwVzNZdGZuZkVSMkNqRWFvZ28tTEZnWXF1cUVR?oc=5",
+      "title": "大手損保、業績踊り場 MS&amp;ADとSOMPOが今期減益 稼ぎ頭の海外、競争激しく - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQZmZXQVZzR3ZfS0kycUNoOHlSSS1MbW00eWpBM0xobDVidmZyTUJkVGRZTXBCblpEbE5sNy1WSV91R0tTVVZBcGZNY3pYenhYcC1tQ2hNcGN0dXFTOU1YalB2Q3N4cWtCZFl2c2JfelNoaDhVX01LdGNQcTQ2Ukk5c0w3a2Zsc2RnR3BvbFZCa3FnMDFCTnNxWi1hang5WkxFb2xwdUV3?oc=5",
       "pubDate": "Wed, 20 May 2026 17:06:33 GMT",
       "source": "日本経済新聞",
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=2&n_m_code=121&ng=DGKKZO96380550Q6A520C2EE9000",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKKZO9638056020052026EE9000-KB2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&ixlib=java-1.2.0&s=a470a5fc171313cad05d23aa899a08c6",
-      "summary": "上場地方銀行の業績が好調だ。2027年3月期連結純利益は合計2兆円に迫り、3期連続の最高益更新を視野に入れる。日銀の利上げによる利ざや改善に加え、一部銀行は都市部への「越境融資」を伸ばしている。今後"
+      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=124&ng=DGKKZO96380680Q6A520C2EE9000",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKKZO9638069020052026EE9000-KB2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&ixlib=java-1.2.0&s=44550906dda07d7262b0ff8aee64accf",
+      "summary": "大手損害保険の業績がいったん踊り場を迎える。大手3グループのうちMS&ADインシュアランスグループホールディングス（HD）とSOMPOHDは2027年3月期の連結純利益が前期を下回る見通しだ。前期に"
     },
     {
       "title": "ミュトス対応、地銀首脳に要請 金融庁「主体的関与を」 - 日本経済新聞",
@@ -2105,18 +2405,6 @@
       "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=2&n_m_code=121&ng=DGKKZO96380790Q6A520C2EE9000",
       "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
       "summary": "金融庁は20日、全国地方銀行協会などの業界団体との意見交換会を開いた。米新興アンソロピックの新AI（人工知能）を悪用したサイバー攻撃への懸念の高まりを踏まえ、地方銀行の首脳などに対策を要請した。金融"
-    },
-    {
-      "title": "有報開示、8割が総会直前 民間調べ、「3週間前」は7社どまり - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPbU9hNjZoSlFUZnhyWVdGWExmLXB0b2lmc1FzMXVBX19mVGlzUW5wN2VIMkppTlgzOF9Vb2I1ZjJlY1R6U2VPMnprazVxWHg0UG51Qm9pYm03WmRQRG5QNm5COTdSZjFpNVR1bnA3VHROWlJUWWFLUDhrc2tEWmRHMHdVaG9aeG96Vlg4aVAwV0pNWHU0UDUwbmVhaGRyQWxISjNBOFFn?oc=5",
-      "pubDate": "Wed, 20 May 2026 17:05:09 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=2&n_m_code=121&ng=DGKKZO96383770Q6A520C2EA2000",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKKZO9638378020052026EA2000-KB2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&ixlib=java-1.2.0&s=16b652f5feb564b48080abf1e3745248",
-      "summary": "有価証券報告書の前倒し開示が形式的なものにとどまっている。三菱UFJ信託銀行が3月期決算の上場企業を調べたところ、今年、株主総会前の開示を予定する企業のうち8割弱が総会の1～3日前とし、機関投資家の"
     },
     {
       "title": "くら寿司USA、300店目標 トランプ氏株取得で関心 節約志向取り込む - 日本経済新聞",
@@ -2155,30 +2443,6 @@
       "summary": "森ビルは20日、向後康弘取締役常務執行役員（58）が社長に就く人事を発表した。社長交代は15年ぶり。辻慎吾社長（65）は会長に就く。麻布台ヒルズ（東京・港）の整備などに一定のメドが付いたとみて新体制に刷新する。6月23日の定時株主総会後の取締役会を経て正式決定する。創業家以外からの社長は2人目となる。向後氏は1991年に森ビルに入社後、六本木ヒルズ（東京・港）と周辺"
     },
     {
-      "title": "3県上場企業の今期 営業損益、6割が改善 価格転嫁や宇宙・防衛が寄与 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQc1RLUUNGVW1KNVEtVkZLSUxQMk5qS1N1aHBKYmU0NkxkVGlwMGlneldRaVJXWEpxMEdMMVVaMHVqY3oydlJTeGRuczEwZnJkYXhQeHJ5Mm5lZDJ2NDh3YjZmcmxYU0RmbFhnOWZqQnlqbDEtUFV4QzlLU2JIbzlhQklEMk51NFRhWGFnaVI0dUd0R1gtNHpvNXJnd0pqSHFZd0xKTUZRWXU?oc=5",
-      "pubDate": "Wed, 20 May 2026 16:53:06 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGKKZO96368770Q6A520C2LB0000&scode=7267&ba=1",
-      "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
-      "summary": "北陸3県の上場企業（金融、電力除く）の2027年3月期は約6割の企業で営業損益が改善する。価格転嫁や生産性の向上に加え、防衛・宇宙といった事業が寄与する。減益になる企業は中東情勢による原材料費上昇や"
-    },
-    {
-      "title": "小糸製作所のヘッドランプ 車両検知し照射範囲制御 レクサス「ES」に採用 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPcTVPd0RiQlJFUGJydm9rZXV0bHpFWFJQMXVLMHFOVnJJaXFvck1sa1RKOWZITUlZSXlCcENTUENHMGI1LWhJX3VnSHV6YTJITEtiZGQ1ZUFwd2tXRW1PRE5pQ0JrX2NKMkQ2aWV2akFUME0zUU1YR2s1SGJNTnRwMy1GbTNEOC1PNDNZZFU5WWtPeXFMVXNOQjR3UkUxWEJETUJWdGE0ZWc?oc=5",
-      "pubDate": "Wed, 20 May 2026 16:52:59 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGKKZO96371850Q6A520C2L61000&scode=7203&ba=1",
-      "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
-      "summary": "小糸製作所は19日、前方の車両を検知して照射範囲を自動制御する車載ヘッドランプ「高精細ADB」を開発し、量産を開始したと発表した。トヨタ自動車の高級車ブランド「レクサス」のセダン車「ES」が採用する"
-    },
-    {
       "title": "エアロエッジ、航空部品加工会社を買収 防衛分野へ進出図る - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMzN3UHA0QV9qNDN2ZkFjbjdxS1o3MG9rcXpiTV95RlplNEhfNEdUbEZtakhZVmJZQ0JsWnRsZGtFMUswa3NDOF9IOXpMRXExbEZRQ25rU3hQXzdXbzJHTXpHWXpGSHJSSXVMaVo4amVGXy1FaDhBTklLWGtxLUlpRFVuYUFBeVVMQnZjbFM4UGExTmZnSzFV?oc=5",
       "pubDate": "Wed, 20 May 2026 16:50:35 GMT",
@@ -2203,52 +2467,28 @@
       "summary": ""
     },
     {
-      "title": "日韓首脳、サプライチェーン、エネルギー分野の協力策を議論(韓国、日本) | ビジネス短信 - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1idnFPUnp6bkpSMnoxcWQySFhuWFBwbW9wY1c1Ry1HZVBTNlhVNFRzMXJ0MGRYUEVIVnltbWp5dEtHR2VqclF5aldYY0FoT1JhX0VWSE51d3NmRHRORGVvSEx4eC0xamVocmtHbV93?oc=5",
-      "pubDate": "Wed, 20 May 2026 15:05:19 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/59e4d4e86de762e0.html",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "グローバルインフォメーション 、ユーザベースによるTOBを受け入れて株式を非公開化 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5mMHdwdnZzRnJqYVh0MmE0aGczZFEwNWREakZjNndsOFpiX2YzN3RraDctOXkyZmlBNkJsVXI1S3M4QlQ2V2lkOXR3?oc=5",
+      "title": "日本テレビホールディングス 、XRコンテンツ制作のNeoRealXを子会社化 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE40NGFyRFZyTmthaDZCWU9sT1Y2TWNYd3NvUENRZXBkYnhOUXU3N3JzeGhwaXlNRE9kX2FOc2Y5QXZMSl84cFh2UVBR?oc=5",
       "pubDate": "Wed, 20 May 2026 14:11:24 GMT",
       "source": "M&amp;A Online",
       "sourceUrl": "https://maonline.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://maonline.jp/news/20260520g",
+      "resolvedUrl": "https://maonline.jp/news/20260520d",
       "img": "https://maonline.jp/images/tmb_flash_news.png",
-      "summary": "市場調査リポートを販売するグローバルインフォメーションは、法人向けの情報提供サービスや経済メディア「NewsPicks」の運営を手がけるユーザベース（東京都千代田区）によるTOB（株式公開買い付け）を受け入れて株式を非公開化する。インドや中国系調査出版会社の台頭や生成AI（人工知能）の進化など事業環境の変化を背景に、従来からのキーワード検索による集客モデルの抜本的な見直し、AI関連施策を通じた事業基盤の再強化が必要だと判断。ユーザベースが保有する法人向け営業基盤の活用による多角的な営業チャンネルの構築、両者の持つデータ基盤の統合に基づく調査サービスの高度化、付加価値の高い新たなサービスの提供な"
+      "summary": "日本テレビホールディングスは、XR（クロスリアリティー＝現実と仮想の世界の融合）コンテンツや体験型コンテンツの制作を手がけるNeoRealX（東京都港区）を子会社化することで、XR領域の強化を図る。NeoRealXは自治体向けの観光・防災分野のVR（仮想現実）コンテンツ作成で実績があるという。"
     },
     {
-      "title": "スターティアホールディングス 、昭文堂事務機からITインフラ関連事業を取得 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1zNjFMODFQS1FLdElUTXNqTHdlVzlvS1pfUVRnRFFhMUI4UXg4RTZiQV9PRXVrbjhqdWI2NHRyZGFoNnoxbkE5bFN3?oc=5",
+      "title": "AeroEdge 、航空機体部品メーカーのオノプラントを子会社化 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9UU245ckk4WDZBQTJnbG5YUjg4eW52UlBPODZsb1ppcGRIaWlmSl9FdWx4TFpZcEdxYkdGQjR3VjgwTDJmSnUyVzJ3?oc=5",
       "pubDate": "Wed, 20 May 2026 14:06:24 GMT",
       "source": "M&amp;A Online",
       "sourceUrl": "https://maonline.jp",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://maonline.jp/news/20260520a",
+      "resolvedUrl": "https://maonline.jp/news/20260520c",
       "img": "https://maonline.jp/images/tmb_flash_news.png",
-      "summary": "法人向けにIT機器の販売・保守を手がけるスターティアホールディングスは、昭文堂事務機（東京都足立区）からOA機器の販売・保守メンテナンスなどITインフラ関連事業を取得することで、東京都を中心とした関東地域での新規顧客の獲得やクロスセル（併売）の拡大、既存事業とのスケールメリット獲得などの相乗効果を見込む。"
-    },
-    {
-      "title": "スターティアホールディングス 、電通システムからITインフラ関連事業を取得 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5MZDVoeHV4aFl4SXJqREpMcDMwc0h2NWszWUY0UGxHQXdDZDl1LXdTd2lXRzU3RHl5SURyNDFqWTNSbm5nRU50cXJR?oc=5",
-      "pubDate": "Wed, 20 May 2026 14:06:24 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/news/20260520b",
-      "img": "https://maonline.jp/images/tmb_flash_news.png",
-      "summary": "法人向けにIT機器の販売・保守を手がけるスターティアホールディングスは、電通システム（福島県本宮市）からITインフラ関連事業を取得することで、福島県エリアでの新規顧客の獲得やクロスセル（併売）の拡大、既存事業とのスケールメリット獲得などの相乗効果を見込む。電通システムは、福島県を中心に約500社の顧客基盤を有し、複合機を中心に電話設備やパソコンなどの販売・設置工事などを手がけている。"
+      "summary": "チタンアルミブレードなどの航空機エンジン用部品や自動車部品を製造するAeroEdgeは、航空機体部品の加工を主力とするオノプラント（栃木県上三川町）を子会社化し、航空機体分野への事業ポートフォリオの拡充と航空機関連ビジネスでの競争力強化を図る。また、防衛分野への進出の足がかりとする狙い。オノプラントは売上高10億3000万円、営業利益8110万円、純資産4億2700万円（2025年3月期）。"
     },
     {
       "title": "損保大手３グループ決算発表、株価の上昇で政策保有株の売却益が膨らむ…海外事業も好調 - 読売新聞",
@@ -2309,6 +2549,18 @@
       "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUF2090B0Q6A520C2000000/",
       "img": "",
       "summary": ""
+    },
+    {
+      "title": "愛媛信金の26年3月期、189億円の最終赤字 債券売却損計上で - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPNVFxWE9rakQ1SXFkNHZkalAtdzN1ZVZGM1ZPM3ByWk02bUxrZWprMGxwRDlHeWtlb2RWcWpWb1V3R19scDFGdk5zSXB2N3lmb2gySXJzVFY0ZVpkNWhhODlrV05yNVQ1LXZBdkk2MWdOZnRKWFJ3QVJkdndmTFl6Z1N1eGFHZldyVzdHSTNpN3NLTTBTMHY0Vnl1czA0ck9ULUc1TUpB?oc=5",
+      "pubDate": "Wed, 20 May 2026 09:37:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=121&ng=DGXZQOCC206K50Q6A520C2000000",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3049052020052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=84ac6c1f47c98d4f5bd3ef38895a59bd",
+      "summary": "愛媛信用金庫（松山市）が20日に発表した2026年3月期の単独決算は、最終損益が189億円の赤字（前の期は6億3300万円の黒字）だった。金利上昇の影響で、評価損が拡大した国債や地方債などの売却損を"
     },
     {
       "title": "【2026年版】HRテック（HR Tech）のカオスマップ！AI面接やAIスカウトにも注目 - BOXIL Magazine（ボクシル マガジン） - BOXIL",
@@ -2419,18 +2671,6 @@
       "summary": "東証グロースのアライドアーキテクツ株式会社＜6081＞について、ディファイ・ディベロップメント・コープ(DeFi Development Corp.)が2026年5月20日付で財務局に大量保有報告書（5%ルール報告書）を新規提出した。"
     },
     {
-      "title": "【M&amp;Aニュース解説】売上3400万円。1.6億で買収。GMOペパボがフルスクリーンEC「SmartEC」を買収し子会社化｜スマホ購買率を武器に中〜大型ECを取りにいく - note",
-      "link": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBhQ1NOM1pTNEQ1YTVGbzY5bkJpVlZjSkFONnIyWkZTdnRVY2JQdUpvVGZsUzk2RU1OODl2d3lZMERERjhHRURaTEJkRFd6MFpk?oc=5",
-      "pubDate": "Wed, 20 May 2026 08:06:02 GMT",
-      "source": "note",
-      "sourceUrl": "https://note.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://note.com/manav_/n/n57d867bce7c7",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "パン・パシフィック・インターナショナルホールディングス、最終増益 - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQOE9uNkpoUjJ6MHl0Sm1uOWFnOWtTWEhJekYzalF0UVFHSXd0UUpTbWNTdnRYSmc3OU1CeXEyRGxhcjl1dW1HQmVDLTBhWlVwQ1d2a1UyTWZNQ19KelB6R1RQTmFaeWxBeGd3YkZMZWZDUl9mTGM1SXJwSERNSEZJcE85cHA4b1l2R3ZjUFFROHI3WWNwZElxSklPMjhLdjR4TGRVUVh3?oc=5",
       "pubDate": "Wed, 20 May 2026 08:01:00 GMT",
@@ -2441,6 +2681,18 @@
       "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=101&ng=DGXZQOUB13ANJ0T10C26A5000000",
       "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
       "summary": "【最終増益】26年6月期は訪日客の免税売り上げが好調に推移し、利益率の高いプライベートブランド（PB）商品の拡販が続く。海外事業も収益が改善し、増収増益。27年6月期も主力事業で好調を維持する見通し"
+    },
+    {
+      "title": "インドネシア中銀が0.5%利上げ 2年1カ月ぶり、通貨安進行で防衛 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZUpiTmxEUFJXWFJhdVJZWUdjYnBIRkhUYTZVUDdaWXBVcTl1WkVqaXUwUkdYcjVFa1l2Ti00RE5zRHRMNjFOTDJTVlIzVjktMXdXbnc4T0tTNGhLdDhRa25zU3lJeS1wWGdLbVVraHBUZDRkOTZkeUowWExXUEFyaEFqZEpQc04zZDQxNnhnX2YtdHMwTXB1ZWZNdXZlNFgycHlISWdB?oc=5",
+      "pubDate": "Wed, 20 May 2026 08:01:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=121&ng=DGXZQOGM203BN0Q6A520C2000000",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3047025020052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.49&fp-y=0.62&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=87dd54443d38c4ff75b4fd3e3fd7d991",
+      "summary": "【ジャカルタ=押切智義】インドネシア中央銀行は20日、政策金利（7日物リバースレポ金利）を0.5%引き上げ、5.25%にすると決めた。中東情勢の緊張などからルピアが対ドルで史上最安値を更新しており、"
     },
     {
       "title": "【速報】ニチレイロジグループ本社、海外事業さらに拡大 中計を上方修正 - 日本食糧新聞・電子版",
@@ -2489,6 +2741,18 @@
       "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/56cd3b8941a7f53a.html",
       "img": "",
       "summary": ""
+    },
+    {
+      "title": "人事、アコム - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1EdFNxalRVZ2NQaU14TGl2YVllMWs4bHJZRDVjMk4zYnQzLWxHUEFUeF9ubGozSGVGMVRYSG5IUG1PRlJvNWhLZXVTeXF5azZESWpYQ01ldktaY0FCbElwLTJWS0JTa3ZLcE1QaA?oc=5",
+      "pubDate": "Wed, 20 May 2026 07:16:42 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZTSJY10101_Q6A520C2000000/",
+      "img": "https://www.nikkei.com/.resources/k-components/rectangle.rev-d54ea30.png",
+      "summary": "（6月23日）専務兼専務執行役員（常務執行役員）営業本部長木下裕司▽退任（専務）吉羽優志人事部・経理部担当（営業企画部担当）常務執行役員森下和喜▽常務執行役員経営企画部・デジタル・業務統括部担当（執行役員経営企画）森本"
     },
     {
       "title": "米国の鉄鋼・アルミ・銅の232条関税の制度変更と企業の実務対応 | 地域・分析レポート - 海外ビジネス情報 - jetro.go.jp",
@@ -2551,14 +2815,14 @@
       "summary": ""
     },
     {
-      "title": "世界のまなざしと工芸〜海外展開の歴史と現在…工芸シンポジウム2026基調講演 - 読売新聞",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8zWVRBckkxZE5xQUhHeEtKOWF4c2ZxNEpmVGdvcnBFb0wteGFFN0w4NlhYeVhoT2R3aVo4QUNiU3NiUGhveFlISGYzU3BDY25DVlhSR3A1QlBVc1U?oc=5",
-      "pubDate": "Wed, 20 May 2026 06:56:15 GMT",
-      "source": "読売新聞",
-      "sourceUrl": "https://www.yomiuri.co.jp",
+      "title": "グローバル人材育成海外派遣事業（フィンランド派遣） - city.shinagawa.tokyo.jp",
+      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOFpoT3hVTzVibTdSekR3VUdIelBFSm5BeWstU1d4TEc2ODNZZjkyTUFndVF3UXF6MTZ0bmFJVzFiRTFiUnpqX05BNkdNNUNCcVZXeXR3bFM1YXk5SlJrc2hUZ3BtMmhobk9mb1hlams3RmNvR1VIaWdEa1JvN0ZvckVzYW5TZ1I4?oc=5",
+      "pubDate": "Wed, 20 May 2026 07:00:00 GMT",
+      "source": "city.shinagawa.tokyo.jp",
+      "sourceUrl": "https://www.city.shinagawa.tokyo.jp",
       "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.yomiuri.co.jp/stream/article/27321/",
+      "category": "talent",
+      "resolvedUrl": "https://www.city.shinagawa.tokyo.jp/PC/chiiki/kokusai/tabunka/20210804172733.html",
       "img": "",
       "summary": ""
     },
@@ -2623,6 +2887,30 @@
       "summary": "movus technologies株式会社のプレスリリース（2026年5月20日 15時00分）東南アジアのモビリティインフラを構築するmovus、インドネシア財閥系リース会社と総額約20億円分のリース契約を締結"
     },
     {
+      "title": "カナダ、経済電化に向けた国家戦略を公表、電力インフラ拡張へ(カナダ) | ビジネス短信 - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1ZakNxYVNIbXpZTkpraDc3eEl2VDlNSWpoaDRGdUp1MUhPMEExbHJCV1hsZkVBdENpcVB6Q1VDTS13MXBvVzdORVJlbmVTVEZkTWRBYkxBd1c4NDZYQl9Pek9CaGlrb3BKZHFDMU5n?oc=5",
+      "pubDate": "Wed, 20 May 2026 05:43:10 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/5f54af118fd1d11c.html",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "ウエリントン・マネージメント・カンパニー・エルエルピー(Wellington Management Company LLP)がSansan株式会社＜4443＞株式の大量保有報告書を提出 - M&amp;A Online",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9VOS1Id1A1aGhuWTVseTQwM3psUnNtWU9aRTlzMTZwV25xXzFjZF9sRFNNLWpjTDltWVVva3M0WDVteEdHQ0FqSzd1RzVXeEJKalE?oc=5",
+      "pubDate": "Wed, 20 May 2026 05:42:29 GMT",
+      "source": "M&amp;A Online",
+      "sourceUrl": "https://maonline.jp",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://maonline.jp/kabuhoyu/sh-s100y4w1",
+      "img": "https://maonline.jp/images/taiho/taiho_new.png",
+      "summary": "東証プライムのSansan株式会社＜4443＞について、ウエリントン・マネージメント・カンパニー・エルエルピー(Wellington Management Company LLP)が2026年5月20日付で財務局に大量保有報告書（5%ルール報告書）を新規提出した。"
+    },
+    {
       "title": "アンソロピック、脆弱性の共有容認 AI「ミュトス」巡り - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQS2ljVnRON0M4N2lnR0h1VDZHYzN0MnJsNGttOUduWnJlLV83dDgxS3dOVjE2V0F3amN1VnBDTTR6SE1mUWE4alhjUkdEX0ptQTNoc2NlVF9GaTlCWVMyWjQ2VVdLT2Fsal9WdjdMcFJwNE5uM1dIZlFiUDJncWxuMTI4cGRMdHdJUnVfN19QQ2JZNkoxbWxQZG9uTDRILW5hWjhFeHVYOTlfUQ?oc=5",
       "pubDate": "Wed, 20 May 2026 05:41:02 GMT",
@@ -2633,6 +2921,18 @@
       "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGKKZO96366420Q6A520C2EAF000&nik_code=0070007",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKKZO9636643020052026EAF000-KB2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=scale&h=500&ixlib=java-1.2.0&s=06b214851a1fc1876536c9aae4baa7d6",
       "summary": "【シリコンバレー=山田遼太郎】米新興アンソロピックは19日、限定公開している新型の人工知能（AI）「Claude Mythos（クロード・ミュトス）」が見つけたソフトの脆弱性などの情報を、利用企業が"
+    },
+    {
+      "title": "香港輸出信用保険局、中小企業向けの輸出支援計画を導入(香港) | ビジネス短信 - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5XZEhldEtXV2ZzVmlucGdhYnFiWldHVW9BcEFkZ3RXd0I4bTRteVIxdGxNWXJHbFg0NUxBVjAxY3pSczlEVWJIeGJfZ1Nycm14OGtYR19iY1BnVm43OUdoQ3h5TGt3dVY2Nkg2bDJ3?oc=5",
+      "pubDate": "Wed, 20 May 2026 05:12:58 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/343f6a06ffbb2593.html",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "Power Angels、次世代有機EL材料を手がけるKyuluxへ出資 - PR TIMES",
@@ -2681,18 +2981,6 @@
       "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000020.000092156.html",
       "img": "https://prcdn.freetls.fastly.net/release_image/92156/20/92156-20-0e379a674c9354af9bb3276d0597b2bf-1952x641.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
       "summary": "株式会社ソラリスのプレスリリース（2026年5月20日 10時00分）ミミズ型管内走行ロボットを開発・提供するソラリス、第三者割当増資で総額5.0億円の資金調達を実施"
-    },
-    {
-      "title": "ピッチだけじゃない、次のステージに繋がる出会いを提供！シード・アーリー限定ピッチコンテスト『StartupGo!Go! The Pitch』エントリー受付開始！ - PR TIMES",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB0eE5fUTJVQlNIanNtZXQ4eGswSUg2TkgyUU1wUVh3MThZM1RyLWZEcTlIbEt5QWltbFdIclh0U1FCelZLZzYyR0xOQUpLdF8wY3dxUHZsdTZCZkVKLVl0UEFTLVd5bnZZTlE?oc=5",
-      "pubDate": "Wed, 20 May 2026 01:00:02 GMT",
-      "source": "PR TIMES",
-      "sourceUrl": "https://prtimes.jp",
-      "descHref": "",
-      "category": "funding",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000021.000018601.html",
-      "img": "https://prcdn.freetls.fastly.net/release_image/18601/21/18601-21-fcb3dc0d88645c04605f98a250e47681-1920x1080.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
-      "summary": "一般社団法人StartupGoGoのプレスリリース（2026年5月20日 10時00分）ピッチだけじゃない、次のステージに繋がる出会いを提供！シード・アーリー限定ピッチコンテスト『StartupGo!Go! The Pitch』エントリー受付開始！"
     },
     {
       "title": "グローバルファッションEC「SHEIN」が日本初登壇！ 日本戦略＋「Marketplace」活用で売上UP＋海外進出できる仕組みとは？ - ネットショップ担当者フォーラム",
@@ -2875,6 +3163,18 @@
       "summary": "台湾の製薬企業である保瑞薬業は米国のマクロジェニクスからバイオ医薬品の開発・製造受託（CDMO）事業を買収すると発表した。買収金額は1億2250万ドル（約190億円）で、米メリーランド州の製薬工場な"
     },
     {
+      "title": "〈M&amp;Aファイル〉住友林業→トライ・ポイント・ホームズ 粘り勝ちの米社買収 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNWmlZZ0d2WG93eFpVbWNJZkdrY0Z3UXZFVUxIUWo3cDdETzEtSXZHOFhHa0VBRk4xaVJmek5FLW5kdlNOTklOLWRDMlNoUDZqYjl5OUhqVTFlUjczMHptYzgzcDdqRkRNY1NJX2JZaC0yMmdWQ2otZC1SVE9YQ0RicDNMWU1mdG9hRlpOVzRlbGQ3aUY0UmJGeDF1SUlwdm5peVJwN21n?oc=5",
+      "pubDate": "Tue, 19 May 2026 17:05:50 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=122&ng=DGKKZO96353520Z10C26A5DTB000",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKKZO9635353019052026DTB000-KB2.jpg?auto=format%2Ccompress&ch=Width%2CDPR&fit=max&ixlib=java-1.2.0&s=466d4a6d58632361c6302180cf14d70b",
+      "summary": "住友林業は米住宅大手トライ・ポイント・ホームズ（TPH）の買収に約42億ドル（約6500億円）を投じる。国内住宅業界で過去最大規模。住宅業界の買収に数多く関与してきた三菱UFJモルガン・スタンレー証"
+    },
+    {
       "title": "マレーシアの電池会社買収 TDK、380億円で - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNSzhBMVhBc29mU1czQW1QSkJyeWRPejNxMEdOSEowQVRNd2t6MlJQdkxCWVRRMXRieFQ1djBjVXFiWTRHVTlLR1JoSV93dXNPYy00dGFXRWRES2tuQl8wUkdydnFaNGlMTFpHdHJVQkZ1a1dJQWlTdFNDZmhFbWpEclpnTjlYVThPX0Mwczh6S1RiNno4Q1RJS1o4azYzbnd0MUU5VktR?oc=5",
       "pubDate": "Tue, 19 May 2026 17:01:49 GMT",
@@ -2885,18 +3185,6 @@
       "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=042&ng=DGKKZO96354580Z10C26A5TB3000",
       "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
       "summary": "TDKは19日、電池子会社を通じてマレーシアの中型電池メーカー、リナジーパワーを買収すると発表した。2億4110万ドル（約380億円）で全株を取得する。人工知能（AI）向け蓄電池などで需要が伸びる中"
-    },
-    {
-      "title": "〈M&amp;Aファイル〉住友林業→トライ・ポイント・ホームズ 粘り勝ちの米社買収 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd0hvVnRTRXFfWWljZVZDUnJqM0tXUHJ4c2F5MHZ6dklxemItTkZiZ2hiemE1dlQ4Z3lzdVpXZHh0MWxic0NWeHQ2VnlJUGJUZjRneHN4OFdYUWR2dXB6NFBSWlNnakFpenNSbURVU1M1VW42M1hDSkJybGZ0SUVsVGNzTDIzN2lkMEx6dURFMXVTSUJSeDJjOWRFS29wU0tJLUVDZU5B?oc=5",
-      "pubDate": "Tue, 19 May 2026 17:01:48 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=083&ng=DGKKZO96353520Z10C26A5DTB000",
-      "img": "",
-      "summary": ""
     },
     {
       "title": "半導体工場の細い配管や下水管もロボで検査 ソラリス、5億円調達 - 日本経済新聞",
@@ -2923,18 +3211,6 @@
       "summary": "【ニューヨーク=竹内弘文】米大手投資会社ブラックストーンは18日、米グーグルと共同出資会社を設立し、クラウドコンピューティング事業を始めると発表した。グーグルの人工知能（AI）半導体「TPU」を用いた計算能力を顧客に提供する。ブラックストーン"
     },
     {
-      "title": "経済安保、海外事業に出資 改正案が衆院通過 重要物資を確保 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBld3ZPSmQ5RnJXcUlzUzI4VzRlVDBhRjN5LVRKZ2lqUHBxeVcwcmIwUmI4bk9sWVVVb3dkMVJzRGUtYUdzNWFFYlpaa3pJdTZzZDByNldVOGhDbk9aaGJnR3RqU0NzU1JJeGtBOQ?oc=5",
-      "pubDate": "Tue, 19 May 2026 17:00:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "funding",
-      "resolvedUrl": "https://www.nikkei.com/article/DGKKZO96360870Q6A520C2PD0000/",
-      "img": "https://www.nikkei.com/.resources/k-components/rectangle.rev-d54ea30.png",
-      "summary": "経済安全保障推進法の改正案が19日の衆院本会議で可決し、参院に送付された。経済安保上で重要な日本企業の海外事業を国際協力銀行（JBIC）が支援する制度を新設する。重要物資のサプライチェーン（供給網）強化に同志国と取り組む。政府は新興・途上国「グローバルサウス」で重要な海外事業への伴走支援に乗り出す。政府系金融機関であるJBICによる「劣後出資」を認め、損失が発生した場合のリスクを国が引き受ける"
-    },
-    {
       "title": "新興企業の買収促進 経産省、きょう指針公表 IPO以外も選択肢に - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA2dE9OSjFzUU91WG5wNTVObzMyQV92VXRYbzVMNmp5X2xsYm4tMDdVQVdac3Nlc0pEX3JlZEpIbWt1ay15NXpIbWVkbDgwZzRYUm5pYXJ0V3g2M3U3SkdNTWMybnBESm9IelptRg?oc=5",
       "pubDate": "Tue, 19 May 2026 17:00:00 GMT",
@@ -2945,6 +3221,18 @@
       "resolvedUrl": "https://www.nikkei.com/article/DGKKZO96356900Z10C26A5EP0000/",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKKZO9635691019052026EP0000-2.jpg?auto=compress&bg=FFFF&fill=blur&fit=fill&fm=jpg&h=630&upscale=false&w=1200&s=bb5f08ed2d61d51ff0a4598508f39e61",
       "summary": "経済産業省はスタートアップを巡るM&A（合併・買収）の指針をまとめる。新規株式公開（IPO）だけでなく買収されるのも新興企業の重要な出口戦略だと位置づける。スタートアップを買収する企業へのアドバイスも盛り込む。20日に政府が開くスタートアップ政策推進分科会で公表する。指針は経産省が新興企業の買収や売却の経験者、ベンチャーキャピタル（VC）、法律家などを集めて2025年から開いた有識者検討会の議"
+    },
+    {
+      "title": "パナHD、英映像機器を買収 プロジェクター立て直し 売却白紙から一転、改革めど - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ZaXZtUkgwZjIyV2QxTFZnV1dKT3Z5M2xfd1kzZHJwbmU3Vkp0RTFvVzNpZUVDSzkzdGRLRGZUUlpUYUpBVlp4S3cyUldnMjNtZXBMNUpCbWE2ZUlIU2pzaW9aM2FTUy0yMHlQbg?oc=5",
+      "pubDate": "Tue, 19 May 2026 17:00:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://www.nikkei.com/article/DGKKZO96355520Z10C26A5TB1000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKZZO9635599019052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=9853e47c37d7706a82e21f5f7078114f",
+      "summary": "パナソニックホールディングス（HD）は19日、映像機器を手がける英スタートアップを買収したと発表した。2025年に売却が白紙になったプロジェクター事業の立て直しをはかる。テレビや車載機器など課題事業の再建や売却を進める構造改革にめどを付ける。傘下のパナソニックプロジェクター&ディスプレイ（PPND、大阪府門真市）を通じて、11日に英ハイブ・メディア・コントロールの全株式を取得した。買収額は10"
     },
     {
       "title": "三菱商事も持て余した水ing、インフロニアが世界大手への道を開く - 日本経済新聞",
@@ -2983,18 +3271,6 @@
       "summary": "ソフトウエア開発のHBA（札幌市）がバイオ燃料の素材として注目されているジャイアントミスカンサス（オギススキ）の栽培実験を始めた。生育が早く二酸化炭素（CO2）を取り込む効果が期待できる。バイオマス"
     },
     {
-      "title": "EU幹部、欧州銀のミュトス利用を「米国が確約」 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUmo4Yk1ZV2sya1ZseTFxTnB1QmlPSlYyd3N6ZTJPWlNubDJlX2FHNmcwUklsSHNVN2VhZWpjc3hEWThmTzdHU0ZYM2xNS2FGVG9JcGMzTDluM0JhbzdDT1hyS0hTNXBES1ZRNlJuUjdiRmhLVGVYN0FfdHNLaGNCX3ZzZlAwWGMtTjFTNDlLQnpLQWl2bjVFbllacGlfMFNYMGxyTlB4bTVLZw?oc=5",
-      "pubDate": "Tue, 19 May 2026 15:51:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGXZQOGR19BNA0Z10C26A5000000&nik_code=0070007",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3045287019052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.54&fp-y=0.37&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=86aa5599ae37ea223fca3093f3a1dd29",
-      "summary": "【パリ=北松円香】欧州連合（EU）のドムブロフスキス欧州委員（経済担当）は19日、米新興企業アンソロピックが開発した人工知能（AI）「Claude Mythos（クロード・ミュトス）」について、欧州"
-    },
-    {
       "title": "日立、アンソロピックと提携しクロードAIをグローバル展開へ 執筆 - Investing.com - FX | 株式市場 | ファイナンス | 金融ニュース",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Ya2hnWTgwcEkzQjd6RW85SEFxeWx2WXRjWGtBeVRfWHhyZXg4VFVDTkVaQmJ6RGhUV0k0dUdDV1dINzRNTlF5R3BwRU5IN1l5czBrN01BeUxDR0tqTVlmUDUtbFVPRHQxVFlkazhlUS0?oc=5",
       "pubDate": "Tue, 19 May 2026 15:37:00 GMT",
@@ -3005,18 +3281,6 @@
       "resolvedUrl": "https://jp.investing.com/news/company-news/article-93CH-1542128",
       "img": "",
       "summary": ""
-    },
-    {
-      "title": "帝人からピジョンCHROへ想定外の転職を決断、40代後半で長野に移住も - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBSOXpXQW9Jdkw2Q2hpbXRMWV9pMGdEa2E1dk9WQmN4QklQSE1qUDRnUjQzZ0Znd25mTEV3LXFGUXZsekJhTC1Tc3EzZjY5TFlLaDIxdk1fMnBQYmVXVm93NjdueFRCX2ItcGE1SG9n?oc=5",
-      "pubDate": "Tue, 19 May 2026 15:00:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://woman.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://woman.nikkei.com/atcl/feature/23/031200390/043000010/",
-      "img": "https://woman.nikkei.com/atcl/feature/23/031200390/043000010/top_m.jpg?20260401",
-      "summary": "【下編】英語の壁を破るには／ドイツ人女性上司から学んだこと／コロナ禍に決めた長野への移住、パーパスを言葉にする"
     },
     {
       "title": "三菱UFJ銀行、ペットボトル回収を一括管理 再生原料の品質向上に 5/20 - 日本経済新聞",
@@ -3079,18 +3343,6 @@
       "summary": ""
     },
     {
-      "title": "インフォネット 、不動産業向け建築CG・アニメーション事業のアクティブリテックを子会社化 - M&amp;A Online",
-      "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE96eUhvU3hGVDJvbGg2Q25qekNDTXo0RVd5THlSblh1dU40VGxzZE9abkk2Mkdham9odW85TkJkWnBIdmo4cmltRC1R?oc=5",
-      "pubDate": "Tue, 19 May 2026 10:00:07 GMT",
-      "source": "M&amp;A Online",
-      "sourceUrl": "https://maonline.jp",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://maonline.jp/news/20260519b",
-      "img": "https://maonline.jp/images/tmb_flash_news.png",
-      "summary": "ウェブコンテンツ管理システムのインフォネットは、建築CG・アニメーション事業やVR（仮想空間）などのアプリケーション事業、デジタルツイン事業などを展開するアクティブリテック（東京都新宿区）を子会社化することで、3DCG技術やシステム開発力を取り込み、グループ全体の競争力強化と持続的成長の実現を目指す。"
-    },
-    {
       "title": "淺沼組 、塗装業のシンガポールT3 Internationalを子会社化 - M&amp;A Online",
       "link": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBRakY2c3JSei1ORGo5VkNvSGktRXIzekNXTDlud3RaejlLLWN3LV9FdUY2emV5TWxrM0VtUmt6OUVIRTFvT1p6UElB?oc=5",
       "pubDate": "Tue, 19 May 2026 09:45:06 GMT",
@@ -3103,18 +3355,6 @@
       "summary": "中堅ゼネコンの淺沼組は、内外装などの塗装を手がけるシンガポールT3 International Pte. Ltd.を子会社化することで、現中期経営計画で掲げるASEAN（東南アジア諸国連合）地域におけるリニューアル事業の強化につなげる。T3 Internationalは売上高17億6000万円、営業利益1億2600万円、純資産7億6000万円（2024年12月期）。"
     },
     {
-      "title": "アニメ『超かぐや姫！』手がけるツインエンジン社、SBIホールディングスと資本業務提携へ 新IPの創出や海外展開を促進 - Yahoo!ニュース",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1idWtOc3RlR0tFZ0JpODhvMXlfek95TXdpb3J4ZUVqbFZkSV9JSlN6VFFIRWNjOHBidzJDRzhoSlZwb051REhfSWpOVi1nbDJIUVV3QTl3d0U5eUxNTkhnQmxWTl9obU1xV1RSdFVTdWhXdUgxaUtWMjh2Vzllem8?oc=5",
-      "pubDate": "Tue, 19 May 2026 09:40:00 GMT",
-      "source": "Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/articles/37a55bd25c6637b59b18eae0097f7e26b64e4e4b",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "スタートアップの買収促進へ指針作成 経産省「IPO以外も選択肢に」 - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IbmNzTU1jX0JPckdJcUUtRGEweE5yOS1PSVlkbHN1am1jbjRBaUtDcHI3R01zX3ExTjBRNkVJME5GWDdpSEFIdVlERVZIamNHLWppOXJneWFxSWo2N0J6djliaGNHQjg1WWRwbg?oc=5",
       "pubDate": "Tue, 19 May 2026 09:33:29 GMT",
@@ -3125,6 +3365,18 @@
       "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUA180TV0Y6A510C2000000/",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3043413019052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&upscale=false&w=1200&s=2563aae64d756c2e9f322f8613165873",
       "summary": "経済産業省はスタートアップを巡るM&A（合併・買収）の指針をまとめる。新規株式公開（IPO）だけでなく買収されるのも新興企業の重要な出口戦略だと位置づける。スタートアップを買収する企業へのアドバイスも盛り込む。20日に政府が開くスタートアップ政策推進分科会で公表する。指針は経産省が新興企業の買収や売却の経験者、ベンチャーキャピタル（VC）、法律家などを集めて2025年から開いた有識者検"
+    },
+    {
+      "title": "ツインエンジン、SBIホールディングスと資本業務提携へ 新IPの創出や海外展開を促進 - KAI-YOU",
+      "link": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1iaUdpMWNXbTRlV2s4OExGV0U1Mzl3UGwxcjZ2SXVEWWhwZ2tobWt0aHZzMHJmc2RvVVA4X2lFdHFXNUxhdXBkLQ?oc=5",
+      "pubDate": "Tue, 19 May 2026 09:25:00 GMT",
+      "source": "KAI-YOU",
+      "sourceUrl": "https://kai-you.net",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://kai-you.net/article/95443",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "大和証券、航空機リースに10%出資へ 富裕層向け代替資産を拡充 - 日本経済新聞",
@@ -3151,6 +3403,18 @@
       "summary": ""
     },
     {
+      "title": "大阪府内中小企業の海外進出を強力にバックアップ！令和8年度「大阪府中小企業等外国出願支援事業」の申請受付を開始 - 愛媛新聞",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5WMUQyM0xtdVd6QXoyd1dEZmhKRWVDTjdzRk1EeTl5cnZHaWhfVVhjNUNpUllOZFhubkIxSWh1VlNhREw4MFVENnkyM0RFdHdTTEdKRWFzYnJneXc?oc=5",
+      "pubDate": "Tue, 19 May 2026 09:02:07 GMT",
+      "source": "愛媛新聞",
+      "sourceUrl": "https://www.ehime-np.co.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.ehime-np.co.jp/article/prtimes91851",
+      "img": "",
+      "summary": ""
+    },
+    {
       "title": "【太平洋セメント】積極的な国内外のM＆Aで「圧倒的なリーディングカンパニー」目指す - M&amp;A Online",
       "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1kcmxST1NFdllValo2dGgtZHVnSlBwZUNiLW1lU3dHT2pydW9ERjM0VWNFUTZWalZPOUhxZUhvM2psTlF6dGRVT2FPekFOLVJkZ1IwZ2VxY2NNS0VZNFdXX0Z3?oc=5",
       "pubDate": "Tue, 19 May 2026 09:00:03 GMT",
@@ -3161,18 +3425,6 @@
       "resolvedUrl": "https://maonline.jp/articles/taiheiyo-cement20260519",
       "img": "https://drdo50jm8vowu.cloudfront.net/uploads/article/211631/image_taiheiyo-cement20260428(2).jpg",
       "summary": "太平洋セメント＜5233＞（東京都港区）の歴史は、1875（明治8）年設立の日本初の官営模範工場、深川セメント製造所に遡る。1883（明治16）年に浅野総一郎氏に払い下げられ、「日本セメント株式会社」（旧浅野セメント）が始動。他方、1881（明治14）年にセメント製造会社（小野田セメントの前身）が創立。戦後の高度経済成長期にセメント需要が拡大すると、1994（平成6）年に秩父セメントと小野田セメントの合併で「秩父小野田株式会社」を設立する。その4年後、同社（秩父小野田）と日本セメントが合併して誕生したのが「太平洋セメント株式会社」だ。"
-    },
-    {
-      "title": "米電力のネクステラ、10兆円で同業買収 AI向け需要に備え - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQNTIycVpDYXpuNWxmc3ZXNlhpUnpMcTloWFI0Mm1lalJoR0JiYVF1T2RSb0dJaGJKbVlqc0VMWFZ0amxzZjdDR1d0a2NyV3A2OUJHNnBGVDg1WWUyVVVNcVFPV0gzSnlDZFZWQ0JYSUFCaV9PRVBCU3YwQkJxTHQwQWVrc2F0cWlPZmkzU3BEeFBqdkJZRWZtSEF3?oc=5",
-      "pubDate": "Tue, 19 May 2026 08:43:52 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/nkd/company/us/PSKY/news/?DisplayType=2&ng=DGKKZO9633635019052026EAF000",
-      "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
-      "summary": "【ヒューストン=大平祐嗣】米電力会社ネクステラ・エナジーは18日、同業のドミニオン・エナジーを約670億ドル（約10兆円）で買収することで合意したと発表した。人工知能（AI）の普及で電力需要が急拡大"
     },
     {
       "title": "メタ「スマホの次」へ日本でAI眼鏡 手放し撮影や同時翻訳に利便性 - 日本経済新聞",
@@ -3223,18 +3475,6 @@
       "summary": ""
     },
     {
-      "title": "大阪府内中小企業の海外進出を強力にバックアップ！令和8年度「大阪府中小企業等外国出願支援事業」の申請受付を開始 - PR TIMES",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5reUVza1JqZ0huMXZkWWFya2Voa0JvNzNqaS16d3ZVSjM5aFg4N09heTdQMVFFRnUzVUhJMFZwaEpUbG9zTnRxczM2VHZNX1ZRb2F3elNUWXZadGF6NURhYVEzSThacE02a1E?oc=5",
-      "pubDate": "Tue, 19 May 2026 06:00:01 GMT",
-      "source": "PR TIMES",
-      "sourceUrl": "https://prtimes.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000222.000104413.html",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "カンヌ見本市、「国際共同製作」推進へ日本が存在感…「海外展開が成長の鍵」「自由度の高い映画作り可能に」 - 読売新聞",
       "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5OSEhYN3REd3N2U0hySjE2cmVKUmNkSTY2THBXNXdNY0piNTlFeVN1cFZFejY4NHVWWUN2N09rVnJmSmdvZDdHUjBOSjl5UnNRdEhGMU9hYWpKeF9RaVRrSV81ZzVQRW1neVpLOHJ3?oc=5",
       "pubDate": "Tue, 19 May 2026 06:00:00 GMT",
@@ -3245,6 +3485,18 @@
       "resolvedUrl": "https://www.yomiuri.co.jp/culture/cinema/20260519-GYT1T00173/",
       "img": "",
       "summary": ""
+    },
+    {
+      "title": "米電力のネクステラ、10兆円で同業買収 AI向け需要に備え - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNSmJEOUdaYWdBMEJxTlhZMnhrbE9TZnpTaWh3bVdYQlJ1RjljZGFJZnhqYlZzOUFaSS00cmdua2hWOW5fc0RBeDJsR2JwVUF4MHZVOUt3YnpvdktaTEw4aTZZZHhabDlPWGFVZHd3amVtRFlzU0E5MmRVTDVKcndIZ2hjWGVpRGZMa1VmbHJoM3l5Wi1lMktjag?oc=5",
+      "pubDate": "Tue, 19 May 2026 05:48:45 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://www.nikkei.com/nkd/company/us/WBD/news/?DisplayType=1&ng=DGKKZO9633635019052026EAF000",
+      "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnkd.png",
+      "summary": "【ヒューストン=大平祐嗣】米電力会社ネクステラ・エナジーは18日、同業のドミニオン・エナジーを約670億ドル（約10兆円）で買収することで合意したと発表した。人工知能（AI）の普及で電力需要が急拡大"
     },
     {
       "title": "独コメルツ銀が買収提案拒否 - 日本経済新聞",
@@ -3295,6 +3547,30 @@
       "summary": "新潟フードテックタウン実行委員会のプレスリリース（2026年5月19日 14時00分）新潟フードテックタウン（NFTT）のスタートアップコミュニティ「フードテックグラウンド（仮称）」創設 キックオフイベントを開催"
     },
     {
+      "title": "世界のまなざしと工芸〜海外展開の歴史と現在…工芸シンポジウム2026基調講演 - 読売新聞",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8zWVRBckkxZE5xQUhHeEtKOWF4c2ZxNEpmVGdvcnBFb0wteGFFN0w4NlhYeVhoT2R3aVo4QUNiU3NiUGhveFlISGYzU3BDY25DVlhSR3A1QlBVc1U?oc=5",
+      "pubDate": "Tue, 19 May 2026 04:09:00 GMT",
+      "source": "読売新聞",
+      "sourceUrl": "https://www.yomiuri.co.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.yomiuri.co.jp/stream/article/27321/",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "日本経済新聞 印刷画面 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSW8yUTAwYmZDcXMyWnpmVTV6aXQwVFVRWHFaT0tObGhwZWUyV2pQR2pXcEpwcGxKZGxYS2ZLMFhWRGplR0EtSk5tcHJ4RDlYRHl6bzBvRVk1UGFrMG92RDh6R2hPeFNPekJhUGwtNGlraEJhWGdPci05TjhsRXBPd211OGREQUFTSXIxRU15Z1Q?oc=5",
+      "pubDate": "Tue, 19 May 2026 03:29:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/news/print-article/?R_FLG=0&bf=0&ng=DGXZRSP707216_Z10C26A5000000",
+      "img": "https://assets.nikkei.jp/release/v3.7.7/parts/ds/images/common/icon_ogpnikkei.png",
+      "summary": "日本経済新聞の電子版。日経や日経BPの提供する経済、企業、国際、政治、マーケット、情報・通信、社会など各分野のニュース。ビジネス、マネー、IT、スポーツ、住宅、キャリアなどの専門情報も満載。"
+    },
+    {
       "title": "アングル：英企業対象のＭ＆Ａ、年初来総額が1920億ドルと記録的な急増 - Reuters",
       "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNTEx6RlF3RGJKTlYwMHV0ZXJUX0p3X0NXVkF6NlE3ZzNidzhaWHhub1dJajdoZGxXQzlHN2hvUUZCLUl1NEQzYlRORU1FLUlJSmtpQlVVSWRlV293U3NPRGI2eXZhY3FSWmVQRmlpd2pfaXBhVW9pcGFxUWpBclJPUw?oc=5",
       "pubDate": "Tue, 19 May 2026 03:24:00 GMT",
@@ -3327,6 +3603,30 @@
       "descHref": "",
       "category": "talent",
       "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000460.000045351.html",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "パナソニックHD、プロジェクター事業で英社買収 売却白紙から再起 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5sbEptLWxCdkFvNG5LQWJIUlV2RUsyUkxOOUpyNTZRV2xpUlJNQmRpSzJSeHRlV2hwWGZoeXJmdHRTOXl1ZUZFbjVpTGc3TkNrbVhTVzVoRnZLVk9FeVZrZHNfOC1DUkt2eEtkUA?oc=5",
+      "pubDate": "Tue, 19 May 2026 02:00:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUF161BT0W6A510C2000000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3039346018052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=7ceb6397969578a89ac4ed9cfa844804",
+      "summary": "パナソニックホールディングス（HD）は19日、映像機器を手がける英スタートアップを買収したと発表した。2025年に売却が白紙になったプロジェクター事業の立て直しをはかる。テレビや車載機器など課題事業の再建や売却を進める構造改革にめどを付ける。傘下のパナソニックプロジェクター&ディスプレイ（PPND、大阪府門真市）を通じて、11日に英ハイブ・メディア・コントロールの全株式を取得した。買収"
+    },
+    {
+      "title": "【画像】グローバル人材・海外赴任者の実務英語力を高める新研修「Synergy Talk」導入が拡大～″単体″から″統合 - ライブドアニュース",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBXZVNUMnN4TXpvai16LU16alVna1VoMzI2UWV3UUVjUHBhMlpaMXZLak1iOHhQQ3BrdjRvbjNKaDdPNWZtX1lKeDVaWHVIWTBnSkFBMjN5el80ZXB3YWlvRGJqQkVCdkRLakloVTUwQkM2RUV6ZlJv?oc=5",
+      "pubDate": "Tue, 19 May 2026 02:00:00 GMT",
+      "source": "ライブドアニュース",
+      "sourceUrl": "https://news.livedoor.com",
+      "descHref": "",
+      "category": "talent",
+      "resolvedUrl": "https://news.livedoor.com/pr_article/detail/31319676/image/54064564/",
       "img": "",
       "summary": ""
     },
@@ -3391,6 +3691,30 @@
       "summary": "【シリコンバレー=山田遼太郎】米人工知能（AI）新興アンソロピックは18日、ソフト開発ツールの米ステインレス・ソフトウエアを買収すると発表した。競合の米オープンAIも使う技術を取り込み、AIエージェントの使い勝手を高める。ステインレスは2022年設立の新興で、社員は約90人。24年末時点の企業価値は約1億6000万ドル（約250億円）で、アンソロピックの買収額はこれを上回るとみられる。同社は買"
     },
     {
+      "title": "【岡山大学】2026年度グローバル人材育成院「海外留学全体説明会」・「夏季語学研修・短期海外研修説明会」を開催 - 山陽新聞",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1DRHVDdWpKcEJfU3dnblNwVThBWFRhZnpHWEZleGs0LUNxT1JGMzdGVTVvd01ua3lmZWJ4ZDRTelcyMFRqczNFbnVBYjlKenJFUXVUM080YjRMT0VULUhnNm4xWG03R1k?oc=5",
+      "pubDate": "Mon, 18 May 2026 21:42:29 GMT",
+      "source": "山陽新聞",
+      "sourceUrl": "https://www.sanyonews.jp",
+      "descHref": "",
+      "category": "talent",
+      "resolvedUrl": "https://www.sanyonews.jp/photo/detail?article_id=1916152",
+      "img": "",
+      "summary": ""
+    },
+    {
+      "title": "DHLエクスプレス、最大3000kg対応の重量貨物向け新ソリューションをグローバル展開 - LOGI-BIZ online",
+      "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE84Vm1rZmNvbXhOU0VsaFBWdDhBdS04eGdiRGdhQkFlSTk1ekpKT2FLZzZJWWFOaFM1Qkxra3BuRkgySnZ0Y2g1UFpTVQ?oc=5",
+      "pubDate": "Mon, 18 May 2026 21:00:28 GMT",
+      "source": "LOGI-BIZ online",
+      "sourceUrl": "https://online.logi-biz.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://online.logi-biz.com/144574/",
+      "img": "",
+      "summary": ""
+    },
+    {
       "title": "【現地取材】ニチレイロジ、海外事業の低温設備能力が100万tの大台突破 - LOGI-BIZ online",
       "link": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9SMDdQT1hNVGpNTjJlRThMcURNeGcxLTdHX0lpV21fMlYxX2hpTmNWaHE1azk4N0FrVW1YZUFWWW1BZTAwbnk3MDZCQQ?oc=5",
       "pubDate": "Mon, 18 May 2026 21:00:09 GMT",
@@ -3425,18 +3749,6 @@
       "resolvedUrl": "https://xtech.nikkei.com/atcl/nxt/mag/ne/18/00001/00662/",
       "img": "https://xtech.nikkei.com/atcl/nxt/mag/ne/18/00001/00662/topm.jpg?20220512",
       "summary": "東京大学発のAI（人工知能）スタートアップ、燈（あかり、東京・千代田）は三菱電機から50億円を調達し、企業評価額は1000億円を超えた。企業価値が10億ドル（約1500億円）以上の未上場企業「ユニコーン」の数は国内では1桁台にとどまるとの推計がある中で、燈が「ユニコーン予備軍」として存在感を高めている。"
-    },
-    {
-      "title": "パナHD、英映像機器を買収 プロジェクター立て直し 売却白紙から一転、改革めど - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ZaXZtUkgwZjIyV2QxTFZnV1dKT3Z5M2xfd1kzZHJwbmU3Vkp0RTFvVzNpZUVDSzkzdGRLRGZUUlpUYUpBVlp4S3cyUldnMjNtZXBMNUpCbWE2ZUlIU2pzaW9aM2FTUy0yMHlQbg?oc=5",
-      "pubDate": "Mon, 18 May 2026 20:00:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/article/DGKKZO96355520Z10C26A5TB1000/",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKZZO9635599019052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=9853e47c37d7706a82e21f5f7078114f",
-      "summary": "パナソニックホールディングス（HD）は19日、映像機器を手がける英スタートアップを買収したと発表した。2025年に売却が白紙になったプロジェクター事業の立て直しをはかる。テレビや車載機器など課題事業の再建や売却を進める構造改革にめどを付ける。傘下のパナソニックプロジェクター&ディスプレイ（PPND、大阪府門真市）を通じて、11日に英ハイブ・メディア・コントロールの全株式を取得した。買収額は10"
     },
     {
       "title": "アマゾン、衛星企業1.8兆円買収の狙い スマホ直接通信の実現へ「時間買う」（2ページ目） - 日経クロステック",
@@ -3485,6 +3797,18 @@
       "resolvedUrl": "https://www.nikkei.com/article/DGXZQOCC11A980R10C26A5000000/",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3019229014052026000000-1.png?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=bf0e58657d05054eecb33bbef0a74a34",
       "summary": "水産・畜産用医薬品や飼料製造を手掛けるバイオ科学（徳島県阿南市）は海外事業を強化している。1月にインド企業に出資し、高騰する魚粉の代わりとして水産用飼料の原料販売を拡大する。米国でも畜産用栄養剤の販売を検討している。バイオ科学は1983年創業で、養殖ハマチ用のビタミンである水産用栄養剤の製造・販売から事業を始めた。競合品の登場や販売価格の低下を受けて、病気になった養殖魚に与える医薬品（抗生剤）"
+    },
+    {
+      "title": "自動車産業を中心に活発なメキシコ投資−11年の日本の対中南米投資（3）− - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQWjUxRl8tVlM4Tk5ib3N3LVktai1XcV9FUkZaZWhZaGNJcVJnakVUMldScVpFUmtVbjlDX3ZpT3ZCVmFsNUxvczRzbllLYTI2R1Juc3VCYTRNbUJ6T0lTWFBuZkdXOS0tVk9KclVJTE9TTDZGSnZVLUhPRTNHdUxXaWtSRUg5MzNkUkEtZTViNWFqZ3pKb2lrZldzTzQ1UTFpek5xREIwbUJWa0ZUcHoxakwtc0R0SWpveUhaWTQ5MkppMVgwLVg5ekhPYWpjVnlNdTdPV0VCYmx6c0t1dUlrWExhTDFWbGFHT3lLaElfa2dhR2xLN1Br?oc=5",
+      "pubDate": "Mon, 18 May 2026 18:54:47 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/biznews/2012/05/4fa8bf9d8a6d8.html?_previewDate_=null&revision=0&viewForce=1&_tmpCssPreview_=0%2F%2F%2Fevents%2F%2F%2Fevents%2F%2Fbiznews%2F",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "ミツバ、1人乗りEV新興に出資 - 日本経済新聞",
@@ -3581,66 +3905,6 @@
       "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC187M10Y6A510C2000000/",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3038425018052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=57faaa7e2f52329f60362ceb1dac3a1f",
       "summary": "芝浦機械は18日、超精密工作機械の製造と販売を手がける米国の工作機械メーカー、ムーア・ナノテクノロジー・システムズを買収すると発表した。買収額は1億5000万ドル（約238億円）。芝浦機械はムーア社を子会社化することで、手薄だった北米市場の開拓を目指す。芝浦機械は同社の米子会社を通じて、ムーア社の全株式を取得する。18日に持ち分譲渡契約を結んだ。買収完了は2026年後半を見込む。芝浦機械にとっ"
-    },
-    {
-      "title": "東京都主催「SusHi Tech Tokyo」のピッチコンテストでマレーシアのアグリテック企業が優勝 - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1LSXNxX3FSTF8yakQ5by16R0ZKY2tjMkUxMG1RdF9VbnktdUNXZWlTZzlzd2dyTi1xNFotR05yQkdPMHF0WkI1R2JwYUdqS201UnpUbVFZODBsY0tOMEE3ZmhwaWFyWWtaa3FLaWJB?oc=5",
-      "pubDate": "Mon, 18 May 2026 10:05:54 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/biznews/2026/05/ae88a82183288bb2.html",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "米Amazon、Fire TVで新モデル アニメ専用タブなどで日本市場の開拓狙う - 日経ビジネス電子版",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9WUEpkSE9HTVBwX3NrMF93SVUzQUdreDQza3NoY1pNSHFfRWJJZmFGUnVGLTk4RHNaTnNOM2JzdzhIeExqUzhZTDdGRkRsYlVFNGpjNnFxT25BSE4yS19iaGtTSUI2X1U?oc=5",
-      "pubDate": "Mon, 18 May 2026 08:00:00 GMT",
-      "source": "日経ビジネス電子版",
-      "sourceUrl": "https://business.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://business.nikkei.com/atcl/gen/19/00297/042700283/",
-      "img": "https://business.nikkei.com/atcl/gen/19/00297/042700283/fb.jpg",
-      "summary": "米Amazon.comは、ストリーミングメディアプレーヤー「Fire TV Stick HD（第2世代）」を発表した。本体の小型化やアニメ専用タブの新設など、日本のユーザーを意識した強化点が目立つ。市場を開拓できるだろうか。"
-    },
-    {
-      "title": "【陸上】青学大出身の近藤幸太郎がHOKA移籍　異例の海外拠点から「MGCで勝つ」　 - 日刊スポーツ",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE00UXpTSklSV1oxMUhxYXEwS2JqXzhkWVVoZ3E0X00wMVVjM3E1aWVLSFlVY1l1LUtjNTBUZW9CUVJINThCOXAyZURVeFlXNVdLQzI2ajVSSmxoUmZnZ2pqOHRVeXVfdkFjSlBsblYzZFRVeFpnWkpOZDJOQdIBgwFBVV95cUxPVmYzU1JmRF94ZmZldTFoWnFPTUZmd2Q1VURMQ3Z1YmkxYWl6djZhTW9yVkVJZG9NSWwwczFGT1lJZjdOb2lNclpqS0I4NS1ROHpIb3BhNXRmVGJITkNEVTVad0ZuLWhpX29MQU5ndFJxN3BRMWhnLTFKcUVrV055a2I5UQ?oc=5",
-      "pubDate": "Mon, 18 May 2026 07:51:00 GMT",
-      "source": "日刊スポーツ",
-      "sourceUrl": "https://www.nikkansports.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkansports.com/sports/athletics/news/202605180000936.html",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "みずほ証、投資銀行好調で前期純利益31％増 社債引受・Ｍ＆Ａ伸長 - Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZl9Tckt5NWpfWE9leU1uengtMWgzdDZJSXBsZWhxUGJXR0pKSTZwbUJGVDU5S1dmakVzS1dVY2ZxaU5pTmJNanpsNnBHWnhBVEVpU0o2ZHc3VzRQUXp2RkZYM3dES0RwUXhuRW1ubTROY0p1U0ZhZ3F3WllQRHlOT3N4MHh1dDZUNmo0?oc=5",
-      "pubDate": "Mon, 18 May 2026 07:39:43 GMT",
-      "source": "Reuters",
-      "sourceUrl": "https://jp.reuters.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://jp.reuters.com/markets/world-indices/V4ZZEE5DKFIFVAPS7LOSOA2TWI-2026-05-18/",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "日経ビジネス電子版：総合トップ - 日経ビジネス電子版",
-      "link": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE02blpsTk5vQkpkZFpmcXlvS0lDU3ptYmkyUnZfNUVrZFlfZG9NT3Z2U2t3WHh5YVlJNTJrdTFfUG1VZw?oc=5",
-      "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
-      "source": "日経ビジネス電子版",
-      "sourceUrl": "https://business.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE02blpsTk5vQkpkZFpmcXlvS0lDU3ptYmkyUnZfNUVrZFlfZG9NT3Z2U2t3WHh5YVlJNTJrdTFfUG1VZw?oc=5",
-      "img": "",
-      "summary": ""
     },
     {
       "title": "ライフサイエンス | 主要産業 - 対日投資 - jetro.go.jp",
@@ -3823,18 +4087,6 @@
       "summary": "UntroD Capital Japan株式会社のプレスリリース（2026年5月18日 09時00分）リアルテックファンド、独自のADC（抗体薬物複合体）で難治性固形がん治療を目指すキャストバイオへの出資を実施"
     },
     {
-      "title": "飯能信用金庫にて海外ビジネスマッチングプラットフォーム「BIG ADVANCE GLOBAL」利用開始 - PR TIMES",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE52ekRGNDAyOFlyZVFBSDZ0S0pTTFBBQmRmUzE5S2VQbzVuUWtCby1ZMm9IdHk3SjczQm9CVXV4MFExX2pZWUR3STFScXVpSEdkUWRTR2dTQzFjR1ZrWU9qYkJvVW1zZ2xTWXc?oc=5",
-      "pubDate": "Mon, 18 May 2026 00:00:02 GMT",
-      "source": "PR TIMES",
-      "sourceUrl": "https://prtimes.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000110.000019415.html",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "【締切1/29】企業の海外展開を幅広くサポート「海外展開助成金」 - スタートアップポートヨコハマ",
       "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Qamt4YUo1MkpaeEs3VHFvdl9yUkpSc3hQS2xUbHg1WnYyNGhqTDlkMnlXUE8wa05ZdjRITThRNjBvXzUwbE1veWVnWngzY1B0aVRVSC1sRE92VEkyblkzeDh5ZjlKUUU?oc=5",
       "pubDate": "Sun, 17 May 2026 22:57:15 GMT",
@@ -3919,18 +4171,6 @@
       "summary": "会計の次は品質。ぎらぎらした成長オーラを発していたニデックが、今では不正のデパートのようだ。買収を繰り返し、企業集団が複雑になりすぎてしまったことが背景にある。創業者の永守重信氏はそんなM&A（合併・買収）のワナに陥り、現場の実情に寄り添ったハンズオン経営から徐々に遠ざかった。品質不正の舞台となったニデックテクノモータ（京都市）やニデックインスツルメンツ（長野県下諏訪町）は、いずれもM&Aでグ"
     },
     {
-      "title": "Dリーグとオドロウゼ！ 動員数2.6倍、M&amp;A仲介など異業種も参加 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1BaDFhQ3dpd3pYaUhZSGwwMzA1Q3pESTJHZXlKRUpvN1k1V0JoNXNUbjBSbVQ5U3ljdEhleHc2cTI5TGxnRC01Q2d4SzdsTk1YaGYtQnNCb2FpVVo0N3g1VEtTdjZYUzNSdkFGdg?oc=5",
-      "pubDate": "Sun, 17 May 2026 17:00:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC2014X0Q6A420C2000000/",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2997132011052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.37&fp-y=0.37&h=630&w=1200&s=90fc606be0a278f3a8b523626fe8d460",
-      "summary": "中学校のダンス必修化から10年以上がたち、ダンスの楽しみ方が広がっている。市場をけん引する存在の1つが、2020年に立ち上がったプロダンスリーグの「Dリーグ」だ。会場は連日ほぼ満席で、若年層を中心に熱量の高いファンが集まる。チームオーナーとして異業種からの参入が増えるなど、企業からも熱視線が向けられている。4月下旬、トヨタアリーナ東京（東京・江東）でDリーグの大会が開かれ、会場内は熱気に包まれ"
-    },
-    {
       "title": "中国企業の「シンガポール・ウオッシング」、Manus買収差し止めで岐路 - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4waXpiMk40d1hEamRsdHZCd0FnNVNTX01QendKa28zcy1tRUdXQk5TTWVqOW81Mmxad0RVLTZ0RFk2N2QyVUQwZmxmUXA3OU1kQWtiMVh0bVlPS1RXS0ZMeWNRRENKQW96ZkJuSFExXzVEYnJVMUdJ?oc=5",
       "pubDate": "Sun, 17 May 2026 15:00:00 GMT",
@@ -3991,18 +4231,6 @@
       "summary": ""
     },
     {
-      "title": "藤沢で東南アジア人材・経済セミナー 海外展開や外国人材活用紹介（みんなの経済新聞ネットワーク） - Yahoo!ニュース",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9yanB0OWp6dTB3YVhBc05kUDlWTy15Tk9iRGFpcWU0bldqR1lxemR2X2djUlpQTVctNDNYQTd4bjVKcU1xTDhSUnRXSFBva3p1Qm81S19BR1B1dUFLOWNtNEtHbXprZFNUM2FtUkY0MEpmbUNaNVhrb3lDM2h2MTQ?oc=5",
-      "pubDate": "Sat, 16 May 2026 06:37:06 GMT",
-      "source": "Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/articles/df4b3dd280733f050a78ac6330722df67908351c",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "1年後に量産開始予定…BMWによるブランド買収から4年の沈黙を破り､コンセプトカーを公開した新生｢アルピナ｣の行方 - 東洋経済オンライン",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9jZEQwWlU2TDdsMk4yMHpYY0cwSmRHQ2RQaEdwNjdvdmdaMVV1ZU9WcDJxaGRwNkdtd2hTS1JmT08tbkU5dzhRN0FneEhoSG1zVnc?oc=5",
       "pubDate": "Sat, 16 May 2026 00:01:44 GMT",
@@ -4051,6 +4279,18 @@
       "summary": "国内のスタートアップが5月10〜15日に発表した主な資金調達をまとめました。各社の資金調達に関する記事やこれまでの関連記事を取り上げます。NovAccel 12億円がんの放射線治療に使われる放射性同位体の製造技術を開発するNovAccel（ノバセル、茨城県土浦市）はベンチャーキャピタル（VC）の東京大学エッジキャピタルパートナーズ（UTEC）などを引受先とする第三者割当増資で12億円を調達し"
     },
     {
+      "title": "目的別に見る - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPTUk3UEtQdi1FcTVjU0NweEZJS05lWkYydHNfcGFYem0tUXBqZkhEOGVNQ2dQU3BNNTktRjhYRjlseWFGNG1IOUJrMTdTQ0tVbVZCaTVWeURiVUFGVTdkaUFkUHFNTkJMRVY4bGg3WFRVME92dXZjZ0MzMERjM3JNNEdFSVlpb1p4UjRERVlsWmNTSWhfZlprQWZ5WlVmLXRqd2tPZEdETkc4OUdtVVVuX3ZFRmxKdEVHTlJDalBMbzBKVllvNXducDQxZUNaNm5FdGU4RklLWS1xMzNFRjBST3FPbTFyN3JNYXJuNHVVZXpkQzVCSXRjM3lBUUUzN2VRZFFqdHV1ZWlndw?oc=5",
+      "pubDate": "Fri, 15 May 2026 19:22:08 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/theme/?_previewDate_=null&revision=0&viewForce=1&_tmpCssPreview_=0%2Fbiznews%2F%2Fbiznews%2F%2F%2Fbiznews%2F%2Fevents%2F%2Fbiznews%2F%2F%2F%2Fevents%2F%2F",
+      "img": "",
+      "summary": ""
+    },
+    {
       "title": "全体概況 | ライフサイエンス - 主要産業 - 対日投資 - jetro.go.jp",
       "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPRnEwRzZ6SHJSYldNQ21uWTBleWRib0VXYjJRWmk0MWFZT1NRN01fRm40MXh6cEFWdEQ5UmVNS1dvdWU3OFd2b1RLcDQ2Qjc1UHhhUXhSNjVTNkNBMnhINDZqOUQ2T1phUlduTHRwdVpiRndJMUxxVVdPUzJlVzVGdmdkOXM3OXJ6WjFzcUpobV9XOGpmVG9RZENycnQ3ZTFTWTNPa2ctZEVFTXlTSF82cjFNbHNpV0RyNlhRY2FzcVRYdWZhejVMZjdfdjdWbVhZOTg3cExzOEtTdWdNSHRfdE5sRGVYVW5jSTBZZ2RYd0VuR2lEbVR3MUpEX3IyeWZTQU1tb1h3dw?oc=5",
       "pubDate": "Fri, 15 May 2026 18:25:57 GMT",
@@ -4072,6 +4312,18 @@
       "category": "global",
       "resolvedUrl": "https://www.jetro.go.jp/invest/newsroom/2024.html?_previewDate_=null&revision=0&viewForce=1&_tmpCssPreview_=0%2F%2Fbiznews%2F%2Fbiznews%2F%2F%2F%2Fbiznews%2F%2F%2F%2F%2F%2F",
       "img": "",
+      "summary": ""
+    },
+    {
+      "title": "投資・規制改革要望の相談対日投資相談ホットラインのサポート - 対日投資 - jetro.go.jp",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPVXdHUGRzQktfd21KNnJ6MnRWV0RvQ2FvZzN5TkNMcmt5TUJFM1g4MG1qLUdyZGF3SmhybS1xeFYtMGFNWk4tUjBfVlEtN1g1b1JsQWRGTGttR0NBUmZkZVE0c29GeU1WMk9udlhwaEVCN1pIYUJENE1nWFdNdGVlOXk0TXEyYlBBQ2RtTU4tVmhVM1hubk5Sb2U2dmJsQ2UtNjRER0Jfa0x6eUtHNFkxNVVfTmpFQ2p5enRiRjVILTdGX2dqcnhyczhhbkU2N3RwRGMzRWZBOVZIWm1Vc1FYZ0xaZU5ldm5xclhjWTB6M2JERGM?oc=5",
+      "pubDate": "Fri, 15 May 2026 11:49:56 GMT",
+      "source": "jetro.go.jp",
+      "sourceUrl": "https://www.jetro.go.jp",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.jetro.go.jp/invest/jetros_support/hotline/?_previewDate_=null&revision=0&viewForce=1&_tmpCssPreview_=0%2Fbiznews%2F%2F%2Fbiznews%2F%2F%2F%2F%2F%2F%2F",
+      "img": "https://www.jetro.go.jp/library/images/sns/logo1200_630.png",
       "summary": ""
     },
     {
@@ -4111,18 +4363,6 @@
       "summary": "日本での拠点設立に関して寄せられる主な質問と回答をまとめたQ&A。会社設立登記、ビザ・在留資格、税制、人事・労務の4つのセクションに分け、制度や手続きのポイント、実務上の留意点、日本進出時に役立つ実務情報を分かりやすく解説しています。"
     },
     {
-      "title": "ゼビオHD、豪ゴルフ用品小売り大手を買収 27年4月にも子会社へ - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQUlXZ3dwMFQzT3dFc2Rlb0dEOExNUXdaeDZXWmF0SUtTOWMxU0g0WG51TFk0ZG9YVXNmTnVGUkhueFR3WWdYcklfbEFacFhvSmc5RHcyZGY1clYzMVhIMUVTWWZ5bWhoRnJ5c3UtUFQ5UHVUWG1ScjBvaWtwc1ZhRWZXRVV2aEQyb2RyTG95M2lyZnhaajltLUJwWF9QVENzR1JRRk9n?oc=5",
-      "pubDate": "Fri, 15 May 2026 10:39:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/nkd/industry/article/?DisplayType=1&n_m_code=151&ng=DGXZQOCC155RE0V10C26A5000000",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3027996015052026000000-1.jpg?auto=format%2Ccompress&ch=Width%2CDPR&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&fp-z=1&h=500&ixlib=java-1.2.0&w=800&s=fffd28bc0be4a8361ccabebf72001d45",
-      "summary": "ゼビオホールディングス（HD）は15日、オーストラリアのゴルフ用品小売り大手ドラモンドゴルフを買収する計画を発表した。買収は2027年4月を予定しており、海外事業の拡大を目指す。\n　同日に開いた取締役"
-    },
-    {
       "title": "【7/2開催開始】グローバル化に向けた組織づくり実践セミナー（第1クール：海外展開の課題把握）〔無料〕［公益財団法人 日本生産性本部］ - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5Kem9WTFhxSEFHM2Y0cE5qaU03cEdvbE10d2JSUUsyT2FFcGJRY1l0ZzRhN2l6ZExpWEhUOVBXTWY3alNqZi1iTW1EMmxUckdfVlZUQnBYWExZb3BsV0x2WXNTOUw2dFptZlVWZzVydlNQbGp4RW9acmFRbGQ?oc=5",
       "pubDate": "Fri, 15 May 2026 10:25:14 GMT",
@@ -4144,18 +4384,6 @@
       "category": "global",
       "resolvedUrl": "https://www.jetro.go.jp/invest/support_programs/one-stop/?_previewDate_=null&revision=0&viewForce=1&_tmpCssPreview_=0%2F%2F%2Fbiznews%2F%2F%2F%2Fbiznews%2F%2Fbiznews%2F%2F%2Fbiznews%2F%2F%2F%2F%2F%2F",
       "img": "https://www.jetro.go.jp/library/images/sns/logo1200_630.png",
-      "summary": ""
-    },
-    {
-      "title": "「世界は今－JETRO Global Eye」 - ベトナム - 環境・エネルギー - 海外進出 - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMingJBVV95cUxNYjNzSDNleVBxVXh5Mm10OXNrUTJjdU9DcDJiX0dtOFZMYURMeWViTVMwVU84VGROS3VXd0NyTHVseldjaDBTZUc4MGgzTEExU3dWTEg3cDB2bTdSN3VkSzhHZ3BKeVFHWEt1QXotOWowbmJEajRGdXA0aXdCbGt5R0xkRGp2YUNtZ21JM0VOZy1oT1dRa2NJSm0ydzRmQWstemlmLVFnTW9PcmtNN0VZN0ZtdDdFTjJVTTZKeFJuSFFTNHJNZ3dRbkM1NTk4MmJxUjJ6YXQzVW9zOHFIR0ZsM3RTS2tGbm1ZUWpwTk5tOWJ5bXltMjdwNHBXb0c5TXNvams4MlBnWXN2SXJVOVFWR0w0Q0VDYkJBY0pYVzdR?oc=5",
-      "pubDate": "Fri, 15 May 2026 10:07:46 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/tvtop/asia/vn/tv/energy/fdi/?_previewDate_=null&revision=0&viewForce=1&_tmpCssPreview_=0%2F%2F%2Fbiznews%2F%2F%2Fevents%2F%2F%2Fbiznews%2F%2F%2Fbiznews%2F%2F%2F%2F%2F%2F",
-      "img": "",
       "summary": ""
     },
     {
@@ -4195,30 +4423,6 @@
       "summary": ""
     },
     {
-      "title": "ベルーナ（9997）月次報告（4月度） - 会社四季報オンライン",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE80ZXpsUjNueU5SdkUzQUFYSTViZmZsLWR1czBPMnpRd0NJU3Z1UGZoVEpQYWF3YXhIOHlyT09PdXFuOV9oNmhoeDVhQUZtbFI2djVEcDV0bw?oc=5",
-      "pubDate": "Fri, 15 May 2026 08:45:00 GMT",
-      "source": "会社四季報オンライン",
-      "sourceUrl": "https://shikiho.toyokeizai.net",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://shikiho.toyokeizai.net/news/0/944757",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "H2Oリテイリング（8242）2026年4月度営業概況 - 会社四季報オンライン",
-      "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB1bFphRGFfam1Qbm13Q3JzNmFNc2EtRWJBNEQ3MUVXa0cybExuUEI4QVNVNHUxeF9Wb2o5bzFxb2RlTF9BN2Q0RktPN3otMEVqR1lzUlRUUQ?oc=5",
-      "pubDate": "Fri, 15 May 2026 08:45:00 GMT",
-      "source": "会社四季報オンライン",
-      "sourceUrl": "https://shikiho.toyokeizai.net",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://shikiho.toyokeizai.net/news/0/944751",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "クレディセゾン（8253）マンスリーレポート（2026年3月度）（PDF 0.16 MB） - 会社四季報オンライン",
       "link": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9BU1dfZWRZOWRWZi04bklUaDBRaW44ODRZNE5uZUhYZ3FHbmxFZTg0Z3RZZ2pxZ3dFbUh6aWp2WVp6aUtzbVh0WXZ4VkxfRnNRRlg5SmpfMA?oc=5",
       "pubDate": "Fri, 15 May 2026 08:45:00 GMT",
@@ -4231,16 +4435,16 @@
       "summary": ""
     },
     {
-      "title": "環境・エネルギー | 主要産業 - 対日投資 - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMitgJBVV95cUxQU3MxbWVkb0lOSmJsamdsalVObnRhRE1JUUx6emRNWHhWR25JNU42dTVNcUpVYzFaejZwZUl0TXVWaGhFRnFpRDViU3lOTmIxeS01SndMY3cyNkhKSks5Ym9wZ19LSnZacWhWQXBENGlmLXB4ajFjdUc4anp2LXNTbHdGcG5DV0ZIMFB0QlhHeHJ1dWJHV2VLZlExaUFGcmVIcE1wTnRZWU56T1lwRzUya05ZaFdEcEl0bnRfMkNXVGkzenpFWFU3WlJ2MXN4RkdWdUFucXliX1dnUkg0MUhmN0Jzb1pySmRoUThTWXV3YXU1c3JOYlJiYTBxeHF5aDVmR3JGLWVtbnZfdHo4LTkxcGxHV1hpNTFDWmVKa0ZhTkd0cUJyemlEeEtORG43X3RhM0VUNEhn?oc=5",
-      "pubDate": "Fri, 15 May 2026 08:17:04 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
+      "title": "資金調達できるプレゼン資料の作り方。成功したスタートアップに学ぶ10のテクニック - Business Insider Japan",
+      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9iSFNyLUxWTW43SGU4SExDblpZZ29QQ0pPTEpvOUlJcnY3XzgzVXd2OFlQbXZJeUdraVlQdzhKajBXT2VLdmpka2gzWFdSbUFsV3hzTHdkaTdLZnc?oc=5",
+      "pubDate": "Fri, 15 May 2026 08:05:00 GMT",
+      "source": "Business Insider Japan",
+      "sourceUrl": "https://www.businessinsider.jp",
       "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/invest/attractive_sectors/env_and_energy/?_previewDate_=null&revision=0&viewForce=1&_tmpCssPreview_=0%2Fbiznews%2F%2Fbiznews%2F%2Fbiznews%2F%2F%2Fbiznews%2F%2F%2Fbiznews%2F%2F%2F%2F%2F%2F",
+      "category": "funding",
+      "resolvedUrl": "https://www.businessinsider.jp/article/280183h/",
       "img": "",
-      "summary": "2022年、日本の再生可能エネルギー供給は前年度比16％増加、2010年比で75％増加し、成長市場となっています。政府と民間部門の協力により、2050年のカーボンニュートラルに向けた取り組みが継続される見込みです。"
+      "summary": ""
     },
     {
       "title": "日東建設株式会社：海外ビジネス拡大で社内グローバル人材の育成に成功活用事例 - jetro.go.jp",
@@ -4251,30 +4455,6 @@
       "descHref": "",
       "category": "talent",
       "resolvedUrl": "https://www.jetro.go.jp/case_study/2016/nittokensetsu.html?_previewDate_=null&revision=0&viewForce=1&_tmpCssPreview_=0%2Fbiznews%2F%2F%2F%2F%2Fbiznews%2F%2F%2F%2Fbiznews%2F%2Fbiznews%2F%2F%2Fbiznews%2F%2F%2F%2F%2F%2F",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "第3章 最近の政府施策 | 2022対日投資報告 - 日本の投資環境 - 対日投資 - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPLU5mSkY4ZjFjWkozUWt3ZHJleUZvaHJiWWhfMEo3ZEFieUFlVG9iTDV0S1gwb1dnUVZBYk1SbUZSZURJUkluVmhMZVQzLTJpYUdSQVZ5SVpvWEppUDFRTHNmOC1zdzhsdV9LTk1UWG5vY25xSGZaY0dIZlE1Z3Z5V1I5aXFJQ0t4RjN4WVlNN21NMzJYakVaUHlHY1ozSTRhMVdBbVlTcDdYNWlfQ1RlUmppZ2YxZG1YUzczeURUZXJLaXdRcDhtR085bkVvT21BRjBzNUJzbXVLWUZzeGU2bnNDV29YY2xYdEU5RlNLaVdHVVNCTmt4MDVmUGxrWXc?oc=5",
-      "pubDate": "Fri, 15 May 2026 07:38:02 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/invest/investment_environment/ijre/report2022/ch3/?_previewDate_=null&revision=0&viewForce=1&_tmpCssPreview_=0%2F%2F%2Fevents%2F%2Fevents%2F%2F%2F",
-      "img": "https://www.jetro.go.jp/library/images/sns/logo1200_630.png",
-      "summary": ""
-    },
-    {
-      "title": "【来日決定】海外進出セミナー刷新第1回に、台湾大手食品商社代表のRay Wang氏が来日登壇！［一般社団法人国際ビジネス連結機構］ - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1XNnhYb0ZpOEUyUzZRU282WTdmSjF1cFNyUzhaSkQ5WEI2UHhFbW4tRDl5bFd1dEc4bk5qTV9mdHpHc1BTNGhMdXB2cjRIX2IxZXhaTEhOMFZqNU1wM2VaN0c1dkhSSFB5TUxUVmxfdGdXUVkza2xEZEs5VlI?oc=5",
-      "pubDate": "Fri, 15 May 2026 07:19:01 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/compass/content/PRTKDB000000029_000161515/preview",
       "img": "",
       "summary": ""
     },
@@ -4303,30 +4483,6 @@
       "summary": "ベンチャーキャピタル（VC）のライトアップベンチャーズ（大阪市）がサムライインキュベート（東京・港）と協力し、5月中に関西のスタートアップの資金調達を支援する組織を立ち上げる。関西の地銀などが参画する。設立するのは「関西STARTUP RUNWAY（スタートアップランウェイ）」。関西みらい銀行や紀陽銀行などの地銀に加え、池田泉州キャピタルや京都キャピタルパートナーズなど地銀系のVCも参加する。"
     },
     {
-      "title": "フリークス ストアが初の海外進出 台湾のイベントに出展（FASHIONSNAP） - Yahoo!ニュース",
-      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9zbWRqWHd1dEtoZU5xMUJ1ZkY4ak1hbkw0NDREWFNTV1BBNWFTV1NkN0ozUnZ4WVJFZnhmeW44WUxFdkxQTy1yMWg5RVNJeTVjZEg5eENLa1l3UjV3VkFJNDd1UWI0bXRVeWsycFA0dDFUUDNHWS1XanhuM0RRREU?oc=5",
-      "pubDate": "Fri, 15 May 2026 05:36:12 GMT",
-      "source": "Yahoo!ニュース",
-      "sourceUrl": "https://news.yahoo.co.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://news.yahoo.co.jp/articles/e1b9c09216f51b9133ee21ab64c9d51425828ace",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "「日本でのビジネススターターガイド」パンフレットダウンロード - jetro.go.jp",
-      "link": "https://news.google.com/rss/articles/CBMizAJBVV95cUxNUGlMX0ktTEpRSUQtUzB6UXNXVVZKNHlJNlB0amJQVjdQZ2hLa1ZYTEhZenlSazZPN3pCRXJpcFQ3QW85TUVKbFhySm9pX1lGcjdrdkpnNzBVN1k4X0tXaUNDeEJfb2FvMlpSTnUxTjJZUXZTSDNFTDZQaEhRbGxjZWNlMWhzZFRJNF9KNUdRMjlsZ1RsenFrM1JXMmJ0Snc3T1o3SXlIRnR1MmtWck5NemVKVGQxa0U3SWY0MFNFOURua0lrS2RacXloQ2ZmUXVuYkdVem9wN3FOckg3TE5VWFlvbkNsNFh5OVdUNTAxZDV1SDRjaUtXX3VwRHJuWF9PTmltc0ZGdTRXWERoMjVJcFg3T3oyaUJJR0NzOU9RNGNCNF94OEVEQXhUM3kyRm5iaGhYc3YzbDFOU3hHRGYxRFU4RlZaN2RONk5tcA?oc=5",
-      "pubDate": "Fri, 15 May 2026 05:10:17 GMT",
-      "source": "jetro.go.jp",
-      "sourceUrl": "https://www.jetro.go.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.jetro.go.jp/invest/form/starter_guide.html?_previewDate_=null&revision=0&viewForce=1&_tmpCssPreview_=0%2Fbiznews%2F%2Fbiznews%2F%2F%2Fbiznews%2F%2Fevents%2F%2Fbiznews%2F%2F%2Fbiznews%2F%2F%2Fbiznews%2F%2F%2F%2F%2F%2F",
-      "img": "https://www.jetro.go.jp/library/images/sns/logo1200_630.png",
-      "summary": ""
-    },
-    {
       "title": "東南アジアのモビリティインフラを構築するmovus、シリーズBで総額42.6億円の資金調達を完了 - PR TIMES",
       "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB4dTA2S3o3VUlCY0p2cmRkNWdxUXRXeWZhc3Y3X1plWnREZzlfd3V3dDJKaVJTVXhLRnJUT3ZzdzN6TW5LV3dkQlF0VEJBLWlSeWJvRGltQ19Hby0xZHdwQkJEd2Y2a2xtYVE?oc=5",
       "pubDate": "Fri, 15 May 2026 04:00:02 GMT",
@@ -4351,26 +4507,14 @@
       "summary": "最近行われた資金調達の情報から、venture.jp（ベンチャー.jp）が厳選した注目企業をご紹介します。"
     },
     {
-      "title": "神奈川からグローバルへ 大学研究シーズの海外展開を考える - yokohama-cu.ac.jp",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9JVmFIUTVpeVRGZllBX0RfQkNINTZoNWlvSzNkRDRqanQydDc1Wm91V09aaFpoNTRnNk5sV0pVRjdGeTlTUXlSR0xjU1BLZFNKQkRrdGswS2pfaFJWU3U4aWZEd19keDZN?oc=5",
-      "pubDate": "Fri, 15 May 2026 01:04:37 GMT",
-      "source": "yokohama-cu.ac.jp",
-      "sourceUrl": "https://www.yokohama-cu.ac.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.yokohama-cu.ac.jp/news/2026/20260515gtie.html",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "〈ランキング〉4月に資金調達した｢スタートアップ｣TOP20､核融合発電目指すヘリカルフュージョンは37億円調達 - 東洋経済オンライン",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE04WkhrRVFVNmFZTGVOWHN6ZFZNQlRiMko4eXduUE5Bd0lyTEhiekhQamhVV0xOVnE1TFJkZzNub1VYNFB4SGZVbnBGRUFXdzcxRV9Pazh6Sm90ajBXVkFz?oc=5",
-      "pubDate": "Thu, 14 May 2026 22:00:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE95dEdTMkdrRXg2aTRwNGUxVlA0UEtQZ0QwY21rSWFSWWV4YTJzdDg2clc3QnRjaHQyeWRlR0NMa2hmNGpqeDBjU3Z0Vnh0REtxTVE?oc=5",
+      "pubDate": "Thu, 14 May 2026 22:01:54 GMT",
       "source": "東洋経済オンライン",
       "sourceUrl": "https://toyokeizai.net",
       "descHref": "",
       "category": "funding",
-      "resolvedUrl": "https://toyokeizai.net/articles/-/944539?display=b",
+      "resolvedUrl": "https://toyokeizai.net/articles/-/944539",
       "img": "",
       "summary": ""
     },
@@ -4411,18 +4555,6 @@
       "summary": "｢データのプロパーが大手町（NTT）の中枢に入る日が来るとは｣――。あるNTTグループ関係者は､そう驚きます。主力としてきた通信事業が停滞する中､ITサービス中心の成長戦略へと大きく舵を切ったNTTグループ。その要を担うのは､NTTデータグループです。新たな幹部の抜擢人事が示す\"非通信\"時代へのシフト､その狙いと裏側とは？"
     },
     {
-      "title": "ノジマ、ヤマト金融子会社を買収 決済サービスで家電販売を底上げ - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zeHl1SWJuMkZWR2lQUC1za2hka1FPSTNuNC1Kc3hjUWIwdGppU2xocG5NbV9pRnlqeVVZYlNEQmhLVTlyeGt4Z1R3emNyUktIcFAwWnpjaVprNW45cjVuaE5reHFPdFFJbG1OUg?oc=5",
-      "pubDate": "Thu, 14 May 2026 08:25:46 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC1472U0U6A510C2000000/",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3019519014052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=90b75dc3ac7f855719caa2aa79910605",
-      "summary": "ノジマは14日、ヤマトホールディングス（HD）金融子会社のヤマトクレジットファイナンスを35億円で買収すると発表した。後払い決済などを手掛ける同社を傘下に収めることで決済サービスを取り込み、家電や携帯販売の底上げにつなげる。同日の取締役会で決議した。9月1日付で特別目的会社（SPC）を通じてヤマトHDが持つヤマトクレジットファイナンスの70%の株式を取得し子会社化する。ヤマトクレジットファイ"
-    },
-    {
       "title": "カカクコム買収、LINEヤフーが対抗提案 食べログ｢1億人経済圏｣狙う - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBsUXo0TkUxRzhKWG5SSjZfVlkwUUVKaFhsekpHMjdDa1ZJTFFHZkJLWkkyQnQ5OUZsN1c2UkdsenpuaTk1NFNuczdDSUdXWlg2UzNJcEZNMm5sNlFDTnE4STRkbWdrbWxPVXBaTg?oc=5",
       "pubDate": "Thu, 14 May 2026 08:17:04 GMT",
@@ -4435,21 +4567,21 @@
       "summary": "LINEヤフーは14日、レストラン検索・予約サービス「食べログ」を運営するカカクコムに買収案を再提示したと発表した。TOB（株式公開買い付け）の想定価格は欧州系投資ファンドEQTの提案より約8%高く、争奪戦に発展する可能性が高まってきた。同日までに米投資ファンドのベインキャピタルと共同で提示した。5月上旬に示した最初の提案と同様に法的な拘束力はないという。LINEヤフーは正式な案の概要や提示額"
     },
     {
-      "title": "M&amp;A（合併・買収）とは？2026年現在の動向から目的・手法・メリットを専門家が徹底解説 - masouken.com",
-      "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE1xQ0JDZU1tNXVycGxpcHp1ZjVuRFhqYXlJd3pib09nam91V2w4eXdxSHFkdmdHbzVGUHctVw?oc=5",
+      "title": "ノジマ、ヤマト金融子会社を買収 決済サービスで家電販売を底上げ - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4zeHl1SWJuMkZWR2lQUC1za2hka1FPSTNuNC1Kc3hjUWIwdGppU2xocG5NbV9pRnlqeVVZYlNEQmhLVTlyeGt4Z1R3emNyUktIcFAwWnpjaVprNW45cjVuaE5reHFPdFFJbG1OUg?oc=5",
       "pubDate": "Thu, 14 May 2026 07:00:00 GMT",
-      "source": "masouken.com",
-      "sourceUrl": "https://masouken.com",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://masouken.com/M&A",
-      "img": "",
-      "summary": ""
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC1472U0U6A510C2000000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3019519014052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=90b75dc3ac7f855719caa2aa79910605",
+      "summary": "ノジマは14日、ヤマトホールディングス（HD）金融子会社のヤマトクレジットファイナンスを35億円で買収すると発表した。後払い決済などを手掛ける同社を傘下に収めることで決済サービスを取り込み、家電や携帯販売の底上げにつなげる。同日の取締役会で決議した。9月1日付で特別目的会社（SPC）を通じてヤマトHDが持つヤマトクレジットファイナンスの70%の株式を取得し子会社化する。ヤマトクレジットファイ"
     },
     {
       "title": "ENEOS、米シェブロン事業を3000億円で買収 東南アの石油製品販売 - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5BQUhGWVBzVDVUdElFUmg3LTNaTzhJU1VtN1U4MGtnTXRWYndSS1A2c002TlAwUGc0VldwQnRiOXVmU1ZRallZNUJ2LWRQN1VvVEgzRXp4b1VuUm5yLTJEM3h5SU5vMl96U29lcw?oc=5",
-      "pubDate": "Thu, 14 May 2026 04:30:17 GMT",
+      "pubDate": "Thu, 14 May 2026 07:00:00 GMT",
       "source": "日本経済新聞",
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
@@ -4457,6 +4589,30 @@
       "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC144A10U6A510C2000000/",
       "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3017229014052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=6f0c3af68fae4f507bf77090d2c3feaf",
       "summary": "ENEOSホールディングス（HD）は14日、米石油メジャーのシェブロンから石油製品事業を21億ドル（約3300億円）で買収すると発表した。東南アジアなどの製油所や給油所を取得する。脱炭素が鈍るなか、基盤事業の成長を優先する。シンガポール、マレーシア、フィリピン、ベトナム、インドネシア、オーストラリアの事業を取得する。石油製品を貯蔵する拠点は計12カ所、給油拠点1482カ所になる。シンガポール"
+    },
+    {
+      "title": "半導体「非先端品」、投資300億円未満も国が補助 自動車向けなど - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE53X1NFT2xfVkhWaXBwTG1lY05YQ0IwOTY0VG5xNzhUb3k5a0ZqYi0wUG5pVzFKOUVad21vVy1wZ2s1Y2I0WXNGczRLNWtoR2Zrb1RXU0d3WVJjZTZoRkpqTFlEX29TSDhzWXdZXw?oc=5",
+      "pubDate": "Thu, 14 May 2026 07:00:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "global",
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUA275O40X20C26A4000000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2961746029042026000000-2.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&upscale=false&w=1200&s=86c7e8742d2d29709f8eefaaa6f3762d",
+      "summary": "経済産業省は先端品ではない従来型半導体の国内製造への補助金を拡大する。投資額が300億円未満の事業も支援対象に加える。自動車など幅広い分野の製造業に欠かせない重要物資として、安定調達できる体制を整える。補助金要件を5月中に改定する。電源ICなど圧力や温度などをデジタル信号に変換するアナログ半導体や電子制御を担うマイコンをつくる企業への支援を想定する。こうした従来型半導体は自動車や工作機械など"
+    },
+    {
+      "title": "リーガルテック、スタートアップの資金調達を支援する「リーガルテックVDR スタートアップ」の提供を開始 - ProductZine",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5TSGFLX0Y5ZlpZSHpiZDZOaThSMnBxYkxKRWQ1TkQ5eklsY3Z3b1lYa19QZ3otN2pUWTg1SlZBZ2FVeE5NNjN5Vy1hUWhiWndnc0Jmeg?oc=5",
+      "pubDate": "Thu, 14 May 2026 04:32:11 GMT",
+      "source": "ProductZine",
+      "sourceUrl": "https://productzine.jp",
+      "descHref": "",
+      "category": "funding",
+      "resolvedUrl": "https://productzine.jp/article/detail/2367",
+      "img": "",
+      "summary": ""
     },
     {
       "title": "中南米地域へのインフラ海外展開に関する官民連携プラットフォーム（PLACIDA）中米カリブ地域セミナーの開催 - mofa.go.jp",
@@ -4471,30 +4627,6 @@
       "summary": ""
     },
     {
-      "title": "農林水産省「みどり脱炭素海外展開コンソーシアム」に参画 - 株式会社スペースデータ - 株式会社スペースデータ",
-      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5HRF9pNzF5blZQREJWWkxVRTY4VUpOektEbnM5R1BDblV0LVFwX3hyRng2R05jbXBuSDFrazZneEJjVVVITDdFeDU0X3Q0bkd0UGx3Z1JOZG1WaDFybTEw?oc=5",
-      "pubDate": "Thu, 14 May 2026 02:10:56 GMT",
-      "source": "株式会社スペースデータ",
-      "sourceUrl": "https://spacedata.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://spacedata.jp/news/202605_midori-consortium",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "病院向け基幹システムのヘンリー、シリーズCラウンドにて総額30億円の資金調達を実施 - PR TIMES",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFAxS1pPOWZUOVBoUDdIbWZkcmVIaXB5dlVtZjEzVW9sUm5yZXNWOU55WkYtOFlPb0k1M1Q1YzRYd2dVY0E2NkJ3M3g4QkJybTBXdWNDNkluSmRsNEVYeTNCaEh2MURqZUM2eHc?oc=5",
-      "pubDate": "Thu, 14 May 2026 01:00:02 GMT",
-      "source": "PR TIMES",
-      "sourceUrl": "https://prtimes.jp",
-      "descHref": "",
-      "category": "funding",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000020.000102549.html",
-      "img": "https://prcdn.freetls.fastly.net/release_image/102549/20/102549-20-de450a6989b51b1f77a9699c067cc49c-2400x1260.jpg?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
-      "summary": "株式会社ヘンリーのプレスリリース（2026年5月14日 10時00分）病院向け基幹システムのヘンリー、シリーズCラウンドにて総額30億円の資金調達を実施"
-    },
-    {
       "title": "LINEヤフー、カカクコムへ買収を再提案 欧州ファンド対抗で価格上げ - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9sYXc1b1FNSnhTODJvb0pHMEtFNzBwY3o2blBCRTFxYWx6Sjg0WVJndW00MTFnUmZFOHpxYW4zZlN5c1NUSTRfMDFKeW1obzlwMEZDZGxpZHU1WGNHZDh6RTFHTzktcENwczJIWA?oc=5",
       "pubDate": "Thu, 14 May 2026 00:12:56 GMT",
@@ -4507,16 +4639,16 @@
       "summary": "レストラン検索・予約サービス「食べログ」を運営するカカクコムを巡り、LINEヤフーは14日、米投資ファンドのベインキャピタルと新たな買収提案をすると発表した。12日に欧州系投資ファンドEQTが公表した買収案に対抗する。LINEヤフー陣営は7日付でカカクコム側に水面下で買収の意向を示したが、初期的な提案にとどまっていた。同陣営は13日付の新たな提案でEQTの買い付け価格を上回る1株あたり3232"
     },
     {
-      "title": "半導体「非先端品」、投資300億円未満も国が補助 自動車向けなど - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE53X1NFT2xfVkhWaXBwTG1lY05YQ0IwOTY0VG5xNzhUb3k5a0ZqYi0wUG5pVzFKOUVad21vVy1wZ2s1Y2I0WXNGczRLNWtoR2Zrb1RXU0d3WVJjZTZoRkpqTFlEX29TSDhzWXdZXw?oc=5",
-      "pubDate": "Wed, 13 May 2026 20:00:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
+      "title": "社会人1・2年生の42.8％が生成AI結果をそのまま仕事に使用することをアリと回答 - 労務ドットコム",
+      "link": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9VWE1CU1IwOXdJZ0Q5R2FtNm80em9rNGkwYUdHbmM0bFA3cE5wMUFjdXU3T09fcTVfZFQwWW5GTy1LOVVBQWZXT3g2cElnLXc?oc=5",
+      "pubDate": "Wed, 13 May 2026 15:33:13 GMT",
+      "source": "労務ドットコム",
+      "sourceUrl": "https://roumu.com",
       "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUA275O40X20C26A4000000/",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2961746029042026000000-2.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&upscale=false&w=1200&s=86c7e8742d2d29709f8eefaaa6f3762d",
-      "summary": "経済産業省は先端品ではない従来型半導体の国内製造への補助金を拡大する。投資額が300億円未満の事業も支援対象に加える。自動車など幅広い分野の製造業に欠かせない重要物資として、安定調達できる体制を整える。補助金要件を5月中に改定する。電源ICなど圧力や温度などをデジタル信号に変換するアナログ半導体や電子制御を担うマイコンをつくる企業への支援を想定する。こうした従来型半導体は自動車や工作機械など"
+      "category": "hr",
+      "resolvedUrl": "https://roumu.com/archives/131461.html",
+      "img": "https://roumu.com/wp-content/uploads/2026/02/logo.png",
+      "summary": "生成AIの活用が進んでいます。実際に私自身も積極的に仕事に活用していますし、こうした記事を執筆する際にも部分的"
     },
     {
       "title": "野田クリスタル「海外進出も現実に」 AIアプリ開発を吉本興業がサポート - 日経クロストレンド",
@@ -4525,22 +4657,22 @@
       "source": "日経クロストレンド",
       "sourceUrl": "https://xtrend.nikkei.com",
       "descHref": "",
-      "category": "global",
+      "category": "ma",
       "resolvedUrl": "https://xtrend.nikkei.com/atcl/contents/18/01385/00006/",
       "img": "https://xtrend.nikkei.com/atcl/contents/18/01385/00006/nxr_m.jpg",
       "summary": "お笑いコンビ・マヂカルラブリーとして、芸人の世界の第一線で活躍しつつ、クリエーター業でも存在感を増している野田クリスタル。ゲーム好きが高じて、趣味でゲームプログラミングを始め、自作ゲームを使ったネタで『R-1ぐらんぷり2020』で優勝。“野田ゲー”（野田が制作したゲームの通称）は商品化されるなどの展開を見せた。最近はAIにも傾倒、吉本社内にチームが編成され、様々なクリエーティブに挑戦しているという。"
     },
     {
-      "title": "ALSOKとカーライル、日本ドライケミカルを買収 最大836億円 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB2LXF6S1pfcEdqSk5LbUtjZUZITTNHamVvc0E0TWRxWDU3Q0pidDhLLS1CbEh1RmloeE14ZGhveXNsUUlXaEE0TDFVQWwyTDJydkFoV1M3Tkstckx4cVRsRlMtUjJnX21NTExWQg?oc=5",
+      "title": "廃棄物処理×M&amp;Aで時価総額が3倍 大栄環境、事業承継企業に注目 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9ZWUhWVzQtaFR1U2lBc2V3aGdKbzlNU2g4WFJEWjlKSzJOUUFUQlJxMGNQYnBIVjgwQXhUU0hpZ3B4TGVwRGxwWWF4YnVGTnBXSEczeGptLVNVb2dUcWhQWlB4dWRBVWhNVUJkTQ?oc=5",
       "pubDate": "Wed, 13 May 2026 07:00:00 GMT",
       "source": "日本経済新聞",
       "sourceUrl": "https://www.nikkei.com",
       "descHref": "",
       "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC1284D0S6A510C2000000/",
-      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO3009675013052026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&h=630&w=1200&s=931a41ff8c914e8ac970727d6f185bd0",
-      "summary": "ALSOKは13日、消火設備の日本ドライケミカルを米投資ファンドのカーライル・グループと共同で買収すると発表した。TOB（株式公開買い付け）をし、全株の取得を目指す。買収総額は836億円を見込む。全株取得した場合の出資比率はALSOKが51%、カーライルが49%となる。TOB価格は1株当たり3730円と、13日終値（3025円）を23%上回る。期間は14日から6月29日まで。成立すれば、日本ド"
+      "resolvedUrl": "https://www.nikkei.com/article/DGXZQOUC204BT0Q6A420C2000000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSXZQO2916169020042026000000-1.jpg?auto=compress&bg=FFFF&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.06&fp-y=0.15&h=630&w=1200&s=74167d92d6326826030578b2a2ddf530",
+      "summary": "産業廃棄物処理の大栄環境は2026年3月末の時価総額が約3900億円と上場から3年で3倍に増えた。廃棄物処理は生活に必要なインフラで、安定したキャッシュフローが期待できる。再編が遅れている点に目を付け、負債を活用して積極的にM&A（合併・買収）を仕掛ける財務戦略が、教科書通りだとして投資家から支持を集めている。長らく迷惑施設「NIMBY（not in my back yard）」として忌避されて"
     },
     {
       "title": "【元住友商事メキシコ社長から学ぶ！】グローバル人材の要件と育成ガイド| 人事部・海外事業部必見！5/26(火)10時30分開催 - PR TIMES",
@@ -4553,18 +4685,6 @@
       "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000552.000077877.html",
       "img": "",
       "summary": ""
-    },
-    {
-      "title": "日本Ｍ＆Ａセンターホールディングス[2127]：主要株主の異動に関するお知らせ 2026年5月13日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9fYzBVZ0taYXItM3NCOGdfeUdDU0V6MVJBSWNLS2dCS29DZkJqTWVoSzE3QzlPWk00MWtFd3JBblpXc2JWYk5VWkVnM0FBOUxWbEFOcHI3SERjVWF1M1huemJ2QUd6Yk9RMUE?oc=5",
-      "pubDate": "Wed, 13 May 2026 06:30:00 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/nkd/disclosure/tdnr/20260513527880/",
-      "img": "https://www.nikkei.com/nkd/disclosure/tdnr/20260513527880/thumbnail/?ttype=ogp",
-      "summary": "2026年5月13日 日本Ｍ＆Ａセンターホールディングス[2127]の開示資料「主要株主の異動に関するお知らせ」 が閲覧できます。資料はPDFでダウンロードできます"
     },
     {
       "title": "パトスロゴス、大企業の人事DXとデータ活用をテーマにしたカンファレンスを東京・大阪で開催 - ニコニコニュース",
@@ -4639,6 +4759,30 @@
       "summary": "欧州系投資ファンドのEQTは12日、レストラン検索・予約サービス「食べログ」を運営するカカクコムを買収すると発表した。買収総額は5900億円規模。株式非公開化で経営判断を速め、人工知能（AI）投資を進める。近くTOB（株式公開買い付け）を始め、成立後に東証プライム市場からの非公開化を予定する。買い付け価格は1株あたり3000円。5月12日の終値は2925円だった。カカクコムは同日、提案に賛同し"
     },
     {
+      "title": "MBK、アルミ大手買収 外為法審査で承認 経済安保の「コア業種」 - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAxM1g3Nm56YW1wa1BmLW55RmtZeFltZnpIZEFEdGgxMDVYZVVEMDlVUmxvRlJwVWpFNWNhMUJqeTJxVDhLSjYtaEFvRXl2Y0pMTTJhbmJZQ1lublRkcTFuN2N4ZDUtSklCamZtOA?oc=5",
+      "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://www.nikkei.com/article/DGKKZO96166820S6A510C2MM8000/",
+      "img": "https://article-image-ix.nikkei.com/https%3A%2F%2Fimgix-proxy.n8s.jp%2FDSKKZO9616683012052026MM8000-2.jpg?auto=compress&bg=FFFF&fill=blur&fit=fill&fm=jpg&h=630&upscale=false&w=1200&s=0c5e22a0d8288652cd0957f7d0be28e0",
+      "summary": "アジア系の投資ファンド、MBKパートナーズはアルミ事業大手のアルテミラ・ホールディングス（HD、東京・文京）を買収する。負債を含めた買収総額は1300億円規模になるもようだ。このほど外為法の事前審査で当局から承認された。同ファンドによる工作機械大手の牧野フライス製作所の買収計画は国から外為法に基づく中止勧告を受けた。どこで線引きするのか当局が明らかにしないなか、民間の投資案件の実績が先行する。"
+    },
+    {
+      "title": "イシン[143A]：イシン株式会社が展開するM&amp;A仲介事業において、 株式会社ＣＳ－Ｃとperzik株式会社の株式譲渡を支援 2026年5月12日(適時開示) ：日経会社情報DIGITAL - 日本経済新聞",
+      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1DOHpaSzBtWVh4TXNXUk5PamsyaW9pd3lFTlN5U3JwREtyZllYdl9RTmZ0Q2dEQ1pvc3BxOENXMGhwSFQ5eWdhTEJmUXVweVlOdWlfZklleWdRRHZNWE1LcGl0eUpwMUg5Wnc?oc=5",
+      "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
+      "source": "日本経済新聞",
+      "sourceUrl": "https://www.nikkei.com",
+      "descHref": "",
+      "category": "ma",
+      "resolvedUrl": "https://www.nikkei.com/nkd/disclosure/tdnr/20260512525156/",
+      "img": "https://www.nikkei.com/nkd/disclosure/tdnr/20260512525156/thumbnail/?ttype=ogp",
+      "summary": "2026年5月12日 イシン[143A]の開示資料「イシン株式会社が展開するM&A仲介事業において、 株式会社ＣＳ－Ｃとperzik株式会社の株式譲渡を支援」 が閲覧できます。資料はPDFでダウンロードできます"
+    },
+    {
       "title": "インドのモディ首相、在宅勤務や海外旅行自粛を要請 燃料・外貨節約へ - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9tR0taNkluRFFuVGNrNGpfSHVFb3VLWkJRdnY4NTVaWndXdEtXOVNVWllVdVE0N1NmZG1GOWhrVDdZajlZSmxqRG5uX1NTbFgxOTZMYVJQdnFMS3oxckVwVjRSSWRzRlEyU0laSA?oc=5",
       "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
@@ -4647,18 +4791,6 @@
       "descHref": "",
       "category": "talent",
       "resolvedUrl": "https://www.nikkei.com/article/DGXZQOGM119LQ0R10C26A5000000/",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "イシン株式会社が展開する M&amp;A 仲介事業において、 株式会社ＣＳ－Ｃと perzik 株式会社の株 - 日本経済新聞",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQR0g2WUN5RjJvTE9uMzRjX2s0UkYzczRzNjBZNFVCOTVYeENmTWFqeWtpaVc5QWlYWEtEN0JfZnVIOUVGSWFPWmZ4RWJUcU1kTjRKaWtPcDQxNzV5UEtobjVNWFFpSDlMampYUTRKVWVDVklTcDIwQ2xRNDRNUG5ZVFZ2UXVDYWVHN1I5QzlaMHc3dzhGc0hoR2liRVM?oc=5",
-      "pubDate": "Tue, 12 May 2026 04:22:28 GMT",
-      "source": "日本経済新聞",
-      "sourceUrl": "https://www.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://www.nikkei.com/markets/ir/irftp/data/tdnr/tdnetg3/20260512/fx8on8/140120260512525156.pdf",
       "img": "",
       "summary": ""
     },
@@ -4719,18 +4851,6 @@
       "descHref": "",
       "category": "deel",
       "resolvedUrl": "https://voix.jp/business-cards/deel-akai-ai-automation-platform/",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "SHIFT、10年間で37件のM＆A 買収判断も統合作業も仕組み化で迅速に - 日経ビジネス電子版",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTEQwQWQtMmFYeWpteXF4SmFuaEc3dk1pRTkwd21JRWlBTE95T1ZXTjloNVJ0aURSRnQ3QjBkVklhT2g5aDNGeFRqY0RNZ1FLQzdwUk1DMjA5RS05M2R0YkY2U1ZDTEFFckVpdGNVeW9OUmR3enhzbTVqUjZGRmRVTVNvQjdxMVdO?oc=5",
-      "pubDate": "Sun, 10 May 2026 10:12:53 GMT",
-      "source": "日経ビジネス電子版",
-      "sourceUrl": "https://business.nikkei.com",
-      "descHref": "",
-      "category": "ma",
-      "resolvedUrl": "https://business.nikkei.com/atcl/gen/19/00737/061700013/?SS=imgview&FD=-654642772",
       "img": "",
       "summary": ""
     },
@@ -4843,14 +4963,14 @@
       "summary": ""
     },
     {
-      "title": "傍流で培った「グローバル化への道」 - Forbes JAPAN",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE56anF5RTl0anQ5RVJNLXI5VEZlYmtSZjN4SUEtc1BkWWF1N2FvdkNJSWxvTFVRRlNnZXVyYVNqUXF1SnZWVU9YalV5ODVST3VNVm1pRFkwV0U?oc=5",
-      "pubDate": "Sun, 03 May 2026 07:00:00 GMT",
-      "source": "Forbes JAPAN",
-      "sourceUrl": "https://forbesjapan.com",
+      "title": "【岡山大学】2026年度グローバル人材育成院「海外留学全体説明会」・「夏季語学研修・短期海外研修説明会」を開催-未来を拓く一歩、グローバルへの挑戦を後押し- (2026年5月4日掲載) - ライブドアニュース",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5JNEFVQnQwSU5UZmNiSjNqbzBxdHV4Wk52TW1veXlZcERzQlRRTnphaDR0SC0teWRydU51REk0NGlZTUlXNTdzRy1MZzN1eXJzZGFIb1FnSmptWGpyT3NOVEpn?oc=5",
+      "pubDate": "Mon, 04 May 2026 07:00:00 GMT",
+      "source": "ライブドアニュース",
+      "sourceUrl": "https://news.livedoor.com",
       "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://forbesjapan.com/articles/detail/96363",
+      "category": "talent",
+      "resolvedUrl": "https://news.livedoor.com/pr_topics/detail/31181790/",
       "img": "",
       "summary": ""
     },
@@ -4863,18 +4983,6 @@
       "descHref": "",
       "category": "funding",
       "resolvedUrl": "https://www.nikkei.com/nkd/company/article/?DisplayType=1&ng=DGXZQOUC309630Q6A430C2000000&scode=9025&ba=1",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "令和8年度文化庁「活字文化のグローバル展開推進事業」海外における日本書籍の出版・流通に向けた企画書の翻訳・作成とサンプルの翻訳を助成 - PR TIMES",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9IQnVMRmh0Q082V1pIaHRoMU9rOGxUVmE4dUhTbmJseFJtaVJuVEJLXzItdjA3dXlGdVZ2WHNmM1F1SHlYVEpKazlvMm0yb3lQcWNVc2FOTDBtUTMzRklfeVQxdU1JcHA1NEE?oc=5",
-      "pubDate": "Fri, 01 May 2026 07:00:00 GMT",
-      "source": "PR TIMES",
-      "sourceUrl": "https://prtimes.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000269.000103029.html",
       "img": "",
       "summary": ""
     },
@@ -4903,18 +5011,6 @@
       "summary": ""
     },
     {
-      "title": "【調査結果】海外進出の最大の懸念は「信頼できるシェフ・調理人材の確保」〜実務支援の重要性が明らかに - PR TIMES",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBNTTh3Szk2d1NFbUtWR0hTN2RPcS1HdFNKTXlqeHB5YXI3SzFyeFZqWEF4VnhaV0tkQi11NnZNOFFSck1ESXFYZVJSUkUwWkh5dHZHcTdXN0xpWUIxd2RoQUFmaGFWV1VYVmc?oc=5",
-      "pubDate": "Tue, 28 Apr 2026 07:00:00 GMT",
-      "source": "PR TIMES",
-      "sourceUrl": "https://prtimes.jp",
-      "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://prtimes.jp/main/html/rd/p/000000186.000028141.html",
-      "img": "",
-      "summary": ""
-    },
-    {
       "title": "大企業向けHR SaaSを提供するパトスロゴス、総額31億円のシリーズBを実施 - ニコニコニュース",
       "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1xd0RDdHpuT0xUQWJaSVRKUXlieThlR3ZEbnBvdjlSdm5UcThRYzBwMzlpalFnanFxRm5vM0NnMjZ4YXpWTTc2QUFGRWQyeGlfMnFCaw?oc=5",
       "pubDate": "Tue, 28 Apr 2026 07:00:00 GMT",
@@ -4923,18 +5019,6 @@
       "descHref": "",
       "category": "hr",
       "resolvedUrl": "https://news.nicovideo.jp/watch/nw19222307",
-      "img": "",
-      "summary": ""
-    },
-    {
-      "title": "【元アデランス グローバル人事トップが語る】海外での人材マネジメントエッセンス インサイトアカデミー株式会社 | セミナー - HRプロ",
-      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1HVmpaei1Iay1HYmI1NlpKdE14QmEzRjZZaXRselJSVGxhZUF3VE80eG5YbGxacms0dU0zWU9pU2ttNkRHODhCLXpXc2hfa3h5ZzN4ZWJ5UDdpaFdxejdlQjlTQXpvUS01Z3hmSw?oc=5",
-      "pubDate": "Tue, 28 Apr 2026 03:23:16 GMT",
-      "source": "HRプロ",
-      "sourceUrl": "https://www.hrpro.co.jp",
-      "descHref": "",
-      "category": "talent",
-      "resolvedUrl": "https://www.hrpro.co.jp/seminar_detail.php?ccd=01013&pcd=162",
       "img": "",
       "summary": ""
     },
@@ -4963,7 +5047,7 @@
       "summary": ""
     },
     {
-      "title": "4月20〜24日 スタートアップ資金調達まとめ読み 4/25 - 日本経済新聞",
+      "title": "4月20〜24日 スタートアップ資金調達まとめ読み - 日本経済新聞",
       "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNZzljbnlCRWdPWUhma00zekxpMy1MMEUtU3RISTJWSHk5SWZ5bWhmTUJ4QU9XN0xJS0ZYTXlKcjg1bm44U2RVSHVmMmR5MkZ4Mm1wV2NxZU5IY0dxS0JfSi14eWE5M3h0R1JzWDN6STdVQi1sbktyVlNkU1BGSUZ2b2VsTkZDaExZOHVtMTA0X3JONDRYdlJlM3gwSnB0STBwaHdSQUFzVWk?oc=5",
       "pubDate": "Sat, 25 Apr 2026 07:00:00 GMT",
       "source": "日本経済新聞",
@@ -4975,14 +5059,14 @@
       "summary": ""
     },
     {
-      "title": "仙北市に本店を置く菓子店が海外進出へ 台湾の商業施設に常設店舗 9月オープン予定 秋田 - 日テレNEWS NNN",
-      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOOTlSanRJX2w5eHhlRW1Ma09ORzA0RmR4UTNpOW9MQW9nSEZEbjVvTmN4OGpaandLZWhWaXpRdzZQeVg4d0o3RFp4bGg5VkQzT1h4M2J2alRrbmgzOHlSZWxXRS1pOE9YcEtFZDJseFZtbmtpalhRcUdHYzFRNnNzazE1NjNxN28?oc=5",
-      "pubDate": "Fri, 24 Apr 2026 09:04:36 GMT",
-      "source": "日テレNEWS NNN",
-      "sourceUrl": "https://news.ntv.co.jp",
+      "title": "【独自】中小企業買収仲介に新資格 政府、悪質業者を排除（共同通信） - Yahoo!ニュース",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8wVk5MMl9LcVVUcTYtVDNVdWxodjA5WV9peG16QjU5Zm05cG41dUt3VHFCcmRvV0VLLVFZOHA1djN2X0hsZ2VwTTlFVEZhNzBUVkhPUmUzTnA1d1Q3MDBXcWxFTjVUM2RvVzFIVlVXM0l0andickZIeUxfTDVZVEU?oc=5",
+      "pubDate": "Sat, 25 Apr 2026 07:00:00 GMT",
+      "source": "Yahoo!ニュース",
+      "sourceUrl": "https://news.yahoo.co.jp",
       "descHref": "",
-      "category": "global",
-      "resolvedUrl": "https://news.ntv.co.jp/n/abs/category/economy/ab5b068872ee8e4c53ad97c0b4844d8940",
+      "category": "ma",
+      "resolvedUrl": "https://news.yahoo.co.jp/articles/d13ac1158665273aedb31b2f937f85d2d210ce54",
       "img": "",
       "summary": ""
     },
@@ -5047,16 +5131,16 @@
       "summary": ""
     },
     {
-      "title": "【#118】注目の資金調達情報 - ベンチャー.jp",
-      "link": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9kZjB0Z1c3bTdpSks2RlZaRTRXNjR5SGVNTWxLUnFETmNwQnVKVFgybnFBbnZpcHdvemVrYzF4emtlMmtSZERPWW5LM1hlcldGYzFr?oc=5",
-      "pubDate": "Tue, 21 Apr 2026 07:00:00 GMT",
-      "source": "ベンチャー.jp",
-      "sourceUrl": "https://venture.jp",
+      "title": "ホンダ系も相次ぎ傘下入り インド部品首位マザーサンの「任せるM＆A」 - 日経ビジネス電子版",
+      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1yaVJRdE5HTTE4cGYtMWhZOWNNb0lQMEIwb1ZVa3ZVSWpfTGdENDB5LVF4NUhoWkxzcGNpV0ZzTFNocS1YX3k2RXdZSnNjTTJhQ0loano1aWttUXB3bGk0SWNtcGZYWU0?oc=5",
+      "pubDate": "Wed, 22 Apr 2026 07:00:00 GMT",
+      "source": "日経ビジネス電子版",
+      "sourceUrl": "https://business.nikkei.com",
       "descHref": "",
-      "category": "funding",
-      "resolvedUrl": "https://venture.jp/news/2026/04/21/21799/",
-      "img": "https://venture.jp/wp-content/uploads/2026/04/27-10.png",
-      "summary": "最近行われた資金調達の情報から、venture.jp（ベンチャー.jp）が厳選した注目企業をご紹介します。 &"
+      "category": "ma",
+      "resolvedUrl": "https://business.nikkei.com/atcl/gen/19/00865/042100006/",
+      "img": "",
+      "summary": ""
     }
   ]
 }
